@@ -1,0 +1,33 @@
+ErrorDocument 403 /403.htm
+ErrorDocument 404 /404.htm
+ErrorDocument 500 /500.htm
+
+Redirect 301 /shows.htm            http://fontefideliti.ru/shows/
+
+Redirect 301 /females.htm          http://fontefideliti.ru/females/
+
+Redirect 301 /danaya-photos.htm    http://fontefideliti.ru/females/danaya/photos.htm
+Redirect 301 /danaya-shows.htm     http://fontefideliti.ru/females/danaya/shows.htm
+Redirect 301 /danaya-video.htm     http://fontefideliti.ru/females/danaya/video.htm
+
+Redirect 301 /demetra-photos.htm   http://fontefideliti.ru/females/demetra/photos.htm
+Redirect 301 /demetra-shows.htm    http://fontefideliti.ru/females/demetra/shows.htm
+Redirect 301 /demetra-video.htm    http://fontefideliti.ru/females/demetra/video.htm
+
+Redirect 301 /hillari-photos.htm   http://fontefideliti.ru/females/hillari/photos.htm
+Redirect 301 /hillari-shows.htm    http://fontefideliti.ru/females/hillari/shows.htm
+Redirect 301 /hillari-video.htm    http://fontefideliti.ru/females/hillari/video.htm
+
+Redirect 301 /mabari-photos.htm    http://fontefideliti.ru/females/mabari/photos.htm
+Redirect 301 /mabari-shows.htm     http://fontefideliti.ru/females/mabari/shows.htm
+Redirect 301 /mabari-video.htm     http://fontefideliti.ru/females/mabari/video.htm
+
+Redirect 301 /nikoletta-photos.htm http://fontefideliti.ru/females/nikoletta/photos.htm
+Redirect 301 /nikoletta-shows.htm  http://fontefideliti.ru/females/nikoletta/shows.htm
+Redirect 301 /nikoletta-video.htm  http://fontefideliti.ru/females/nikoletta/video.htm
+
+Redirect 301 /viviana-photos.htm   http://fontefideliti.ru/females/viviana/photos.htm
+Redirect 301 /viviana-shows.htm    http://fontefideliti.ru/females/viviana/shows.htm
+Redirect 301 /viviana-video.htm    http://fontefideliti.ru/females/viviana/video.htm
+
+php_value auto_append_file none
