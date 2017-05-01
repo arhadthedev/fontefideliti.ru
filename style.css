@@ -151,6 +151,14 @@ article
 	margin: 0pt 50pt;
 }
 
+article .special
+{
+	color: #990033;
+	display: block;
+	font-size: 1.25em;
+	margin: -0.75em 0em -0.4em 0em;
+}
+
 article.filled
 {
 	max-width: 570pt;
