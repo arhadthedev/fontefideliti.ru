@@ -1,0 +1,6 @@
+name: Питомник немецких овчарок «Фонте Фиделити» г. Тольятти
+url: https://fontefideliti.ru
+sass:
+  style: compressed
+compress_html:
+  clippings: all

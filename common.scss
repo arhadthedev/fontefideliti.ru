@@ -1,0 +1,125 @@
+---
+# The front matter is required for encouraging Jekyll to pay attention to this file
+---
+$layout-pagewidth: 912pt;
+
+$border-radius-small: 3pt;
+$border-radius-large: 12pt;
+
+$background-page: #caecfd;
+$background-button: #021835;
+$background-button-active: #175ebf;
+
+$shadow: rgba(0,0,0,0.5);
+$borderline: #021835;
+$text-dark: #572325;
+$text-light: #b50f0f;
+
+
+h1, h2, h3 {
+	color: $text-dark;
+	font-family: Verdana;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+html {
+	background: fixed $background-page url('img/background.png');
+	margin: 0pt;
+	padding: 0pt;
+}
+
+body {
+	margin: 0pt auto;
+	width: $layout-pagewidth;
+	text-align: center;
+}
+
+header {
+	display: table;
+	width: 100%;
+
+	& > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	h1 {
+		font-family: serif;
+		margin: 0pt;
+		padding: 0pt;
+		width: 100%;
+
+		span {
+			display: block;
+			font: italic normal 270% Georgia, Palatino, "Palatino Linotype", serif;
+			text-shadow: 1pt 1pt 2pt rgba(0,0,0,0.5);
+		}
+	}
+
+	img {
+		border-radius: $border-radius-large;
+	}
+}
+
+nav {
+	margin: 24pt 24pt 12pt 24pt;
+	position: relative;
+
+	/* Horizontal background line */
+	&::before {
+		border-bottom: solid #ddd 1pt;
+		box-shadow: 1px 1px #fafafa;
+		content: " ";
+		display: block;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+	}
+
+	ul {
+		margin: 0pt;
+		padding: 0pt;
+		position: relative;
+
+		&, & > li {
+			display: inline-block;
+		}
+
+		li {
+			list-style-type: none;
+
+			.current, a {
+				border-radius: $border-radius-small;
+				box-shadow: 1pt 1pt 2pt $shadow;
+				color: #fff;
+				display: block;
+				margin: 3pt 6px;
+				padding: 6pt 10pt;
+				text-decoration: none;
+			}
+
+			.current {
+				background: $background-button-active;
+				font-weight: bold;
+			}
+
+			a {
+				background: $background-button;
+
+				&:active {
+					box-shadow: none;
+					left: 2px;
+					position: relative;
+					top: 2px;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	border-top: 1pt solid $borderline;
+	clear: both;
+	margin: 24pt 12pt 0pt 12pt;
+}

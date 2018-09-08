@@ -1,0 +1,57 @@
+---
+layout: compress
+---
+{% capture copy_years %}Copyright © 2015–{{ site.time | date: '%Y' }}{% endcapture %}
+{% assign author_name = 'Олег Ярыгин' %}
+{% assign author_site = 'https://vk.com/arhad95' %}
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="/common.css">
+		<link rel="shortcut icon" href="/favicon.png">
+		<title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.name }}</title>
+
+		<meta name="author" content="Олег Ярыгин ({{ author_site }})">
+		<meta name="copyright" content="{{ copy_years }} {{ author_name }}">
+		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+
+		<meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+		{% capture cover_relurl %}{% if page.cover %}{{ page.cover }}{% else %}/img/title.jpg{% endif %}{% endcapture %}
+		<meta name="og:image" content="{{ site.url | append: cover_relurl }}">
+		<meta name="og:image:secure_url" content="{{ site.url | append: cover_relurl }}">
+		<meta name="og:url" content="{{ site.url | append: page.url }}">
+		{% if page.description %}<meta name="og:description" content="{{ page.description }}">{% endif %}
+		<meta name="og:site_name" content="{{ site.name }}">
+		<meta name="og:type" content="website">
+		<meta name="og:locale" content="ru_RU">
+	</head>
+
+	<body>
+		<header>
+			<h1>Питомник немецких овчарок <span>«Fonte Fideliti»</span> г. Тольятти</h1>
+			<img src="/img/title.jpg" width="500" height="260" alt="Логотип" />
+		</header>
+
+		<nav>
+			<ul>
+			{% for entry in site.data.navigation %}
+				{% if page.url != entry.url %}
+					<li><a {% if page.url contains entry.url and entry.url != "/" %}class="current"{% endif %}
+					       href="{{ entry.url }}">{{ entry.title }}</a></li>
+				{% else %}
+					<li><span class="current">{{ entry.title }}</span></li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+		</nav>
+
+		{{ page.content }}
+
+		<footer>
+			<p>{{ copy_years }} <a href="{{ author_site }}" rel="author">{{ author_name }}</a>.</p>
+		</footer>
+	</body>
+</html>
