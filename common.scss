@@ -42,11 +42,40 @@ img {
 	border-radius: 7pt;
 }
 
+dl, ul, ol {
+	text-align: left;
+}
+
+dt, dd {
+	display: inline;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin-left: 0pt;
+
+	&::before {
+		content: " — ";
+	}
+
+	&::after {
+		content: "";
+		display: block;
+	}
+}
+
 .banner {
 	color: $text-dark;
 	font-size: 14pt;
 	font-style: italic;
 	font-weight: bold;
+}
+
+.plike {
+	list-style-type: none;
 }
 
 .contacts {
