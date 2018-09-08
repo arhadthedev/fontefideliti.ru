@@ -65,6 +65,10 @@ dd {
 		content: "";
 		display: block;
 	}
+
+	&.accent {
+		font-weight: bold;
+	}
 }
 
 .banner {
