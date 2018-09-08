@@ -23,6 +23,62 @@ h1, h2, h3 {
 	margin-bottom: 1em;
 }
 
+article {
+	margin: 0pt 50pt;
+
+	&.card {
+		background-color: $background-page;
+		border: 1pt solid $borderline;
+		border-radius: 12pt;
+		display: inline-block;
+		margin: 1em;
+		max-width: 570pt;
+		padding: 2em;
+		vertical-align: top;
+	}
+}
+
+img {
+	border-radius: 7pt;
+}
+
+.banner {
+	color: $text-dark;
+	font-size: 14pt;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.contacts {
+	display: table;
+	text-align: left;
+
+	h2 {
+		font-size: 14pt;
+	}
+
+	p {
+		margin: 1em 0em;
+	}
+
+	ul, .cojoin {
+		margin-top: -1em;
+	}
+
+	& > * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	& > img {
+		margin-left: 40pt;
+	}
+
+	& > div {
+		padding-left: 140pt;
+	}
+}
+
 html {
 	background: fixed $background-page url('img/background.png');
 	margin: 0pt;
