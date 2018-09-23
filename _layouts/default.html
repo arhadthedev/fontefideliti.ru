@@ -18,14 +18,18 @@ layout: compress
 		<meta name="copyright" content="{{ copy_years }} {{ author_name }}">
 		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
 
-		<meta name="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+		{% capture card_title %}{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}{% endcapture %}
+		<meta name="og:title" content="{{ card_title }}">
+		<meta name="twitter:title" content="{{ card_title }}">
 		{% capture cover_relurl %}{% if page.cover %}{{ page.cover }}{% else %}/img/title.jpg{% endif %}{% endcapture %}
-		<meta name="og:image" content="{{ site.url | append: cover_relurl }}">
-		<meta name="og:image:secure_url" content="{{ site.url | append: cover_relurl }}">
+		{% capture card_image %}{{ site.url | append: cover_relurl }}{% endcapture %}
+		<meta name="og:image" content="{{ card_image }}">
+		<meta name="og:image:secure_url" content="{{ card_image }}">
+		<meta name="twitter:image" content="{{ card_image }}">
 		<meta name="og:url" content="{{ site.url | append: page.url }}">
-		{% if page.description %}<meta name="og:description" content="{{ page.description }}">{% endif %}
 		<meta name="og:site_name" content="{{ site.name }}">
 		<meta name="og:type" content="website">
+		<meta name="twitter:card" content="summary_large_image">
 		<meta name="og:locale" content="ru_RU">
 	</head>
 
