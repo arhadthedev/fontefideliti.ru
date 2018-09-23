@@ -1,0 +1,5 @@
+# types: 0 - breeder, 1 - non-breeder, 3 - other (unlisted)
+
+- id: elisey
+  type: 1
+  
