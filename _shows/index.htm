@@ -1,0 +1,18 @@
+---
+layout: default
+title: Выставки
+description: Монопородные и всепородные, российские и зарубежные — наши собаки выставляются на большом количестве мероприятий разных рангов.
+cover: /img/photos/shows/2015-volgograd-4.jpg
+has_photos: true
+---
+{% assign sorted_shows = site.shows | sort: 'label' | reverse %}
+{% for entry in sorted_shows %}
+	{% if entry.path contains '2' %}
+		<article class="ultra compact card">
+			<h1><a href="{{ entry.year }}.htm">{{ entry.year }}</a></h1>
+			<a href="{{ entry.year }}.htm">
+				<img src="/img/photos/shows/{{ entry.photo.name }}.jpg" width="{{ entry.photo.width }}" height="152" alt="{{ entry.photo.caption }}">
+			</a>
+		</article>
+	{% endif %}
+{% endfor %}
