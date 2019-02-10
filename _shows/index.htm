@@ -5,7 +5,7 @@ description: Монопородные и всепородные, российс
 cover: /img/photos/shows/2015-volgograd-4.jpg
 has_photos: true
 ---
-{% assign sorted_shows = site.shows | sort: 'label' | reverse %}
+{% assign sorted_shows = site.shows | sort: 'year' | reverse %}
 {% for entry in sorted_shows %}
 	{% if entry.path contains '2' %}
 		<article class="ultra compact card">
