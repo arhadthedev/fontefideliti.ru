@@ -18,7 +18,17 @@ layout: compress
 		</title>
 		<link rel="stylesheet" href="/common.css">
 		<link rel="shortcut icon" href="/favicon.png">
-		{% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+		{% if layout.description_generator %}
+			<meta name="description" content="{% include {{ layout.description_generator }} page=page %}">
+		{% else %}
+			{% if page.description %}
+				<meta name="description" content="{{ page.description }}">
+			{% endif %}
+		{% endif %}
+		{% if layout.interactive_images %}
+			<script src="/jquery-1.11.0.min.js"></script>
+			<script src="/fancybox/jquery.fancybox.pack.js" defer></script>
+		{% endif %}
 	</head>
 	<body>
 		<header>
