@@ -43,7 +43,9 @@ layout: compress
 					<li>
 						<a
 							{% if page.url contains entry.url and entry.url != "/" %}
-								class="current"
+								{% unless entry.url contains ".htm" %}
+									class="current"
+								{% endunless %}
 							{% endif %}
 							href="{{ entry.url }}">{{ entry.title }}
 						</a>
