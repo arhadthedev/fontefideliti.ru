@@ -25,7 +25,7 @@ layout: compress
 				<meta name="description" content="{{ page.description }}">
 			{% endif %}
 		{% endif %}
-		{% if layout.interactive_images %}
+		{% if layout.interactive_images or page.interactive_images %}
 			<script src="/jquery-1.11.0.min.js"></script>
 			<script src="/fancybox/jquery.fancybox.pack.js" defer></script>
 		{% endif %}
