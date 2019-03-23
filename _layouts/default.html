@@ -8,13 +8,13 @@ layout: compress
 		<meta charset="utf-8">
 		<title>
 			{% if layout.subtitle_generator %}
-				{% include {{ layout.subtitle_generator }} page=page %} —
+				{% include {{ layout.subtitle_generator }} page=page %}{% unless layout.skip_branding %} —{% endunless %}
 			{% else %}
 				{% if page.title %}
-					{{ page.title }} —
+					{{ page.title }}{% unless page.skip_branding %} —{% endunless %}
 				{% endif %}
 			{% endif %}
-			Питомник немецких овчарок «Фонте Фиделити» г. Тольятти</title>
+			{% unless page.skip_branding %}Питомник немецких овчарок «Фонте Фиделити» г. Тольятти{% endunless %}</title>
 		</title>
 		<link rel="stylesheet" href="/common.css">
 		<link rel="shortcut icon" href="/favicon.png">
