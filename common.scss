@@ -29,6 +29,24 @@ article {
 	&.dog {
 		font-weight: bold;
 
+		& > ul {
+			color: $text-light;
+			list-style-type: none;
+			padding: 0pt;
+			text-align: center;
+			text-transform: uppercase;
+
+			li {
+				&::after {
+					content: ",";
+				}
+
+				&:last-child::after {
+					content: "";
+				}
+			}
+		}
+
 		& > p {
 			margin-bottom: 8pt;
 			margin-top: 8pt;
