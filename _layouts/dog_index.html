@@ -5,6 +5,7 @@ interactive_images: true
 ---
 <article class="dog card">
 	<h1>{{ page.name_nom }}</h1>
+	{% if page.longhair %}<p>(длинношёрстная)</p>{% endif %}
 	<p>Дата рождения: {% include date.html value=page.dob %}</p>
 	{{ content }}
 </article>
