@@ -1,0 +1,10 @@
+---
+layout: default
+subtitle_generator: dog_index_title.html
+interactive_images: true
+---
+<article class="dog card">
+	<h1>{{ page.name_nom }}</h1>
+	<p>Дата рождения: {% include date.html value=page.dob %}</p>
+	{{ content }}
+</article>

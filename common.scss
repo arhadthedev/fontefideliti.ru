@@ -26,6 +26,15 @@ h1, h2, h3, h1 a {
 article {
 	margin: 0pt 50pt;
 
+	&.dog {
+		font-weight: bold;
+
+		& > p {
+			margin-bottom: 8pt;
+			margin-top: 8pt;
+		}
+	}
+
 	&.card {
 		background-color: $background-page;
 		border: 1pt solid $borderline;
@@ -121,6 +130,31 @@ dd {
 
 	& > div {
 		padding-left: 140pt;
+	}
+}
+
+.pedigree {
+	border-collapse: collapse;
+	font-size: 80%;
+	font-weight: bold;
+	margin: 0pt auto 12pt auto;
+	text-align: left;
+
+	td {
+		border: 1pt solid gray;
+		padding: 3pt 7pt;
+	}
+
+	p {
+		margin: 0pt;
+
+		&:first-child {
+			color: $text-light;
+		}
+	}
+
+	img {
+		margin-top: 9pt;
 	}
 }
 
