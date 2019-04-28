@@ -23,3 +23,6 @@ sass:
 
 compress_html:
   clippings: all
+
+plugins:
+  - jekyll-redirect-from
