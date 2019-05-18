@@ -17,6 +17,10 @@ defaults:
       type: perdog_cards
     values:
       layout: dog_index
+  - scope:
+      type: shows
+    values:
+      layout: global_shows
 
 sass:
   style: compressed
