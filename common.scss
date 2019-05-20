@@ -63,6 +63,14 @@ article {
 		max-width: 570pt;
 		padding: 2em;
 		vertical-align: top;
+
+		& > p:first-child {
+			margin-top: 0pt;
+		}
+
+		& > p:last-child {
+			margin-bottom: 0pt;
+		}
 	}
 
 	&.compact {
