@@ -1,1 +1,1 @@
-<a href="/img/{{ include.path }}.jpg" title="{{ include.title }}" rel="a"><img src="/img/{{ include.path }}-h{{ include.h }}.jpg" height="{{ include.h }}" alt="{{ include.title }}"></a>
+<a href="/img/{{ include.path }}.jpg" title="{{ include.title }}" rel="a"><img src="/img/{{ include.path }}-h{{ include.h }}.jpg" {% if include.w %}width="{{ include.w }}"{% endif include.w %} height="{{ include.h }}" alt="{{ include.title }}"></a>
