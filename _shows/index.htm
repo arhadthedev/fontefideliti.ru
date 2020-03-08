@@ -12,7 +12,7 @@ has_photos: true
 			{% capture year %}{% include page_id.html path=entry.path %}{% endcapture %}
 			<h1><a href="{{ year }}.htm">{{ year }}</a></h1>
 			<a href="{{ year }}.htm">
-				<img src="/img/photos/shows/{{ entry.photo.name }}.jpg" width="{{ entry.photo.width }}" height="152" alt="{{ entry.photo.caption }}">
+				<img src="/img/{{ entry.photo.name }}.jpg" width="{{ entry.photo.width }}" height="152" alt="{{ entry.photo.caption }}">
 			</a>
 		</article>
 	{% endif %}
