@@ -3,6 +3,7 @@ exclude:
   - LICENSE
   - README.md
 url: https://fontefideliti.ru
+destination: public
 
 collections:
   shows:
