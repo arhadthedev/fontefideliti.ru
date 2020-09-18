@@ -7,5 +7,5 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
-mkdir public && cd "$_"
-../scripts/generate_main.py
+mkdir public
+scripts/generate_main.py public

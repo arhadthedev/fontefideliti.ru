@@ -9,7 +9,7 @@
 
 from PIL import Image
 
-img_path = '/img/main.jpg'
+img_path = 'img/main.jpg'
 hasso = Image.open(img_path)
-w, h = image.size
+w, h = hasso.size
 img = f'<img src="{img_path}" width="{w}" height="{h}" alt="Фанхил Хаус Хассо">'
