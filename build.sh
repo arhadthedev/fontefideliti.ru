@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env bash
 
 # build.py - builds the whole site into a public/ directory
 #
@@ -6,3 +6,5 @@
 #
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
+
+mkdir public && cd "$_"

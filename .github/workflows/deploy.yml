@@ -24,7 +24,7 @@ jobs:
             ${{ runner.os }}-gems-
       - run: bundle install && bundle exec jekyll build
       - run: find public -name 'index.htm' -print0 | xargs -0 -n1 bash -c 'mv "$0" "${0/.htm/.html}"'
-      - run: python build.py
+      - run: ./build.sh
       - uses: actions/setup-node@v2-beta
       - uses: w9jds/firebase-action@master
         with:

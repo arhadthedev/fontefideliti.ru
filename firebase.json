@@ -1,6 +1,6 @@
 {
   "hosting": {
     "public": "public",
-    "ignore": ["_*/", ".**", "img/"]
+    "ignore": ["_*/", ".**", "img/", "scripts/"]
   }
 }
