@@ -55,10 +55,10 @@ extra_style = {'multicolumn': multicol + multicol_ul, 'banner': banner_style}
 
 def render_all_styles(used_styles):
     out = ''
-    for style in used_styles:
-        if style not in extra_style:
-            sys.exit(f'error: unknown class {style} is used')
-        out += extra_style[style]
+    for style_class in used_styles:
+        if style_class not in extra_style:
+            sys.exit(f'error: unknown class {style_class} is used')
+        out += extra_style[style_class]
     return style + out
 
 
