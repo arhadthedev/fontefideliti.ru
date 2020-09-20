@@ -63,7 +63,7 @@ def render_all_styles(used_styles):
 
 
 class Layout:
-    def __init__(self, menu_section, title):
+    def __init__(self, menu_section, title=''):
         self.title = title
         self.used_styles = set()
         self.menu_section = menu_section
@@ -75,10 +75,13 @@ class Layout:
         self.used_styles |= set(classes)
 
     def get_html(self):
+        full_title = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
+        if self.title != '':
+            full_title = f'{self.title} — ' + full_title
         out = ('<!DOCTYPE html>'
                '<html lang="ru">'
                '<meta charset="utf-8">'
-               '' f'<title>{self.title}</title>'
+               '' f'<title>{full_title}</title>'
                '' f'<style>{render_all_styles(self.used_styles)}</style>'
                '<link rel="shortcut icon" href="/favicon.png">'
                '<header>'

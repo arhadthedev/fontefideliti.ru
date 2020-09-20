@@ -12,8 +12,7 @@ from page_layout import Layout
 from snippets import *
 import sys
 
-title = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
-layout = Layout('main', title)
+layout = Layout('main')
 
 banner = ('Приветствуем вас на сайте питомника «Фонте Фиделити».<br>'
           'Наш питомник занимается профессиональным разведением собак породы '
