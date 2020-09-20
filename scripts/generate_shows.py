@@ -25,10 +25,13 @@ for year_entry in reversed(per_year_list):
 
     card = (f'<h3><a href="{year}.htm">{year}</a></h3>'
             f'<a href="{year}.htm">{make_image(photocard, caption)}</a>')
-    list_layout.add(card, element='article', classes=['compact', 'card'])
+    list_layout.add(card, element='article', classes=['card', 'compact'])
 
 if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
 path = os.path.join(sys.argv[1], 'shows/index.html')
 output = open(path, 'w', encoding='utf-8')
 output.write(list_layout.get_html())
+
+
+show2020_layout = Layout('shows', 'Выставки 2020 года')

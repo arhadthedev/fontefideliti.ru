@@ -58,8 +58,8 @@ compact_style = '.compact{display:inline-block;margin:1em}'
 
 extra_style = {'multicolumn': multicol + multicol_ul,
                'banner': banner_style,
-               'card': card_style,
-               'compact': compact_style}
+               'compact': compact_style,
+               'card': card_style}
 
 
 def render_all_styles(used_styles):
