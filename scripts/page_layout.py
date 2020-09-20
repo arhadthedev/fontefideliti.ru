@@ -50,7 +50,13 @@ multicol_ul = '.multicolumn ul{margin-top:-1em}'
 banner_style = ('.banner{color:#572325;font-size:14pt;font-style:italic;'
                 'font-weight:bold}')
 
-extra_style = {'multicolumn': multicol + multicol_ul, 'banner': banner_style}
+card_style = ('.card{background-color:#caecfd;border:1pt solid #021835;'
+              'border-radius:12pt;margin:2em auto;max-width:570pt;'
+              'padding:1em 2em}')
+
+extra_style = {'multicolumn': multicol + multicol_ul,
+               'banner': banner_style,
+               'card': card_style}
 
 
 def render_all_styles(used_styles):
@@ -69,9 +75,9 @@ class Layout:
         self.menu_section = menu_section
         self.body = ''
 
-    def add(self, content, element, classes):
-        class_list = ' '.join(classes)
-        self.body += f'<{element} class="{class_list}">{content}</{element}>'
+    def add(self, content, element, classes=[]):
+        class_markup = f' class="{" ".join(classes)}"' if classes else ''
+        self.body += f'<{element}{class_markup}>{content}</{element}>'
         self.used_styles |= set(classes)
 
     def get_html(self):
