@@ -8,4 +8,5 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 scripts/generate_main.py public
+scripts/generate_shows.py public
 scripts/generate_sale.py public

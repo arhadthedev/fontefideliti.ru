@@ -22,7 +22,7 @@ style = ('html{background:fixed #caecfd url("/img/background.png")}'
          'body{margin:0pt auto;width:912pt;text-align:center}'
          'footer{border-top:1pt solid #021835;margin:24pt 12pt 0pt}'
          'img{border-radius:7pt}'
-         'h1,h2,h3{color:#572325;font-family:Verdana;margin-top:1em;'
+         'h1,h2,h3,h3 a{color:#572325;font-family:Verdana;margin-top:1em;'
          '' 'margin-bottom:1em}'
 
          'header{display:flex;align-items:center}'
@@ -54,9 +54,12 @@ card_style = ('.card{background-color:#caecfd;border:1pt solid #021835;'
               'border-radius:12pt;margin:2em auto;max-width:570pt;'
               'padding:1em 2em}')
 
+compact_style = '.compact{display:inline-block;margin:1em}'
+
 extra_style = {'multicolumn': multicol + multicol_ul,
                'banner': banner_style,
-               'card': card_style}
+               'card': card_style,
+               'compact': compact_style}
 
 
 def render_all_styles(used_styles):
