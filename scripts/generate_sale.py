@@ -29,6 +29,6 @@ layout.add(call, element='p')
 
 if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
-path = os.path.join(sys.argv[1], 'sale.html')
+path = os.path.join(sys.argv[1], 'sale.htm')
 output = open(path, 'w', encoding='utf-8')
 output.write(layout.get_html())
