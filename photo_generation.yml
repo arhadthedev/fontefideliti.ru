@@ -1,7 +1,7 @@
 # A temporary file required until proper requests from page generators are added
 
 - path: "img/title"
-  default_size: 260
+  default_size: 500
 - path: "img/2008/04051"
   mirror: true
   output:
