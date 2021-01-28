@@ -47,6 +47,6 @@ for item in photos:
 	default_size = item.get("default_size", 794)
 	generate_large(original, output_base_path, default_size)
 
-	for variant in item["output"]:
+	for variant in item.get("output", []):
 		print(" - {}...". format(variant))
 		generate_thumbnail(original ,output_base_path, variant)
