@@ -1,5 +1,20 @@
 # A temporary file required until proper requests from page generators are added
 
+- path: "img/2021/01061"
+  output:
+    - h152
+- path: "img/2021/01062"
+  output:
+    - h152
 - path: "img/2021/01063"
+  output:
+    - h152
+- path: "img/2021/01064"
+  output:
+    - h152
+- path: "img/2021/01065"
+  output:
+    - h152
+- path: "img/2021/01066"
   output:
     - h152
