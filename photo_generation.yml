@@ -16,6 +16,12 @@
 - path: "img/2016/12102"
   output:
     - h152
+- path: "img/2020/05291"
+  output:
+    - h250
+- path: "img/2020/05111"
+  output:
+    - h250
 - path: "img/2020/08231"
   output:
     - h152
@@ -23,6 +29,12 @@
   output:
     - h152
 - path: "img/2020/08233"
+  output:
+    - h152
+- path: "img/2020/09121"
+  output:
+    - h152
+- path: "img/2020/09122"
   output:
     - h152
 - path: "img/2021/01061"
