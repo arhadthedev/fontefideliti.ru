@@ -37,7 +37,7 @@ photos = yaml.safe_load(photos_file)
 for item in photos:
 	relative_base_path = "{}".format(item["path"])
 	original = Image.open("{}.jpg".format(relative_base_path))
-	if item["mirror"]:
+	if item.get("mirror", False):
 		original = original.transpose(Image.FLIP_LEFT_RIGHT)
 	if len(sys.argv) < 2:
 		sys.exit('error: output path argument is not specified')
