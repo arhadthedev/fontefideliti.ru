@@ -3,7 +3,7 @@
 - path: "img/2008/04051"
   mirror: true
   output:
-    - h152
+    - w168
 - path: "img/2016/06041"
   output:
     - h152
@@ -14,6 +14,15 @@
   output:
     - h152
 - path: "img/2016/12102"
+  output:
+    - h152
+- path: "img/2020/08231"
+  output:
+    - h152
+- path: "img/2020/08232"
+  output:
+    - h152
+- path: "img/2020/08233"
   output:
     - h152
 - path: "img/2021/01061"
