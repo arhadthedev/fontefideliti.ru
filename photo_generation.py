@@ -11,10 +11,10 @@ def save_jpeg(image, path):
 	image.save(path, quality=94, optimize=True, progressive=True)
 
 
-def generate_large(original, output_base):
+def generate_large(original, output_base, max_size):
 	output_path = "{}.jpg".format(output_base)
 	generated = original.copy()
-	generated.thumbnail((794, 794), Image.LANCZOS, None)
+	generated.thumbnail((max_size, max_size), Image.LANCZOS, None)
 	save_jpeg(generated, output_path)
 
 
@@ -44,7 +44,8 @@ for item in photos:
 	output_base_path = os.path.join(sys.argv[1], relative_base_path)
 
 	print("Generating {}...".format(relative_base_path))
-	generate_large(original, output_base_path)
+	default_size = item.get("default_size", 794)
+	generate_large(original, output_base_path, default_size)
 
 	for variant in item["output"]:
 		print(" - {}...". format(variant))
