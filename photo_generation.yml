@@ -3,6 +3,9 @@
 - path: "img/2016/06041"
   output:
     - h152
+- path: "img/2016/09111"
+  output:
+    - h152
 - path: "img/2016/12101"
   output:
     - h152
