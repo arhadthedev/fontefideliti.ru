@@ -1,5 +1,9 @@
 # A temporary file required until proper requests from page generators are added
 
+- path: "img/2005/02071"
+  output:
+    - h152
+    - h540
 - path: "img/2008/04051"
   mirror: true
   output:
@@ -19,7 +23,7 @@
 - path: "img/2020/05291"
   output:
     - h250
-- path: "img/2020/05111"
+- path: "img/2020/08111"
   output:
     - h250
 - path: "img/2020/08231"
