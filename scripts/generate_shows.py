@@ -13,6 +13,10 @@ from snippets import *
 import yaml
 import sys
 
+if len(sys.argv) < 2:
+    sys.exit('error: output directory path argument is not specified')
+build_path = sys.argv[1]
+
 config_file = open('database/shows.yml', 'r', encoding='utf-8')
 per_year_list = yaml.safe_load(config_file)
 
@@ -21,15 +25,14 @@ list_layout = Layout('shows', 'Выставки')
 for year_entry in reversed(per_year_list):
     year = year_entry['год']
     photocard = year_entry['фотокарточка']
+    real_path = os.path.join(build_path, photocard)
     caption = year_entry['подпись']
 
     card = (f'<h3><a href="{year}.htm">{year}</a></h3>'
-            f'<a href="{year}.htm">{make_image(photocard, caption)}</a>')
+            f'<a href="{year}.htm">{make_image(real_path, photocard, caption)}</a>')
     list_layout.add(card, element='article', classes=['card', 'compact'])
 
-if len(sys.argv) < 2:
-    sys.exit('error: output directory path argument is not specified')
-path = os.path.join(sys.argv[1], 'shows/index.html')
+path = os.path.join(build_path, 'shows/index.html')
 output = open(path, 'w', encoding='utf-8')
 output.write(list_layout.get_html())
 

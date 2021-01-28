@@ -12,6 +12,10 @@ from page_layout import Layout
 from snippets import *
 import sys
 
+if len(sys.argv) < 2:
+    sys.exit('error: output directory path argument is not specified')
+real_path = sys.argv[1]
+
 layout = Layout('main')
 
 banner = ('Приветствуем вас на сайте питомника «Фонте Фиделити».<br>'
@@ -19,7 +23,8 @@ banner = ('Приветствуем вас на сайте питомника �
           'немецкая овчарка.')
 layout.add(banner, element='p', classes=['banner'])
 
-body = (make_image('img/main.jpg', 'Фанхил Хаус Хассо') +
+head_real_path = os.path.join(real_path, 'img/main.jpg')
+body = (make_image(head_real_path, 'img/main.jpg', 'Фанхил Хаус Хассо') +
         '<div><h3>Контакты</h3>'
         '<p><strong>Группа ВКонтакте:</strong> ' +
         make_link('vk.com/fontefideliti') +
@@ -52,8 +57,6 @@ body = (make_image('img/main.jpg', 'Фанхил Хаус Хассо') +
         '</ul></div>')
 layout.add(body, element='article', classes=['multicolumn'])
 
-if len(sys.argv) < 2:
-    sys.exit('error: output directory path argument is not specified')
-path = os.path.join(sys.argv[1], 'index.html')
+path = os.path.join(real_path, 'index.html')
 output = open(path, 'w', encoding='utf-8')
 output.write(layout.get_html())

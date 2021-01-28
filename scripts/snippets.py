@@ -21,7 +21,7 @@ def make_email(addr):
     return f'<a href="mailto:{addr}">{addr}</a>'
 
 
-def make_image(src, alt):
-    image = Image.open(src)
+def make_image(real_path, src, alt):
+    image = Image.open(real_path)
     w, h = image.size
     return f'<img src="/{src}" width="{w}" height="{h}" alt="{alt}">'

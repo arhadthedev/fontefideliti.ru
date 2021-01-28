@@ -96,7 +96,7 @@ class Layout:
                '<header>'
                '' '<h1>Питомник немецких овчарок <span>«Fonte Fideliti»'
                '' '</span> г. Тольятти</h1>'
-               '' + make_image('img/title.jpg', 'Логотип') +
+               '' + make_image('public/img/title.jpg', 'img/title.jpg', 'Логотип') +
                '</header>')
 
         out += '<nav><ul>'
