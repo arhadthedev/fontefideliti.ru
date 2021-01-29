@@ -23,8 +23,8 @@ banner = ('Приветствуем вас на сайте питомника �
           'немецкая овчарка.')
 layout.add(banner, element='p', classes=['banner'])
 
-head_real_path = os.path.join(real_path, 'img/2015/02071-h540.jpg')
-body = (make_image(head_real_path, 'img/2015/02071-h540.jpg', 'Фанхил Хаус Хассо') +
+head_real_path = os.path.join(real_path, 'img/2011/06111-h540.jpg')
+body = (make_image(head_real_path, 'img/2011/06111-h540.jpg', 'Фанхил Хаус Хассо') +
         '<div><h3>Контакты</h3>'
         '<p><strong>Группа ВКонтакте:</strong> ' +
         make_link('vk.com/fontefideliti') +
