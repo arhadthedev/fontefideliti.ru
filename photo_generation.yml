@@ -18,6 +18,18 @@
 - path: "img/2009/06063"
   output:
     - h152
+- path: "img/2009/06211"
+  output:
+    - h152
+- path: "img/2009/06212"
+  output:
+    - h152
+- path: "img/2009/06213"
+  output:
+    - h152
+- path: "img/2011/03241"
+  output:
+    - h152
 - path: "img/2011/06111"
   output:
     - h152
