@@ -61,7 +61,7 @@ article {
 		display: inline-block;
 		margin: 1em;
 		max-width: 570pt;
-		padding: 2em;
+		padding: 1.25em 2em 2em;
 		vertical-align: top;
 
 		& > p:first-child {
@@ -76,13 +76,13 @@ article {
 	&.compact {
 		h1 {
 			font-size: 1.17em;
+			margin-top: 0.6em;
 		}
 
 		.note {
 			color: $text-middle;
 			display: block;
 			font-size: 1.25em;
-			margin: -0.75em 0em -0.4em 0em;
 		}
 	}
 

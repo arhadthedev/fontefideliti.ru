@@ -6,7 +6,7 @@ layout: default
 		{% assign card_rpath = card.url | split: '/' | reverse %}
 		{% if card_rpath[1] == id %}
 			<article class="compact card">
-				{% if card.veteran %}<span class="note">Заслуженный ветеран</span>{% endif %}
+				<span class="note">{% if card.veteran %}Заслуженный ветеран{% endif %}</span>
 				<h1><a href="{{ id }}/">{{ card.name_nom }}</a></h1>
 				<a href="{{ id }}/"><img src="/img/{{ card.photo }}.jpg" width="200" alt="Фотография {{ card.name_gen }}"></a>
 			</article>
