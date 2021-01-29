@@ -22,6 +22,39 @@
 - path: "img/2016/12102"
   output:
     - h152
+- path: "img/2017/05271"
+  output:
+    - h152
+- path: "img/2017/06281"
+  output:
+    - h152
+- path: "img/2017/12131"
+  output:
+    - h152
+- path: "img/2018/05151"
+  output:
+    - h152
+- path: "img/2018/05152"
+  output:
+    - h152
+- path: "img/2018/11171"
+  output:
+    - h152
+- path: "img/2018/11172"
+  output:
+    - h152
+- path: "img/2018/11173"
+  output:
+    - h152
+- path: "img/2018/11174"
+  output:
+    - h152
+- path: "img/2018/12101"
+  output:
+    - h152
+- path: "img/2018/12102"
+  output:
+    - h152
 - path: "img/2020/05291"
   output:
     - h250
