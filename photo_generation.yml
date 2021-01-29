@@ -2,6 +2,9 @@
 
 - path: "img/title"
   default_size: 500
+- path: "img/2008/01201"
+  output:
+    - h152
 - path: "img/2008/04051"
   mirror: true
   output:
@@ -30,6 +33,9 @@
 - path: "img/2009/04301"
   output:
     - h152
+- path: "img/2009/05241"
+  output:
+    - h152
 - path: "img/2009/05311"
   output:
     - h152
@@ -40,6 +46,9 @@
   output:
     - h152
 - path: "img/2009/06063"
+  output:
+    - h152
+- path: "img/2009/06064"
   output:
     - h152
 - path: "img/2009/06211"
@@ -58,6 +67,9 @@
   output:
     - h152
 - path: "img/2009/06216"
+  output:
+    - h152
+- path: "img/2009/06241"
   output:
     - h152
 - path: "img/2009/07031"
