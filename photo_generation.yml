@@ -27,6 +27,21 @@
 - path: "img/2009/06213"
   output:
     - h152
+- path: "img/2009/06214"
+  output:
+    - h152
+- path: "img/2009/06215"
+  output:
+    - h152
+- path: "img/2009/06216"
+  output:
+    - h152
+- path: "img/2010/10011"
+  output:
+    - h152
+- path: "img/2010/10012"
+  output:
+    - h152
 - path: "img/2011/03241"
   output:
     - h152
