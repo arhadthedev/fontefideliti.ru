@@ -226,3 +226,12 @@
 - path: "img/2021/01066"
   output:
     - h152
+- path: "02141"
+  output:
+    - h152
+- path: "02142"
+  output:
+    - h152
+- path: "02143"
+  output:
+    - h152
