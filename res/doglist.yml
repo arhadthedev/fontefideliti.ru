@@ -5,6 +5,11 @@ aleks:
   gender: male
   videos:
     - _Ow_NdUAKoc
+alisha:
+  name:
+    nom: Фонте Фиделити Алиша
+    gen: Фонте Фиделити Алиши
+  gender: female
 hasso:
   name:
     nom: Фанхил Хаус Хассо
