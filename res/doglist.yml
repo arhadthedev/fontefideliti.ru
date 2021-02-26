@@ -10,6 +10,11 @@ alisha:
     nom: Фонте Фиделити Алиша
     gen: Фонте Фиделити Алиши
   gender: female
+danaya:
+  name:
+    nom: Фанхил Хаус Даная
+    gen: Фанхил Хаус Данаи
+  gender: female
 hasso:
   name:
     nom: Фанхил Хаус Хассо
