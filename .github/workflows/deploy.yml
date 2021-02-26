@@ -29,6 +29,7 @@ jobs:
       - run: find public -name 'index.htm' -print0 | xargs -0 -n1 bash -c 'mv "$0" "${0/.htm/.html}"'
       - uses: actions/setup-node@v2-beta
       - run: ./build.sh
+      - run: python src/build_site.py public
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
