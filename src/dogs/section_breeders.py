@@ -66,5 +66,7 @@ def generate_section(output, resources):
         output_path = '{}s/{}/video.htm'.format(dog_details['gender'], dog_id)
         page = output.create_file(output_path)
         name = dog_details['name']
-        youtube_ids = dog_details['videos']
+        youtube_ids = dog_details.get('videos')
+        if youtube_ids == None:
+            youtube_ids = []
         fill_page(page, name, youtube_ids)
