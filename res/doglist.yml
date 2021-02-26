@@ -5,6 +5,14 @@ aleks:
   gender: male
   videos:
     - _Ow_NdUAKoc
+hasso:
+  name:
+    nom: Фанхил Хаус Хассо
+    gen: Фанхил Хаус Хассо
+  gender: male
+  videos:
+    - ZtrtZPUq2Cg
+    - DSoxvCLlRKA
 itan:
   name:
     nom: Фонте Фиделити Итан
