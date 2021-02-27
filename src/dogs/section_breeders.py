@@ -35,7 +35,7 @@ def write_navigation(output):
     output.write('</nav>')
 
 
-def write_main(output, name, youtube_ids):
+def write_video_main(output, name, youtube_ids):
     output.write('<article class="filled">')
     output.write('<h1>Видео <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
     for video_id in youtube_ids:
@@ -51,12 +51,12 @@ def write_footer(output):
     output.write('</html>')
 
 
-def fill_page(output, name, youtube_ids):
+def fill_video_page(output, name, youtube_ids):
     title = "Видео {}".format(name['gen'])
     write_metainfo(output, title)
     write_header(output, title)
     write_navigation(output)
-    write_main(output, name, youtube_ids)
+    write_video_main(output, name, youtube_ids)
     write_footer(output)
 
 
@@ -69,4 +69,4 @@ def generate_section(output, resources):
         youtube_ids = dog_details.get('videos')
         if youtube_ids == None:
             youtube_ids = []
-        fill_page(page, name, youtube_ids)
+        fill_video_page(page, name, youtube_ids)
