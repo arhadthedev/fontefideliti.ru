@@ -303,6 +303,117 @@ aleks:
     caption: Ersteshrit Aleks, 2 месяца
   - path: photos/aleks/85
     caption: Ersteshrit Aleks
+alisha:
+  - path: photos/alisha/1.jpg
+    caption: Май, 2018. 3 года
+  - path: photos/alisha/2.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/3.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/4.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/5.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/6.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/7.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/8.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/9.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/10.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/11.jpg
+    caption: Март, 2018. 3 года
+  - path: photos/alisha/12.jpg
+    caption: Январь, 2018. 2 года
+  - path: photos/alisha/13.jpg
+    caption: Декабрь, 2017. 2 года
+  - path: photos/alisha/14.jpg
+    caption: Декабрь, 2017. 2 года
+  - path: photos/alisha/15.jpg
+    caption: Декабрь, 2017. 2 года
+  - path: photos/alisha/16.jpg
+    caption: Март, 2017. 2 года
+  - path: photos/alisha/17.jpg
+    caption: Март, 2017. 2 года
+  - path: photos/alisha/18.jpg
+    caption: Декабрь, 2016. 1 год и 11 месяцев
+  - path: photos/alisha/19.jpg
+    caption: Декабрь, 2016. 1 год и 11 месяцев
+  - path: photos/alisha/20.jpg
+    caption: Июль, 2016. 1 год и 5 месяцев
+  - path: photos/alisha/21.jpg
+    caption: Июль, 2016. 1 год и 5 месяцев
+  - path: photos/alisha/22.jpg
+    caption: Июнь, 2016. 1 год и 4 месяца
+  - path: photos/alisha/23.jpg
+    caption: Март, 2016. 1 год и 1 месяц
+  - path: photos/alisha/24.jpg
+    caption: Март, 2016. 1 год и 1 месяц
+  - path: photos/alisha/25.jpg
+    caption: Январь, 2016. 11 месяцев
+  - path: photos/alisha/26.jpg
+    caption: Январь, 2016. 11 месяцев
+  - path: photos/alisha/27.jpg
+    caption: Ноябрь, 2015. Портрет, 9 месяцев
+  - path: photos/alisha/28.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/29.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/30.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/31.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/32.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/33.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/34.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/35.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/36.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/37.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/38.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/39.jpg
+    caption: Сентябрь, 2015. 7,5 месяцев
+  - path: photos/alisha/40.jpg
+    caption: Август, 2015. 7 месяцев
+  - path: photos/alisha/41.jpg
+    caption: Август, 2015. 6,5 месяцев
+  - path: photos/alisha/42.jpg
+    caption: Июль, 2015. 5 месяцев
+  - path: photos/alisha/43.jpg
+    caption: Июль, 2015. 5 месяцев
+  - path: photos/alisha/44.jpg
+    caption: Июль, 2015. 5 месяцев
+  - path: photos/alisha/45.jpg
+    caption: Июль, 2015. 5 месяцев
+  - path: photos/alisha/46.jpg
+    caption: Май, 2015. 3,5 месяца
+  - path: photos/alisha/47.jpg
+    caption: Май, 2015. 3,5 месяца
+  - path: photos/alisha/48.jpg
+    caption: Май, 2015. 3,5 месяца
+  - path: photos/alisha/49.jpg
+    caption: Май, 2015. 3,5 месяца
+  - path: photos/alisha/50.jpg
+    caption: Май, 2015. 3 месяца.
+  - path: photos/alisha/51.jpg
+    caption: Май, 2015. 3 месяца
+  - path: photos/alisha/52.jpg
+    caption: 1,5 месяца
+  - path: photos/alisha/53.jpg
+    caption: 1,5 месяца
+  - path: photos/alisha/54.jpg
+    caption: 1,5 месяца
+  - path: photos/alisha/55.jpg
+    caption: 1 месяц и 10 дней
 danaya:
   - path: photos/danaya/1
     caption: Май, 2015г.
@@ -524,7 +635,7 @@ inessa:
   - path: 2020/01157
     preview: h152
     caption: Фонте Фиделити Инесса, 2,5 года
-  - path: photos/inessa/inessa-12.jpg
+  - path: photos/inessa/inessa-12
     preview: h152
     caption: Фонте Фиделити Инесса
   - path: 2018/12102
@@ -561,118 +672,117 @@ inessa:
     preview: h152
     caption: Фонте Фиделити Инесса
 hasso:
-  - path: photos/hasso/37.jpg
-    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/hasso/37.jpg" width="225" height="152" alt="Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/hasso/38.jpg
-    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/hasso/38.jpg" width="119" height="152" alt="Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/hasso/39.jpg
-    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/hasso/39.jpg" width="114" height="152" alt="Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/20181216-tolyatty-1.jpg
-    caption: Фанхил Хаус Хассо, Изабель и Персей, г. Тольятти, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/shows/20181216-tolyatty-1-p.jpg" width="213" height="152" alt="Фанхил Хаус Хассо, Изабель и Персей, г. Тольятти, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/20181216-tolyatty-2.jpg
-    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/shows/20181216-tolyatty-2-p.jpg" width="206" height="152" alt="Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/20181216-tolyatty-3.jpg
-    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/shows/20181216-tolyatty-3-p.jpg" width="166" height="152" alt="Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/20181216-tolyatty-4.jpg
-    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/shows/20181216-tolyatty-4-p.jpg" width="95" height="152" alt="Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/20181216-tolyatty-5.jpg
-    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г." rel="a"><img src="/img/photos/shows/20181216-tolyatty-5-p.jpg" width="117" height="152" alt="Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г."></a>
-  - path: photos/shows/2016-uralsk-11092016-11.jpg
-    caption: Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-11-p.jpg" alt="Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="228" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-9.jpg
-    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-9-p.jpg" alt="Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="216" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-7.jpg
-    caption: Светлана Крыгина с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-7-p.jpg" alt="Светлана Крыгина с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="160" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-1.jpg
-    caption: Настя Максимова с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-1-p.jpg" alt="Настя Максимова с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="183" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-3.jpg
-    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-3-p.jpg" alt="Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="93" height="152" /></a>
+  - path: photos/hasso/37
+    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г.
+  - path: photos/hasso/38
+    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г.
+  - path: photos/hasso/39
+    caption: Фанхил Хаус Хассо, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/20181216-tolyatty-1
+    caption: Фанхил Хаус Хассо, Изабель и Персей, г. Тольятти, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/20181216-tolyatty-2
+    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/20181216-tolyatty-3
+    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/20181216-tolyatty-4
+    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/20181216-tolyatty-5
+    caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018&nbsp;г.
+  - path: photos/shows/2016-uralsk-11092016-11
+    caption: Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-9
+    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-7
+    caption: Светлана Крыгина с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-1
+    caption: Настя Максимова с Николеттой и Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-3
+    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
   - path: path="2016/09111
     preview: h152
-    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." w="96" h="152" %}
-  - path: photos/shows/2016-uralsk-11092016-10.jpg
-    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г. Судья Бойко Н. Н." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-10-p.jpg" alt="Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="132" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-6.jpg
-    caption: Настя Максимова с Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-6-p.jpg" alt="Настя Максимова с Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="120" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-2.jpg
-    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-2-p.jpg" alt="Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="115" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-8.jpg
-    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-8-p.jpg" alt="Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="116" height="152" /></a>
-  - path: photos/shows/2016-uralsk-11092016-4.jpg
-    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." rel="a"><img src="/img/photos/shows/2016-uralsk-11092016-4-p.jpg" alt="Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г." width="109" height="152" /></a>
-  - path: photos/hasso/32.jpg
+    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-10
+    caption: Фанхил Хаус Хассо — Победитель Best ветеранов. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г. Судья Бойко Н. Н.
+  - path: photos/shows/2016-uralsk-11092016-6
+    caption: Настя Максимова с Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-2
+    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-8
+    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/shows/2016-uralsk-11092016-4
+    caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
+  - path: photos/hasso/32
     caption:
-  - path: photos/hasso/33.jpg
+  - path: photos/hasso/33
     caption:
-  - path: photos/hasso/34.jpg
+  - path: photos/hasso/34
     caption:
-  - path: photos/hasso/35.jpg
+  - path: photos/hasso/35
     caption:
-  - path: photos/hasso/36.jpg
+  - path: photos/hasso/36
     caption:
-  - path: photos/hasso/31.jpg
+  - path: photos/hasso/31
     caption:
   - path: 2011/06111
     caption:
     preview: h152
+  - path: photos/hasso/2
     caption:
-  - path: photos/hasso/2.jpg
+  - path: photos/hasso/3
     caption:
-  - path: photos/hasso/3.jpg
+  - path: photos/hasso/4
     caption:
-  - path: photos/hasso/4.jpg
+  - path: photos/hasso/5
     caption:
-  - path: photos/hasso/5.jpg
+  - path: photos/hasso/6
     caption:
-  - path: photos/hasso/6.jpg
+  - path: photos/hasso/7
     caption:
-  - path: photos/hasso/7.jpg
+  - path: photos/hasso/8
     caption:
-  - path: photos/hasso/8.jpg
+  - path: photos/hasso/9
     caption:
-  - path: photos/hasso/9.jpg
+  - path: photos/hasso/10
     caption:
-  - path: photos/hasso/10.jpg
+  - path: photos/hasso/11
     caption:
-  - path: photos/hasso/11.jpg
+  - path: photos/hasso/12
     caption:
-  - path: photos/hasso/12.jpg
+  - path: photos/hasso/13
     caption:
-  - path: photos/hasso/13.jpg
+  - path: photos/hasso/14
     caption:
-  - path: photos/hasso/14.jpg
+  - path: photos/hasso/15
     caption:
-  - path: photos/hasso/15.jpg
+  - path: photos/hasso/16
     caption:
-  - path: photos/hasso/16.jpg
+  - path: photos/hasso/17
     caption:
-  - path: photos/hasso/17.jpg
+  - path: photos/hasso/18
     caption:
-  - path: photos/hasso/18.jpg
+  - path: photos/hasso/19
     caption:
-  - path: photos/hasso/19.jpg
+  - path: photos/hasso/20
     caption:
-  - path: photos/hasso/20.jpg
+  - path: photos/hasso/21
     caption:
-  - path: photos/hasso/21.jpg
+  - path: photos/hasso/22
     caption:
-  - path: photos/hasso/22.jpg
+  - path: photos/hasso/23
     caption:
-  - path: photos/hasso/23.jpg
+  - path: photos/hasso/24
     caption:
-  - path: photos/hasso/24.jpg
+  - path: photos/hasso/25
     caption:
-  - path: photos/hasso/25.jpg
+  - path: photos/hasso/26
     caption:
-  - path: photos/hasso/26.jpg
+  - path: photos/hasso/27
     caption:
-  - path: photos/hasso/27.jpg
+  - path: photos/hasso/28
     caption:
-  - path: photos/hasso/28.jpg
+  - path: photos/hasso/29
     caption:
-  - path: photos/hasso/29.jpg
-    caption:
-  - path: photos/hasso/30.jpg
+  - path: photos/hasso/30
     caption:
 zheneva:
   - path: photos/zheneva/22
