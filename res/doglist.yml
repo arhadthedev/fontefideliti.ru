@@ -57,6 +57,13 @@ itan:
   gender: male
   videos:
     - fDREAoKZtR8
+mabari:
+  name:
+    nom: Фанхил Хаус Мабари
+    gen: Фанхил Хаус Мабари
+  gender: female
+  videos:
+    - QVGW-IH7-_Q
 zheneva:
   name:
     nom: Фонте Фиделити Женева
