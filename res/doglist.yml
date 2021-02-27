@@ -71,6 +71,11 @@ nikoletta:
   gender: female
   videos:
     - qNXtwLuB-d4
+viviana:
+  name:
+    nom: Хаус Велхольм Вивиана
+    gen: Хаус Велхольм Вивианы
+  gender: female
 zheneva:
   name:
     nom: Фонте Фиделити Женева
