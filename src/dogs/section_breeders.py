@@ -1,17 +1,25 @@
 # -*- coding: UTF-8 -*-
 
+import datetime
 import yaml
 
 site_name = 'Питомник немецких овчарок {}«Fonte Fideliti»{} г. Тольятти'
 
 
-def write_metainfo(output, title):
+def write_metainfo(output, title, allo_interactive_images, use_modern_styles):
     output.write('<!DOCTYPE html><html lang="ru">')
     output.write('<meta charset="utf-8">')
     output.write('<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->')
-    output.write('<link rel="stylesheet" href="/style.css">')
+    if use_modern_styles:
+        output.write('<link rel="stylesheet" href="/common.css">')
+    else:
+        output.write('<link rel="stylesheet" href="/style.css">')
     output.write('<link rel="shortcut icon" href="/favicon.png">')
     output.write('<title>{} — {}</title>'.format(title, site_name.format('', '')))
+    if allow_interactive_images:
+        output.write('<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">')
+        output.write('<script src="/jquery-1.11.0.min.js"></script>')
+        output.write('<script src="/fancybox/jquery.fancybox.pack.js" defer></script>')
 
 
 def write_header(output, title):
@@ -53,7 +61,7 @@ def write_footer(output):
 
 def fill_video_page(output, name, youtube_ids):
     title = "Видео {}".format(name['gen'])
-    write_metainfo(output, title)
+    write_metainfo(output, title, False, False)
     write_header(output, title)
     write_navigation(output)
     write_video_main(output, name, youtube_ids)
