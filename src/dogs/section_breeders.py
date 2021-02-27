@@ -6,7 +6,7 @@ import yaml
 site_name = 'Питомник немецких овчарок {}«Fonte Fideliti»{} г. Тольятти'
 
 
-def write_metainfo(output, title, allo_interactive_images, use_modern_styles):
+def write_metainfo(output, title, allow_interactive_images, use_modern_styles):
     output.write('<!DOCTYPE html><html lang="ru">')
     output.write('<meta charset="utf-8">')
     output.write('<!--[if lt IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script><![endif]-->')
@@ -43,6 +43,13 @@ def write_navigation(output):
     output.write('</nav>')
 
 
+def write_photo_main(output, name, photos):
+    output.write('<article>')
+    output.write('<h1>Фото <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
+    for photo in photos:
+        output.write('<a href="/img/{p}.jpg" title="{c}" rel="a"><img src="/img/{p}-p.jpg" alt="{c}" height="152"></a>)'.format(p=photo['path'], c=photo['caption']))
+    output.write('</article>')
+
 def write_video_main(output, name, youtube_ids):
     output.write('<article class="filled">')
     output.write('<h1>Видео <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
@@ -59,6 +66,15 @@ def write_footer(output):
     output.write('</html>')
 
 
+def fill_photo_page(output, name, photos):
+    title = "Фото {}".format(name['gen'])
+    write_metainfo(output, title, True, False)
+    write_header(output, title)
+    write_navigation(output)
+    write_photo_main(output, name, photos)
+    write_footer(output)
+
+
 def fill_video_page(output, name, youtube_ids):
     title = "Видео {}".format(name['gen'])
     write_metainfo(output, title, False, False)
@@ -70,10 +86,19 @@ def fill_video_page(output, name, youtube_ids):
 
 def generate_section(output, resources):
     dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
     for dog_id, dog_details in dog_list.items():
+        name = dog_details['name']
+
+        output_path = '{}s/{}/photos.htm'.format(dog_details['gender'], dog_id)
+        page = output.create_file(output_path)
+        photos = photo_list.get(dog_id)
+        if photos == None:
+            photos = []
+        fill_photo_page(page, name, photos)
+
         output_path = '{}s/{}/video.htm'.format(dog_details['gender'], dog_id)
         page = output.create_file(output_path)
-        name = dog_details['name']
         youtube_ids = dog_details.get('videos')
         if youtube_ids == None:
             youtube_ids = []
