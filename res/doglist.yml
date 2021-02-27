@@ -45,6 +45,11 @@ hillari:
   gender: female
   videos:
     - baLBSWVZXbA
+inessa:
+  name:
+    nom: Фонте Фиделити Инесса
+    gen: Фонте Фиделити Инессы
+  gender: female
 itan:
   name:
     nom: Фонте Фиделити Итан
