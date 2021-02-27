@@ -98,14 +98,12 @@ aleks:
   - path: photos/aleks/10
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/shows/2016-tolyatty-25092016-4
-    preview: h152
     caption: Ersteshrit Aleks — Лучший представитель породы, BIG-2. 25.09.2016 Всепородная выставка, г. Тольятти
   - path: photos/aleks/11
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/aleks/12
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/aleks/13
-    preview: h152
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/aleks/42
     caption: Ersteshrit Aleks и Максимова Настя. Сентябрь 2016г.
@@ -308,3 +306,202 @@ aleks:
 danaya:
   - path: photos/danaya/1
     caption: Май, 2015г.
+demetra:
+  - path: photos/demetra-1
+    caption: Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/demetra-2
+    caption: Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/demetra-3
+    caption: Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/alex-demetra-1
+    caption: Ersteshrit Aleks и Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/demetra-5
+    caption: Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/demetra-6
+    caption: Фанхил Хаус Деметра, 22.12.2018
+  - path: photos/demetra/54
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/55
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/56
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/57
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/58
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/59
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/60
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/61
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/62
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/63
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/64
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/65
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/66
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/67
+    caption: Занятие по защите, г. Тольятти, август 2015 г. Дрессировщик: Шигаев Роман
+  - path: photos/shows/2016-tolyatty-08082016-1
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 7 августа 2016 г. Победитель Best 1 группы (BIG-1). Эксперт Никитин А. В.
+  - path: photos/demetra/68
+    caption: Настя Максимова и Фанхил Хаус Деметра — победители конкурса «Ребёнок и собака». Эксперт Никитин А. В.
+  - path: photos/shows/2016-tolyatty-08082016-4
+    caption: Настя Максимова и Фанхил Хаус Деметра — победители конкурса «Ребёнок и собака». Эксперт Никитин А. В.
+  - path: photos/shows/2016-tolyatty-08082016-2
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 7 августа 2016 г. Эксперт Тиц А. З.
+  - path: photos/shows/2016-tolyatty-08082016-3
+    caption: Настя Максимова и Фанхил Хаус Деметра — победители конкурса «Ребёнок и собака». Эксперт Тиц А. З.
+  - path: photos/shows/2016-samara-25072016-10
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-6
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-8
+    caption: Светлана Крыгина с Деметрой и Хассо. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-1
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-2
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-3
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-4
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-5
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/shows/2016-samara-25072016-9
+    caption: Настя, Светлана и Екатерина с Деметрой и Хассо. Всепородная выставка, г. Самара, 24 июля 2016 г.
+  - path: photos/demetra/52
+    caption: Фанхил Хаус Деметра. Июнь, 2016 г.
+  - path: photos/nikoletta/76
+    caption: Настя с Николеттой, Хиллари и Деметрой. Июнь, 2016 г.
+  - path: photos/demetra/50
+    caption: Фанхил Хаус Деметра. Июнь, 2016 г.
+  - path: photos/demetra/51
+    caption: Фанхил Хаус Деметра. Июнь, 2016 г.
+  - path: photos/nikoletta/75
+    caption: Николетта, Хиллари и Деметра. Июнь, 2016 г.
+  - path: photos/nikoletta/77
+    caption: Светлана Крыгина с Николеттой, Хиллари и Деметрой. Июнь, 2016 г.
+  - path: photos/demetra/46
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/demetra/47
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/demetra/48
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/demetra/49
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/shows/2016-tolyatty-12062016-2
+    caption: Ирина Дмитриева с Фанхил Хаус Деметрой и Ersteshrit Alex. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/shows/2016-tolyatty-12062016-4
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/shows/2016-tolyatty-12062016-1
+    caption: Фанхил Хаус Деметра. Всепородная выставка, г. Тольятти, 12 июня 2016 г.
+  - path: photos/demetra/42
+    caption: Февраль, 2016г. 2 года 6 месяцев
+  - path: photos/demetra/43
+    caption: Февраль, 2016г. 2 года 6 месяцев
+  - path: photos/demetra/44
+    caption: Фанхил Хаус Деметра. Победитель Best 1 группы! Всероссийская выставка в г. Тольятти 6.03.2016 г.
+  - path: photos/demetra/45
+    caption: Фанхил Хаус Деметра. Победитель Best 1 группы! Всероссийская выставка в г. Тольятти 6.03.2016 г.
+  - path: photos/demetra/41
+    caption: Январь, 2016г. 2 года 5 месяцев
+  - path: photos/demetra/38
+    caption: Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.
+  - path: photos/demetra/39
+    caption: Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.
+  - path: photos/shows/2015-volgograd-1
+    caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
+  - path: photos/shows/2015-volgograd-2
+    caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
+  - path: photos/shows/2015-samara-1
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/shows/2015-samara-2
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/shows/2015-samara-5
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/demetra/40
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/shows/2015-samara-6
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/shows/2015-samara-7
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/shows/2015-samara-8
+    caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
+  - path: photos/demetra/36
+    caption: Ринговка в зале. Март, 2015г.
+  - path: photos/demetra/37
+    caption: Март, 2015г.
+  - path: photos/demetra/53
+    caption: Март, 2015г.
+  - path: photos/demetra/34
+    caption: Деметра и Даная. Январь, 2015г.
+  - path: photos/demetra/35
+    caption: Январь, 2015г.
+  - path: photos/demetra/3
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/4
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/5
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/6
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/7
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/8
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/9
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/10
+    caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
+  - path: photos/demetra/11
+    caption: Монопородная выставка, г. Пермь, 7 июня 2014г.
+  - path: photos/demetra/12
+    caption: Монопородная выставка, г. Пермь, 7 июня 2014г.
+  - path: photos/demetra/13
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/14
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/15
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/16
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/17
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/18
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/19
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/20
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/21
+    caption: Занятие по защите, август 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/22
+    caption: Занятие по защите, октябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/23
+    caption: Занятие по защите, октябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/24
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/25
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/26
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/27
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/28
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/29
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/30
+    caption: Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман
+  - path: photos/demetra/31
+    caption: Ноябрь, 2014г.
+  - path: photos/demetra/32
+    caption: Май, 2014г.
+  - path: photos/demetra/33
+    caption: Выставка, BEST, 25 мая 2014г.
