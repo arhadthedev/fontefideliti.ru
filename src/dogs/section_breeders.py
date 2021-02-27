@@ -47,7 +47,8 @@ def write_photo_main(output, name, photos):
     output.write('<article>')
     output.write('<h1>Фото <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
     for photo in photos:
-        output.write('<a href="/img/{p}.jpg" title="{c}" rel="a"><img src="/img/{p}-p.jpg" alt="{c}" height="152"></a>)'.format(p=photo['path'], c=photo['caption']))
+        preview = photo.get('preview') if photo.get('preview') else 'p'
+        output.write('<a href="/img/{p}.jpg" title="{c}" rel="a"><img src="/img/{p}-{pr}.jpg" alt="{c}" height="152"></a>'.format(p=photo['path'], pr=preview, c=photo['caption']))
     output.write('</article>')
 
 def write_video_main(output, name, youtube_ids):
