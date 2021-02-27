@@ -64,6 +64,13 @@ mabari:
   gender: female
   videos:
     - QVGW-IH7-_Q
+nikoletta:
+  name:
+    nom: Фанхил Хаус Николетта
+    gen: Фанхил Хаус Николетты
+  gender: female
+  videos:
+    - qNXtwLuB-d4
 zheneva:
   name:
     nom: Фонте Фиделити Женева
