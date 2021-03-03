@@ -187,6 +187,9 @@
 - path: "img/2018/12102"
   output:
     - h152
+- path: "img/2018/12221"
+  output:
+    - h152
 - path: "img/2020/05291"
   output:
     - h250
