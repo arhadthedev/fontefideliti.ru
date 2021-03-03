@@ -418,7 +418,8 @@ danaya:
   - path: photos/danaya/1
     caption: Май, 2015г.
 demetra:
-  - path: photos/demetra-1
+  - path: 2018/12225
+    preview: h152
     caption: Фанхил Хаус Деметра, 22.12.2018
   - path: 2018/12224
     preview: h152
