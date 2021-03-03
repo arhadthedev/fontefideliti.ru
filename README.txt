@@ -30,3 +30,7 @@ COPYRIGHT
        Resources: Copyright © 2015–2021 Oleg Yarygin, Natalya Yarigina.
        License CC BY-SA 4.0:
        <https://creativecommons.org/licenses/by-sa/4.0/legalcode>.
+
+       This project uses baguetteBox.js by Marek Grzybek
+       <https://github.com/feimosi/baguetteBox.js>. Copyright (c) 2018
+       feimosi. License MIT.

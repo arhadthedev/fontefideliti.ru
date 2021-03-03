@@ -17,9 +17,9 @@ def write_metainfo(output, title, allow_interactive_images, use_modern_styles):
     output.write('<link rel="shortcut icon" href="/favicon.png">')
     output.write('<title>{} — {}</title>'.format(title, site_name.format('', '')))
     if allow_interactive_images:
-        output.write('<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">')
-        output.write('<script src="/jquery-1.11.0.min.js"></script>')
-        output.write('<script src="/fancybox/jquery.fancybox.pack.js" defer></script>')
+        output.write('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">')
+        output.write('<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>')
+        output.write('<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>')
 
 
 def write_header(output, title):
@@ -48,7 +48,8 @@ def write_photo_main(output, name, photos):
     output.write('<h1>Фото <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
     for photo in photos:
         preview = photo.get('preview') if photo.get('preview') else 'p'
-        output.write('<a href="/img/{p}.jpg" title="{c}" rel="a"><img src="/img/{p}-{pr}.jpg" alt="{c}" height="152"></a> '.format(p=photo['path'], pr=preview, c=photo['caption']))
+        photo['caption'] = photo['caption'] if photo['caption'] != None else ''
+        output.write('<a href="../../../img/{p}.jpg" title="{c}" rel="a"><img src="../../../img/{p}-{pr}.jpg" alt="{c}" height="152"></a> '.format(p=photo['path'], pr=preview, c=photo['caption']))
     output.write('</article>')
 
 def write_video_main(output, name, youtube_ids):

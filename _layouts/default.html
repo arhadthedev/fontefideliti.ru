@@ -26,9 +26,9 @@ layout: compress
 			{% endif %}
 		{% endif %}
 		{% if layout.interactive_images or page.interactive_images %}
-			<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-			<script src="/jquery-1.11.0.min.js"></script>
-			<script src="/fancybox/jquery.fancybox.pack.js" defer></script>
+			<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+			<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>
+			<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>
 		{% endif %}
 	</head>
 	<body>
