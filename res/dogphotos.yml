@@ -1,5 +1,6 @@
 aleks:
-  - path: photos/alex-demetra-1
+  - path: 2018/12226
+    preview: h152
     caption: Ersteshrit Aleks и Фанхил Хаус Деметра, 22.12.2018
   - path: photos/aleks/main-new4
     caption: Ersteshrit Aleks, 22.12.2018
@@ -427,7 +428,8 @@ demetra:
   - path: 2018/12223
     preview: h152
     caption: Фанхил Хаус Деметра, 22.12.2018
-  - path: photos/alex-demetra-1
+  - path: 2018/12226
+    preview: h152
     caption: Ersteshrit Aleks и Фанхил Хаус Деметра, 22.12.2018
   - path: 2018/12222
     preview: h152
