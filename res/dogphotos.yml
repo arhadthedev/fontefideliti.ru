@@ -544,11 +544,13 @@ demetra:
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: photos/shows/2015-samara-2
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/shows/2015-samara-5
+  - path: 2015/04261
+    preview: h152
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: photos/demetra/40
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/shows/2015-samara-6
+  - path: 2015/04262
+    preview: h152
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: photos/shows/2015-samara-7
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
@@ -557,9 +559,11 @@ demetra:
   - path: 2015/03051
     preview: h152
     caption: Ринговка в зале. Март, 2015г.
-  - path: photos/demetra/37
+  - path: 2015/03072
+    preview: h152
     caption: Март, 2015г.
-  - path: photos/demetra/53
+  - path: 2015/03071
+    preview: h152
     caption: Март, 2015г.
   - path: 2015/01102
     preview: h152

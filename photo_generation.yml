@@ -121,10 +121,22 @@
 - path: "img/2015/03051"
   output:
     - h152
+- path: "img/2015/03071"
+  output:
+    - h152
+- path: "img/2015/03072"
+  output:
+    - h152
 - path: "img/2015/04261"
   output:
     - h152
 - path: "img/2015/04262"
+  output:
+    - h152
+- path: "img/2015/05021"
+  output:
+    - h152
+- path: "img/2015/05022"
   output:
     - h152
 - path: "img/2015/07031"
