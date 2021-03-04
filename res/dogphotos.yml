@@ -1093,20 +1093,16 @@ itan:
     caption: Фонте Фиделити Итан, 1,5 месяца
 mabari:
   - path: photos/mabari/35
-    preview: h152
     caption: 'Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.'
   - path: photos/mabari/36
-    preview: h152
     caption: 'Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.'
   - path: photos/mabari/37
-    preview: h152
     caption: 'Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.'
   - path: photos/mabari/1
     caption:
   - path: photos/mabari/2
     caption:
   - path: photos/mabari/3
-    preview: h152
     caption: Мабари и Хассо
   - path: 2014/08241
     preview: h152
@@ -1118,46 +1114,32 @@ mabari:
     preview: h152
     caption: Монопородная выставка в г. Тольятти, 24 августа 2014г.
   - path: photos/mabari/16
-    preview: h152
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
   - path: photos/mabari/17
-    preview: h152
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
   - path: photos/mabari/18
-    preview: h152
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
   - path: photos/mabari/19
-    preview: h152
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
   - path: photos/mabari/38
-    preview: h152
     caption: Весна 2013г.
   - path: photos/mabari/33
-    preview: h152
     caption: Монопородная выставка, г. Саратов, сентябрь 2012г.
   - path: photos/mabari/6
-    preview: h152
     caption: 'Монопородная выставка, г. Саратов, сентябрь 2012г. Фигурант: Хорешко Сергей'
   - path: photos/mabari/7
-    preview: h152
     caption: 'Монопородная выставка, г. Саратов, сентябрь 2012г. Фигурант: Хорешко Сергей'
   - path: photos/mabari/8
-    preview: h152
     caption: 'Монопородная выставка, г. Саратов, сентябрь 2012г. Фигурант: Хорешко Сергей'
   - path: photos/mabari/28
-    preview: h152
     caption: Монопородная выставка, г. Саратов, сентябрь 2012г.
   - path: photos/mabari/29
-    preview: h152
     caption: Монопородная выставка, г. Саратов, сентябрь 2012г.
   - path: photos/mabari/9
-    preview: h152
     caption: Монопородная выставка, г. Самара, июнь 2012г.
   - path: photos/mabari/10
-    preview: h152
     caption: Монопородная выставка, г. Самара, июнь 2012г.
   - path: photos/mabari/32
-    preview: h152
     caption: Монопородная выставка, г. Самара, июнь 2012г.
   - path: 2014/07241
     preview: h152
@@ -1171,22 +1153,18 @@ mabari:
   - path: photos/mabari/15
     caption:
   - path: photos/mabari/20
-    preview: h152
     caption: Мабари со своим сыном Хаус Велхольм Вальдо
   - path: photos/mabari/21
     caption:
   - path: photos/mabari/22
-    preview: h152
     caption: 'Занятие по защите, дрессировщик: Василий Терёхин, 2012г.'
   - path: photos/mabari/24
     caption:
   - path: photos/mabari/25
-    preview: h152
     caption: Монопородная выставка в г. Балаково, май 2012г.
   - path: photos/mabari/27
     caption:
   - path: photos/mabari/30
-    preview: h152
     caption: Мабари в 45 дней
   - path: photos/mabari/31
     caption:
