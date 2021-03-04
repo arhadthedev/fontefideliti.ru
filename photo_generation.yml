@@ -100,6 +100,24 @@
   output:
     - h152
     - h540
+- path: "img/2014/06011"
+  output:
+    - h152
+- path: "img/2014/07191"
+  output:
+    - h152
+- path: "img/2014/07192"
+  output:
+    - h152
+- path: "img/2014/07193"
+  output:
+    - h152
+- path: "img/2014/07194"
+  output:
+    - h152
+- path: "img/2014/07195"
+  output:
+    - h152
 - path: "img/2014/07241"
   output:
     - h152

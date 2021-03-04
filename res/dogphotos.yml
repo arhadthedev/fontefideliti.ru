@@ -536,9 +536,11 @@ demetra:
     caption: 'Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.'
   - path: photos/demetra/39
     caption: 'Занятие по защите, г. Волгоград, 2 мая 2015 г. Дрессировщик: Пятов В. А.'
-  - path: photos/shows/2015-volgograd-1
+  - path: 2015/05021
+    preview: h152
     caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
-  - path: photos/shows/2015-volgograd-2
+  - path: 2015/05021
+    preview: h152
     caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
   - path: photos/shows/2015-samara-1
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
@@ -585,7 +587,8 @@ demetra:
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
   - path: photos/demetra/9
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
-  - path: photos/demetra/10
+  - path: 2014/06011
+    preview: h152
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
   - path: photos/demetra/11
     caption: Монопородная выставка, г. Пермь, 7 июня 2014г.
@@ -750,15 +753,20 @@ hasso:
   - path: 2011/06111
     caption:
     preview: h152
-  - path: photos/hasso/2
+  - path: 2014/07191
+    preview: h152
     caption:
-  - path: photos/hasso/3
+  - path: 2014/07192
+    preview: h152
     caption:
-  - path: photos/hasso/4
+  - path: 2014/07193
+    preview: h152
     caption:
-  - path: photos/hasso/5
+  - path: 2014/07194
+    preview: h152
     caption:
-  - path: photos/hasso/6
+  - path: 2014/07195
+    preview: h152
     caption:
   - path: photos/hasso/7
     caption:
