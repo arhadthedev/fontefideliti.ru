@@ -212,6 +212,21 @@
 - path: "img/2015/10031"
   output:
     - h152
+- path: "img/2015/10032"
+  output:
+    - h152
+- path: "img/2015/10033"
+  output:
+    - h152
+- path: "img/2015/10034"
+  output:
+    - h152
+- path: "img/2015/10035"
+  output:
+    - h152
+- path: "img/2015/10036"
+  output:
+    - h152
 - path: "img/2014/08243"
   output:
     - h152
