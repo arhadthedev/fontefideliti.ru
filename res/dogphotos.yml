@@ -554,15 +554,18 @@ demetra:
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: photos/shows/2015-samara-8
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/demetra/36
+  - path: 2015/03051
+    preview: h152
     caption: Ринговка в зале. Март, 2015г.
   - path: photos/demetra/37
     caption: Март, 2015г.
   - path: photos/demetra/53
     caption: Март, 2015г.
-  - path: photos/demetra/34
+  - path: 2015/01102
+    preview: h152
     caption: Деметра и Даная. Январь, 2015г.
-  - path: photos/demetra/35
+  - path: 2015/01101
+    preview: h152
     caption: Январь, 2015г.
   - path: photos/demetra/3
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
@@ -620,8 +623,9 @@ demetra:
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
   - path: photos/demetra/30
     caption: 'Занятие по защите, ноябрь 2014г. Дрессировщик: Шигаев Роман'
-  - path: photos/demetra/31
-    caption: Ноябрь, 2014г.
+  - path: 2014/12021
+    preview: h152
+    caption: Декабрь, 2014г.
   - path: photos/demetra/32
     caption: Май, 2014г.
   - path: photos/demetra/33
