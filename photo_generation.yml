@@ -100,6 +100,9 @@
   output:
     - h152
     - h540
+- path: "img/2012/05061"
+  output:
+    - h152
 - path: "img/2014/06011"
   output:
     - h152
