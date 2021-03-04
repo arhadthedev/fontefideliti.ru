@@ -390,9 +390,11 @@ alisha:
     caption: Август, 2015. 6,5 месяцев
   - path: photos/alisha/42
     caption: Июль, 2015. 5 месяцев
-  - path: photos/alisha/43
+  - path: 2015/07032
+    preview: h152
     caption: Июль, 2015. 5 месяцев
-  - path: photos/alisha/44
+  - path: 2015/07031
+    preview: h152
     caption: Июль, 2015. 5 месяцев
   - path: photos/alisha/45
     caption: Июль, 2015. 5 месяцев
