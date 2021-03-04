@@ -1379,9 +1379,11 @@ nikoletta:
   - path: photos/nikoletta/15
     caption: Сентябрь, 2014 г., 1,5 месяца
 viviana:
-  - path: photos/viviana/25
+  - path: 2015/08233
+    preview: h152
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/24
+  - path: 2015/08234
+    preview: h152
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: photos/viviana/23
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
