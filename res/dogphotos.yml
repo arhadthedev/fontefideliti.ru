@@ -1391,9 +1391,11 @@ viviana:
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: photos/viviana/20
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/18
+  - path: 2015/08112
+    preview: h152
     caption: Хаус Велхольм Вивиана, 1,5 года
-  - path: photos/viviana/19
+  - path: 2015/08113
+    preview: h152
     caption: Хаус Велхольм Вивиана, 1,5 года
   - path: photos/viviana/17
     caption: Хаус Велхольм Вивиана, 1,5 года
