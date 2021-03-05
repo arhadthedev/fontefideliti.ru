@@ -308,7 +308,8 @@ aleks:
   - path: photos/aleks/85
     caption: Ersteshrit Aleks
 alisha:
-  - path: photos/alisha/1
+  - path: 2018/05091
+    preview: h152
     caption: Май, 2018. 3 года
   - path: photos/alisha/2
     caption: Март, 2018. 3 года
@@ -362,21 +363,29 @@ alisha:
     caption: Январь, 2016. 11 месяцев
   - path: photos/alisha/27
     caption: Ноябрь, 2015. Портрет, 9 месяцев
-  - path: photos/alisha/28
+  - path: 2015/09201
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/29
+  - path: 2015/09202
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/30
+  - path: 2015/09203
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/31
+  - path: 2015/09204
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/32
+  - path: 2015/09205
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/33
+  - path: 2015/09206
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/34
+  - path: 2015/09207
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/35
+  - path: 2015/09141
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
   - path: photos/alisha/36
     caption: Сентябрь, 2015. 7,5 месяцев
