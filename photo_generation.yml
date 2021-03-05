@@ -218,6 +218,9 @@
 - path: "img/2015/08234"
   output:
     - h152
+- path: "img/2015/09191"
+  output:
+    - h152
 - path: "img/2015/10031"
   output:
     - h152
@@ -293,6 +296,9 @@
 - path: "img/2017/0409a"
   output:
     - h152
+- path: "img/2017/12021"
+  output:
+    - h250
 - path: "img/2017/12131"
   output:
     - h152
@@ -353,6 +359,7 @@
 - path: "img/2020/08111"
   output:
     - h250
+    - h588
 - path: "img/2020/08231"
   output:
     - h152
