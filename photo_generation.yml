@@ -193,6 +193,9 @@
 - path: "img/2015/07032"
   output:
     - h152
+- path: "img/2015/07041"
+  output:
+    - h152
 - path: "img/2015/08111"
   output:
     - w200
@@ -224,7 +227,25 @@
 - path: "img/2015/08234"
   output:
     - h152
+- path: "img/2015/08291"
+  output:
+    - h152
+- path: "img/2015/08311"
+  output:
+    - h152
 - path: "img/2015/09141"
+  output:
+    - h152
+- path: "img/2015/09142"
+  output:
+    - h152
+- path: "img/2015/09143"
+  output:
+    - h152
+- path: "img/2015/09144"
+  output:
+    - h152
+- path: "img/2015/09145"
   output:
     - h152
 - path: "img/2015/09191"
@@ -275,7 +296,19 @@
 - path: "img/2015/08235"
   output:
     - h152
+- path: "img/2015/11081"
+  output:
+    - h15
+- path: "img/2016/01031"
+  output:
+    - h152
+- path: "img/2016/01032"
+  output:
+    - h152
 - path: "img/2016/06041"
+  output:
+    - h152
+- path: "img/2016/07111"
   output:
     - h152
 - path: "img/2016/09111"
@@ -392,7 +425,19 @@
 - path: "img/2017/12131"
   output:
     - h152
-- path: "img/2015/03161"
+- path: "img/2017/12243"
+  output:
+    - h152
+- path: "img/2017/12244"
+  output:
+    - h152
+- path: "img/2017/12245"
+  output:
+    - h152
+- path: "img/2018/01031"
+  output:
+    - h152
+- path: "img/2018/03161"
   output:
     - h152
 - path: "img/2018/03091"

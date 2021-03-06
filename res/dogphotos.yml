@@ -340,13 +340,14 @@ alisha:
   - path: 2018/03098
     preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/12
+  - path: 2018/01031
+    preview: h152
     caption: Январь, 2018. 2 года
-  - path: photos/alisha/13
+  - path: 2017/12243
     caption: Декабрь, 2017. 2 года
-  - path: photos/alisha/14
+  - path: 2017/12244
     caption: Декабрь, 2017. 2 года
-  - path: photos/alisha/15
+  - path: 2017/12245
     caption: Декабрь, 2017. 2 года
   - path: photos/alisha/16
     caption: Март, 2017. 2 года
@@ -362,17 +363,21 @@ alisha:
     caption: Июль, 2016. 1 год и 5 месяцев
   - path: photos/alisha/21
     caption: Июль, 2016. 1 год и 5 месяцев
-  - path: photos/alisha/22
+  - path: 2016/07111
+    preview: h152
     caption: Июнь, 2016. 1 год и 4 месяца
   - path: photos/alisha/23
     caption: Март, 2016. 1 год и 1 месяц
   - path: photos/alisha/24
     caption: Март, 2016. 1 год и 1 месяц
-  - path: photos/alisha/25
+  - path: 2016/01031
+    preview: h152
     caption: Январь, 2016. 11 месяцев
-  - path: photos/alisha/26
+  - path: 2016/01032
+    preview: h152
     caption: Январь, 2016. 11 месяцев
-  - path: photos/alisha/27
+  - path: 2015/11081
+    preview: h152
     caption: Ноябрь, 2015. Портрет, 9 месяцев
   - path: 2015/09201
     preview: h152
@@ -398,19 +403,26 @@ alisha:
   - path: 2015/09141
     preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/36
+  - path: 2015/09142
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/37
+  - path: 2015/09143
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/38
+  - path: 2015/09144
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/39
+  - path: 2015/09145
+    preview: h152
     caption: Сентябрь, 2015. 7,5 месяцев
-  - path: photos/alisha/40
+  - path: 2015/08311
+    preview: h152
     caption: Август, 2015. 7 месяцев
-  - path: photos/alisha/41
+  - path: 2015/08291
+    preview: h152
     caption: Август, 2015. 6,5 месяцев
-  - path: photos/alisha/42
+  - path: 2015/07041
+    preview: h152
     caption: Июль, 2015. 5 месяцев
   - path: 2015/07032
     preview: h152
