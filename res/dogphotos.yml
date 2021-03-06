@@ -311,25 +311,34 @@ alisha:
   - path: 2018/05091
     preview: h152
     caption: Май, 2018. 3 года
-  - path: photos/alisha/2
+  - path: 2018/03161
+    preview: h152
     caption: Март, 2018. 3 года
   - path: photos/alisha/3
     caption: Март, 2018. 3 года
-  - path: photos/alisha/4
+  - path: 2018/03091
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/5
+  - path: 2018/03092
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/6
+  - path: 2018/03093
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/7
+  - path: 2018/03094
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/8
+  - path: 2018/03095
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/9
+  - path: 2018/03096
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/10
+  - path: 2018/03097
+    preview: h152
     caption: Март, 2018. 3 года
-  - path: photos/alisha/11
+  - path: 2018/03098
+    preview: h152
     caption: Март, 2018. 3 года
   - path: photos/alisha/12
     caption: Январь, 2018. 2 года
@@ -343,9 +352,11 @@ alisha:
     caption: Март, 2017. 2 года
   - path: photos/alisha/17
     caption: Март, 2017. 2 года
-  - path: photos/alisha/18
+  - path: 2016/12101
+    preview: h152
     caption: Декабрь, 2016. 1 год и 11 месяцев
-  - path: photos/alisha/19
+  - path: 2016/12102
+    preview: h152
     caption: Декабрь, 2016. 1 год и 11 месяцев
   - path: photos/alisha/20
     caption: Июль, 2016. 1 год и 5 месяцев
@@ -417,9 +428,11 @@ alisha:
     caption: Май, 2015. 3,5 месяца
   - path: photos/alisha/49
     caption: Май, 2015. 3,5 месяца
-  - path: photos/alisha/50
+  - path: 2015/05011
+    preview: h152
     caption: Май, 2015. 3 месяца.
-  - path: photos/alisha/51
+  - path: 2015/05012
+    preview: h152
     caption: Май, 2015. 3 месяца
   - path: photos/alisha/52
     caption: 1,5 месяца
