@@ -344,10 +344,13 @@ alisha:
     preview: h152
     caption: Январь, 2018. 2 года
   - path: 2017/12243
+    preview: h152
     caption: Декабрь, 2017. 2 года
   - path: 2017/12244
+    preview: h152
     caption: Декабрь, 2017. 2 года
   - path: 2017/12245
+    preview: h152
     caption: Декабрь, 2017. 2 года
   - path: photos/alisha/16
     caption: Март, 2017. 2 года
@@ -430,15 +433,20 @@ alisha:
   - path: 2015/07031
     preview: h152
     caption: Июль, 2015. 5 месяцев
-  - path: photos/alisha/45
+  - path: 2015/07033
+    preview: h152
     caption: Июль, 2015. 5 месяцев
-  - path: photos/alisha/46
+  - path: 2015/05301
+    preview: h152
     caption: Май, 2015. 3,5 месяца
-  - path: photos/alisha/47
+  - path: 2015/05302
+    preview: h152
     caption: Май, 2015. 3,5 месяца
-  - path: photos/alisha/48
+  - path: 2015/05171
+    preview: h152
     caption: Май, 2015. 3,5 месяца
-  - path: photos/alisha/49
+  - path: 2015/05172
+    preview: h152
     caption: Май, 2015. 3,5 месяца
   - path: 2015/05011
     preview: h152
