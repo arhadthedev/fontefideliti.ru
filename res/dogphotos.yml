@@ -1461,38 +1461,49 @@ viviana:
   - path: photos/viviana/16
     caption: Хаус Велхольм Вивиана, 1 месяц
 zheneva:
-  - path: photos/zheneva/22
+  - path: 2018/07281
+    preview: h152
     caption: 1,5 года
-  - path: photos/zheneva/21
+  - path: 2017/07284
+    preview: h152
     caption: 1,5 года
-  - path: photos/zheneva/20
+  - path: 2017/07283
+    preview: h152
     caption: 1,5 года
-  - path: photos/zheneva/19
+  - path: 2017/07282
+    preview: h152
     caption: 1,5 года
-  - path: photos/zheneva/18
+  - path: 2017/07281
+    preview: h152
     caption: 1,5 года
-  - path: 2015/11073
+  - path: 2017/11073
     preview: h152
     caption: 10 месяцев
-  - path: 2015/11072
+  - path: 2017/11072
     preview: h152
     caption: 10 месяцев
-  - path: 2015/11071
+  - path: 2017/11071
     preview: h152
     caption: 10 месяцев
   - path: photos/zheneva/14
     caption: 7 месяцев
-  - path: photos/zheneva/13
+  - path: 2017/05144
+    preview: h152
     caption: 4 месяца
-  - path: photos/zheneva/12
+  - path: 2017/05143
+    preview: h152
     caption: 4 месяца
-  - path: photos/zheneva/11
+  - path: 2017/05142
+    preview: h152
     caption: 4 месяца
-  - path: photos/zheneva/10
+  - path: 2017/05203
+    preview: h152
     caption: 4 месяца
-  - path: photos/zheneva/9
+  - path: 2017/05202
+    preview: h152
     caption: 4 месяца
-  - path: photos/zheneva/8
+  - path: 2017/05201
+    preview: h152
     caption: 4 месяца
   - path: 2017/05141
     preview: h152
@@ -1506,9 +1517,12 @@ zheneva:
   - path: 2017/03211
     preview: h152
     caption: 3 месяца
-  - path: photos/zheneva/3
+  - path: 2017/02083
+    preview: h152
     caption: 1,5 месяца
-  - path: photos/zheneva/2
+  - path: 2017/02082
+    preview: h152
     caption: 1,5 месяца
-  - path: photos/zheneva/1
+  - path: 2017/02081
+    preview: h152
     caption: 1,5 месяца

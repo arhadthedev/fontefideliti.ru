@@ -284,6 +284,15 @@
 - path: "img/2016/12102"
   output:
     - h152
+- path: "img/2017/02081"
+  output:
+    - h152
+- path: "img/2017/02082"
+  output:
+    - h152
+- path: "img/2017/02083"
+  output:
+    - h152
 - path: "img/2017/05271"
   output:
     - h152
@@ -330,6 +339,36 @@
   output:
     - h152
 - path: "img/2017/05141"
+  output:
+    - h152
+- path: "img/2017/05142"
+  output:
+    - h152
+- path: "img/2017/05143"
+  output:
+    - h152
+- path: "img/2017/05144"
+  output:
+    - h152
+- path: "img/2017/05201"
+  output:
+    - h152
+- path: "img/2017/05202"
+  output:
+    - h152
+- path: "img/2017/05203"
+  output:
+    - h152
+- path: "img/2017/07281"
+  output:
+    - h152
+- path: "img/2017/07282"
+  output:
+    - h152
+- path: "img/2017/07283"
+  output:
+    - h152
+- path: "img/2017/07284"
   output:
     - h152
 - path: "img/2017/11071"
