@@ -95,11 +95,11 @@ aleks:
   - path: 2017/0409a
     preview: h152
     caption: Ersteshrit Aleks. Апрель, 2017г. Занятие по защите. Дрессировщик Руслан Дорохов.
-  - path: photos/aleks/71
+  - path: photos/shows/2016-tolyatty-25092016-1
     caption: Ersteshrit Aleks — Лучший представитель породы, BIG-2. 25.09.2016 Всепородная выставка, г. Тольятти
   - path: photos/shows/2016-tolyatty-25092016-2
     caption: Ersteshrit Aleks — Лучший представитель породы, BIG-2. 25.09.2016 Всепородная выставка, г. Тольятти
-  - path: photos/aleks/10
+  - path: photos/shows/2016-tolyatty-25092016-3
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/shows/2016-tolyatty-25092016-4
     caption: Ersteshrit Aleks — Лучший представитель породы, BIG-2. 25.09.2016 Всепородная выставка, г. Тольятти
@@ -233,7 +233,7 @@ aleks:
     caption: Ersteshrit Aleks. Всепородная выставка в г. Тольятти 12.06.16
   - path: photos/aleks/80
     caption: Ирина Дмитриева с Фанхил Хаус Деметрой и Ersteshrit Aleks. Всепородная выставка в г. Тольятти 12.06.16
-  - path: photos/aleks/83
+  - path: photos/shows/2016-tolyatty-12062016-6
     caption: Питомник Фонте Фиделити. Всепородная выставка в г. Тольятти 12.06.16
   - path: photos/aleks/88
     caption: Ersteshrit Aleks. Всепородная выставка в г. Самаре 4.06.16
@@ -241,15 +241,15 @@ aleks:
     caption: Ersteshrit Aleks и Светлана Крыгина. Всепородная выставка в г. Самаре 4.06.16
   - path: photos/aleks/69
     caption: Ersteshrit Aleks, 1 год 2 месяца. Всепородная выставка в г. Самаре 4.06.16
-  - path: photos/aleks/24
+  - path: photos/shows/2016-samara-04062016-1
     caption: Ersteshrit Aleks и Фанхил Хаус Николетта. Всепородная выставка в г. Самаре 4.06.16
-  - path: photos/aleks/75
+  - path: photos/shows/2016-samara-04062016-2
     caption: Ersteshrit Aleks и Фанхил Хаус Николетта. Всепородная выставка в г. Самаре 4.06.16
-  - path: photos/aleks/93
+  - path: photos/shows/2016-samara2
     caption: Ersteshrit Aleks. 24.04.2016, г. Самара, монопородная выставка ранга КЧК, эксперт Кейвомяги А.
   - path: photos/aleks/21
     caption: Ersteshrit Aleks. 24.04.2016, г. Самара, монопородная выставка ранга КЧК, эксперт Кейвомяги А.
-  - path: photos/aleks/22
+  - path: photos/shows/2016-samara
     caption: Ersteshrit Aleks. 24.04.2016, г. Самара, монопородная выставка ранга КЧК, эксперт Кейвомяги А.
   - path: photos/aleks/77
     caption: Ersteshrit Aleks. Ринговка, апрель 2016г.
@@ -285,7 +285,7 @@ aleks:
     caption: Ersteshrit Aleks, 9 месяцев
   - path: photos/aleks/97
     caption: Ersteshrit Aleks, 9 месяцев
-  - path: photos/aleks/99
+  - path: photos/shows/7
     caption: Ersteshrit Aleks. 17.10.2015, г. Балаково, монопородная выставка ранга КЧК, эксперт Фёдоров В. Н.
   - path: photos/aleks/5
     caption: Ersteshrit Aleks, 6 месяцев
@@ -570,9 +570,9 @@ demetra:
     caption: Февраль, 2016г. 2 года 6 месяцев
   - path: photos/demetra/43
     caption: Февраль, 2016г. 2 года 6 месяцев
-  - path: photos/demetra/44
+  - path: photos/shows/2016-tolyatty-4
     caption: Фанхил Хаус Деметра. Победитель Best 1 группы! Всероссийская выставка в г. Тольятти 6.03.2016 г.
-  - path: photos/demetra/45
+  - path: photos/shows/2016-tolyatty-3
     caption: Фанхил Хаус Деметра. Победитель Best 1 группы! Всероссийская выставка в г. Тольятти 6.03.2016 г.
   - path: photos/demetra/41
     caption: Январь, 2016г. 2 года 5 месяцев
@@ -707,7 +707,7 @@ inessa:
   - path: 2020/01157
     preview: h152
     caption: Фонте Фиделити Инесса, 2,5 года
-  - path: photos/inessa/inessa-12
+  - path: photos/shows/20181118-penza-3
     caption: Фонте Фиделити Инесса
   - path: 2018/12102
     preview: h152
@@ -782,15 +782,15 @@ hasso:
     caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
   - path: photos/shows/2016-uralsk-11092016-4
     caption: Светлана Крыгина с Фанхил Хаус Хассо. Национальная выставка, г. Уральск, Казахстан, 11 сентября 2016г.
-  - path: photos/hasso/32
+  - path: photos/shows/2016-samara-25072016-7
     caption:
-  - path: photos/hasso/33
+  - path: photos/shows/2016-samara-25072016-9
     caption:
   - path: photos/hasso/34
     caption:
-  - path: photos/hasso/35
+  - path: photos/shows/2016-samara-25072016-11
     caption:
-  - path: photos/hasso/36
+  - path: photos/shows/2016-samara-25072016-8
     caption:
   - path: photos/hasso/31
     caption:
@@ -1051,11 +1051,10 @@ itan:
   - path: 2019/03175
     preview: h152
     caption: Фонте Фиделити Итан. Выставка САС в Тольятти 17 марта 2019 г.
-  - path: photos/itan/16
+  - path: photos/shows/20181118-penza-2
     preview: h152
     caption: Фонте Фиделити Итан, 1 год 7 месяцев
-  - path: photos/itan/15
-    preview: h152
+  - path: photos/shows/20181118-penza-1
     caption: Фонте Фиделити Итан, 1 год 7 месяцев
   - path: 2018/08253
     preview: h152
@@ -1093,11 +1092,9 @@ itan:
   - path: photos/itan/10
     preview: h152
     caption: Фонте Фиделити Итан, 10 месяцев
-  - path: photos/itan/8
-    preview: h152
+  - path: photos/shows/20180217-tolyatty-1
     caption: Фонте Фиделити Итан, 10 месяцев
-  - path: photos/itan/9
-    preview: h152
+  - path: photos/shows/20180217-tolyatty-3
     caption: Фонте Фиделити Итан, 10 месяцев
   - path: 2017/12241
     preview: h152
@@ -1251,9 +1248,9 @@ nikoletta:
     caption: Фанхил Хаус Николетта. Всепородная выставка, г. Самара, 4 июня 2016 г.
   - path: photos/nikoletta/65
     caption: Фанхил Хаус Николетта. Всепородная выставка, г. Самара, 4 июня 2016 г.
-  - path: photos/nikoletta/66
+  - path: photos/shows/2016-samara-04062016-1
     caption: Фанхил Хаус Николетта с Ersteshrit Alex. Всепородная выставка, г. Самара, 4 июня 2016 г.
-  - path: photos/nikoletta/67
+  - path: photos/shows/2016-samara-04062016-2
     caption: Фанхил Хаус Николетта с Ersteshrit Alex. Всепородная выставка, г. Самара, 4 июня 2016 г.
   - path: photos/nikoletta/68
     caption: Фанхил Хаус Николетта. Всепородная выставка, г. Самара, 4 июня 2016 г.
@@ -1296,11 +1293,11 @@ nikoletta:
     caption: Фанхил Хаус Николетта, Февраль 2016, 1,5 года
   - path: photos/nikoletta/z93
     caption: Фанхил Хаус Николетта, Февраль 2016, 1,5 года
-  - path: photos/nikoletta/a1
+  - path: photos/shows/15
     caption: Региональная выставка, г. Сызрань, 8 ноября 2015 г. Фанхил Хаус Николетта
   - path: photos/nikoletta/a2
     caption: Региональная выставка, г. Сызрань, 8 ноября 2015 г. Светлана Крыгина с Николеттой и Алишей
-  - path: photos/nikoletta/a3
+  - path: photos/shows/14
     caption: Региональная выставка, г. Сызрань, 8 ноября 2015 г. Светлана Крыгина с Николеттой, Алишей и Антеем
   - path: photos/nikoletta/z0
     caption: Монопородная выставка, г. Балаково, 17 октября 2015 г.
@@ -1308,7 +1305,7 @@ nikoletta:
     caption: Монопородная выставка, г. Балаково, 17 октября 2015 г.
   - path: photos/nikoletta/z2
     caption: Монопородная выставка, г. Балаково, 17 октября 2015 г.
-  - path: photos/nikoletta/z3
+  - path: photos/shows/1
     caption: Монопородная выставка, г. Волгоград, 3 октября 2015 г.
   - path: 2015/10031
     preview: h152
@@ -1336,7 +1333,7 @@ nikoletta:
     caption: Региональная выставка, г. Самара, 19 сентября 2015 г. BEST. Светлана Крыгина с Николеттой
   - path: photos/nikoletta/56
     caption: Региональная выставка, г. Самара, 19 сентября 2015 г. Светлана Крыгина с Николеттой
-  - path: photos/nikoletta/44
+  - path: photos/shows/22
     caption: Всероссийская выставка ЧРКФ, г. Самара, 5 сентября 2015 г. Светлана Крыгина с Николеттой
   - path: photos/nikoletta/45
     caption: Всероссийская выставка ЧРКФ, г. Самара, 5 сентября 2015 г. Фанхил Хаус Николетта, победитель класса юниоров, 2xJun.САС. Эксперт — Попова Л. Н.
@@ -1392,9 +1389,9 @@ nikoletta:
   - path: 2015/08221
     preview: h152
     caption: 'Занятие по защите, август 2015г. Дрессировщик: Шигаев Роман'
-  - path: photos/nikoletta/82
+  - path: shows/2015-togliatty-2
     caption: Всепородная выставка, г. Тольятти, 1 августа 2015 г. Ника с Ольгой Сырцовой
-  - path: photos/nikoletta/19
+  - path: shows/2015-togliatty-1
     caption: Всепородная выставка, г. Тольятти, 1 августа 2015 г. Ника с Ольгой Сырцовой
   - path: photos/nikoletta/18
     caption: Май, 2015 г., 9 месяцев
@@ -1404,9 +1401,9 @@ nikoletta:
     caption: Май, 2015 г., 9 месяцев
   - path: photos/shows/2015-volgograd-5
     caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
-  - path: photos/nikoletta/1
+  - path: photos/shows/2015-volgograd-4
     caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
-  - path: photos/nikoletta/2
+  - path: photos/shows/2015-volgograd-3
     caption: Монопородная выставка, г. Волгоград, 2 мая 2015 г.
   - path: photos/nikoletta/3
     caption: Март, 2015 г., 8 месяцев
@@ -1447,7 +1444,8 @@ viviana:
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: photos/viviana/21
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/20
+  - path: 2015/08236
+    preview: h152
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: 2015/08112
     preview: h152
