@@ -629,7 +629,8 @@ demetra:
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
   - path: photos/demetra/8
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
-  - path: photos/demetra/9
+  - path: 2014/06012
+    preview: h152
     caption: Монопородная выставка, г. Уфа, 1 июня 2014г.
   - path: 2014/06011
     preview: h152
@@ -917,7 +918,8 @@ hillari:
     caption:
   - path: photos/hillari/20
     caption:
-  - path: photos/hillari/21
+  - path: 2009/10021
+    preview: h152
     caption:
   - path: 2009/07031
     preview: h152
@@ -936,11 +938,9 @@ hillari:
   - path: 2009/06241
     preview: h152
     caption:
-  - path: photos/hillari/28
-    caption:
   - path: 2009/06064
     preview: h152
-    caption: 'Занятие по защите, июнь 2009г., г. Самара. Дрессировщик: Сергей Сорокин'
+    caption: 'Фанхил Хаус Хиллари. Занятие по защите, июнь 2009г., г. Самара. Дрессировщик: Сергей Сорокин'
   - path: 2009/05241
     preview: h152
     caption:
@@ -959,6 +959,8 @@ hillari:
     preview: h152
     caption: Монопородная выставка в г. Тольятти, август 2008г.
   - path: photos/hillari/36
+    caption:
+  - path: 2008/06291
     caption:
   - path: photos/hillari/38
     caption:
