@@ -45,7 +45,7 @@ def write_navigation(output):
 
 def write_photo_main(output, name, photos):
     output.write('<article>')
-    output.write('<h1>Фото <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
+    output.write('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
     for photo in photos:
         preview = photo.get('preview') if photo.get('preview') else 'p'
         photo['caption'] = photo['caption'] if photo['caption'] != None else ''
@@ -54,7 +54,7 @@ def write_photo_main(output, name, photos):
 
 def write_video_main(output, name, youtube_ids):
     output.write('<article class="filled">')
-    output.write('<h1>Видео <a href="/males/itan/">{}</a></h1>'.format(name['gen']))
+    output.write('<h1>Видео <a href=".">{}</a></h1>'.format(name['gen']))
     for video_id in youtube_ids:
         output.write('<p>')
         output.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/{}" style="border:0px" allow="gyroscope; picture-in-picture" allowfullscreen></iframe>'.format(video_id))
