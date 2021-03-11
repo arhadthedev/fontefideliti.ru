@@ -4,6 +4,7 @@
 import dogs.section_breeders
 import os
 import sys
+import tools.document
 
 
 class Input(object):
@@ -26,7 +27,23 @@ class Output(object):
         return open(full_path, 'w', encoding='utf-8')
 
 
+if len(sys.argv) < 2:
+    sys.exit('error: output directory path argument is not specified')
+output_base_path = sys.argv[1]
+
 resources = Input('res')
 output = Output(sys.argv[1])
 
 dogs.section_breeders.generate_section(output, resources)
+
+for generator in []:
+    artifacts = generator.get_root_artifact_list()
+    for title, path, generator in artifacts:
+        output_path = '{}.htm'.format(path)
+        output_document = tools.document.Document(title, output_path)
+        generator(output_document, resources)
+        html_content = output_document.finalize()
+
+        path = os.path.join(output_base_path, output_path)
+        with open(path, 'w', encoding='utf-8') as output:
+            output.write(html_content)
