@@ -2,7 +2,13 @@
 
 - path: "img/title"
   default_size: 500
+- path: "img/2007/09141"
+  output:
+    - h152
 - path: "img/2008/01201"
+  output:
+    - h152
+- path: "img/2008/01301"
   output:
     - h152
 - path: "img/2008/04051"
@@ -22,6 +28,15 @@
   output:
     - h152
 - path: "img/2008/07021"
+  output:
+    - h152
+- path: "img/2008/08101"
+  output:
+    - h152
+- path: "img/2008/08102"
+  output:
+    - h152
+- path: "img/2008/08103"
   output:
     - h152
 - path: "img/2008/08241"
@@ -106,6 +121,36 @@
   output:
     - h152
     - h540
+- path: "img/2011/06121"
+  output:
+    - h152
+- path: "img/2011/06122"
+  output:
+    - h152
+- path: "img/2011/07111"
+  output:
+    - h152
+- path: "img/2011/07112"
+  output:
+    - h152
+- path: "img/2011/07151"
+  output:
+    - h152
+- path: "img/2011/07152"
+  output:
+    - h152
+- path: "img/2011/07153"
+  output:
+    - h152
+- path: "img/2011/07154"
+  output:
+    - h152
+- path: "img/2011/07155"
+  output:
+    - h1522
+- path: "img/2011/07181"
+  output:
+    - h152
 - path: "img/2012/05061"
   output:
     - h152
@@ -549,6 +594,9 @@
   output:
     - h152
 - path: "img/2018/12229"
+  output:
+    - h152
+- path: "img/2019/11092"
   output:
     - h152
 - path: "img/2020/05291"
