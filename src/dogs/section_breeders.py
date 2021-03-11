@@ -56,8 +56,11 @@ def write_video_main(output, name, youtube_ids):
     output.write('<article class="filled">')
     output.write('<h1>Видео <a href=".">{}</a></h1>'.format(name['gen']))
     for video_id in youtube_ids:
+        youtube_id, *title = video_id.split(' ', 1)
+        if title:
+            output.write('<h3>{}</h3>'.format(title[0]))
         output.write('<p>')
-        output.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/{}" style="border:0px" allow="gyroscope; picture-in-picture" allowfullscreen></iframe>'.format(video_id))
+        output.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/{}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'.format(video_id))
     output.write('</article>')
 
 
