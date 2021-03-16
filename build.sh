@@ -13,4 +13,3 @@ set -e
 ./photo_generation.py public
 scripts/generate_main.py public
 scripts/generate_shows.py public
-scripts/generate_sale.py public

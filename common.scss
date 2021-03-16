@@ -59,7 +59,7 @@ article {
 		border: 1pt solid $borderline;
 		border-radius: 12pt;
 		display: inline-block;
-		margin: 1em;
+		margin: 2em auto;
 		max-width: 570pt;
 		padding: 1.25em 2em 2em;
 		vertical-align: top;
@@ -84,6 +84,11 @@ article {
 			display: block;
 			font-size: 1.25em;
 		}
+	}
+
+	&.notification {
+		font-style: italic;
+		font-weight: bold;
 	}
 
 	&.ultra {

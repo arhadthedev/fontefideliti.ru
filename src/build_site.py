@@ -3,6 +3,7 @@
 
 import dogs.section_breeders
 import os
+import sections.sale
 import sys
 import tools.document
 
@@ -36,7 +37,7 @@ output = Output(sys.argv[1])
 
 dogs.section_breeders.generate_section(output, resources)
 
-for generator in []:
+for generator in [sections.sale]:
     artifacts = generator.get_root_artifact_list()
     for title, path, generator in artifacts:
         output_path = '{}.htm'.format(path)
