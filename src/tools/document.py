@@ -37,6 +37,10 @@ class Document(object):
         self._content_chunks.append('<link rel="stylesheet" href="/common.css">')
         self._content_chunks.append('<link rel="icon" href="/favicon.png">')
 
+        self._content_placeholder_id = len(self._content_chunks)
+        self._content_chunks.append('')
+        self._content_chunks.append('')
+        self._content_chunks.append('')
         self._content_chunks.append('<header>')
         brand_pretty = brand_en.replace('«', '<span>«').replace('»', '»</span>')
         self._content_chunks.append('<h1>{}</h1>'.format(brand_pretty))
@@ -100,6 +104,7 @@ class Document(object):
         original = Image.open('img/{}.jpg'.format(name))
         imgdir = '{}/img'.format(self._output_directory)
         output_path = '{}/{}-{}.jpg'.format(imgdir, name, size)
+        fullsize_path = '{}/{}.jpg'.format(imgdir, name)
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         width = None
         height = None
@@ -111,7 +116,22 @@ class Document(object):
         else:
             with Image.open(output_path) as existing:
                 width, height = existing.size
+
+        if is_clickable:
+            if not os.path.isfile(fullsize_path):
+                preview = original.copy()
+                full_size = 794, 794
+                preview.thumbnail(full_size, Image.LANCZOS, None)
+                preview.save(fullsize_path, quality=94, optimize=True, progressive=True)
+            i = self._content_placeholder_id
+            self._content_chunks[i + 0] = '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">'
+            self._content_chunks[i + 1] = '<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
+            self._content_chunks[i + 2] = '<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>'
+            self._content_chunks.append('<a href="/img/{}.jpg" title="{}">'.format(name, caption))
+
         self._content_chunks.append('<img src="/img/{}-{}{}.jpg" width="{}" height="{}" alt="{}">'.format(name, dimension_type, dimension, width, height, caption))
+        if is_clickable:
+            self._content_chunks.append('</a>')
 
 
     def add_human_url(self, url):
