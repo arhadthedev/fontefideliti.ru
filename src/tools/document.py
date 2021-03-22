@@ -1,6 +1,8 @@
 # -*- coding: UTF-8 -*-
 
 from datetime import datetime
+import os
+from PIL import Image
 
 brand_ru = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
 brand_en = 'Питомник немецких овчарок «Fonte Fideliti» г. Тольятти'
@@ -24,7 +26,9 @@ def _make_html_class_list(class_list):
 
 
 class Document(object):
-    def __init__(self, title, path):
+    def __init__(self, title, path, output_directory):
+        self._output_directory = output_directory
+
         self._content_chunks = []
         self._content_chunks.append('<!DOCTYPE html><html lang="ru">')
         self._content_chunks.append('<meta charset="utf-8">')
@@ -36,7 +40,7 @@ class Document(object):
         self._content_chunks.append('<header>')
         brand_pretty = brand_en.replace('«', '<span>«').replace('»', '»</span>')
         self._content_chunks.append('<h1>{}</h1>'.format(brand_pretty))
-        self._content_chunks.append('<img src="/img/title.jpg" alt="Логотип" width="500" height="260">')
+        self.add_image('title', 'Логотип', 'w', 500, False)
         self._content_chunks.append('</header>')
 
         self._content_chunks.append('<nav><ul>')
@@ -67,6 +71,32 @@ class Document(object):
     def add_plain(self, text):
         text_safe = text.replace('&', '&amp;').replace('<', '&lt;')
         self._content_chunks.append(text_safe)
+
+
+    def add_image(self, name, caption, dimension_type, dimension, is_clickable):
+        size = '{}{}'.format(dimension_type, dimension)
+        if dimension_type == 'w':
+            max_size = dimension, 9999
+        elif dimension_type == 'h':
+            max_size = 9999, dimension
+        else:
+            raise ValueError('dimension_type can be "w" or "h" only')
+
+        original = Image.open('img/{}.jpg'.format(name))
+        imgdir = '{}/img'.format(self._output_directory)
+        output_path = '{}/{}-{}.jpg'.format(imgdir, name, size)
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        width = None
+        height = None
+        if not os.path.isfile(output_path):
+            preview = original.copy()
+            preview.thumbnail(max_size, Image.LANCZOS, None)
+            preview.save(output_path, quality=94, optimize=True, progressive=True)
+            width, height = preview.size
+        else:
+            with Image.open(output_path) as existing:
+                width, height = existing.size
+        self._content_chunks.append('<img src="/img/{}-{}{}.jpg" width="{}" height="{}" alt="{}">'.format(name, dimension_type, dimension, width, height, caption))
 
 
     def finalize(self):

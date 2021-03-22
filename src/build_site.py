@@ -41,7 +41,7 @@ for generator in [sections.sale]:
     artifacts = generator.get_root_artifact_list()
     for title, path, generator in artifacts:
         output_path = '{}.htm'.format(path)
-        output_document = tools.document.Document(title, output_path)
+        output_document = tools.document.Document(title, output_path, output_base_path)
         generator(output_document, resources)
         html_content = output_document.finalize()
 
