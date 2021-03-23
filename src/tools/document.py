@@ -62,6 +62,21 @@ class Document(object):
         self._content_chunks.append('</article>')
 
 
+    def start_generic_container(self, css_classes=[]):
+        class_list = _make_html_class_list(css_classes)
+        class_mixin = ' class="{}"'.format(class_list) if css_classes else ''
+        self._content_chunks.append('<div{}>'.format(class_mixin))
+
+
+    def end_generic_container(self):
+        self._content_chunks.append('</div>')
+
+
+    def add_header(self, level, text):
+        text_safe = text.replace('&', '&amp;').replace('<', '&lt;')
+        self._content_chunks.append('<h{0}>{1}</h{0}>'.format(level, text_safe))
+
+
     def start_paragraph(self, css_classes=[]):
         class_list = _make_html_class_list(css_classes)
         class_mixin = ' class="{}"'.format(class_list) if css_classes else ''
@@ -97,6 +112,31 @@ class Document(object):
             with Image.open(output_path) as existing:
                 width, height = existing.size
         self._content_chunks.append('<img src="/img/{}-{}{}.jpg" width="{}" height="{}" alt="{}">'.format(name, dimension_type, dimension, width, height, caption))
+
+
+    def add_human_url(self, url):
+        text = '<a href="//{0}">{0}</a>'.format(url)
+        self._content_chunks.append(text)
+
+    def add_telephone(self, number):
+        f_num = '{} ({}) {}-{}-{}'.format(number[0:2], number[2:5], number[5:8], number[8:10], number[10:12])
+        text = 'т. <a href="tel:{}">{}</a>'.format(number, f_num)
+        self._content_chunks.append(text)
+
+    def add_break(self):
+        self._content_chunks.append('<br>')
+
+
+    def start_list(self):
+        self._content_chunks.append('<ul>')
+
+
+    def new_list_item(self):
+        self._content_chunks.append('<li>')
+
+
+    def end_list(self):
+        self._content_chunks.append('</ul>')
 
 
     def finalize(self):
