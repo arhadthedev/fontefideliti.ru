@@ -142,33 +142,18 @@ dd {
 	list-style-type: none;
 }
 
-.contacts {
-	display: table;
+.multicolumn {
+	display: flex;
+	justify-content: space-evenly;
 	text-align: left;
+	align-items: center;
 
 	h2 {
-		font-size: 14pt;
+		font-size: 1.17em;
 	}
 
-	p {
-		margin: 1em 0em;
-	}
-
-	ul, .cojoin {
+	ul {
 		margin-top: -1em;
-	}
-
-	& > * {
-		display: table-cell;
-		vertical-align: middle;
-	}
-
-	& > img {
-		margin-left: 40pt;
-	}
-
-	& > div {
-		padding-left: 140pt;
 	}
 }
 
