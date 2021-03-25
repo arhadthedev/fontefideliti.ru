@@ -94,6 +94,10 @@ class Document(object):
         self._content_chunks.append(text_safe)
 
 
+    def add_raw(self, text):
+        self._content_chunks.append(text)
+
+
     def add_image(self, name, caption, dimension_type, dimension, is_clickable):
         size = '{}{}'.format(dimension_type, dimension)
         if dimension_type == 'w':
