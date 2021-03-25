@@ -49,5 +49,6 @@ for generator in [sections.main, sections.sale, sections.shows]:
         html_content = output_document.finalize()
 
         path = os.path.join(output_base_path, output_path)
+        os.makedirs(os.path.dirname(path), exist_ok=True)
         with open(path, 'w', encoding='utf-8') as output:
             output.write(html_content)
