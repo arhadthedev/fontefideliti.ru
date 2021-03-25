@@ -7,7 +7,7 @@ from PIL import Image
 brand_ru = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
 brand_en = 'Питомник немецких овчарок «Fonte Fideliti» г. Тольятти'
 
-menu = [('Главная', '/'),
+menu = [('Главная', ''),
         ('Производители', 'males/'),
         ('Производительницы', 'females/'),
         ('Выставки', 'shows/'),
@@ -49,12 +49,12 @@ class Document(object):
 
         self._content_chunks.append('<nav><ul>')
         for title, menu_path in menu:
-            if menu_path == '/':
+            if not menu_path:
                 menu_path = 'index.html'
             if path.startswith(menu_path):
                 item = '<li><span class="current">{}'.format(title)
             else:
-                item = '<li><a href="{}">{}</a>'.format(menu_path, title)
+                item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
             self._content_chunks.append(item)
         self._content_chunks.append('</nav>')
 
