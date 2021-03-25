@@ -58,11 +58,9 @@ article {
 		background-color: $background-page;
 		border: 1pt solid $borderline;
 		border-radius: 12pt;
-		display: inline-block;
 		margin: 2em auto;
 		max-width: 570pt;
-		padding: 1.25em 2em 2em;
-		vertical-align: top;
+		padding: 1em 2em;
 
 		& > p:first-child {
 			margin-top: 0pt;
@@ -74,6 +72,10 @@ article {
 	}
 
 	&.compact {
+		display: inline-block;
+		margin: 1em;
+		vertical-align: top;
+
 		h1 {
 			font-size: 1.17em;
 			margin-top: 0.6em;
