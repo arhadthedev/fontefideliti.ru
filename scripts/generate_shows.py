@@ -25,7 +25,7 @@ list_layout = Layout('shows', 'Выставки')
 for year_entry in reversed(per_year_list):
     year = year_entry['год']
     photocard = year_entry['фотокарточка']
-    real_path = os.path.join(build_path, photocard)
+    real_path = os.path.join(build_path, 'img/{}.jpg'.format(photocard))
     caption = year_entry['подпись']
 
     card = (f'<h3><a href="{year}.htm">{year}</a></h3>'
