@@ -4,12 +4,16 @@ NAME
 
 SYNOPSIS
 
-       src/build_site.py OUT_DIR
+       python src/build_site.py OUT_DIR
 
 DESCRIPTION
 
        Take content of ./res directory and populate OUT_DIR with
        a static site file structure.
+
+NOTES
+
+       To run the script, Python 3.3 or above is required.
 
 AUTHOR
 
