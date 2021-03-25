@@ -17,7 +17,7 @@ if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
 build_path = sys.argv[1]
 
-config_file = open('database/shows.yml', 'r', encoding='utf-8')
+config_file = open('res/shows.yml', 'r', encoding='utf-8')
 per_year_list = yaml.safe_load(config_file)
 
 list_layout = Layout('shows', 'Выставки')
