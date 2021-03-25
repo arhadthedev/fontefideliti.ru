@@ -28,6 +28,7 @@ def _make_html_class_list(class_list):
 class Document(object):
     def __init__(self, title, path, output_directory):
         self._output_directory = output_directory
+        self._path = path
 
         self._content_chunks = []
         self._content_chunks.append('<!DOCTYPE html><html lang="ru">')
@@ -57,6 +58,10 @@ class Document(object):
                 item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
             self._content_chunks.append(item)
         self._content_chunks.append('</nav>')
+
+
+    def get_path(self):
+        return self._path
 
 
     def start_container(self, css_classes=[]):
