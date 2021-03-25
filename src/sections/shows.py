@@ -26,7 +26,7 @@ def generate_shows(output_document, resources):
         output_document.add_raw('</a>')
         output_document.end_container()
 
-def get_root_artifact_list():
+def get_root_artifact_list(resources):
     section_pages = [('Выставки', 'shows/index', generate_shows)]
     return section_pages
 

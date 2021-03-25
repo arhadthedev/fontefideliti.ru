@@ -40,7 +40,7 @@ output = Output(sys.argv[1])
 dogs.section_breeders.generate_section(output, resources)
 
 for generator in [sections.main, sections.sale, sections.shows]:
-    artifacts = generator.get_root_artifact_list()
+    artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
