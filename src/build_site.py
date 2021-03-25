@@ -5,6 +5,7 @@ import dogs.section_breeders
 import os
 import sections.main
 import sections.sale
+import sections.shows
 import sys
 import tools.document
 
@@ -38,7 +39,7 @@ output = Output(sys.argv[1])
 
 dogs.section_breeders.generate_section(output, resources)
 
-for generator in [sections.main, sections.sale]:
+for generator in [sections.main, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list()
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'

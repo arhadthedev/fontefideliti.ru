@@ -11,4 +11,3 @@
 set -e
 
 ./photo_generation.py public
-scripts/generate_shows.py public
