@@ -21,9 +21,8 @@ def generate_photos(output_document, resources):
     photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
     photos = photo_list.get(dog_id)
     for photo in photos:
-        preview = photo.get('preview') if photo.get('preview') else 'p'
         photo['caption'] = photo['caption'] if photo['caption'] != None else ''
-        output_document.add_raw('<a href="../../../img/{p}.jpg" title="{c}" rel="a"><img src="../../../img/{p}-{pr}.jpg" alt="{c}" height="152"></a> '.format(p=photo['path'], pr=preview, c=photo['caption']))
+        output_document.add_image(photo['path'], photo['caption'], 'h', 152, is_clickable=True)
     output_document.end_container()
 
 

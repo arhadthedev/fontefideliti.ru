@@ -19,10 +19,7 @@ def generate_shows(output_document, resources):
 
         output_document.start_container(css_classes=['card', 'compact'])
         output_document.add_raw('<a href="{0}.htm"><h3>{0}</h3>'.format(year))
-        if photocard.startswith('photos/'):
-            output_document.add_raw('<img src="/img/{}.jpg" height="152" alt="{}">'.format(photocard, caption))
-        else:
-            output_document.add_image(photocard, caption, 'h', 152, False)
+        output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
         output_document.end_container()
 

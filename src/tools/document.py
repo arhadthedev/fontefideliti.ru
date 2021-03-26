@@ -114,7 +114,9 @@ class Document(object):
 
         original = Image.open('img/{}.jpg'.format(name))
         imgdir = '{}/img'.format(self._output_directory)
-        output_path = '{}/{}-{}.jpg'.format(imgdir, name, size)
+        legacy_output_path = '{}/{}-p.jpg'.format(imgdir, name)
+        new_output_path = '{}/{}-{}.jpg'.format(imgdir, name, size)
+        output_path = legacy_output_path if os.path.isfile(legacy_output_path) else new_output_path
         fullsize_path = '{}/{}.jpg'.format(imgdir, name)
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         width = None
