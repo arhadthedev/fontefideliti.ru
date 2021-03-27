@@ -113,12 +113,11 @@ class Document(object):
             raise ValueError('dimension_type can be "w" or "h" only')
 
         original = Image.open('img/{}.jpg'.format(name))
-        imgdir = '{}/img'.format(self._output_directory)
-        legacy_output_path = '{}/{}-p.jpg'.format(imgdir, name)
-        new_output_path = '{}/{}-{}.jpg'.format(imgdir, name, size)
+        legacy_output_path = '/img/{}-p.jpg'.format(name)
+        new_output_path = '/img/{}-{}.jpg'.format(name, size)
         is_legacy = os.path.isfile('img/{}-p.jpg'.format(name))
-        output_path = legacy_output_path if is_legacy else new_output_path
-        fullsize_path = '{}/{}.jpg'.format(imgdir, name)
+        rel_output_path = legacy_output_path if is_legacy else new_output_path
+        output_path = '{}/{}'.format(self._output_directory, rel_output_path)
         os.makedirs(os.path.dirname(output_path), exist_ok=True)
         width = None
         height = None
@@ -132,6 +131,7 @@ class Document(object):
                 width, height = existing.size
 
         if is_clickable:
+            fullsize_path = '{}/{}.jpg'.format(self._output_directory, name)
             if not os.path.isfile(fullsize_path):
                 preview = original.copy()
                 full_size = 794, 794
@@ -143,7 +143,7 @@ class Document(object):
             self._content_chunks[i + 2] = '<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>'
             self._content_chunks.append('<a href="/img/{}.jpg" title="{}">'.format(name, caption))
 
-        self._content_chunks.append('<img src="/img/{}-{}{}.jpg" width="{}" height="{}" alt="{}">'.format(name, dimension_type, dimension, width, height, caption))
+        self._content_chunks.append('<img src="{}" width="{}" height="{}" alt="{}">'.format(rel_output_path, width, height, caption))
         if is_clickable:
             self._content_chunks.append('</a>')
 
