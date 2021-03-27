@@ -23,6 +23,7 @@ def generate_photos(output_document, resources):
     for photo in photos:
         photo['caption'] = photo['caption'] if photo['caption'] != None else ''
         output_document.add_image(photo['path'], photo['caption'], 'h', 152, is_clickable=True)
+        output_document.add_plain(' ')
     output_document.end_container()
 
 
