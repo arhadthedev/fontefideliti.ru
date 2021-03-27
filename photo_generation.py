@@ -35,8 +35,8 @@ photos_file = open('photo_generation.yml', 'r', encoding='utf-8')
 photos = yaml.safe_load(photos_file)
 
 for item in photos:
-	relative_base_path = "res/{}".format(item["path"])
-	original = Image.open("{}.jpg".format(relative_base_path))
+	relative_base_path = "{}".format(item["path"])
+	original = Image.open("res/{}.jpg".format(relative_base_path))
 	if item.get("mirror", False):
 		original = original.transpose(Image.FLIP_LEFT_RIGHT)
 	if len(sys.argv) < 2:
