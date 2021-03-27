@@ -113,14 +113,16 @@ class Document(object):
             raise ValueError('dimension_type can be "w" or "h" only')
 
         base = 'img/{}'.format(name)
-        fullsize_path = 'img/{}.jpg'.format(name)
-        legacy_preview_path = '{}-p.jpg'.format(base)
-        modern_preview_path = '{}-{}.jpg'.format(base, size)
-        is_legacy = os.path.isfile(legacy_preview_path)
-        preview_path = legacy_preview_path if is_legacy else modern_preview_path
+        fullsize_path = '{}.jpg'.format(base)
+        preview_path = '{}-p.jpg'.format(base)
+        try:
+            legacy_preview_test = self._resources.get_image(preview_path)
+            legacy_preview_test.close()
+        except FileNotFoundError:
+            preview_path = '{}-{}.jpg'.format(base, size)
 
         os.makedirs(os.path.dirname(preview_path), exist_ok=True)
-        original = self._resources.get_image(name)
+        original = self._resources.get_image('img/{}.jpg'.format(name))
         width = None
         height = None
         if not os.path.isfile(preview_path):

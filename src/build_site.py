@@ -20,7 +20,7 @@ class Input(object):
         return open(full_path, 'r', encoding='utf-8')
 
     def get_image(self, rel_path):
-        full_path = os.path.join(self._base_path, 'img/{}.jpg'.format(rel_path))
+        full_path = os.path.join(self._base_path, rel_path)
         return PIL.Image.open(full_path)
 
 
