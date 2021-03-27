@@ -38,6 +38,8 @@ for generator in [sections.breeders, sections.main, sections.sale, sections.show
         generator(output_document, resources)
         html_content = output_document.finalize()
 
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        output_directory = os.path.dirname(output_path)
+        if output_directory:
+            os.makedirs(output_directory, exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as output:
             output.write(html_content)
