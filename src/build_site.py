@@ -29,6 +29,7 @@ def copy_static_files(input_directory):
     base = os.path.join(input_directory, 'img/')
     shutil.copyfile('{}favicon.png'.format(base), 'favicon.png')
     shutil.copyfile('{}background.png'.format(base), 'img/background.png')
+    shutil.copytree('{}photos'.format(base), 'img/photos')
 
 
 if len(sys.argv) < 2:
