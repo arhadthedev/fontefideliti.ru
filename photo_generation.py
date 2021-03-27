@@ -35,15 +35,15 @@ photos_file = open('photo_generation.yml', 'r', encoding='utf-8')
 photos = yaml.safe_load(photos_file)
 
 for item in photos:
-	relative_base_path = "{}".format(item["path"])
-	original = Image.open("res/{}.jpg".format(relative_base_path))
+	original = Image.open("res/{}.jpg".format(item["path"]))
 	if item.get("mirror", False):
 		original = original.transpose(Image.FLIP_LEFT_RIGHT)
 	if len(sys.argv) < 2:
 		sys.exit('error: output path argument is not specified')
-	output_base_path = os.path.join(sys.argv[1], relative_base_path)
+	output_base_path = os.path.join(sys.argv[1], item["path"])
+	os.makedirs(os.path.dirname(output_base_path), exist_ok=True)
 
-	print("Generating {}...".format(relative_base_path))
+	print("Generating {}...".format(item["path"]))
 	default_size = item.get("default_size", 794)
 	generate_large(original, output_base_path, default_size)
 
