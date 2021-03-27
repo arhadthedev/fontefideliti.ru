@@ -26,8 +26,9 @@ def _make_html_class_list(class_list):
 
 
 class Document(object):
-    def __init__(self, title, path):
+    def __init__(self, title, path, resources):
         self._path = path
+        self._resources = resources
 
         self._content_chunks = []
         self._content_chunks.append('<!DOCTYPE html><html lang="ru">')
@@ -119,7 +120,7 @@ class Document(object):
         preview_path = legacy_preview_path if is_legacy else modern_preview_path
 
         os.makedirs(os.path.dirname(preview_path), exist_ok=True)
-        original = Image.open('img/{}.jpg'.format(name))
+        original = self._resources.get_image(name)
         width = None
         height = None
         if not os.path.isfile(preview_path):

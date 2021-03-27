@@ -2,6 +2,7 @@
 # -*- coding: UTF-8 -*-
 
 import os
+import PIL
 import sections.breeders
 import sections.main
 import sections.sale
@@ -18,6 +19,10 @@ class Input(object):
         full_path = os.path.join(self._base_path, rel_path)
         return open(full_path, 'r', encoding='utf-8')
 
+    def get_image(self, rel_path):
+        full_path = os.path.join(self._base_path, 'img/{}.jpg'.format(rel_path))
+        return PIL.Image.open(full_path)
+
 
 if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
@@ -29,7 +34,7 @@ for generator in [sections.breeders, sections.main, sections.sale, sections.show
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
-        output_document = tools.document.Document(title, output_path)
+        output_document = tools.document.Document(title, output_path, resources)
         generator(output_document, resources)
         html_content = output_document.finalize()
 
