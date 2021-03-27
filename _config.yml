@@ -2,6 +2,7 @@ encoding: utf-8
 exclude:
   - LICENSE
   - README.md
+  - res
 url: https://fontefideliti.ru
 destination: public
 
