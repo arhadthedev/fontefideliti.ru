@@ -7,6 +7,7 @@ import sections.breeders
 import sections.main
 import sections.sale
 import sections.shows
+import shutil
 import sys
 import tools.document
 
@@ -22,6 +23,12 @@ class Input(object):
     def get_image(self, rel_path):
         full_path = os.path.join(self._base_path, rel_path)
         return PIL.Image.open(full_path)
+
+
+def copy_static_files(input_directory):
+    base = os.path.join(input_directory, 'img/')
+    shutil.copyfile('{}favicon.png'.format(base), 'favicon.png')
+    shutil.copyfile('{}background.png'.format(base), 'img/background.png')
 
 
 if len(sys.argv) < 2:
@@ -43,3 +50,5 @@ for generator in [sections.breeders, sections.main, sections.sale, sections.show
             os.makedirs(output_directory, exist_ok=True)
         with open(output_path, 'w', encoding='utf-8') as output:
             output.write(html_content)
+
+copy_static_files()
