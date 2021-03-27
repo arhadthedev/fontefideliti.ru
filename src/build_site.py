@@ -21,20 +21,18 @@ class Input(object):
 
 if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
-output_base_path = sys.argv[1]
-
-resources = Input('res')
+input_base_path = sys.argv[1]
+resources = Input(input_base_path)
 
 for generator in [sections.breeders, sections.main, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
-        output_document = tools.document.Document(title, output_path, output_base_path)
+        output_document = tools.document.Document(title, output_path)
         generator(output_document, resources)
         html_content = output_document.finalize()
 
-        path = os.path.join(output_base_path, output_path)
-        os.makedirs(os.path.dirname(path), exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as output:
+        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+        with open(output_path, 'w', encoding='utf-8') as output:
             output.write(html_content)

@@ -4,12 +4,12 @@ NAME
 
 SYNOPSIS
 
-       python src/build_site.py OUT_DIR
+       python src/build_site.py RES_DIR
 
 DESCRIPTION
 
-       Take content of ./res directory and populate OUT_DIR with
-       a static site file structure.
+       Take a file database from RES_DIR directory and populate
+       a current directory with a static site file structure.
 
 NOTES
 

@@ -26,8 +26,7 @@ def _make_html_class_list(class_list):
 
 
 class Document(object):
-    def __init__(self, title, path, output_directory):
-        self._output_directory = output_directory
+    def __init__(self, title, path):
         self._path = path
 
         self._content_chunks = []
@@ -112,26 +111,27 @@ class Document(object):
         else:
             raise ValueError('dimension_type can be "w" or "h" only')
 
+        base = 'img/{}'.format(name)
+        fullsize_path = 'img/{}.jpg'.format(name)
+        legacy_preview_path = '{}-p.jpg'.format(base)
+        modern_preview_path = '{}-{}.jpg'.format(base, size)
+        is_legacy = os.path.isfile(legacy_preview_path)
+        preview_path = legacy_preview_path if is_legacy else modern_preview_path
+
+        os.makedirs(os.path.dirname(preview_path), exist_ok=True)
         original = Image.open('img/{}.jpg'.format(name))
-        legacy_output_path = '/img/{}-p.jpg'.format(name)
-        new_output_path = '/img/{}-{}.jpg'.format(name, size)
-        is_legacy = os.path.isfile('img/{}-p.jpg'.format(name))
-        rel_output_path = legacy_output_path if is_legacy else new_output_path
-        output_path = '{}/{}'.format(self._output_directory, rel_output_path)
-        os.makedirs(os.path.dirname(output_path), exist_ok=True)
         width = None
         height = None
-        if not os.path.isfile(output_path):
+        if not os.path.isfile(preview_path):
             preview = original.copy()
             preview.thumbnail(max_size, Image.LANCZOS, None)
-            preview.save(output_path, quality=94, optimize=True, progressive=True)
+            preview.save(preview_path, quality=94, optimize=True, progressive=True)
             width, height = preview.size
         else:
-            with Image.open(output_path) as existing:
+            with Image.open(preview_path) as existing:
                 width, height = existing.size
 
         if is_clickable:
-            fullsize_path = '{}/{}.jpg'.format(self._output_directory, name)
             if not os.path.isfile(fullsize_path):
                 preview = original.copy()
                 full_size = 794, 794
@@ -141,9 +141,8 @@ class Document(object):
             self._content_chunks[i + 0] = '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">'
             self._content_chunks[i + 1] = '<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
             self._content_chunks[i + 2] = '<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>'
-            self._content_chunks.append('<a href="/img/{}.jpg" title="{}">'.format(name, caption))
-
-        self._content_chunks.append('<img src="{}" width="{}" height="{}" alt="{}">'.format(rel_output_path, width, height, caption))
+            self._content_chunks.append('<a href="{}" title="{}">'.format(fullsize_path, caption))
+        self._content_chunks.append('<img src="{}" width="{}" height="{}" alt="{}">'.format(preview_path, width, height, caption))
         if is_clickable:
             self._content_chunks.append('</a>')
 
