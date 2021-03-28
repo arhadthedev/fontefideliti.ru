@@ -5,6 +5,7 @@ import os
 import PIL
 import sections.breeders
 import sections.main
+import sections.photos
 import sections.sale
 import sections.shows
 import shutil
@@ -56,7 +57,7 @@ if len(sys.argv) < 2:
 input_base_path = sys.argv[1]
 resources = Input(input_base_path)
 
-for generator in [sections.breeders, sections.main, sections.sale, sections.shows]:
+for generator in [sections.breeders, sections.main, sections.photos, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'

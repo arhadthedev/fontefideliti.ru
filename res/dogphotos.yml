@@ -1,3 +1,74 @@
+'$':
+  - path: photos/dogs/nuts
+    caption: Фонте Фиделити Натс, 6 месяцев
+  - path: photos/dogs/elisey-1
+    caption: Фонте Фиделити Елисей, 1,6 года
+  - path: photos/dogs/kvina-1
+    caption: Фонте Фиделити Квина, 10 месяцев
+  - path: 2017/06281
+    caption: Фонте Фиделити Инесса, 7 месяцев
+  - path: photos/dogs/iskander-2
+    caption: Фонте Фиделити Искандер, 7 месяцев
+  - path: photos/dogs/kassandra-3
+    caption: Фонте Фиделити Кассандра, 4 месяца
+  - path: photos/dogs/kamila-2
+    caption: Фонте Фиделити Камила, 4 месяца
+  - path: photos/dogs/zheneva-3
+    caption: Фонте Фиделити Женева, 10 месяцев
+  - path: photos/dogs/izabel-3
+    caption: Фонте Фиделити Изабель, 6 месяцев
+  - path: photos/dogs/itan-3
+    caption: Фонте Фиделити Итан, 6 месяцев
+  - path: photos/dogs/gambo-2
+    caption: Фонте Фиделити Гамбо, 1,5 года
+  - path: photos/dogs/goldi-2
+    caption: Фонте Фиделити Голди, 1,5 года
+  - path: photos/dogs/zhofrey-2
+    caption: Фонте Фиделити Жофрей, 10 месяцев
+  - path: photos/dogs/ingur-2
+    caption: Фонте Фиделити Ингур, 6 месяцев
+  - path: photos/our-dogs/vivat
+    caption: Фонте Фиделити Виват, 4 месяца
+  - path: photos/dogs/vivat2
+    caption: Фонте Фиделити Виват, 1,5 года
+  - path: photos/dogs/greit2
+    caption: Фонте Фиделити Грейт, 1 год
+  - path: photos/dogs/elisei
+    caption: Фонте Фиделити Елисей, 5 месяцев
+  - path: photos/our-dogs/vivat2
+    caption: Фонте Фиделити Виват, 8 месяцев
+  - path: photos/our-dogs/belissima
+    caption: Фонте Фиделити Белиссима, 1 год
+  - path: photos/our-dogs/yunaru
+    caption: Фанхил Хаус Юнару, 3 года
+  - path: photos/our-dogs/yunona
+    caption: Фанхил Хаус Юнона
+  - path: photos/our-dogs/valdo
+    caption: Хаус Велхольм Вальдо
+  - path: photos/our-dogs/runita
+    caption: Фанхил Хаус Рунита
+  - path: photos/our-dogs/adelina
+    caption: Фонте Фиделити Аделина, 4 месяца
+  - path: 2015/07032
+    caption: Фиделити Алиша
+  - path: photos/our-dogs/antey
+    caption: Фонте Фиделити Антей, 7 месяцев
+  - path: 2015/08232
+    caption: Фонте Фиделити Алиша, 6,5 месяцев
+  - path: photos/our-dogs/nord
+    caption: Фанхил Хаус Норд, 1 год
+  - path: photos/our-dogs/brando
+    caption: Фонте Фиделити Брандо, 5 месяцев
+  - path: photos/our-dogs/beatris
+    caption: Фонте Фиделити Беатрис, 5 месяцев
+  - path: photos/our-dogs/vinsent
+    caption: Хаус Велхольм Винсент, 2 года
+  - path: photos/our-dogs/ultra
+    caption: Фанхил Хаус Ультра, 4 года
+  - path: photos/our-dogs/vargus
+    caption: Хаус Велхольм Варгус, 2 года
+  - path: photos/our-dogs/urman
+    caption: Фанхил Хаус Урман, 4,5 года')
 aleks:
   - path: 2018/12226
     caption: Ersteshrit Aleks и Фанхил Хаус Деметра, 22.12.2018
