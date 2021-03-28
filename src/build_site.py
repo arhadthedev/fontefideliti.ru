@@ -51,4 +51,4 @@ for generator in [sections.breeders, sections.main, sections.sale, sections.show
         with open(output_path, 'w', encoding='utf-8') as output:
             output.write(html_content)
 
-copy_static_files()
+copy_static_files(input_base_path)

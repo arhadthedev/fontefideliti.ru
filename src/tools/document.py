@@ -144,8 +144,8 @@ class Document(object):
             self._content_chunks[i + 0] = '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">'
             self._content_chunks[i + 1] = '<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
             self._content_chunks[i + 2] = '<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>'
-            self._content_chunks.append('<a href="{}" title="{}">'.format(fullsize_path, caption))
-        self._content_chunks.append('<img src="{}" width="{}" height="{}" alt="{}">'.format(preview_path, width, height, caption))
+            self._content_chunks.append('<a href="/{}" title="{}">'.format(fullsize_path, caption))
+        self._content_chunks.append('<img src="/{}" width="{}" height="{}" alt="{}">'.format(preview_path, width, height, caption))
         if is_clickable:
             self._content_chunks.append('</a>')
 
