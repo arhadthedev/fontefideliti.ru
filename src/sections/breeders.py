@@ -108,5 +108,6 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
     section_pages.append(('Производители', 'males/index', generate_list))
+    section_pages.append(('Производительницы', 'females/index', generate_list))
 
     return section_pages

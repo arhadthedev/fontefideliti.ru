@@ -10,17 +10,25 @@ alisha:
   name:
     nom: Фонте Фиделити Алиша
     gen: Фонте Фиделити Алиши
+  photo: photos/alisha/main
+  after: nikoletta
   gender: female
 danaya:
   name:
     nom: Фанхил Хаус Даная
     gen: Фанхил Хаус Данаи
   gender: female
+  is_veteran: true
+  photo: photos/danaya/main
+  after: mabari
 demetra:
   name:
     nom: Фанхил Хаус Деметра
     gen: Фанхил Хаус Деметры
   gender: female
+  is_veteran: true
+  photo: photos/shows/2016-samara-25072016-10
+  after: danaya
   videos:
     - jDR8kIoXov4
     - SEblsF7sFEM
@@ -62,6 +70,9 @@ hillari:
     nom: Фанхил Хаус Хиллари
     gen: Фанхил Хаус Хиллари
   gender: female
+  is_veteran: true
+  photo: photos/hillari/main
+  after: viviana
   videos:
     - baLBSWVZXbA
 inessa:
@@ -69,6 +80,8 @@ inessa:
     nom: Фонте Фиделити Инесса
     gen: Фонте Фиделити Инессы
   gender: female
+  photo: 2020/01151
+  after: zheneva
 itan:
   name:
     nom: Фонте Фиделити Итан
@@ -83,6 +96,9 @@ mabari:
     nom: Фанхил Хаус Мабари
     gen: Фанхил Хаус Мабари
   gender: female
+  is_veteran: true
+  photo: photos/mabari/main
+  after: hillari
   videos:
     - QVGW-IH7-_Q
 nikoletta:
@@ -90,15 +106,34 @@ nikoletta:
     nom: Фанхил Хаус Николетта
     gen: Фанхил Хаус Николетты
   gender: female
+  photo: photos/nikoletta/main
   videos:
     - qNXtwLuB-d4
+olivia:
+  name:
+    nom: Фонте Фиделити Оливия
+    gen: Фонте Фиделити Оливии
+  gender: female
+  photo: 2019/09021
+  after: inessa
+palmira:
+  name:
+    nom: Фонте Фиделити Пальмира
+    gen: Фонте Фиделити Пальмиры
+  gender: female
+  photo: 2019/05053
+  after: olivia
 viviana:
   name:
     nom: Хаус Велхольм Вивиана
     gen: Хаус Велхольм Вивианы
   gender: female
+  photo: 2015/08111
+  after: palmira
 zheneva:
   name:
     nom: Фонте Фиделити Женева
     gen: Фонте Фиделити Женевы
+  photo: 2018/07281
+  after: alisha
   gender: female
