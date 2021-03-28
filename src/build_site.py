@@ -25,11 +25,30 @@ class Input(object):
         return PIL.Image.open(full_path)
 
 
+def _copy_missing_recursive(entries, src, dst):
+    os.makedirs(dst, exist_ok=True)
+
+    for srcentry in entries:
+        srcname = os.path.join(src, srcentry.name)
+        dstname = os.path.join(dst, srcentry.name)
+        if srcentry.is_dir():
+            copy_missing_recursive(srcentry, dstname)
+        else:
+            if not os.path.exists(dstname):
+                shutil.copy2(srcentry, dstname)
+
+
+def copy_missing_recursive(src, dst):
+    with os.scandir(src) as itr:
+        entries = list(itr)
+    _copy_missing_recursive(entries, src, dst)
+
+
 def copy_static_files(input_directory):
     base = os.path.join(input_directory, 'img/')
     shutil.copyfile('{}favicon.png'.format(base), 'favicon.png')
     shutil.copyfile('{}background.png'.format(base), 'img/background.png')
-    shutil.copytree('{}photos'.format(base), 'img/photos')
+    copy_missing_recursive(base, 'img')
 
 
 if len(sys.argv) < 2:
