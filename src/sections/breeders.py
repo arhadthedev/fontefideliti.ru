@@ -46,6 +46,27 @@ def generate_videos(output_document, resources):
     output_document.end_container()
 
 
+def generate_list(output_document, resources):
+    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+
+    path = output_document.get_path()
+    gender = path.split('/')[0][:-1]
+
+    for dog_id, dog_info in [dog for dog in dog_list.items() if dog[1]['gender'] == gender]:
+        output_document.start_container(css_classes=['compact', 'card'])
+        output_document.add_raw('<span class="note">')
+        if dog_info.get('is_veteran', False):
+            output_document.add_plain('Заслуженный ветеран')
+        link = '<a href="/{}/{}/">'.format(dog_info['gender'], dog_id)
+        output_document.add_raw('</span>')
+        output_document.add_raw('<h1>{}{}</a></h1>'.format(link, dog_info['name']['nom']))
+        output_document.add_raw(link)
+        caption = 'Фотография {}'.format(dog_info['name']['gen'])
+        output_document.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 200, is_clickable=False)
+        output_document.add_raw('</a>')
+        output_document.end_container()
+
+
 def get_root_artifact_list(resources):
     section_pages = []
 
@@ -66,5 +87,7 @@ def get_root_artifact_list(resources):
             title = "Видео {}".format(name['gen'])
             page = (title, '{}/videos'.format(base_url), generate_videos)
             section_pages.append(page)
+
+    section_pages.append(('Производители', 'males/index', generate_list))
 
     return section_pages

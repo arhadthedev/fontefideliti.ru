@@ -3,6 +3,7 @@ aleks:
     nom: Ersteshrit Aleks
     gen: Ersteshrit Aleks
   gender: male
+  photo: photos/aleks/main-new4
   videos:
     - _Ow_NdUAKoc
 alisha:
@@ -35,6 +36,7 @@ eiko:
     nom: Eiko vom Haus Portofino
     gen: Eiko vom Haus Portofino
   gender: male
+  photo: photos/eiko/main
   videos:
     - hFYx9ev6Du4 EIKO vom Haus Portofino. Мутпроба в Сочи 2011. Эйко - вице-победитель рабочего класса
     - Hw3Wu9EatbM EIKO vom Haus Portofino. Мутпроба в Кропоткине 2011
@@ -48,6 +50,8 @@ hasso:
     nom: Фанхил Хаус Хассо
     gen: Фанхил Хаус Хассо
   gender: male
+  is_veteran: true
+  photo: photos/hasso/main
   videos:
     - ZtrtZPUq2Cg
     - DSoxvCLlRKA
@@ -68,6 +72,7 @@ itan:
     nom: Фонте Фиделити Итан
     gen: Фонте Фиделити Итана
   gender: male
+  photo: 2019/10193
   videos:
     - fDREAoKZtR8
 mabari:
