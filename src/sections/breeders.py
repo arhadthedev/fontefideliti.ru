@@ -46,13 +46,32 @@ def generate_videos(output_document, resources):
     output_document.end_container()
 
 
+def get_dog_records_key(dog_list):
+    def _key_generator(value):
+        dog_id, dog_payload = value
+
+        ordering_components = []
+        next_component_id = dog_payload.get('after')
+        if dog_id == next_component_id:
+            raise ValueError('A record can not follow itself')
+        while next_component_id:
+            next_component = dog_list[next_component_id]
+            ordering_components.append(next_component_id)
+            next_component_id = next_component.get('after', '')
+        ordering_components.reverse()
+        return '>'.join(ordering_components)
+    return _key_generator
+
+
 def generate_list(output_document, resources):
     dog_list = yaml.safe_load(resources.get('doglist.yml'))
 
     path = output_document.get_path()
     gender = path.split('/')[0][:-1]
+    dogs = [dog for dog in dog_list.items() if dog[1]['gender'] == gender]
+    dogs.sort(key=get_dog_records_key(dog_list))
 
-    for dog_id, dog_info in [dog for dog in dog_list.items() if dog[1]['gender'] == gender]:
+    for dog_id, dog_info in dogs:
         output_document.start_container(css_classes=['compact', 'card'])
         output_document.add_raw('<span class="note">')
         if dog_info.get('is_veteran', False):

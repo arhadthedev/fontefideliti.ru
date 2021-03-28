@@ -37,6 +37,7 @@ eiko:
     gen: Eiko vom Haus Portofino
   gender: male
   photo: photos/eiko/main
+  after: itan
   videos:
     - hFYx9ev6Du4 EIKO vom Haus Portofino. Мутпроба в Сочи 2011. Эйко - вице-победитель рабочего класса
     - Hw3Wu9EatbM EIKO vom Haus Portofino. Мутпроба в Кропоткине 2011
@@ -52,6 +53,7 @@ hasso:
   gender: male
   is_veteran: true
   photo: photos/hasso/main
+  after: eiko
   videos:
     - ZtrtZPUq2Cg
     - DSoxvCLlRKA
@@ -73,6 +75,7 @@ itan:
     gen: Фонте Фиделити Итана
   gender: male
   photo: 2019/10193
+  after: aleks
   videos:
     - fDREAoKZtR8
 mabari:
