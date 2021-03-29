@@ -71,6 +71,60 @@ alisha:
   photo: photos/alisha/main
   after: nikoletta
   gender: female
+  dob: 2015-01-31
+  content: >
+    <ul>
+      <li>Чемпион России</li>
+      <li>Юный Чемпион России</li>
+      <li>Чемпион РФСС</li>
+      <li>Чемпион ОАНКОО</li>
+      <li>3 x Лучший юниор</li>
+      <li>Лучшая сука</li>
+    </ul>
+    <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
+    <img src="/img/photos/alisha/main.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Алиши" />
+    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2339101" target="_blank">Pedigree Database</a></p>
+    <table class="pedigree">
+      <tr>
+        <td rowspan="4">
+          <p>Чемпион России,<br />Чемпион РКФ</p>
+          <p>Eiko vom Haus Portofino</p>
+          <a href="/img/photos/eiko.jpg" title="Eiko vom Haus Portofino" rel="a"><img src="/img/photos/eiko-p.jpg" alt="Eiko vom Haus Portofino" width="168" height="128" /></a>
+        </td>
+        <td rowspan="2"><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
+        <td><p>Отборный класс</p><p>Quando vom Sofienwald</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Ertha von der Urbecke</p></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><p>V</p><p>Conny vom Haus Portofino</p></td>
+        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Zamp vom Thermodos</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Carina vom Wildsteiger Landhaus</p></td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <p>V</p>
+          <p>Фанхил Хаус Мабари</p>
+          <a href="/img/photos/mabari/main.jpg" title="Фанхил Хаус Мабари" rel="b"><img src="/img/photos/mabari/main-p.jpg" alt="Фанхил Хаус Мабари" width="168" height="113" /></a>
+        </td>
+        <td rowspan="2"><p>Отборный класс,<br/>Юный Чемпион Беларуси,<br/>Юный Чемпион Эстонии</p><p>Zearo vom Zellwaldrand</p></td>
+        <td><p>V</p><p>Floro degli Achei</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Vivian vom Zellwaldrand</p></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
+        <td><p>Отборный класс</p><p>Endrefalva Hilton</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
+      </tr>
+    </table>
 danaya:
   name:
     nom: Фанхил Хаус Даная
