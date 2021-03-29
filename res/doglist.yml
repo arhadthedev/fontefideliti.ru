@@ -655,9 +655,70 @@ nikoletta:
     nom: Фанхил Хаус Николетта
     gen: Фанхил Хаус Николетты
   gender: female
+  dob: 2014-07-26
   photo: photos/nikoletta/main
   videos:
     - qNXtwLuB-d4
+  content: >
+    <ul>
+      <li>Чемпион России</li>
+      <li>Чемпион Казахстана</li>
+      <li>3 x Чемпион РКФ</li>
+      <li>Юный Чемпион России</li>
+      <li>Чемпион РФЛС</li>
+      <li>Чемпион РФСС</li>
+      <li>Чемпион РФОС</li>
+      <li>Чемпион ОАНКОО</li>
+      <li>9 x Лучший Представитель Породы</li>
+      <li>3 x Лучший Юниор</li>
+      <li>12 x CAC, 12 x Лучшая сука</li>
+      <li>2 x BIS 1, BIS 3, 3 x BIG 1, 4 x BIG 2, BIG 3</li>
+      <li>2 x ЮСС</li>
+    </ul>
+    <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
+    <img src="/img/photos/nikoletta/main.jpg" width="588" height="382" alt="Фотография Фанхил Хаус Николетты" />
+    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2230345" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=26656" target="_blank">GSDOG</a></p>
+    <table class="pedigree">
+      <tr>
+        <td rowspan="4">
+          <p>Чемпион России,<br />Чемпион РКФ</p>
+          <p>Eiko vom Haus Portofino</p>
+          <a href="/img/photos/eiko.jpg" title="Eiko vom Haus Portofino" rel="a"><img src="/img/photos/eiko-p.jpg" alt="Eiko vom Haus Portofino" width="168" height="128" /></a>
+        </td>
+        <td rowspan="2"><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
+        <td><p>Отборный класс</p><p>Quando vom Sofienwald</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Ertha von der Urbecke</p></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><p>V</p><p>Conny vom Haus Portofino</p></td>
+        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Zamp vom Thermodos</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Carina vom Wildsteiger Landhaus</p></td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+          <p>V</p>
+          <p>Фанхил Хаус Хиллари</p>
+          <a href="/img/photos/hillari/main.jpg" title="Фанхил Хаус Хиллари" rel="f"><img src="/img/photos/hillari/main-p.jpg" alt="Фанхил Хаус Хиллари" width="168" height="126" /></a>
+        </td>
+        <td rowspan="2"><p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p><p>Thor vom Friedenspark</p></td>
+        <td><p>V1</p><p>Karat's Ulk</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Kitty vom Friedenspark</p></td>
+      </tr>
+      <tr>
+        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
+        <td><p>Отборный класс,<br />Чемпион России</p><p>Endrefalva Hilton</p></td>
+      </tr>
+      <tr>
+        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
+      </tr>
+    </table>
 olivia:
   name:
     nom: Фонте Фиделити Оливия
