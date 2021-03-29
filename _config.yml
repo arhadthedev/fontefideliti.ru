@@ -10,15 +10,8 @@ collections:
   shows:
     permalink: /shows/:name.htm
     output: true
-  perdog_cards:
-    permalink: /:categories/:name/index.htm
-    output: true
 
 defaults:
-  - scope:
-      type: perdog_cards
-    values:
-      layout: dog_index
   - scope:
       type: shows
     values:
