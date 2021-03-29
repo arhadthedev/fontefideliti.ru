@@ -46,6 +46,26 @@ def generate_videos(output_document, resources):
     output_document.end_container()
 
 
+def generate_index(output_document, resources):
+    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+
+    path = output_document.get_path()
+    dog_id = path.split('/')[1]
+    dog_info = dog_list[dog_id]
+
+    output_document.start_container(['dog', 'card'])
+    output_document.add_header(1, dog_info['name']['nom'])
+    if dog_info.get('renter', ''):
+        output_document.add_raw('<p><em>Находится в аренде. Владелец — {}</em></p>'.format(dog_info['renter']))
+    if dog_info.get('is_long_hair', False):
+        output_document.add_raw('<p>(длинношёрстная)</p>')
+        output_document.add_raw('<p>Дата рождения: {% include date.html value=page.dob %}</p>')
+        output_document.add_date(dog_info['dob'])
+        output_document.add_raw('</p>')
+    output_document.add_raw(dog_info['content'])
+    output_document.end_container()
+
+
 def get_dog_records_key(dog_list):
     def _key_generator(value):
         dog_id, dog_payload = value
@@ -94,6 +114,8 @@ def get_root_artifact_list(resources):
     for dog_id, dog_details in dog_list.items():
         name = dog_details['name']
         base_url = '{}s/{}/'.format(dog_details['gender'], dog_id)
+
+        section_pages.append((name['nom'], '{}index'.format(base_url), generate_index))
 
         photos = photo_list.get(dog_id)
         if photos:

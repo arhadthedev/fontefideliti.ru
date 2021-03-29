@@ -163,6 +163,12 @@ class Document(object):
         self._content_chunks.append('<br>')
 
 
+    def add_date(date):
+        html_format = date.isoformat()
+        human_format = date.strftime('%-d.%m.%Y')
+        return '<time datetime="{}">{} г.</time>'.format(html_format, human_format)
+
+
     def start_list(self):
         self._content_chunks.append('<ul>')
 
