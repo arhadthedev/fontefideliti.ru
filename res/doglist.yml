@@ -3,6 +3,7 @@ aleks:
     nom: Ersteshrit Aleks
     gen: Ersteshrit Aleks
   gender: male
+  type: breeder
   dob: 2015-04-08
   photo: photos/aleks/main-new4
   videos:
@@ -70,6 +71,7 @@ alisha:
   photo: photos/alisha/main
   after: nikoletta
   gender: female
+  type: breeder
   dob: 2015-01-31
   content: >
     <ul>
@@ -129,8 +131,8 @@ danaya:
     nom: Фанхил Хаус Даная
     gen: Фанхил Хаус Данаи
   gender: female
+  type: retired
   dob: 2013-08-30
-  is_veteran: true
   photo: photos/danaya/main
   after: mabari
   content: >
@@ -183,8 +185,8 @@ demetra:
     nom: Фанхил Хаус Деметра
     gen: Фанхил Хаус Деметры
   gender: female
+  type: retired
   dob: 2013-08-30
-  is_veteran: true
   photo: photos/shows/2016-samara-25072016-10
   after: danaya
   videos:
@@ -258,6 +260,7 @@ eiko:
     nom: Eiko vom Haus Portofino
     gen: Eiko vom Haus Portofino
   gender: male
+  type: breeder
   dob: 2007-07-10
   renter: питомник «Баларис»
   photo: photos/eiko/main
@@ -329,8 +332,8 @@ hasso:
     nom: Фанхил Хаус Хассо
     gen: Фанхил Хаус Хассо
   gender: male
+  type: retired
   dob: 2007-06-06
-  is_veteran: true
   photo: photos/hasso/main
   after: eiko
   videos:
@@ -397,8 +400,8 @@ hillari:
     nom: Фанхил Хаус Хиллари
     gen: Фанхил Хаус Хиллари
   gender: female
+  type: retired
   dob: 2007-06-06
-  is_veteran: true
   photo: photos/hillari/main
   after: viviana
   videos:
@@ -460,6 +463,7 @@ inessa:
     nom: Фонте Фиделити Инесса
     gen: Фонте Фиделити Инессы
   gender: female
+  type: breeder
   dob: 2017-04-26
   photo: 2020/01151
   after: zheneva
@@ -524,6 +528,7 @@ itan:
     nom: Фонте Фиделити Итан
     gen: Фонте Фиделити Итана
   gender: male
+  type: breeder
   dob: 2017-04-26
   photo: 2019/10193
   after: aleks
@@ -596,8 +601,8 @@ mabari:
     nom: Фанхил Хаус Мабари
     gen: Фанхил Хаус Мабари
   gender: female
+  type: retired
   dob: 2011-01-21
-  is_veteran: true
   photo: photos/mabari/main
   after: hillari
   videos:
@@ -652,6 +657,7 @@ nikoletta:
     nom: Фанхил Хаус Николетта
     gen: Фанхил Хаус Николетты
   gender: female
+  type: breeder
   dob: 2014-07-26
   photo: photos/nikoletta/main
   videos:
@@ -721,6 +727,7 @@ olivia:
     nom: Фонте Фиделити Оливия
     gen: Фонте Фиделити Оливии
   gender: female
+  type: breeder
   dob: 2018-03-22
   photo: 2019/09021
   after: inessa
@@ -774,6 +781,7 @@ palmira:
     nom: Фонте Фиделити Пальмира
     gen: Фонте Фиделити Пальмиры
   gender: female
+  type: breeder
   dob: 2018-06-29
   photo: 2019/05053
   after: olivia
@@ -844,6 +852,7 @@ viviana:
     nom: Хаус Велхольм Вивиана
     gen: Хаус Велхольм Вивианы
   gender: female
+  type: breeder
   dob: 2014-01-30
   longhair: true
   photo: 2015/08111
@@ -904,6 +913,7 @@ zheneva:
   dob: 2016-12-23
   after: alisha
   gender: female
+  type: breeder
   content: >
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2018/07281-w588.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Женевы" />

@@ -102,13 +102,13 @@ def generate_list(output_document, resources):
 
     path = output_document.get_path()
     gender = path.split('/')[0][:-1]
-    dogs = [dog for dog in dog_list.items() if dog[1]['gender'] == gender]
+    dogs = [dog for dog in dog_list.items() if dog[1]['gender'] == gender and dog[1]['type'] in ['breeder', 'retired']]
     dogs.sort(key=get_dog_records_key(dog_list))
 
     for dog_id, dog_info in dogs:
         output_document.start_container(css_classes=['compact', 'card'])
         output_document.add_raw('<span class="note">')
-        if dog_info.get('is_veteran', False):
+        if dog_info['type'] == 'retired':
             output_document.add_plain('Заслуженный ветеран')
         link = '<a href="/{}s/{}/">'.format(dog_info['gender'], dog_id)
         output_document.add_raw('</span>')
