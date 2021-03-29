@@ -96,7 +96,7 @@ def generate_list(output_document, resources):
         output_document.add_raw('<span class="note">')
         if dog_info.get('is_veteran', False):
             output_document.add_plain('Заслуженный ветеран')
-        link = '<a href="/{}/{}/">'.format(dog_info['gender'], dog_id)
+        link = '<a href="/{}s/{}/">'.format(dog_info['gender'], dog_id)
         output_document.add_raw('</span>')
         output_document.add_raw('<h1>{}{}</a></h1>'.format(link, dog_info['name']['nom']))
         output_document.add_raw(link)
