@@ -20,8 +20,7 @@ aleks:
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/aleks/main-new4.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
-
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2466950" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=28512" target="_blank">GSDOG</a></p>
 
     <table class="pedigree">
@@ -83,7 +82,7 @@ alisha:
     </ul>
     <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
     <img src="/img/photos/alisha/main.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Алиши" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2339101" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
@@ -137,7 +136,7 @@ danaya:
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
     <img src="/img/photos/danaya/main.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Данаи" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2069515" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=25364" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -212,7 +211,7 @@ demetra:
     </ul>
     <p>ОКД 2, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/shows/2016-samara-25072016-10.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Деметры" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2069514" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=25363" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -282,8 +281,7 @@ eiko:
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a></p>
-
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=558835" target="_blank">Pedigree Database</a></p>
 
     <table class="pedigree">
@@ -352,8 +350,7 @@ hasso:
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/hasso/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Хассо" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
-
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=574451" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=12847" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -416,7 +413,7 @@ hillari:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/hillari/main.jpg" width="588" height="440" alt="Фотография Фанхил Хаус Хиллари" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=574533" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=13729" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -480,7 +477,7 @@ inessa:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2020/01151-w588.jpg" width="588" height="406" alt="Фотография Фанхил Хаус Инессы" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2647833" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
@@ -551,7 +548,7 @@ itan:
 
     <p>ОКД-2, ЗКС-1; HD-A, ED-0, Kkl 1</p>
     <img src="/img/2019/10193-1-w588.jpg" width="588" height="395" alt="Фонте Фиделити Итан, г. Димитровград, 19 октября 2019 г.">
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2647827" target="_blank">Pedigree Database</a>,<br><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=30940" target="_blank">GSDOG</a></p>
 
     <table class="pedigree">
@@ -608,7 +605,7 @@ mabari:
   content: >
     <p>КД 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/mabari/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Мабари" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=705217" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=21008" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -677,7 +674,7 @@ nikoletta:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/photos/nikoletta/main.jpg" width="588" height="382" alt="Фотография Фанхил Хаус Николетты" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2230345" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=26656" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
@@ -857,7 +854,7 @@ viviana:
     </ul>
     <p>ОКД 1; ЗКС 2; HD-A</p>
     <img src="/img/2015/08111-w588.jpg" width="588" height="391" alt="Фотография Хаус Велхольм Вивианы">
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2156108" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
@@ -910,7 +907,7 @@ zheneva:
   content: >
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2018/07281-w588.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Женевы" />
-    <p><a href="photos.htm">Фотографии</a> | <a href="videos.htm">Видео</a> | <a href="shows.htm">Результаты выставок</a></p>
+  content2: >
     <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2610976" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=31482" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>

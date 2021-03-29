@@ -63,6 +63,20 @@ def generate_index(output_document, resources):
         output_document.add_date(dog_info['dob'])
         output_document.add_raw('</p>')
     output_document.add_raw(dog_info['content'])
+
+    output_document.start_paragraph()
+    subsections = []
+    photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
+    photos = photo_list.get(dog_id)
+    if photos:
+        subsections.append('<a href="photos.htm">Фотографии</a>')
+    videos = dog_list[dog_id].get('videos', [])
+    if videos:
+        subsections.append('<a href="videos.htm">Видео</a>')
+    subsections.append('<a href="shows.htm">Результаты выставок</a>')
+    output_document.add_raw(' | '.join(subsections))
+
+    output_document.add_raw(dog_info.get('content2', ''))
     output_document.end_container()
 
 
