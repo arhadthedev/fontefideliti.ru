@@ -26,7 +26,6 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-gems-
       - run: bundle install && bundle exec jekyll build
-      - run: find public -name 'index.htm' -print0 | xargs -0 -n1 bash -c 'mv "$0" "${0/.htm/.html}"'
       - uses: actions/setup-node@v2-beta
       - run: python photo_generation.py public
       - run: cd public && python ../src/build_site.py ../res
