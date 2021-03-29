@@ -5,6 +5,9 @@ aleks:
   gender: male
   type: breeder
   dob: 2015-04-08
+  pedigree:
+    pd: 2466950
+    gsdog: 28512
   photo: photos/aleks/main-new4
   videos:
     - _Ow_NdUAKoc
@@ -22,8 +25,6 @@ aleks:
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/aleks/main-new4.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2466950" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=28512" target="_blank">GSDOG</a></p>
-
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -73,6 +74,8 @@ alisha:
   gender: female
   type: breeder
   dob: 2015-01-31
+  pedigree:
+    pd: 2339101
   content: >
     <ul>
       <li>Чемпион России</li>
@@ -85,7 +88,6 @@ alisha:
     <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
     <img src="/img/photos/alisha/main.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Алиши" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2339101" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -133,13 +135,15 @@ danaya:
   gender: female
   type: retired
   dob: 2013-08-30
+  pedigree:
+    pd: 2069515
+    gsdog: 25364
   photo: photos/danaya/main
   after: mabari
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
     <img src="/img/photos/danaya/main.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Данаи" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2069515" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=25364" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -187,6 +191,9 @@ demetra:
   gender: female
   type: retired
   dob: 2013-08-30
+  pedigree:
+    pd: 2069514
+    gsdog: 25363
   photo: photos/shows/2016-samara-25072016-10
   after: danaya
   videos:
@@ -214,7 +221,6 @@ demetra:
     <p>ОКД 2, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/shows/2016-samara-25072016-10.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Деметры" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2069514" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=25363" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -262,6 +268,8 @@ eiko:
   gender: male
   type: breeder
   dob: 2007-07-10
+  pedigree:
+    pd: 558835
   renter: питомник «Баларис»
   photo: photos/eiko/main
   after: itan
@@ -285,8 +293,6 @@ eiko:
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=558835" target="_blank">Pedigree Database</a></p>
-
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -334,6 +340,9 @@ hasso:
   gender: male
   type: retired
   dob: 2007-06-06
+  pedigree:
+    pd: 574451
+    gsdog: 12847
   photo: photos/hasso/main
   after: eiko
   videos:
@@ -354,7 +363,6 @@ hasso:
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/hasso/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Хассо" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=574451" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=12847" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -402,6 +410,9 @@ hillari:
   gender: female
   type: retired
   dob: 2007-06-06
+  pedigree:
+    pd: 574533
+    gsdog: 13729
   photo: photos/hillari/main
   after: viviana
   videos:
@@ -417,7 +428,6 @@ hillari:
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/hillari/main.jpg" width="588" height="440" alt="Фотография Фанхил Хаус Хиллари" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=574533" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=13729" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -465,6 +475,8 @@ inessa:
   gender: female
   type: breeder
   dob: 2017-04-26
+  pedigree:
+    pd: 2647833
   photo: 2020/01151
   after: zheneva
   content: >
@@ -482,7 +494,6 @@ inessa:
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2020/01151-w588.jpg" width="588" height="406" alt="Фотография Фанхил Хаус Инессы" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2647833" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -530,6 +541,9 @@ itan:
   gender: male
   type: breeder
   dob: 2017-04-26
+  pedigree:
+    pd: 2647827
+    gsdog: 30940
   photo: 2019/10193
   after: aleks
   videos:
@@ -554,8 +568,6 @@ itan:
     <p>ОКД-2, ЗКС-1; HD-A, ED-0, Kkl 1</p>
     <img src="/img/2019/10193-1-w588.jpg" width="588" height="395" alt="Фонте Фиделити Итан, г. Димитровград, 19 октября 2019 г.">
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2647827" target="_blank">Pedigree Database</a>,<br><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=30940" target="_blank">GSDOG</a></p>
-
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -603,6 +615,9 @@ mabari:
   gender: female
   type: retired
   dob: 2011-01-21
+  pedigree:
+    pd: 705217
+    gsdog: 21008
   photo: photos/mabari/main
   after: hillari
   videos:
@@ -611,7 +626,6 @@ mabari:
     <p>КД 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/mabari/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Мабари" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=705217" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=21008" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -659,6 +673,9 @@ nikoletta:
   gender: female
   type: breeder
   dob: 2014-07-26
+  pedigree:
+    pd: 2230345
+    gsdog: 26656
   photo: photos/nikoletta/main
   videos:
     - qNXtwLuB-d4
@@ -681,7 +698,6 @@ nikoletta:
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/photos/nikoletta/main.jpg" width="588" height="382" alt="Фотография Фанхил Хаус Николетты" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2230345" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=26656" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -729,13 +745,14 @@ olivia:
   gender: female
   type: breeder
   dob: 2018-03-22
+  pedigree:
+    pd: 2813203
   photo: 2019/09021
   after: inessa
   content: >
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
     <img src="/img/2019/09021-w588.jpg" width="588" height="371" alt="Фонте Фиделити Оливия, 1 год 5 месяцев">
-    <p><a href="shows.htm">Результаты выставок</a></p>
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2813203" target="_blank">Pedigree Database</a></p>
+  content2: >
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -783,6 +800,8 @@ palmira:
   gender: female
   type: breeder
   dob: 2018-06-29
+  pedigree:
+    pd: 2791393
   photo: 2019/05053
   after: olivia
   content: >
@@ -805,8 +824,7 @@ palmira:
     </ul>
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
     <img src="/img/2019/05053.jpg" width="588" alt="Фонте Фиделити Пальмира">
-    <p><a href="shows.htm">Результаты выставок</a></p>
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2791393" target="_blank">Pedigree Database</a></p>
+  content2: >
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -854,6 +872,8 @@ viviana:
   gender: female
   type: breeder
   dob: 2014-01-30
+  pedigree:
+    pd: 2156108
   longhair: true
   photo: 2015/08111
   after: palmira
@@ -864,7 +884,6 @@ viviana:
     <p>ОКД 1; ЗКС 2; HD-A</p>
     <img src="/img/2015/08111-w588.jpg" width="588" height="391" alt="Фотография Хаус Велхольм Вивианы">
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2156108" target="_blank">Pedigree Database</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">
@@ -911,6 +930,9 @@ zheneva:
     gen: Фонте Фиделити Женевы
   photo: 2018/07281
   dob: 2016-12-23
+  pedigree:
+    pd: 2610976
+    gsdog: 31482
   after: alisha
   gender: female
   type: breeder
@@ -918,7 +940,6 @@ zheneva:
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2018/07281-w588.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Женевы" />
   content2: >
-    <p>Родословная: <a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=2610976" target="_blank">Pedigree Database</a>,<br/><a href="http://database.gsdog.ru/dog.php?screen=1&amp;id=31482" target="_blank">GSDOG</a></p>
     <table class="pedigree">
       <tr>
         <td rowspan="4">

@@ -76,6 +76,15 @@ def generate_index(output_document, resources):
     subsections.append('<a href="shows.htm">Результаты выставок</a>')
     output_document.add_raw(' | '.join(subsections))
 
+    output_document.start_paragraph()
+    output_document.add_plain('Родословная: ')
+    pedigree = []
+    if dog_info['pedigree'].get('pd', ''):
+        pedigree.append('<a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id={}">Pedigree Database</a>'.format(dog_info['pedigree']['pd']))
+    if dog_info['pedigree'].get('gsdog', ''):
+        pedigree.append('<a href="http://database.gsdog.ru/dog.php?screen=1&amp;id={}" target="_blank">GSDOG</a>'.format(dog_info['pedigree']['gsdog']))
+    output_document.add_raw(',<br>'.join(pedigree))
+
     output_document.add_raw(dog_info.get('content2', ''))
     output_document.end_container()
 
