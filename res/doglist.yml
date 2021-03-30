@@ -1,3 +1,9 @@
+adel:
+  name:
+    nom: Страпинг Феллоу Адель
+  type: pedigree-only
+  extra_titles:
+    - V
 aleks:
   name:
     nom: Ersteshrit Aleks
@@ -302,6 +308,15 @@ eiko:
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
+hilton:
+  name:
+    nom: Endrefalva Hilton
+  type: pedigree-only
+  father: ulk
+  mother: riply
+  extra_titles:
+    - Отборный класс
+    - Чемпион России
 ertha:
   name:
     nom: Ertha von der Urbecke
@@ -316,12 +331,34 @@ evita:
   type: pedigree-only
   extra_titles:
     - V
+fanta:
+  name:
+    nom: Фанта оф Флокиш Фест
+  type: pedigree-only
+  father: heiko
+  mother: adel
+  extra_titles:
+    - V
+fenia:
+  name:
+    nom: Fenia degli Achei
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 flex:
   name:
     nom: Flex von Tronje
   type: pedigree-only
   extra_titles:
     - SG6
+floro:
+  name:
+    nom: Floro degli Achei
+  type: pedigree-only
+  father: quenn
+  mother: fenia
+  extra_titles:
+    - V
 handa:
   name:
     nom: Handa von der Urbecke
@@ -398,6 +435,12 @@ hasso:
         <td><p>V</p><p>Страпинг Феллоу Адель</p></td>
       </tr>
     </table>
+heiko:
+  name:
+    nom: Aranyvölgyi-Örseg Heiko
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 hillari:
   name:
     nom: Фанхил Хаус Хиллари
@@ -627,6 +670,15 @@ kira:
   type: pedigree-only
   extra_titles:
     - V
+kvina:
+  name:
+    nom: Квантум Квина
+  type: pedigree-only
+  father: hilton
+  mother: fanta
+  photo: 2008/04051
+  extra_titles:
+    - V
 larus:
   name:
     nom: Larus von Batu
@@ -641,6 +693,8 @@ mabari:
   gender: female
   type: retired
   dob: 2011-01-21
+  father: zearo
+  mother: kvina
   pedigree:
     pd: 705217
     gsdog: 21008
@@ -651,50 +705,15 @@ mabari:
   content: >
     <p>КД 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/mabari/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Мабари" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Отборный класс,<br/>Юный Чемпион Беларуси,<br/>Юный Чемпион Эстонии</p>
-          <p>Zearo vom Zellwaldrand</p>
-          <a href="/img/photos/zearo.jpg" title="Zearo vom Zellwaldrand" rel="c"><img src="/img/photos/zearo-p.jpg" alt="Zearo vom Zellwaldrand" width="168" height="115" /></a>
-        </td>
-        <td rowspan="2"><p>V</p><p>Floro degli Achei</p></td>
-        <td><p>Отборный класс</p><p>Quenn vom Löher Weg</p></td>
-      </tr>
-      <tr>
-        <td><p>Отборный класс</p><p>Fenia degli Achei</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Vivian vom Zellwaldrand</p></td>
-        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Zamp vom Thermodos </p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Melinda vom Niemberger Eck</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Квантум Квина</p>
-          {% include photo.html path="2008/04051" title="Светлана Алексеева с Квантум Квиной. Монопородная выставка, г. Самара, 5 апреля 2008 г." w="168" %}
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br />Чемпион России</p><p>Endrefalva Hilton</p></td>
-        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Ulk von Arlett</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Endrefalva Riply</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-        <td><p>Отборный класс</p><p>Aranyvölgyi-Örseg Heiko</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Страпинг Феллоу Адель</p></td>
-      </tr>
-    </table>
 malte:
   name:
     nom: Malte von der Urbecke
+  type: pedigree-only
+  extra_titles:
+    - V
+melinda:
+  name:
+    nom: Melinda vom Niemberger Eck
   type: pedigree-only
   extra_titles:
     - V
@@ -939,6 +958,12 @@ quantum:
   type: pedigree-only
   extra_titles:
     - Отборный класс
+quenn:
+  name:
+    nom: Quenn vom Löher Weg
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 remo:
   name:
     nom: Remo vom Fichtenschlag
@@ -946,6 +971,19 @@ remo:
   extra_titles:
     - Отборный класс
     - 2 x Чемпион мира, Европы
+riply:
+  name:
+    nom: Endrefalva Riply
+  type: pedigree-only
+  extra_titles:
+    - V
+ulk:
+  name:
+    nom: Ulk von Arlett
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+    - Чемпион мира, Европы
 ustinov:
   name:
     nom: Ustinov vom Römerland
@@ -958,6 +996,14 @@ ute:
   name:
     nom: Ute vom Thermodos
   type: pedigree-only
+  extra_titles:
+    - V
+vivian:
+  name:
+    nom: Vivian vom Zellwaldrand
+  type: pedigree-only
+  father: zamp
+  mother: melinda
   extra_titles:
     - V
 viviana:
@@ -1035,6 +1081,17 @@ zamp:
   extra_titles:
     - Отборный класс
     - Чемпион мира, Европы
+zearo:
+  name:
+    nom: Zearo vom Zellwaldrand
+  type: pedigree-only
+  father: floro
+  mother: vivian
+  photo: photos/zearo
+  extra_titles:
+    - Отборный класс
+    - Юный Чемпион Беларуси
+    - Юный Чемпион Эстонии
 zheneva:
   name:
     nom: Фонте Фиделити Женева
