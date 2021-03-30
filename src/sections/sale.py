@@ -29,6 +29,10 @@ def _print_list(output, resources):
     output.add_raw('<h3 style="font-size: 11pt">Фонте Фиделити Циана</h3>')
     output.add_raw('<p><a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=3069915">Родословная</a></p>')
     output.add_image('2021/03281', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
+    output.add_plain(' ')
+    output.add_image('2021/03282', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
+    output.add_plain(' ')
+    output.add_image('2021/03283', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
     output.end_container()
 
 
