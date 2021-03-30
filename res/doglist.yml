@@ -92,6 +92,13 @@ armour:
   extra_titles:
     - Чемпион России
     - Чемпион Казахстана
+ballack:
+  name:
+    nom: Ballack von Aurelius
+  type: pedigree-only
+  extra_titles:
+    - Чемпион России
+    - Чемпион РКФ
 bazi:
   name:
     nom: Bazi von der Urbecke
@@ -140,6 +147,8 @@ danaya:
   gender: female
   type: retired
   dob: 2013-08-30
+  father: eltoro
+  mother: hillari
   pedigree:
     pd: 2069515
     gsdog: 25364
@@ -148,47 +157,6 @@ danaya:
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
     <img src="/img/photos/danaya/main.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Данаи" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Юный Чемпион России,<br />Чемпион РКФ</p>
-          <p>Atsel Hof El-Toro</p>
-          <a href="/img/photos/el-toro.jpg" title="Atsel Hof El-Toro" rel="e"><img src="/img/photos/el-toro-p.jpg" alt="Atsel Hof El-Toro" width="168" height="121" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Siska von der Freiheit Westerholt</p></td>
-        <td><p>Отборный класс</p><p>Maestro vom Osterberger-Land</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Nannila von der Freiheit Westerholt</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p></p><p>Atsel Hof Rouk</p></td>
-        <td><p>Чемпион России,<br/>Чемпион РКФ</p><p>Ballack von Aurelius</p></td>
-      </tr>
-      <tr>
-        <td><p>Чемпион России,<br />Юный Чемпион России</p><p>Atsel Hof Maraj</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Фанхил Хаус Хиллари</p>
-          <a href="/img/photos/hillari/main.jpg" title="Фанхил Хаус Хиллари" rel="f"><img src="/img/photos/hillari/main-p.jpg" alt="Фанхил Хаус Хиллари" width="168" height="126" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p><p>Thor vom Friedenspark</p></td>
-        <td><p>V1</p><p>Karat's Ulk</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Kitty vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
-        <td><p>Отборный класс,<br />Чемпион России</p><p>Endrefalva Hilton</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-      </tr>
-    </table>
 demetra:
   name:
     nom: Фанхил Хаус Деметра
@@ -314,6 +282,17 @@ eiko:
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
+eltoro:
+  name:
+    nom: Atsel Hof El-Toro
+  type: pedigree-only
+  father: siska
+  mother: rouk
+  photo: photos/el-toro
+  extra_titles:
+    - Чемпион России
+    - Юный Чемпион России
+    - Чемпион РКФ
 hilton:
   name:
     nom: Endrefalva Hilton
@@ -428,6 +407,8 @@ hillari:
     gsdog: 13729
   photo: photos/hillari/main
   after: viviana
+  extra_titles:
+    - V
   videos:
     - baLBSWVZXbA
   content: >
@@ -663,6 +644,12 @@ mabari:
   content: >
     <p>КД 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/mabari/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Мабари" />
+maestro:
+  name:
+    nom: Maestro vom Osterberger-Land
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 malte:
   name:
     nom: Malte von der Urbecke
@@ -675,12 +662,25 @@ melinda:
   type: pedigree-only
   extra_titles:
     - V
+maraj:
+  name:
+    nom: Atsel Hof Maraj
+  type: pedigree-only
+  extra_titles:
+    - Чемпион России
+    - Юный Чемпион России
 nando:
   name:
     nom: Nando vom Gollerweiher
   type: pedigree-only
   extra_titles:
     - Отборный класс
+nannila:
+  name:
+    nom: Nannila von der Freiheit Westerholt
+  type: pedigree-only
+  extra_titles:
+    - V
 nata:
   name:
     nom: Nata vom Wildsteiger Land
@@ -903,12 +903,26 @@ remo:
   extra_titles:
     - Отборный класс
     - 2 x Чемпион мира, Европы
+rouk:
+  name:
+    nom: Atsel Hof Rouk
+  type: pedigree-only
+  father: ballack
+  mother: maraj
 riply:
   name:
     nom: Endrefalva Riply
   type: pedigree-only
   extra_titles:
     - V
+siska:
+  name:
+    nom: Siska von der Freiheit Westerholt
+  type: pedigree-only
+  father: maestro
+  mother: nannila
+  extra_titles:
+    - Отборный класс
 thor:
   name:
     nom: Thor vom Friedenspark
