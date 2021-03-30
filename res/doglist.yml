@@ -112,6 +112,10 @@ bazi:
   photo: photos/bazi
   extra_titles:
     - Отборный класс
+buster:
+  name:
+    nom: Buster aus der Brunnenstraße
+  type: pedigree-only
 carina:
   name:
     nom: Carina vom Wildsteiger Landhaus
@@ -175,6 +179,9 @@ demetra:
     gsdog: 25363
   photo: photos/shows/2016-samara-25072016-10
   after: danaya
+  extra_titles:
+    - Чемпион России
+    - Чемпион РКФ
   videos:
     - jDR8kIoXov4
     - SEblsF7sFEM
@@ -470,6 +477,11 @@ itan:
   after: aleks
   videos:
     - fDREAoKZtR8
+  extra_titles:
+    - Чемпион России
+    - Юный Чемпион России
+    - 2x Чемпион РКФ
+    - Чемпион Татарстана
   content: >
     <ul>
       <li>Чемпион России</li>
@@ -590,6 +602,14 @@ melinda:
   type: pedigree-only
   extra_titles:
     - V
+merlinmonro:
+  name:
+    nom: Antenor Hof Merlin Monro
+  type: pedigree-only
+  father: buster
+  mother: umathurman
+  extra_titles:
+    - Чемпион России
 maraj:
   name:
     nom: Atsel Hof Maraj
@@ -597,6 +617,16 @@ maraj:
   extra_titles:
     - Чемпион России
     - Юный Чемпион России
+nalmira:
+  name:
+    nom: Антенор Хоф Нальмира
+  type: pedigree-only
+  father: eiko
+  mother: merlinmonro
+  extra_titles:
+    - Чемпион России
+    - Юный Чемпион России
+    - 2x Чемпион РКФ
 nando:
   name:
     nom: Nando vom Gollerweiher
@@ -797,6 +827,12 @@ ulk:
   extra_titles:
     - Отборный класс
     - Чемпион мира, Европы
+umathurman:
+  name:
+    nom: Antenor Hof Uma Thurman
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 ustinov:
   name:
     nom: Ustinov vom Römerland
