@@ -9,7 +9,7 @@
 import yaml
 
 def generate_shows(output_document, resources):
-    per_year_list_raw = resources.get('shows.yml')
+    per_year_list_raw = resources.get('show_years.yml')
     per_year_list = yaml.safe_load(per_year_list_raw)
 
     for year_entry in reversed(per_year_list):
