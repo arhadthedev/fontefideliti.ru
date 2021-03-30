@@ -210,7 +210,8 @@ class Document(object):
     def add_date(self, date):
         html_format = date.isoformat()
         human_format = date.strftime('%-d.%m.%Y')
-        return '<time datetime="{}">{} г.</time>'.format(html_format, human_format)
+        chunk = '<time datetime="{}">{} г.</time>'.format(html_format, human_format)
+        self._content_chunks.append(chunk)
 
 
     def start_list(self):

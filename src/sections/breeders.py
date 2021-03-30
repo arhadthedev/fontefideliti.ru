@@ -59,9 +59,9 @@ def generate_index(output_document, resources):
         output_document.add_raw('<p><em>Находится в аренде. Владелец — {}</em></p>'.format(dog_info['renter']))
     if dog_info.get('is_long_hair', False):
         output_document.add_raw('<p>(длинношёрстная)</p>')
-        output_document.add_raw('<p>Дата рождения: {% include date.html value=page.dob %}</p>')
-        output_document.add_date(dog_info['dob'])
-        output_document.add_raw('</p>')
+    output_document.add_raw('<p>Дата рождения: ')
+    output_document.add_date(dog_info['dob'])
+    output_document.add_raw('</p>')
     output_document.add_raw(dog_info['content'])
 
     output_document.start_paragraph()
