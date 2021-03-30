@@ -206,47 +206,6 @@ demetra:
     </ul>
     <p>ОКД 2, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/shows/2016-samara-25072016-10.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Деметры" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Юный Чемпион России,<br />Чемпион РКФ</p>
-          <p>Atsel Hof El-Toro</p>
-          <a href="/img/photos/el-toro.jpg" title="Atsel Hof El-Toro" rel="e"><img src="/img/photos/el-toro-p.jpg" alt="Atsel Hof El-Toro" width="168" height="121" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Siska von der Freiheit Westerholt</p></td>
-        <td><p>Отборный класс</p><p>Maestro vom Osterberger-Land</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Nannila von der Freiheit Westerholt</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p></p><p>Atsel Hof Rouk</p></td>
-        <td><p>Чемпион России,<br/>Чемпион РКФ</p><p>Ballack von Aurelius</p></td>
-      </tr>
-      <tr>
-        <td><p>Чемпион России,<br />Юный Чемпион России</p><p>Atsel Hof Maraj</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Фанхил Хаус Хиллари</p>
-          <a href="/img/photos/hillari/main.jpg" title="Фанхил Хаус Хиллари" rel="f"><img src="/img/photos/hillari/main-p.jpg" alt="Фанхил Хаус Хиллари" width="168" height="126" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p><p>Thor vom Friedenspark</p></td>
-        <td><p>V1</p><p>Karat's Ulk</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Kitty vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
-        <td><p>Отборный класс,<br />Чемпион России</p><p>Endrefalva Hilton</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-      </tr>
-    </table>
 devil:
   name:
     nom: Devil von Santamar
@@ -541,6 +500,12 @@ kira:
   type: pedigree-only
   extra_titles:
     - V
+kuba:
+  name:
+    nom: Kuba Feetback
+  type: pedigree-only
+  father: vegas
+  mother: selma
 kvina:
   name:
     nom: Квантум Квина
@@ -596,6 +561,22 @@ malte:
   type: pedigree-only
   extra_titles:
     - V
+mary:
+  name:
+    nom: Mary della Valcuvia
+  type: pedigree-only
+  extra_titles:
+    - V
+maybach:
+  name:
+    nom: Maybach Tigback Hof
+  type: pedigree-only
+  father: ober
+  mother: kuba
+  photo: photos/maibah
+  extra_titles:
+    - Чемпион России
+    - Чемпион РКФ
 melinda:
   name:
     nom: Melinda vom Niemberger Eck
@@ -700,6 +681,14 @@ olivia:
   content: >
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
     <img src="/img/2019/09021-w588.jpg" width="588" height="371" alt="Фонте Фиделити Оливия, 1 год 5 месяцев">
+ober:
+  name:
+    nom: Ober della Valcuvia
+  type: pedigree-only
+  father: zamp
+  mother: mary
+  extra_titles:
+    - V
 opal:
   name:
     nom: Opal van de Ybajo Hoeve
@@ -796,6 +785,12 @@ riply:
   type: pedigree-only
   extra_titles:
     - V
+selma:
+  name:
+    nom: Selma Feetback
+  type: pedigree-only
+  extra_titles:
+    - SG
 siska:
   name:
     nom: Siska von der Freiheit Westerholt
@@ -848,6 +843,13 @@ ute:
   type: pedigree-only
   extra_titles:
     - V
+vegas:
+  name:
+    nom: Vegas du Haut Mansard
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс,
+    - 2 х Чемпион мира, ЕвропыV
 vivian:
   name:
     nom: Vivian vom Zellwaldrand
@@ -867,6 +869,8 @@ viviana:
     pd: 2156108
   longhair: true
   photo: 2015/08111
+  father: maybach
+  mother: mabari
   after: palmira
   content: >
     <ul>
@@ -874,47 +878,6 @@ viviana:
     </ul>
     <p>ОКД 1; ЗКС 2; HD-A</p>
     <img src="/img/2015/08111-w588.jpg" width="588" height="391" alt="Фотография Хаус Велхольм Вивианы">
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br/>Чемпион РКФ</p>
-          <p>Maybach Tigback Hof</p>
-          <a href="/img/photos/maibah.jpg" title="Maybach Tigback Hof" rel="a"><img src="/img/photos/maibah-p.jpg" alt="Maybach Tigback Hof" width="168" height="121" /></a>
-        </td>
-        <td rowspan="2"><p>V</p><p>Ober della Valcuvia</p></td>
-        <td><p>Отборный класс,<br/>Чемпион мира, Европы</p><p>Zamp vom Thermodos</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Mary della Valcuvia</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p></p><p>Kuba Feetback</p></td>
-        <td><p>Отборный класс,<br />2 х Чемпион мира, Европы</p><p>Vegas du Haut Mansard </p></td>
-      </tr>
-      <tr>
-        <td><p>SG</p><p>Selma Feetback</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Фанхил Хаус Мабари</p>
-          <a href="/img/photos/mabari/main.jpg" title="Фанхил Хаус Мабари" rel="b"><img src="/img/photos/mabari/main-p.jpg" alt="Фанхил Хаус Мабари" width="168" height="113" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br/>Юный Чемпион Беларуси,<br/>Юный Чемпион Эстонии</p><p>Zearo vom Zellwaldrand</p></td>
-        <td><p>V</p><p>Floro degli Achei</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Vivian vom Zellwaldrand</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
-        <td><p>Отборный класс</p><p>Endrefalva Hilton</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-      </tr>
-    </table>
 yasko:
   name:
     nom: Yasko vom Farbenspiel
