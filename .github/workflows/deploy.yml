@@ -28,7 +28,8 @@ jobs:
       - run: bundle install && bundle exec jekyll build
       - uses: actions/setup-node@v2-beta
       - run: python photo_generation.py public
-      - run: cd public && python ../src/build_site.py ../res
+      - run: python ../src/build_site.py ../res
+        working-directory: ./public
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
