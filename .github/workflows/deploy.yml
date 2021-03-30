@@ -19,12 +19,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - uses: actions/setup-ruby@v1
-      - uses: actions/cache@v2       # for Ruby and Github Pages
-        with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
       - run: bundle install && bundle exec jekyll build
       - uses: actions/setup-node@v2-beta
       - run: python photo_generation.py public
