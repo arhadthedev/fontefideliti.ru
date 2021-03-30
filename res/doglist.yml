@@ -348,6 +348,8 @@ hasso:
   gender: male
   type: retired
   dob: 2007-06-06
+  father: thor
+  mother: kvina
   pedigree:
     pd: 574451
     gsdog: 12847
@@ -370,47 +372,6 @@ hasso:
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/hasso/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Хассо" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p>
-          <p>Thor vom Friedenspark</p>
-          <a href="/img/photos/thor.jpg" title="Thor vom Friedenspark" rel="c"><img src="/img/photos/thor-p.jpg" alt="Thor vom Friedenspark" width="168" height="110" /></a>
-        </td>
-        <td rowspan="2"><p>V1</p><p>Karat's Ulk</p></td>
-        <td><p>Отборный класс</p><p>Ghandi von Arlett</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Lilskan Never Give Up</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Kitty vom Friedenspark</p></td>
-        <td><p>Отборный класс</p><p>Dux della Valcuvia</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Zenta vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Квантум Квина</p>
-          {% include photo.html path="2008/04051" title="Светлана Алексеева с Квантум Квиной. Монопородная выставка, г. Самара, 5 апреля 2008 г." w="168" %}
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br />Чемпион России</p><p>Endrefalva Hilton</p></td>
-        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Ulk von Arlett</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Endrefalva Riply</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-        <td><p>Отборный класс</p><p>Aranyvölgyi-Örseg Heiko</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Страпинг Феллоу Адель</p></td>
-      </tr>
-    </table>
 heiko:
   name:
     nom: Aranyvölgyi-Örseg Heiko
