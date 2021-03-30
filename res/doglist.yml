@@ -17,6 +17,10 @@ aleks:
     pd: 2466950
     gsdog: 28512
   photo: photos/aleks/main-new4
+  extra_titles:
+    - Чемпион России
+    - Юный Чемпион России
+    - Чемпион РКФ
   videos:
     - _Ow_NdUAKoc
   content: >
@@ -764,6 +768,8 @@ palmira:
   gender: female
   type: breeder
   dob: 2018-06-29
+  father: aleks
+  mother: nikoletta
   pedigree:
     pd: 2791393
   photo: 2019/05053
@@ -788,47 +794,6 @@ palmira:
     </ul>
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
     <img src="/img/2019/05053.jpg" width="588" alt="Фонте Фиделити Пальмира">
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Юный Чемпион России,<br />Чемпион РКФ</p>
-          <p>Ersteshrit Aleks</p>
-          <a href="/img/photos/aleks/main-new2.jpg" title="Ersteshrit Aleks" rel="a"><img src="/img/photos/aleks/main-new2.jpg" alt="Ersteshrit Aleks" width="168" height="120" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Count Ustinov van de Ybajo Hoeve</p></td>
-        <td><p>Отборный класс</p><p>Ustinov vom Römerland</p></td>
-      </tr>
-      <tr>
-        <td><p>Отборный класс</p><p>Opal van de Ybajo Hoeve</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>Чемпион России,<br />Чемпион РКФ</p><p>Kaja von der Urbecke</p></td>
-        <td><p>Отборный класс</p><p>Pacco vom Langenbungert</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Jilla von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Чемпион Казахстана,<br />Чемпион РКФ,<br />Юный Чемпион России</p>
-          <p>Фанхил Хаус Николетта</p>
-          <a href="/img/photos/nikoletta/main.jpg" title="Фанхил Хаус Николетта" rel="f"><img src="/img/photos/nikoletta/main-p.jpg" alt="Фанхил Хаус Николетта" width="168" height="109" /></a>
-        </td>
-        <td rowspan="2"><p>Чемпион России,<br />Чемпион РКФ</p><p>Eiko vom Haus Portofino</p></td>
-        <td><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Conny vom Haus Portofino</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Фанхил Хаус Хиллари</p></td>
-        <td><p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p><p>Thor vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Квантум Квина</p></td>
-      </tr>
-    </table>
 phill:
   name:
     nom: Phill van der Lust
