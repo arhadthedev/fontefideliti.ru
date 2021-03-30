@@ -47,10 +47,11 @@ def generate_sale(output, resources):
 
     _print_list(output, resources)
 
-    output.start_paragraph()
-    output.add_plain('Купить щенка немецкой овчарки в Тольтти: ')
-    output.add_plain('Наталья (т. 8 (927) 211-09-63, natalia@fontefideliti.ru), ')
-    output.add_plain('Светлана (т. 8 (917) 125-44-68, svetlana@fontefideliti.ru).')
+    if False:
+        output.start_paragraph()
+        output.add_plain('Купить щенка немецкой овчарки в Тольтти: ')
+        output.add_plain('Наталья (т. 8 (927) 211-09-63, natalia@fontefideliti.ru), ')
+        output.add_plain('Светлана (т. 8 (917) 125-44-68, svetlana@fontefideliti.ru).')
 
 def get_root_artifact_list(resources):
     return [('Щенки на продажу', 'sale', generate_sale)]
