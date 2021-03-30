@@ -16,7 +16,7 @@ aleks:
   pedigree:
     pd: 2466950
     gsdog: 28512
-  photo: photos/aleks/main-new4
+  photo: 2018/1222a
   extra_titles:
     - Чемпион России
     - Юный Чемпион России
@@ -35,7 +35,7 @@ aleks:
     </ul>
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/aleks/main-new4.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
+    <img src="/img/2018/1222a.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
 aike:
   name:
     nom: Aike
@@ -434,6 +434,8 @@ inessa:
   gender: female
   type: breeder
   dob: 2017-04-26
+  father: aleks
+  mother: demetra
   pedigree:
     pd: 2647833
   photo: 2020/01151
@@ -452,47 +454,6 @@ inessa:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2020/01151-w588.jpg" width="588" height="406" alt="Фотография Фанхил Хаус Инессы" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Юный Чемпион России,<br />Чемпион РКФ</p>
-          <p>Ersteshrit Aleks</p>
-          <a href="/img/photos/aleks/main-new2.jpg" title="Ersteshrit Aleks" rel="a"><img src="/img/photos/aleks/main-new2.jpg" alt="Ersteshrit Aleks" width="168" height="120" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Count Ustinov van de Ybajo Hoeve</p></td>
-        <td><p>Отборный класс</p><p>Ustinov vom Römerland</p></td>
-      </tr>
-      <tr>
-        <td><p>Отборный класс</p><p>Opal van de Ybajo Hoeve</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>Чемпион России,<br />Чемпион РКФ</p><p>Kaja von der Urbecke</p></td>
-        <td><p>Отборный класс</p><p>Pacco vom Langenbungert</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Jilla von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br>Чемпион РКФ</p>
-          <p>Фанхил Хаус Деметра</p>
-          <a href="/img/photos/2016-samara-25072016-10.jpg" title="Фанхил Хаус Деметра" rel="a"><img src="/img/photos/2016-samara-25072016-10.jpg" alt="Фанхил Хаус Деметра" width="168" height="112" /></a>
-        </td>
-        <td rowspan="2"><p>Юный Чемпион России,<br />Чемпион России,<br />Чемпион РКФ</p><p>Atsel Hof El-Toro</p></td>
-        <td><p>Отборный класс</p><p>Siska von der Freiheit Westerholt</p></td>
-      </tr>
-      <tr>
-        <td><p></p><p>Atsel Hof Rouk</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Фанхил Хаус Хиллари</p></td>
-        <td><p>Отборный класс,<br>Юный Чемпион России,<br>Чемпион России</p><p>Thor vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Квантум Квина</p></td>
-      </tr>
-    </table>
 itan:
   name:
     nom: Фонте Фиделити Итан
