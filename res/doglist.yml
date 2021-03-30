@@ -41,6 +41,8 @@ alisha:
   gender: female
   type: breeder
   dob: 2015-01-31
+  father: eiko
+  mother: mabari
   pedigree:
     pd: 2339101
   content: >
@@ -54,47 +56,6 @@ alisha:
     </ul>
     <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
     <img src="/img/photos/alisha/main.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Алиши" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Чемпион РКФ</p>
-          <p>Eiko vom Haus Portofino</p>
-          <a href="/img/photos/eiko.jpg" title="Eiko vom Haus Portofino" rel="a"><img src="/img/photos/eiko-p.jpg" alt="Eiko vom Haus Portofino" width="168" height="128" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
-        <td><p>Отборный класс</p><p>Quando vom Sofienwald</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Ertha von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Conny vom Haus Portofino</p></td>
-        <td><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Zamp vom Thermodos</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Carina vom Wildsteiger Landhaus</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Фанхил Хаус Мабари</p>
-          <a href="/img/photos/mabari/main.jpg" title="Фанхил Хаус Мабари" rel="b"><img src="/img/photos/mabari/main-p.jpg" alt="Фанхил Хаус Мабари" width="168" height="113" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br/>Юный Чемпион Беларуси,<br/>Юный Чемпион Эстонии</p><p>Zearo vom Zellwaldrand</p></td>
-        <td><p>V</p><p>Floro degli Achei</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Vivian vom Zellwaldrand</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Квантум Квина</p></td>
-        <td><p>Отборный класс</p><p>Endrefalva Hilton</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
-      </tr>
-    </table>
 anabel:
   name:
     nom: Anabel vom Sofienwald
@@ -289,6 +250,9 @@ eiko:
   renter: питомник «Баларис»
   photo: photos/eiko/main
   after: itan
+  extra_titles:
+    - Чемпион России
+    - Чемпион РКФ
   videos:
     - hFYx9ev6Du4 EIKO vom Haus Portofino. Мутпроба в Сочи 2011. Эйко - вице-победитель рабочего класса
     - Hw3Wu9EatbM EIKO vom Haus Portofino. Мутпроба в Кропоткине 2011
@@ -700,6 +664,8 @@ mabari:
     gsdog: 21008
   photo: photos/mabari/main
   after: hillari
+  extra_titles:
+    - V
   videos:
     - QVGW-IH7-_Q
   content: >
