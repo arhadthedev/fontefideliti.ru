@@ -163,7 +163,8 @@ class Document(object):
         if current_depth == 0:
             if 'photo' not in dog_info:
                 raise ValueError('A photo must be specified for {}'.format(dog_info['name']['nom']))
-            self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
+            if dog_info['photo'] != 'none':
+                self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
 
         self._content_chunks.append('</td>')
         self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)
