@@ -32,6 +32,14 @@ aleks:
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/aleks/main-new4.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
+aike:
+  name:
+    nom: Aike
+  type: pedigree-only
+  father: arex
+  mother: troya
+  extra_titles:
+    - V
 alisha:
   name:
     nom: Фонте Фиделити Алиша
@@ -68,6 +76,22 @@ ankaa:
   type: pedigree-only
   extra_titles:
     - V
+arex:
+  name:
+    nom: Arex vom Herbramer-Wald
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+armour:
+  name:
+    nom: Armour from Lannasland
+  type: pedigree-only
+  father: phill
+  mother: aike
+  photo: 2016/09112
+  extra_titles:
+    - Чемпион России
+    - Чемпион Казахстана
 bazi:
   name:
     nom: Bazi von der Urbecke
@@ -83,6 +107,12 @@ carina:
   type: pedigree-only
   father: larus
   mother: nata
+  extra_titles:
+    - V
+cleo:
+  name:
+    nom: Cleo van der Lust
+  type: pedigree-only
   extra_titles:
     - V
 conny:
@@ -236,6 +266,12 @@ demetra:
         <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
       </tr>
     </table>
+devil:
+  name:
+    nom: Devil von Santamar
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 dux:
   name:
     nom: Dux della Valcuvia
@@ -664,6 +700,11 @@ nikoletta:
     pd: 2230345
     gsdog: 26656
   photo: photos/nikoletta/main
+  extra_titles:
+    - Чемпион России
+    - Чемпион Казахстана
+    - Чемпион РКФ
+    - Юный Чемпион России
   videos:
     - qNXtwLuB-d4
   content: >
@@ -827,6 +868,14 @@ palmira:
         <td><p>V</p><p>Квантум Квина</p></td>
       </tr>
     </table>
+phill:
+  name:
+    nom: Phill van der Lust
+  type: pedigree-only
+  father: devil
+  mother: cleo
+  extra_titles:
+    - Отборный класс
 quando:
   name:
     nom: Quando vom Sofienwald
@@ -871,6 +920,12 @@ thor:
     - Отборный класс
     - Чемпион России
     - Юный Чемпион России
+troya:
+  name:
+    nom: Troya Legendhof
+  type: pedigree-only
+  extra_titles:
+    - V
 ulk:
   name:
     nom: Ulk von Arlett
@@ -998,6 +1053,8 @@ zheneva:
     gen: Фонте Фиделити Женевы
   photo: 2018/07281
   dob: 2016-12-23
+  father: armour
+  mother: nikoletta
   pedigree:
     pd: 2610976
     gsdog: 31482
@@ -1007,44 +1064,3 @@ zheneva:
   content: >
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
     <img src="/img/2018/07281-w588.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Женевы" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Чемпион Казахстана</p>
-          <p>Armour from Lannasland</p>
-          <a href="/img/2016/09112.jpg" title="Armour from Lannasland" rel="a"><img src="/img/2016/09112-w168.jpg" alt="Armour from Lannasland" width="168" height="124" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Phill van der Lust</p></td>
-        <td><p>Отборный класс</p><p>Devil von Santamar</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Cleo van der Lust</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Aike</p></td>
-        <td><p>Отборный класс</p><p>Arex vom Herbramer-Wald</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Troya Legendhof</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br />Чемпион Казахстана,<br />Чемпион РКФ,<br />Юный Чемпион России</p>
-          <p>Фанхил Хаус Николетта</p>
-          <a href="/img/photos/nikoletta/main.jpg" title="Фанхил Хаус Николетта" rel="f"><img src="/img/photos/nikoletta/main-p.jpg" alt="Фанхил Хаус Николетта" width="168" height="109" /></a>
-        </td>
-        <td rowspan="2"><p>Чемпион России,<br />Чемпион РКФ</p><p>Eiko vom Haus Portofino</p></td>
-        <td><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Conny vom Haus Portofino</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Фанхил Хаус Хиллари</p></td>
-        <td><p>Отборный класс,<br />Чемпион России,<br />Юный Чемпион России</p><p>Thor vom Friedenspark</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Квантум Квина</p></td>
-      </tr>
-    </table>
