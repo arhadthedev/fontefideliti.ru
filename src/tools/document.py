@@ -158,7 +158,7 @@ class Document(object):
             self._content_chunks.append('<td>')
 
         self._content_chunks.append('<p>')
-        self._content_chunks.append('<br>'.join(dog_info.get('extra_titles', [])))
+        self._content_chunks.append(',<br>'.join(dog_info.get('extra_titles', [])))
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
             self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
