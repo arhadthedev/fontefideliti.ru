@@ -89,6 +89,12 @@ alisha:
         <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
       </tr>
     </table>
+anabel:
+  name:
+    nom: Anabel vom Sofienwald
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 ankaa:
   name:
     nom: Ankaa vom Nadelhaus
@@ -99,8 +105,28 @@ bazi:
   name:
     nom: Bazi von der Urbecke
   type: pedigree-only
+  father: quando
+  mother: ertha
+  photo: photos/bazi
   extra_titles:
     - Отборный класс
+carina:
+  name:
+    nom: Carina vom Wildsteiger Landhaus
+  type: pedigree-only
+  father: larus
+  mother: nata
+  extra_titles:
+    - V
+conny:
+  name:
+    nom: Conny vom Haus Portofino
+  type: pedigree-only
+  father: zamp
+  mother: carina
+  photo: photos/conny
+  extra_titles:
+    - V
 count:
   name:
     nom: Count Ustinov van de Ybajo Hoeve
@@ -250,6 +276,8 @@ eiko:
   gender: male
   type: breeder
   dob: 2007-07-10
+  father: bazi
+  mother: conny
   pedigree:
     pd: 558835
   renter: питомник «Баларис»
@@ -274,53 +302,26 @@ eiko:
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Отборный класс</p>
-          <p>Bazi von der Urbecke</p>
-          <a href="/img/photos/bazi.jpg" title="Bazi von der Urbecke" rel="a"><img src="/img/photos/bazi-p.jpg" alt="Bazi von der Urbecke" width="168" height="128" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Quando vom Sofienwald</p></td>
-        <td><p>SG6</p><p>Flex von Tronje</p></td>
-      </tr>
-      <tr>
-        <td><p>Отборный класс</p><p>Anabel vom Sofienwald</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Ertha von der Urbecke</p></td>
-        <td><p>Отборный класс,<br/>2х Чемпион мира, Европы</p><p>Yasko vom Farbenspiel</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Malte von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>V</p>
-          <p>Conny vom Haus Portofino</p>
-          <a href="/img/photos/conny.jpg" title="Conny vom Haus Portofino" rel="b"><img src="/img/photos/conny-p.jpg" alt="Conny vom Haus Portofino" width="168" height="116" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс,<br />Чемпион мира, Европы</p><p>Zamp vom Thermodos</p></td>
-        <td><p>Отборный класс</p><p>Quantum von Arminius</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Ute vom Thermodos</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Carina vom Wildsteiger<br/>Landhaus</p></td>
-        <td><p>Отборный класс,<br/>2х Чемпион мира, Европы</p><p>Larus von Batu</p></td>
-      </tr>
-      <tr>
-        <td><p>Отборный класс</p><p>Nata vom Wildsteiger Land</p></td>
-      </tr>
-    </table>
+ertha:
+  name:
+    nom: Ertha von der Urbecke
+  type: pedigree-only
+  father: yasko
+  mother: malte
+  extra_titles:
+    - V
 evita:
   name:
     nom: Evita van de Ybajo Hoeve
   type: pedigree-only
   extra_titles:
     - V
+flex:
+  name:
+    nom: Flex von Tronje
+  type: pedigree-only
+  extra_titles:
+    - SG6
 handa:
   name:
     nom: Handa von der Urbecke
@@ -626,6 +627,13 @@ kira:
   type: pedigree-only
   extra_titles:
     - V
+larus:
+  name:
+    nom: Larus von Batu
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+    - 2х Чемпион мира, Европы
 mabari:
   name:
     nom: Фанхил Хаус Мабари
@@ -684,9 +692,21 @@ mabari:
         <td><p>V</p><p>Страпинг Феллоу Адель</p></td>
       </tr>
     </table>
+malte:
+  name:
+    nom: Malte von der Urbecke
+  type: pedigree-only
+  extra_titles:
+    - V
 nando:
   name:
     nom: Nando vom Gollerweiher
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+nata:
+  name:
+    nom: Nata vom Wildsteiger Land
   type: pedigree-only
   extra_titles:
     - Отборный класс
@@ -905,6 +925,14 @@ palmira:
         <td><p>V</p><p>Квантум Квина</p></td>
       </tr>
     </table>
+quando:
+  name:
+    nom: Quando vom Sofienwald
+  type: pedigree-only
+  father: flex
+  mother: anabel
+  extra_titles:
+    - Отборный класс
 quantum:
   name:
     nom: Quantum von Arminius
@@ -926,6 +954,12 @@ ustinov:
   mother: kira
   extra_titles:
     - Отборный класс
+ute:
+  name:
+    nom: Ute vom Thermodos
+  type: pedigree-only
+  extra_titles:
+    - V
 viviana:
   name:
     nom: Хаус Велхольм Вивиана
@@ -985,6 +1019,22 @@ viviana:
         <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
       </tr>
     </table>
+yasko:
+  name:
+    nom: Yasko vom Farbenspiel
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+    - 2x Чемпион мира, Европы
+zamp:
+  name:
+    nom: Zamp vom Thermodos
+  type: pedigree-only
+  father: quantum
+  mother: ute
+  extra_titles:
+    - Отборный класс
+    - Чемпион мира, Европы
 zheneva:
   name:
     nom: Фонте Фиделити Женева
