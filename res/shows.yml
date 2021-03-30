@@ -1,3 +1,15 @@
+2015-09-20:
+  city: Чита
+  events:
+    - rank: монопородная
+      expert: Петрушина
+      dogs:
+        aleks:
+          class: бэби
+          place: 1 очень перспективный
+          achievements:
+            - cw
+            - лб
 2015-10-17:
   city: Балаково
   events:
@@ -7,3 +19,152 @@
         aleks:
           class: щенков
           place: 3 очень перспективный
+2016-04-16:
+  city: Саратов
+  events:
+    - rank: всероссийская
+      expert: Темирова
+      dogs:
+        aleks:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лк
+2016-04-17:
+  city: Пенза
+  events:
+    - rank: всероссийская
+      expert: Дружинина
+      dogs:
+        aleks:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лю
+            - лк
+2016-04-24:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Кейвомяги
+      dogs:
+        aleks:
+          class: юниоров
+          place: 8 очень хорошо
+2016-06-04:
+  city: Самара
+  events:
+    - rank: всероссийская
+      expert: Лепеха
+      dogs:
+        aleks:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лю
+2016-06-12:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Терентьева
+      dogs:
+        aleks:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лю
+    - rank: региональная
+      expert: Соколова
+      dogs:
+        aleks:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+2016-08-14:
+  city: Саранск
+  events:
+    - rank: монопородная
+      expert: Гордеев
+      dogs:
+        aleks:
+          class: юниоров
+          place: 3 очень хорошо
+2016-08-17:
+  city: Самара
+  events:
+    - rank: всероссийская чркф
+      expert: Пирогова
+      dogs:
+        aleks:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cw
+            - cac
+            - cac
+            - лк
+            - чркф
+    - rank: региональная
+      expert: Тихонова
+      dogs:
+        aleks:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cw
+            - лк
+            - cac
+            - кчф оанкоо
+            - лпп
+            - big 2
+2016-09-25:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Купляускас
+      dogs:
+        aleks:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cw
+            - лк
+            - cac
+            - кчф рфлс
+            - лпп
+            - big 2
+2017-04-29:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Тихонова
+      dogs:
+        aleks:
+          class: чемпионов
+          place: 1 отлично
+          achievements:
+            - cw
+            - лк
+            - cac
+            - чф оанкоо
+            - bos
+2017-06-10:
+  city: Ульяновск
+  events:
+    - rank: монопородная
+      expert: Шайхудинов
+      figurant: Терёхин
+      dogs:
+        aleks:
+          class: рабочих собак
+          place: 6 отлично, выражено/отпускает
