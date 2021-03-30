@@ -5,6 +5,8 @@ aleks:
   gender: male
   type: breeder
   dob: 2015-04-08
+  father: count
+  mother: kaja
   pedigree:
     pd: 2466950
     gsdog: 28512
@@ -24,47 +26,6 @@ aleks:
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
     <img src="/img/photos/aleks/main-new4.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
-  content2: >
-    <table class="pedigree">
-      <tr>
-        <td rowspan="4">
-          <p>Отборный класс</p>
-          <p>Count Ustinov van de Ybajo Hoeve</p>
-          <a href="/img/photos/count.jpg" title="Count Ustinov van de Ybajo Hoeve" rel="c"><img src="/img/photos/count-p.jpg" alt="Count Ustinov van de Ybajo Hoeve" width="168" height="112" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Ustinov vom Römerland</p></td>
-        <td><p>Отборный класс</p><p>Quantum von Arminius</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Kira von Lacroz</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>Отборный класс</p><p>Opal van de Ybajo Hoeve</p></td>
-        <td><p>Отборный класс</p><p>Nando vom Gollerweiher</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Evita van de Ybajo Hoeve</p></td>
-      </tr>
-      <tr>
-        <td rowspan="4">
-          <p>Чемпион России,<br/>Чемпион РКФ</p>
-          <p>Kaja von der Urbecke</p>
-          <a href="/img/photos/kaja.jpg" title="Kaja von der Urbecke" rel="b"><img src="/img/photos/kaja-p.jpg" alt="Kaja von der Urbecke" width="168" height="117" /></a>
-        </td>
-        <td rowspan="2"><p>Отборный класс</p><p>Pacco vom Langenbungert</p></td>
-        <td><p>Отборный класс<br/>2 x Чемпион мира, Европы</p><p>Remo vom Fichtenschlag</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Ankaa vom Nadelhaus</p></td>
-      </tr>
-      <tr>
-        <td rowspan="2"><p>V</p><p>Jilla von der Urbecke</p></td>
-        <td><p>Отборный класс</p><p>Bazi von der Urbecke</p></td>
-      </tr>
-      <tr>
-        <td><p>V</p><p>Handa von der urbecke</p></td>
-      </tr>
-    </table>
 alisha:
   name:
     nom: Фонте Фиделити Алиша
@@ -128,6 +89,27 @@ alisha:
         <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
       </tr>
     </table>
+ankaa:
+  name:
+    nom: Ankaa vom Nadelhaus
+  type: pedigree-only
+  extra_titles:
+    - V
+bazi:
+  name:
+    nom: Bazi von der Urbecke
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+count:
+  name:
+    nom: Count Ustinov van de Ybajo Hoeve
+  type: pedigree-only
+  father: ustinov
+  mother: opal
+  photo: photos/count-p
+  extra_titles:
+    - Отборный класс
 danaya:
   name:
     nom: Фанхил Хаус Даная
@@ -333,6 +315,18 @@ eiko:
         <td><p>Отборный класс</p><p>Nata vom Wildsteiger Land</p></td>
       </tr>
     </table>
+evita:
+  name:
+    nom: Evita van de Ybajo Hoeve
+  type: pedigree-only
+  extra_titles:
+    - V
+handa:
+  name:
+    nom: Handa von der Urbecke
+  type: pedigree-only
+  extra_titles:
+    - V
 hasso:
   name:
     nom: Фанхил Хаус Хассо
@@ -608,6 +602,30 @@ itan:
         <td><p>V</p><p>Квантум Квина</p></td>
       </tr>
     </table>
+jilla:
+  name:
+    nom: Jilla von der Urbecke
+  type: pedigree-only
+  father: bazi
+  mother: handa
+  extra_titles:
+    - V
+kaja:
+  name:
+    nom: Kaja von der Urbecke
+  type: pedigree-only
+  father: pacco
+  mother: jilla
+  photo: photos/kaja
+  extra_titles:
+    - Чемпион России
+    - Чемпион РКФ
+kira:
+  name:
+    nom: Kira von Lacroz
+  type: pedigree-only
+  extra_titles:
+    - V
 mabari:
   name:
     nom: Фанхил Хаус Мабари
@@ -666,6 +684,12 @@ mabari:
         <td><p>V</p><p>Страпинг Феллоу Адель</p></td>
       </tr>
     </table>
+nando:
+  name:
+    nom: Nando vom Gollerweiher
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
 nikoletta:
   name:
     nom: Фанхил Хаус Николетта
@@ -793,6 +817,22 @@ olivia:
         <td><p>V</p><p>Фанта оф Флокиш Фест</p></td>
       </tr>
     </table>
+opal:
+  name:
+    nom: Opal van de Ybajo Hoeve
+  type: pedigree-only
+  father: nando
+  mother: evita
+  extra_titles:
+    - Отборный класс
+pacco:
+  name:
+    nom: Pacco vom Langenbungert
+  type: pedigree-only
+  father: remo
+  mother: ankaa
+  extra_titles:
+    - Отборный класс
 palmira:
   name:
     nom: Фонте Фиделити Пальмира
@@ -865,6 +905,27 @@ palmira:
         <td><p>V</p><p>Квантум Квина</p></td>
       </tr>
     </table>
+quantum:
+  name:
+    nom: Quantum von Arminius
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+remo:
+  name:
+    nom: Remo vom Fichtenschlag
+  type: pedigree-only
+  extra_titles:
+    - Отборный класс
+    - 2 x Чемпион мира, Европы
+ustinov:
+  name:
+    nom: Ustinov vom Römerland
+  type: pedigree-only
+  father: quantum
+  mother: kira
+  extra_titles:
+    - Отборный класс
 viviana:
   name:
     nom: Хаус Велхольм Вивиана
