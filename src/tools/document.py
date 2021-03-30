@@ -150,6 +150,47 @@ class Document(object):
             self._content_chunks.append('</a>')
 
 
+    def _add_pedigree_cell(self, dog_info, all_dogs, current_depth, max_depth):
+        rowspan = 2 ** (max_depth - 1 - current_depth)
+        if rowspan > 1:
+            self._content_chunks.append('<td rowspan="{}">'.format(rowspan))
+        else:
+            self._content_chunks.append('<td>')
+
+        self._content_chunks.append('<p>')
+        self._content_chunks.append('<br>'.join(dog_info.get('extra_titles', [])))
+        self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
+        if current_depth == 0:
+            self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
+
+        self._content_chunks.append('</td>')
+        self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)
+
+
+    def _add_pedigree(self, dog_info, all_dogs, current_depth, max_depth):
+        if current_depth >= max_depth:
+            return
+
+        if 'father' not in dog_info:
+            raise ValueError('A father must be specified for {}'.format(dog_info['name']['nom']))
+        father_id = dog_info['father']
+        self._add_pedigree_cell(all_dogs[father_id], all_dogs, current_depth, max_depth)
+
+        self._content_chunks.append('<tr>')
+
+        if 'mother' not in dog_info:
+            raise ValueError('A mother must be specified for {}'.format(dog_info['name']['nom']))
+        mother_id = dog_info['mother']
+        self._add_pedigree_cell(all_dogs[mother_id], all_dogs, current_depth, max_depth)
+
+
+    def add_pedigree(self, dog_info, all_dogs, depth=3):
+        self._content_chunks.append('<table class="pedigree">')
+        self._content_chunks.append('<tr>')
+        self._add_pedigree(dog_info, all_dogs, 0, depth)
+        self._content_chunks.append('</table>')
+
+
     def add_human_url(self, url):
         text = '<a href="//{0}">{0}</a>'.format(url)
         self._content_chunks.append(text)

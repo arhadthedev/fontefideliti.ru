@@ -85,6 +85,9 @@ def generate_index(output_document, resources):
         pedigree.append('<a href="http://database.gsdog.ru/dog.php?screen=1&amp;id={}" target="_blank">GSDOG</a>'.format(dog_info['pedigree']['gsdog']))
     output_document.add_raw(',<br>'.join(pedigree))
 
+    if 'father' in dog_info:
+        output_document.add_pedigree(dog_info, dog_list)
+
     output_document.add_raw(dog_info.get('content2', ''))
     output_document.end_container()
 
@@ -111,7 +114,7 @@ def generate_list(output_document, resources):
 
     path = output_document.get_path()
     gender = path.split('/')[0][:-1]
-    dogs = [dog for dog in dog_list.items() if dog[1]['gender'] == gender and dog[1]['type'] in ['breeder', 'retired']]
+    dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired'] and dog[1]['gender'] == gender]
     dogs.sort(key=get_dog_records_key(dog_list))
 
     for dog_id, dog_info in dogs:
@@ -134,7 +137,9 @@ def get_root_artifact_list(resources):
 
     dog_list = yaml.safe_load(resources.get('doglist.yml'))
     photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
-    for dog_id, dog_details in dog_list.items():
+    dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired']]
+    for dog_id, dog_details in dogs:
+
         name = dog_details['name']
         base_url = '{}s/{}/'.format(dog_details['gender'], dog_id)
 
