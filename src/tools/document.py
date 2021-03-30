@@ -161,6 +161,8 @@ class Document(object):
         self._content_chunks.append(',<br>'.join(dog_info.get('extra_titles', [])))
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
+            if 'photo' not in dog_info:
+                raise ValueError('A photo must be specified for {}'.format(dog_info['name']['nom']))
             self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
 
         self._content_chunks.append('</td>')
