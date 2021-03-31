@@ -125,7 +125,8 @@ def generate_shows(output_document, resources):
         output_document.add_raw('<h1>Монопородные выставки</h2>')
         output_document.add_raw('<ol class="chrono-list">')
         for show in mono_shows:
-            achievements = assembly_achievements(show['place'], show['achievements'])
+            place = show['place'].replace(' ', ' ', 1)
+            achievements = assembly_achievements(place, show['achievements'])
             expert = get_proper_expert_name(show['expert'], experts)
             if show['figurant']:
                 figurant_name = get_proper_expert_name(show['figurant'], experts)
