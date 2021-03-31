@@ -1,3 +1,12 @@
+2012-09-16:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Смирнова
+      dogs:
+        danaya:
+          class: промежуточный
+          place: отлично
 2015-09-20:
   city: Чита
   events:
