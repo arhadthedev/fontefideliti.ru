@@ -202,3 +202,81 @@
         zheneva:
           class: бэби
           place: 5 большая перспектива
+2018-11-17:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Егорова
+      dogs:
+        inessa:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cw
+            - лс
+            - cac
+            - чф рфлс
+            - bos
+2018-11-18:
+  city: Пенза
+  events:
+    - rank: всероссийская
+      expert: Мищенко
+      dogs:
+        inessa:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - cac
+            - cac
+            - чф рфсс
+2018-11-25:
+  city: Самара
+  events:
+    - expert: Киркицкая
+      rank: всероссийская
+      dogs:
+        inessa:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cw
+            - cac
+            - cac
+            - чф рфсс
+2018-12-09:
+  city: Пенза
+  events:
+    - rank: всероссийская
+      expert: Чуприс
+      dogs:
+        inessa:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - лс
+            - cac
+            - чф оанкоо
+    - rank: региональная
+      expert: Пирогова
+      dogs:
+        inessa:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - лс
+            - cac
+            - лпп
+            - best г2
+2019-06-15:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Пудеев
+      dogs:
+        olivia:
+          class: юниоров
+          place: 8 очень хорошо

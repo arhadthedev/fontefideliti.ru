@@ -77,16 +77,20 @@ printable_ranks['cw'] = 'Победитель класса'
 printable_ranks['лб'] = 'Лучший бэби'
 printable_ranks['лю'] = 'Лучший юниор'
 printable_ranks['лк'] = 'Лучший кобель'
+printable_ranks['лс'] = 'Лучшая сука'
 printable_ranks['jcac'] = 'JunCAC'
 printable_ranks['cac'] = 'CAC'
 printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Федерации РФЛС'
 printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
+printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
+printable_ranks['чф рфсс'] = 'Чемпион Федерации РФСС'
 printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАНКОО'
 printable_ranks['лпп'] = 'Лучший представитель породы'
 printable_ranks['big 2'] = 'BIG-2'
 printable_ranks['чркф'] = 'Чемпион РКФ'
 printable_ranks['bos'] = 'BOS'
 printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
+printable_ranks['best г2'] = 'BEST группы 2 место!'
 
 
 def assembly_achievements(place, ranks):
@@ -270,7 +274,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)
