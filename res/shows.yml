@@ -1,3 +1,48 @@
+2011-06-18:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Гордеев
+      dogs:
+        mabari:
+          class: бэби
+          place: 7 очень перспективный
+2011-06-19:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Давыдова
+      dogs:
+        mabari:
+          class: беби
+          place: 4 очень перспективный
+2012-05-06:
+  city: Балаково
+  events:
+    - rank: монопородная
+      expert: Трофимов
+      dogs:
+        mabari:
+          class: юниоров
+          place: 3 очень хорошо
+2012-06-10:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Копылова
+      dogs:
+        mabari:
+          class: юниоров
+          place: 6 очень хорошо
+2012-09-15:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Букаринова
+      dogs:
+        mabari:
+          class: молодых собак
+          place: 7 очень хорошо
 2012-09-16:
   city: Тольятти
   events:
@@ -7,6 +52,27 @@
         danaya:
           class: промежуточный
           place: отлично
+          achievements:
+            - лщ
+    - rank: региональная
+      expert: Букаринова
+      dogs:
+        mabari:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - rcac
+2013-09-07:
+  city: Саратов
+  events:
+    - rank: монопородная
+      expert: Большакова
+      figurant: Хорешко
+      dogs:
+        mabari:
+          class: рабочих собак
+          place: 4 отлично, выражено/отпускает
 2014-08-24:
   city: Тольятти
   events:
@@ -19,6 +85,13 @@
           place: 1 очень перспективный
           achievements:
             - лщ
+    - rank: монопородная
+      expert: Шишкина
+      figurant: Конякин
+      dogs:
+        mabari:
+          class: рабочих собак
+          place: 2 отлично, выражено/отпускает
 2015-04-26:
   city: Самара
   events:
