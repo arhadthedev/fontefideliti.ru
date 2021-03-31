@@ -1,4 +1,10 @@
 # -*- coding: UTF-8 -*-
+# document.py - a document generation class and related utilities
+#
+# Copyright (c) 2021 Oleg Iarygin <oleg@arhadthedev.net>
+#
+# Distributed under the MIT software license; see the accompanying
+# file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from datetime import datetime
 import os
