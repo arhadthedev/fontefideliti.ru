@@ -7,7 +7,6 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from collections import OrderedDict
-import os
 import yaml
 
 def generate_photos(output_document, resources):
@@ -270,7 +269,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if not os.path.exists(shows_url):
+        if dog_id in ['aleks']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)
