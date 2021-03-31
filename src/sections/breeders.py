@@ -80,6 +80,7 @@ printable_ranks['лк'] = 'Лучший кобель'
 printable_ranks['лс'] = 'Лучшая сука'
 printable_ranks['jcac'] = 'JunCAC'
 printable_ranks['cac'] = 'CAC'
+printable_ranks['rcac'] = 'RCAC'
 printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Федерации РФЛС'
 printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
 printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
@@ -274,7 +275,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)

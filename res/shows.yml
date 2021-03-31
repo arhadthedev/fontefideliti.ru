@@ -7,6 +7,15 @@
         danaya:
           class: промежуточный
           place: отлично
+2015-08-23:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Сороко
+      dogs:
+        alisha:
+          class: щенков
+          place: 6 большая перспектива
 2015-09-20:
   city: Чита
   events:
@@ -19,6 +28,15 @@
           achievements:
             - cw
             - лб
+2015-10-03:
+  city: Волгоград
+  events:
+    - rank: монопородная
+      expert: Ширан
+      dogs:
+        alisha:
+          class: щенков
+          place: 4 большая перспектива
 2015-10-17:
   city: Балаково
   events:
@@ -28,6 +46,46 @@
         aleks:
           class: щенков
           place: 3 очень перспективный
+2015-11-08:
+  city: Сызрань
+  events:
+    - rank: региональная
+      expert: Васильев
+      dogs:
+        alisha:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лю
+2015-11-15:
+  city: Пенза
+  events:
+    - rank: всероссийская чркф
+      expert: Григоренко
+      dogs:
+        alisha:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - jcac
+            - лю
+2015-12-05:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Белкин
+      dogs:
+        alisha:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - лю
 2016-04-16:
   city: Саратов
   events:
@@ -152,6 +210,18 @@
             - кчф рфлс
             - лпп
             - big 2
+2016-12-10:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Кармазина
+      dogs:
+        alisha:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - rcac
 2017-02-10:
   city: Пенза
   events:
@@ -165,6 +235,20 @@
             - cw
             - jcac
             - cnd
+2017-03-04:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Гаврилова
+      dogs:
+        alisha:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cw
+            - cac
+            - лс
+            - чф оанкоо
 2017-04-29:
   city: Тольятти
   events:
@@ -189,6 +273,19 @@
             - cac
             - чф оанкоо
             - bos
+2017-05-27:
+  city: Тольятти
+  events:
+    - rank: всероссийская чркф
+      expert: Хамитова
+      dogs:
+        alisha:
+          class: рабочих собак
+          place: 1 отлично
+          achievements:
+            - cw
+            - cac
+            - чф рфсс
 2017-06-10:
   city: Ульяновск
   events:
