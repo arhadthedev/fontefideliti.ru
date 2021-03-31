@@ -30,6 +30,9 @@ jobs:
       - run: python photo_generation.py public
       - run: python ../src/build_site.py ../res
         working-directory: ./public
+      - uses: chabad360/htmlproofer@master
+        with:
+          directory: "./public"
       - uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
