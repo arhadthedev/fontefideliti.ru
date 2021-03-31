@@ -17,9 +17,6 @@ defaults:
     values:
       layout: global_shows
 
-sass:
-  style: compressed
-
 compress_html:
   clippings: all
 

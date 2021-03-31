@@ -24,6 +24,10 @@ jobs:
       - run: python photo_generation.py public
       - run: python ../src/build_site.py ../res
         working-directory: ./public
+      - uses: gha-utilities/sass-build@v0.3.7
+        with:
+          source: res/common.scss
+          destination: public/common.css
       - uses: chabad360/htmlproofer@master
         with:
           directory: "./public"
