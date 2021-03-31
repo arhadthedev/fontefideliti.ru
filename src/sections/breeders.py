@@ -75,12 +75,14 @@ def get_proper_expert_name(last_name, registry):
 printable_ranks = OrderedDict()
 printable_ranks['cw'] = 'Победитель класса'
 printable_ranks['лб'] = 'Лучший бэби'
+printable_ranks['лщ'] = 'Лучший щенок'
 printable_ranks['лю'] = 'Лучший юниор'
 printable_ranks['лк'] = 'Лучший кобель'
 printable_ranks['лс'] = 'Лучшая сука'
 printable_ranks['jcac'] = 'JunCAC'
 printable_ranks['cac'] = 'CAC'
 printable_ranks['rcac'] = 'RCAC'
+printable_ranks['юсс'] = 'ЮСС'
 printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Федерации РФЛС'
 printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
 printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
@@ -275,7 +277,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)

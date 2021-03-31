@@ -7,6 +7,29 @@
         danaya:
           class: промежуточный
           place: отлично
+2014-08-24:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Шишкина
+      figurant: Конякин
+      dogs:
+        viviana:
+          class: щенков
+          place: 1 очень перспективный
+          achievements:
+            - лщ
+2015-04-26:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Овсянникова
+      dogs:
+        viviana:
+          class: юниоров
+          place: 2 очень хорошо
+          achievements:
+            - юсс
 2015-08-23:
   city: Тольятти
   events:
@@ -16,6 +39,18 @@
         alisha:
           class: щенков
           place: 6 большая перспектива
+        viviana:
+          class: молодых собак
+          place: 1 очень хорошо
+2015-09-05:
+  city: Самара
+  events:
+    - rank: всероссийская чркф
+      expert: Попова
+      dogs:
+        viviana:
+          class: промежуточный
+          place: 1 отлично
 2015-09-20:
   city: Чита
   events:
