@@ -143,9 +143,31 @@
             - кчф рфлс
             - лпп
             - big 2
+2017-02-10:
+  city: Пенза
+  events:
+    - rank: региональная
+      expert: Краковская
+      dogs:
+        zheneva:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - cw
+            - jcac
+            - cnd
 2017-04-29:
   city: Тольятти
   events:
+    - rank: всероссийская
+      expert: Никитина
+      dogs:
+        zheneva:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - cw
+            - лб
     - rank: всероссийская
       expert: Тихонова
       dogs:
@@ -168,3 +190,6 @@
         aleks:
           class: рабочих собак
           place: 6 отлично, выражено/отпускает
+        zheneva:
+          class: бэби
+          place: 5 большая перспектива

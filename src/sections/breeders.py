@@ -86,6 +86,7 @@ printable_ranks['лпп'] = 'Лучший представитель пород�
 printable_ranks['big 2'] = 'BIG-2'
 printable_ranks['чркф'] = 'Чемпион РКФ'
 printable_ranks['bos'] = 'BOS'
+printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
 
 
 def assembly_achievements(place, ranks):
@@ -269,7 +270,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko']:
+        if dog_id in ['aleks', 'eiko', 'zheneva']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)
