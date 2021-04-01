@@ -1,3 +1,273 @@
+2007-10-21:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Смелов
+      dogs:
+        hasso:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - лб
+            - bis-b-1
+2007-11-03:
+  city: Тольятти
+  events:
+    - rank: всероссийская
+      expert: Поливанов
+      dogs:
+        hasso:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - лб
+            - bis-b-1
+2007-11-04:
+  city: Самара
+  events:
+    - rank: региональная
+      expert: Козина
+      dogs:
+        hasso:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - лб
+            - bis-b-1
+2007-12-01:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Козина
+      dogs:
+        hasso:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - лб
+            - bis-b-1
+2008-01-19:
+  city: Самара
+  events:
+    - rank: всероссийская
+      expert: Гаврилова
+      dogs:
+        hasso:
+          class: щенков
+          place: 1 большая перспектива
+          achievements:
+            - лщ
+            - bis-b-3
+2008-04-05:
+  city: Самара
+  events:
+    - rank: юниоров
+      expert: Бурдина
+      dogs:
+        hasso:
+          class: подростков
+          place: 1 отлично
+          achievements:
+            - пкю
+            - jcac
+    - rank: монопородная
+      expert: Копылова
+      dogs:
+        hasso:
+          class: подростков
+          place: 1 очень перспективный
+          achievements:
+            - cw
+            - лп
+2008-05-17:
+  city: Ульяновск
+  events:
+    - rank: монопородная
+      cup: Приволжского МО РСВНО
+      expert: Scheerer
+      dogs:
+        hasso:
+          class: подростков
+          place: 1 очень перспективный
+          achievements:
+            - cw
+            - лп
+2008-05-24:
+  city: Яхрома
+  events:
+    - rank: монопородная
+      cup: Royal Canin 2008
+      expert: Koenig
+      dogs:
+        hasso:
+          class: подростков
+          place: 5 очень перспективный
+          note: 26 собак в ринге
+2008-06-22:
+  city: Ульяновск
+  events:
+    - rank: монопородная
+      expert: Гордеев
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 очень хорошо
+          achievements:
+            - пмк
+            - юкчк
+2008-07-27:
+  city: Самара
+  events:
+    - rank: региональная
+      expert: Гордеев
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - пмк
+            - юкчк
+    - rank: монопородная
+      expert: Баклушин
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - лю
+            - jcac
+            - лпп
+2008-08-24:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Горюгина
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 очень хорошо
+          achievements:
+            - пмк
+            - юкчк
+2008-09-06:
+  city: Саратов
+  events:
+    - rank: монопородная
+      expert: Большакова
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 очень хорошо
+          achievements:
+            - пмк
+            - юсс
+    - rank: всероссийская
+      expert: Абракимов
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - лю
+            - jcac
+2008-09-07:
+  city: Самара
+  events:
+    - rank: региональная
+      expert: Ерусалимская
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 отлично
+          achievements:
+            - лю
+            - jcac
+            - лпп
+2008-09-28:
+  city: Волгоград
+  events:
+    - rank: монопородная
+      expert: Пудеев
+      dogs:
+        hasso:
+          class: юниоров
+          place: 1 очень хорошо
+          achievements:
+            - пмк
+            - юкчк
+2008-10-05:
+  city: Самара
+  events:
+    - rank: региональная
+      expert: Хачатурян
+      dogs:
+        hasso:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cac
+2009-03-15:
+  city: Самара
+  events:
+    - rank: всероссийская
+      expert: Никитин
+      dogs:
+        hasso:
+          class: промежуточный
+          place: 1 отлично
+          achievements:
+            - cac
+            - кч оанкоо
+2009-04-12:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Трофимов
+      dogs:
+        hasso:
+          class: молодых собак
+          place: 1 очень хорошо
+          achievements:
+            - пмк
+            - юсс
+2009-08-29:
+  city: Ульяновск
+  events:
+    - rank: монопородная
+      expert: Тимофеева
+      dogs:
+        hasso:
+          class: рабочих собак
+          place: 5 отлично, выражено/отпускает
+2010-04-10:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Пудеев
+      figurant: Авроров
+      note: 19 собак в ринге
+      dogs:
+        hasso:
+          class: рабочих собак
+          place: 6 отлично, СС, выражено/отпускает
+2011-06-18:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Гордеев
+      dogs:
+        mabari:
+          class: бэби
+          place: 7 очень перспективный
+    - rank: монопородная
+      expert: Гордеев
+      dogs:
+        hasso:
+          class: рабочих собак
+          place: 1 отлично, выражено/отпускает
+          achievements:
+            - cw
+            - кчк
 2011-06-18:
   city: Самара
   events:
@@ -25,6 +295,29 @@
         mabari:
           class: юниоров
           place: 3 очень хорошо
+    - rank: монопородная
+      expert: Трофимов
+      figurant: Минин
+      dogs:
+        hasso:
+          class: рабочих собак
+          place: 2 отлично, СС, выражено/отпускает
+2012-06-10:
+  city: Самара
+  events:
+    - rank: монопородная
+      expert: Копылова
+      dogs:
+        mabari:
+          class: юниоров
+          place: 6 очень хорошо
+    - rank: монопородная
+      expert: Копылова
+      figurant: Веремей
+      dogs:
+        hasso:
+          class: рабочих собак
+          place: 3 отлично, СС, выражено/не отпускает
 2012-06-10:
   city: Самара
   events:
@@ -379,6 +672,18 @@
             - cac
             - чф оанкоо
             - bos
+2017-05-07:
+  city: Самара
+  events:
+    - rank: интернациональная ранга CACIB
+      expert: Pichard
+      dogs:
+        hasso:
+          class: ветеранов
+          place: 1 отлично
+          achievements:
+            - cw
+            - лв
 2017-05-27:
   city: Тольятти
   events:
@@ -474,6 +779,20 @@
             - cac
             - лпп
             - best г2
+2018-12-16:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Островская
+      dogs:
+        hasso:
+          class: ветеранов
+          place: 1 отлично
+          achievements:
+            - лв
+            - vcac
+            - лпп
+            - best в2
 2019-06-15:
   city: Тольятти
   events:

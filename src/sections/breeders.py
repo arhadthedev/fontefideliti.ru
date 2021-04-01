@@ -56,11 +56,15 @@ def filter_shows_for(filtered_dog_id, show_tree):
                     element = {}
                     element['date'] = date
                     element['rank'] = event['rank']
+                    if 'cup' in event:
+                        element['cup'] = event['cup']
                     element['city'] = eventset['city']
                     element['class'] = dog_details['class']
                     element['expert'] = event['expert']
                     element['figurant'] = event.get('figurant', '')
                     element['place'] = dog_details['place']
+                    if 'note' in dog_details:
+                        element['note'] = dog_details['note']
                     element['achievements'] = dog_details.get('achievements', [])
                     filtered_shows.append(element)
     return filtered_shows
@@ -77,15 +81,21 @@ def get_proper_expert_name(last_name, registry):
 # Items are printed in the order they specified here
 printable_ranks = OrderedDict()
 printable_ranks['cw'] = 'Победитель класса'
+printable_ranks['пмк'] = 'Победитель младшего класса'
+printable_ranks['пкю'] = 'Победитель класса юниоров'
 printable_ranks['лб'] = 'Лучший бэби'
 printable_ranks['лщ'] = 'Лучший щенок'
+printable_ranks['лп'] = 'Лучший подросток'
 printable_ranks['лю'] = 'Лучший юниор'
+printable_ranks['лв'] = 'Лучший ветеран'
 printable_ranks['лк'] = 'Лучший кобель'
 printable_ranks['лс'] = 'Лучшая сука'
 printable_ranks['jcac'] = 'JunCAC'
 printable_ranks['cac'] = 'CAC'
 printable_ranks['rcac'] = 'RCAC'
+printable_ranks['vcac'] = 'VCAC'
 printable_ranks['юсс'] = 'ЮСС'
+printable_ranks['юкчк'] = 'Юный кандидат в Чемпионы клуба'
 printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Федерации РФЛС'
 printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
 printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
@@ -93,10 +103,13 @@ printable_ranks['чф рфсс'] = 'Чемпион Федерации РФСС'
 printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАНКОО'
 printable_ranks['лпп'] = 'Лучший представитель породы'
 printable_ranks['big 2'] = 'BIG-2'
+printable_ranks['bis-b-1'] = 'BIS-B-I'
+printable_ranks['bis-b-3'] = 'BIS-B-III'
 printable_ranks['чркф'] = 'Чемпион РКФ'
 printable_ranks['bos'] = 'BOS'
 printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
 printable_ranks['best г2'] = 'BEST группы 2 место!'
+printable_ranks['best в2'] = 'ВEST ветеранов 2 место!'
 
 
 def assembly_achievements(place, ranks):
@@ -145,7 +158,9 @@ def generate_shows(output_document, resources):
                 figurant = ''
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
-            output_document.add_raw(' Монопородная выставка КЧК, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}{f}).'.format(ci=show['city'], cl=show['class'], a=achievements, e=expert, f=figurant))
+            cup = '«Кубок {}»'.format(show['cup']) if 'cup' in show else 'КЧК'
+            notes = '({})'.format(show['note']) if 'note' in show else ''
+            output_document.add_raw(' Монопородная выставка {cp}, г. {ci}, класс {cl}, <strong>{a}</strong> {n} (эксперт {e}{f}).'.format(cp=cup, ci=show['city'], cl=show['class'], a=achievements, e=expert, f=figurant, n=notes))
         output_document.add_raw('</ol>')
         output_document.end_container()
 
@@ -280,7 +295,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)
