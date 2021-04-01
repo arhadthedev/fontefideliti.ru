@@ -9,6 +9,7 @@
 from datetime import datetime
 import os
 from PIL import Image
+import re
 
 brand_ru = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
 brand_en = 'Питомник немецких овчарок «Fonte Fideliti» г. Тольятти'
@@ -55,11 +56,14 @@ class Document(object):
         self._content_chunks.append('</header>')
 
         self._content_chunks.append('<nav><ul>')
+        compact_path = re.sub(r'index\.html?$', '', path)
         for title, menu_path in menu:
             if not menu_path:
                 menu_path = 'index.html'
-            if path.startswith(menu_path):
+            if compact_path == menu_path:
                 item = '<li><span class="current">{}'.format(title)
+            elif path.startswith(menu_path):
+                item = '<li><a href="/{}" class="current">{}</a>'.format(menu_path, title)
             else:
                 item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
             self._content_chunks.append(item)
