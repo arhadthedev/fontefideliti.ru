@@ -51,9 +51,7 @@
       dogs:
         danaya:
           class: промежуточный
-          place: отлично
-          achievements:
-            - лщ
+          place: 1 отлично
     - rank: региональная
       expert: Букаринова
       dogs:
