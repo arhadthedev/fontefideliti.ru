@@ -34,7 +34,9 @@ def generate_year_page(output_document, resources):
     source = source[end_of_frontmatter:]
 
     first_image = source.find('{%')
+    output_document.add_raw('<article class="card">')
     output_document.add_raw(source[:first_image])
+    output_document.add_raw('</article>')
 
     matches = re.findall(r'{% include photo.html path="([^"]*)" title="([^"]*)"([^{]*)', source)
     for path, title, rest in matches:
