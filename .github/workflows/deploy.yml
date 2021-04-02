@@ -30,11 +30,17 @@ jobs:
         with:
           source: res/common.scss
           destination: public/common.css
-      - name: Upload Artifact
+      - name: Upload Site Content Artifact
         uses: actions/upload-artifact@v2
         with:
           name: public
           path: public
+          retention-days: 3
+      - name: Upload Firebase Project Artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: firebase.json
+          path: firebase.json
           retention-days: 3
 
   test:
@@ -57,11 +63,15 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download Artifact
+      - name: Download Site Content Artifact
         uses: actions/download-artifact@master
         with:
           name: public
           path: public
+      - name: Firebase Project Artifact
+        uses: actions/download-artifact@master
+        with:
+          name: firebase.json
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
