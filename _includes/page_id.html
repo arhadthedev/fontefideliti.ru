@@ -1,1 +1,0 @@
-{% if include.page.path %}{% assign p = include.page.path %}{% else %}{% assign p = include.path %}{% endif %}{{ p | split: '/' | last | split: '.' | first }}
