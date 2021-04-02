@@ -239,6 +239,19 @@
         hasso:
           class: рабочих собак
           place: 5 отлично, выражено/отпускает
+2009-12-05:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Круценко
+      dogs:
+        hasso:
+          class: открытый
+          place: 1 отлично
+          achievements:
+            - cac
+            - лк
+            - кчф рфлс
 2010-04-10:
   city: Самара
   events:
@@ -318,15 +331,6 @@
         hasso:
           class: рабочих собак
           place: 3 отлично, СС, выражено/не отпускает
-2012-06-10:
-  city: Самара
-  events:
-    - rank: монопородная
-      expert: Копылова
-      dogs:
-        mabari:
-          class: юниоров
-          place: 6 очень хорошо
 2012-09-15:
   city: Тольятти
   events:
@@ -354,6 +358,18 @@
           achievements:
             - cw
             - rcac
+2012-09-22:
+  city: Самара
+  events:
+    - rank: всероссийская
+      expert: Галиаскаров
+      dogs:
+        hasso:
+          class: чемпионов
+          place: 1 отлично
+          achievements:
+            - cac
+            - чф рфлс
 2013-09-07:
   city: Саратов
   events:
@@ -556,6 +572,19 @@
           achievements:
             - cw
             - jcac
+2016-07-24:
+  city: Самара
+  events:
+    - rank: всероссийская
+      expert: Шевелёва
+      dogs:
+        hasso:
+          class: ветеранов
+          place: 1 отлично
+          achievements:
+            - cw
+            - лв
+            - best в1
 2016-08-14:
   city: Саранск
   events:
@@ -593,6 +622,20 @@
             - кчф оанкоо
             - лпп
             - big 2
+2016-09-11:
+  city: Уральск
+  events:
+    - rank: Национальная, Казахстан
+      expert: Бойко
+      dogs:
+        hasso:
+          class: ветеранов
+          place: 1 отлично
+          achievements:
+            - cw
+            - лв
+            - best в1
+            - ч кз
 2016-09-25:
   city: Тольятти
   events:
@@ -609,6 +652,20 @@
             - кчф рфлс
             - лпп
             - big 2
+2016-10-08:
+  city: Воронеж
+  events:
+    - rank: интернациональная ранга CACIB
+      expert: Крылова
+      dogs:
+        hasso:
+          class: ветеранов
+          place: 1 отлично
+          achievements:
+            - cw
+            - лв
+            - bos
+            - best в3
 2016-12-10:
   city: Тольятти
   events:

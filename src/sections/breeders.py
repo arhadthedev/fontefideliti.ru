@@ -101,6 +101,7 @@ printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы �
 printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
 printable_ranks['чф рфсс'] = 'Чемпион Федерации РФСС'
 printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАНКОО'
+printable_ranks['ч кз'] = 'Чемпион Казахстана'
 printable_ranks['лпп'] = 'Лучший представитель породы'
 printable_ranks['big 2'] = 'BIG-2'
 printable_ranks['bis-b-1'] = 'BIS-B-I'
@@ -109,7 +110,9 @@ printable_ranks['чркф'] = 'Чемпион РКФ'
 printable_ranks['bos'] = 'BOS'
 printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
 printable_ranks['best г2'] = 'BEST группы 2 место!'
+printable_ranks['best в1'] = 'Победитель Best ветеранов'
 printable_ranks['best в2'] = 'ВEST ветеранов 2 место!'
+printable_ranks['best в3'] = 'ВEST ветеранов 3 место!'
 
 
 def assembly_achievements(place, ranks):
@@ -174,7 +177,7 @@ def generate_shows(output_document, resources):
             expert = get_proper_expert_name(show['expert'], experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
-            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}).'.format(s=show['rank'].capitalize().replace(' чркф', ' ЧРКФ'), ci=show['city'], cl=show['class'], a=achievements, e=expert))
+            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}).'.format(s=show['rank'].capitalize().replace(' чркф', ' ЧРКФ').replace(' CACIB', ' CACIB'), ci=show['city'], cl=show['class'], a=achievements, e=expert))
         output_document.add_raw('</ol>')
         output_document.end_container()
     output_document.end_container()
