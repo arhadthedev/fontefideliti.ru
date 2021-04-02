@@ -21,7 +21,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
       - run: mkdir public && cp -r ./{males,females,dogs.htm,style.css} ./public
-      - run: python photo_generation.py public
       - name: Build HTML and Image Files
         run: python ../src/build_site.py ../res
         working-directory: ./public
