@@ -35,7 +35,6 @@ aleks:
     </ul>
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/2018/1222a.jpg" width="588" height="411" alt="Фотография Ersteshrit Aleks" />
 aike:
   name:
     nom: Aike
@@ -67,7 +66,6 @@ alisha:
       <li>Лучшая сука</li>
     </ul>
     <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
-    <img src="/img/photos/alisha/main.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Алиши" />
 anabel:
   name:
     nom: Anabel vom Sofienwald
@@ -164,7 +162,6 @@ danaya:
   after: mabari
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
-    <img src="/img/photos/danaya/main.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Данаи" />
 demetra:
   name:
     nom: Фанхил Хаус Деметра
@@ -205,7 +202,6 @@ demetra:
       <li>ЮСС</li>
     </ul>
     <p>ОКД 2, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/shows/2016-samara-25072016-10.jpg" width="588" height="393" alt="Фотография Фанхил Хаус Деметры" />
 devil:
   name:
     nom: Devil von Santamar
@@ -253,7 +249,6 @@ eiko:
     </ul>
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/eiko/main.jpg" width="588" height="416" alt="Фотография Eiko vom Haus Portofino" />
 eltoro:
   name:
     nom: Atsel Hof El-Toro
@@ -358,7 +353,6 @@ hasso:
     </ul>
 
     <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/hasso/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Хассо" />
 heiko:
   name:
     nom: Aranyvölgyi-Örseg Heiko
@@ -392,7 +386,6 @@ hillari:
       <li>КЧ РФСС</li>
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/hillari/main.jpg" width="588" height="440" alt="Фотография Фанхил Хаус Хиллари" />
 inessa:
   name:
     nom: Фонте Фиделити Инесса
@@ -419,7 +412,6 @@ inessa:
       <li>BIG-2</li>
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
-    <img src="/img/2020/01151-w588.jpg" width="588" height="406" alt="Фотография Фанхил Хаус Инессы" />
 itan:
   name:
     nom: Фонте Фиделити Итан
@@ -459,7 +451,6 @@ itan:
     </ul>
 
     <p>ОКД-2, ЗКС-1; HD-A, ED-0, Kkl 1</p>
-    <img src="/img/2019/10193-1-w588.jpg" width="588" height="395" alt="Фонте Фиделити Итан, г. Димитровград, 19 октября 2019 г.">
 jilla:
   name:
     nom: Jilla von der Urbecke
@@ -548,7 +539,6 @@ mabari:
     - QVGW-IH7-_Q
   content: >
     <p>КД 1; HD-A, ED-0; Kkl 1П</p>
-    <img src="/img/photos/mabari/main.jpg" width="588" height="392" alt="Фотография Фанхил Хаус Мабари" />
 maestro:
   name:
     nom: Maestro vom Osterberger-Land
@@ -664,7 +654,6 @@ nikoletta:
       <li>2 x ЮСС</li>
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
-    <img src="/img/photos/nikoletta/main.jpg" width="588" height="382" alt="Фотография Фанхил Хаус Николетты" />
 olivia:
   name:
     nom: Фонте Фиделити Оливия
@@ -680,7 +669,6 @@ olivia:
   after: inessa
   content: >
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
-    <img src="/img/2019/09021-w588.jpg" width="588" height="371" alt="Фонте Фиделити Оливия, 1 год 5 месяцев">
 ober:
   name:
     nom: Ober della Valcuvia
@@ -737,7 +725,6 @@ palmira:
       <li>Победитель Best 1 группы</li>
     </ul>
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
-    <img src="/img/2019/05053.jpg" width="588" alt="Фонте Фиделити Пальмира">
 phill:
   name:
     nom: Phill van der Lust
@@ -877,7 +864,6 @@ viviana:
       <li>ЮСС</li>
     </ul>
     <p>ОКД 1; ЗКС 2; HD-A</p>
-    <img src="/img/2015/08111-w588.jpg" width="588" height="391" alt="Фотография Хаус Велхольм Вивианы">
 yasko:
   name:
     nom: Yasko vom Farbenspiel
@@ -927,4 +913,3 @@ zheneva:
   type: breeder
   content: >
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
-    <img src="/img/2018/07281-w588.jpg" width="588" height="392" alt="Фотография Фонте Фиделити Женевы" />

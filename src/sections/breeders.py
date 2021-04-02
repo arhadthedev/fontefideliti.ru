@@ -200,6 +200,7 @@ def generate_index(output_document, resources):
     output_document.add_date(dog_info['dob'])
     output_document.add_raw('</p>')
     output_document.add_raw(dog_info['content'])
+    output_document.add_image(dog_info['photo'], 'Фотография {}'.format(dog_info['name']['gen']), 'w', 588, is_clickable=False)
 
     output_document.start_paragraph()
     subsections = []
