@@ -67,8 +67,11 @@ def filter_shows_for(filtered_dog_id, show_tree):
 
 
 def get_proper_expert_name(last_name, registry):
-    first_name, patronymic = registry[last_name].split(' ')
-    return '{} {}. {}.'.format(last_name, first_name[0], patronymic[0])
+    first_name, *patronymic = registry[last_name].split(' ')
+    if patronymic:
+        return '{} {}. {}.'.format(last_name, first_name[0], patronymic[0][0])
+    else:
+        return '{} {}'.format(first_name, last_name)
 
 
 # Items are printed in the order they specified here
