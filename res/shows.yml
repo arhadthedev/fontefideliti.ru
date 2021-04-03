@@ -26,7 +26,7 @@
   city: Самара
   events:
     - rank: региональная
-      expert: Козина
+      expert: Куколева
       dogs:
         hasso:
           class: бэби
@@ -65,7 +65,7 @@
       expert: Бурдина
       dogs:
         hasso:
-          class: подростков
+          class: юниоров
           place: 1 отлично
           achievements:
             - пкю
@@ -125,8 +125,9 @@
           class: юниоров
           place: 1 отлично
           achievements:
-            - пмк
-            - юкчк
+            - лю
+            - jcac
+            - лпп
 2008-08-24:
   city: Тольятти
   events:
@@ -137,9 +138,8 @@
           class: юниоров
           place: 1 очень хорошо
           achievements:
-            - лю
-            - jcac
-            - лпп
+            - пмк
+            - юкчк
 2008-09-06:
   city: Саратов
   events:
@@ -208,7 +208,7 @@
           place: 1 отлично
           achievements:
             - cac
-            - кч оанкоо
+            - кчф оанкоо
 2009-04-12:
   city: Самара
   events:
