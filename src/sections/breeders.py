@@ -104,8 +104,11 @@ printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАН
 printable_ranks['ч кз'] = 'Чемпион Казахстана'
 printable_ranks['лпп'] = 'Лучший представитель породы'
 printable_ranks['big 2'] = 'BIG-2'
+# Baby ones
 printable_ranks['bis-b-1'] = 'BIS-B-I'
 printable_ranks['bis-b-3'] = 'BIS-B-III'
+# Non-baby ones
+printable_ranks['bis-3'] = 'BIS-III'
 printable_ranks['чркф'] = 'Чемпион РКФ'
 printable_ranks['bos'] = 'BOS'
 printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'

@@ -57,11 +57,11 @@
           place: 1 большая перспектива
           achievements:
             - лщ
-            - bis-b-3
+            - bis-3
 2008-04-05:
   city: Самара
   events:
-    - rank: юниоров
+    - rank: всероссийская
       expert: Бурдина
       dogs:
         hasso:
@@ -127,16 +127,6 @@
           achievements:
             - пмк
             - юкчк
-    - rank: монопородная
-      expert: Баклушин
-      dogs:
-        hasso:
-          class: юниоров
-          place: 1 отлично
-          achievements:
-            - лю
-            - jcac
-            - лпп
 2008-08-24:
   city: Тольятти
   events:
@@ -147,8 +137,9 @@
           class: юниоров
           place: 1 очень хорошо
           achievements:
-            - пмк
-            - юкчк
+            - лю
+            - jcac
+            - лпп
 2008-09-06:
   city: Саратов
   events:
@@ -194,7 +185,7 @@
           place: 1 очень хорошо
           achievements:
             - пмк
-            - юкчк
+            - юсс
 2008-10-05:
   city: Самара
   events:
@@ -229,7 +220,7 @@
           place: 1 очень хорошо
           achievements:
             - пмк
-            - юсс
+            - юкчк
 2009-08-29:
   city: Ульяновск
   events:
@@ -258,11 +249,11 @@
     - rank: монопородная
       expert: Пудеев
       figurant: Авроров
-      note: 19 собак в ринге
       dogs:
         hasso:
           class: рабочих собак
           place: 6 отлично, СС, выражено/отпускает
+          note: 19 собак в ринге
 2011-06-18:
   city: Самара
   events:
@@ -281,15 +272,6 @@
           achievements:
             - cw
             - кчк
-2011-06-18:
-  city: Самара
-  events:
-    - rank: монопородная
-      expert: Гордеев
-      dogs:
-        mabari:
-          class: бэби
-          place: 7 очень перспективный
 2011-06-19:
   city: Тольятти
   events:
