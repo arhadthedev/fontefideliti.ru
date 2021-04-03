@@ -177,7 +177,8 @@ def generate_shows(output_document, resources):
             expert = get_proper_expert_name(show['expert'], experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
-            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}).'.format(s=show['rank'].capitalize().replace(' чркф', ' ЧРКФ').replace(' CACIB', ' CACIB'), ci=show['city'], cl=show['class'], a=achievements, e=expert))
+            normalized_rank = show['rank'][0].upper() + show['rank'][1:]
+            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}).'.format(s=normalized_rank, ci=show['city'], cl=show['class'], a=achievements, e=expert))
         output_document.add_raw('</ol>')
         output_document.end_container()
     output_document.end_container()
