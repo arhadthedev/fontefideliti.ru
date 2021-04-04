@@ -4,6 +4,23 @@ adel:
   type: pedigree-only
   extra_titles:
     - V
+adelina:
+  name:
+    nom: Фонте Фиделити Аделина
+  type: nonbreeder
+  dob: 2015-01-31
+  father: eiko
+  mother: mabari
+  pedigree:
+    pd: 2339100
+  photo: photos/dogs/adelina
+  after: ando
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>2 x Лучший бэби</li>
+      <li>Лучший щенок</li>
+      <li>Best Puppy-2</li>
+    </ul>
 aleks:
   name:
     nom: Ersteshrit Aleks
@@ -56,6 +73,7 @@ alisha:
   mother: mabari
   pedigree:
     pd: 2339101
+  after: antei
   content: >
     <ul>
       <li>Чемпион России</li>
@@ -72,6 +90,53 @@ anabel:
   type: pedigree-only
   extra_titles:
     - Отборный класс
+ando:
+  name:
+    nom: Фонте Фиделити Андо
+  type: nonbreeder
+  dob: 2015-01-31
+  father: eiko
+  mother: mabari
+  pedigree:
+    pd: 2339097
+  photo: 2019/06171
+  after: alisha
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Чемпион России</li>
+      <li>2 x Чемпион РКФ</li>
+      <li>Юный Чемпион России</li>
+      <li>5 х Jun.САС</li>
+      <li>Лучший юниор, 5 x CAC</li>
+      <li>5 x Лучший представитель породы</li>
+      <li>3 x Чемпион РФСС</li>
+      <li>3 x Чемпион РФОС</li>
+      <li>3 x Чемпион ОАНКОО</li>
+      <li>Победитель Best 1 группы</li>
+      <li>RCACIB</li>
+      <li>3 x Лучшая защита на монопородных выставках</li>
+    </ul>
+    <p><b>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</b></p>
+antei:
+  name:
+    nom: Фонте Фиделити Антей
+  type: nonbreeder
+  dob: 2015-01-31
+  father: eiko
+  mother: mabari
+  pedigree:
+    pd: 2339099
+  photo: photos/dogs/antey
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Юный Чемпион НКП</li>
+      <li>Юный Чемпион России</li>
+      <li>3 x Лучший представитель породы</li>
+      <li>4 x Лучший юниор</li>
+      <li>BIG-2</li>
+      <li>3 x ЮКЧК</li>
+    </ul>
+    <p><b>HD-A, ED-0</b></p>
 ankaa:
   name:
     nom: Ankaa vom Nadelhaus
@@ -110,6 +175,17 @@ bazi:
   photo: photos/bazi
   extra_titles:
     - Отборный класс
+bosko:
+  name:
+    nom: Фонте Фиделити Боско
+  type: nonbreeder
+  dob: 2015-07-17
+  father: eiko
+  mother: undina
+  pedigree:
+    pd: 2417587
+  photo: photos/dogs/bosko
+  after: adelina
 buster:
   name:
     nom: Buster aus der Brunnenstraße
@@ -146,6 +222,17 @@ count:
   photo: photos/count-p
   extra_titles:
     - Отборный класс
+daimond:
+  name:
+    nom: Фонте Фиделити Даймонд
+  type: nonbreeder
+  dob: 2016-05-21
+  father: eiko
+  mother: danaya
+  pedigree:
+    pd: 2553014
+  photo: photos/dogs/daimond
+  after: deiko
 danaya:
   name:
     nom: Фанхил Хаус Даная
@@ -162,6 +249,17 @@ danaya:
   after: mabari
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
+deiko:
+  name:
+    nom: Фонте Фиделити Дейко
+  type: nonbreeder
+  dob: 2016-05-21
+  father: eiko
+  mother: danaya
+  pedigree:
+    pd: 2553015
+  photo: photos/dogs/deiko
+  after: greit
 demetra:
   name:
     nom: Фанхил Хаус Деметра
@@ -249,6 +347,17 @@ eiko:
     </ul>
 
     <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
+elisei:
+  name:
+    nom: Фонте Фиделити Елисей
+  type: nonbreeder
+  dob: 2016-10-24
+  father: eiko
+  mother: demetra
+  pedigree:
+    pd: 2594228
+  photo: photos/dogs/elisey-2
+  after: daimond
 eltoro:
   name:
     nom: Atsel Hof El-Toro
@@ -311,18 +420,55 @@ floro:
   mother: fenia
   extra_titles:
     - V
+gambo:
+  name:
+    nom: Фонте Фиделити Гамбо
+  type: nonbreeder
+  dob: 2016-02-01
+  father: zakhar
+  mother: mabari
+  pedigree:
+    pd: 2695110
+  photo: photos/dogs/gambo
+  after: vivat
 ghandi:
   name:
     nom: Ghandi von Arlett
   type: pedigree-only
   extra_titles:
     - Отборный класс
+goldi:
+  name:
+    nom: Фонте Фиделити Голди
+  type: nonbreeder
+  dob: 2016-02-01
+  father: zakhar
+  mother: mabari
+  pedigree:
+    pd: 2695107
+  photo: photos/dogs/goldi
+  after: gambo
+greit:
+  name:
+    nom: Фонте Фиделити Грейт
+  type: nonbreeder
+  dob: 2016-02-01
+  father: zakhar
+  mother: mabari
+  pedigree:
+    pd: 2619808
+  photo: photos/dogs/greit
+  after: goldi
 handa:
   name:
     nom: Handa von der Urbecke
   type: pedigree-only
   extra_titles:
     - V
+helios:
+  name:
+    nom: Helios di Fosco Aidas
+  type: pedigree-only
 hasso:
   name:
     nom: Фанхил Хаус Хассо
@@ -412,6 +558,49 @@ inessa:
       <li>BIG-2</li>
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
+ingur:
+  name:
+    nom: Фонте Фиделити Ингур
+  type: nonbreeder
+  dob: 2017-04-26
+  father: aleks 
+  mother: demetra
+  pedigree:
+    pd: 2647829
+  photo: photos/dogs/ingur
+  after: isabel
+isabel:
+  name:
+    nom: Фонте Фиделити Изабель
+  type: nonbreeder
+  dob: 2017-04-26
+  father: aleks
+  mother: demetra
+  pedigree:
+    pd: 2647826
+  photo: photos/dogs/isabel-2
+  after: zhasmina
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Чемпион России</li>
+      <li>Юный Чемпион России</li>
+      <li>Лучшая сука</li>
+      <li>CAC</li>
+      <li>Чемпион РФЛС</li>
+      <li>КЧРФСС</li>
+    </ul>
+    <p><b>ОКД/ЗКС; HD-A, ED-0</b></p>
+iskander:
+  name:
+    nom: Фонте Фиделити Искандер
+  type: nonbreeder
+  dob: 2017-04-26
+  father: aleks
+  mother: demetra
+  pedigree:
+    pd: 2647828
+  photo: photos/dogs/iskander-1
+  after: ingur
 itan:
   name:
     nom: Фонте Фиделити Итан
@@ -469,6 +658,17 @@ kaja:
   extra_titles:
     - Чемпион России
     - Чемпион РКФ
+kamila:
+  name:
+    nom: Фонте Фиделити Камила
+  type: nonbreeder
+  dob: 2017-06-25
+  father: aleks
+  mother: danaya
+  pedigree:
+    pd: 2696790
+  photo: photos/dogs/kamila
+  after: kassandra
 karats:
   name:
     nom: Karat’s Ulk
@@ -477,6 +677,17 @@ karats:
   mother: lilskan
   extra_titles:
     - V1
+kassandra:
+  name:
+    nom: Фонте Фиделити Кассандра
+  type: nonbreeder
+  dob: 2017-06-25
+  father: aleks 
+  mother: danaya
+  pedigree:
+    pd: 2695099
+  photo: photos/dogs/kassandra-1
+  after: iskander
 kitty:
   name:
     nom: Kitty vom Friedenspark
@@ -513,6 +724,56 @@ larus:
   extra_titles:
     - Отборный класс
     - 2х Чемпион мира, Европы
+lagerta:
+  name:
+    nom: Фонте Фиделити Лагерта
+  type: nonbreeder
+  dob: 2017-09-07
+  father: aleks
+  mother: pantera
+  pedigree:
+    pd: 2697073
+  photo: photos/dogs/lagerta
+  after: kamila
+lankaster:
+  name:
+    nom: Фонте Фиделити Ланкастер
+  type: nonbreeder
+  dob: 2017-09-07
+  father: aleks
+  mother: pantera
+  pedigree:
+    pd: 2697063
+  photo: photos/dogs/lankaster
+  after: lagerta
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Лучший щенок</li>
+      <li>3 х Jun.САС</li>
+      <li>2 x Лучший юниор</li>
+    </ul>
+legenda:
+  name:
+    nom: Фонте Фиделити Легенда
+  type: nonbreeder
+  dob: 2017-09-07
+  father: aleks
+  mother: pantera
+  pedigree:
+    pd: 2697078
+  photo: photos/dogs/legenda
+  after: levadia
+levadia:
+  name:
+    nom: Фонте Фиделити Левадия
+  type: nonbreeder
+  dob: 2017-09-07
+  father: aleks
+  mother: pantera
+  pedigree:
+    pd: 2697076
+  photo: photos/dogs/levadia
+  after: lankaster
 lilskan:
   name:
     nom: Lilskan Never Give Up
@@ -725,6 +986,34 @@ palmira:
       <li>Победитель Best 1 группы</li>
     </ul>
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
+    <img src="/img/2019/05053.jpg" width="588" alt="Фонте Фиделити Пальмира">
+pantera:
+  name:
+    nom: Пантера с Нижней Камы
+  type: pedigree-only
+persei:
+  name:
+    nom: Фонте Фиделити Персей
+  type: nonbreeder
+  dob: 2018-06-29
+  father: aleks
+  mother: nikoletta
+  pedigree:
+    pd: 2791385
+  photo: 2019/05052
+  after: legenda
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Юный Чемпион России</li>
+      <li>Юный Чемпион РКФ</li>
+      <li>Лучший бэби</li>
+      <li>Лучший щенок</li>
+      <li>4 x Лучший кобель</li>
+      <li>3 x Jun.CAC</li>
+      <li>2 x CAC</li>
+      <li>Юный чемпион РФЛС</li>
+      <li>Юный чемпион РФОС</li>
+    </ul>
 phill:
   name:
     nom: Phill van der Lust
@@ -786,6 +1075,33 @@ siska:
   mother: nannila
   extra_titles:
     - Отборный класс
+tekila:
+  name:
+    nom: Фонте Фиделити Текила
+  type: nonbreeder
+  dob: 2019-05-21
+  father: aleks
+  mother: demetra
+  pedigree:
+    pd: 2894363
+  photo: 2020/05291
+  after: persei
+  content: >
+    <ul class="titles" style="font-size: 90%">
+      <li>Юный чемпион России</li>
+      <li>Чемпион РКФ</li>
+      <li>3 x Лучший юниор</li>
+      <li>5 x Лучшая сука</li>
+      <li>3 x Jun.CAC</li>
+      <li>3 x CAC</li>
+      <li>5 x Лучший представитель породы</li>
+      <li>2 x Юный чемпион РФЛС</li>
+      <li>Юный чемпион РФСС</li>
+      <li>Чемпион РФЛС</li>
+      <li>Чемпион РФОС</li>
+      <li>2 x BIG-1</li>
+      <li>2 x BIG-2</li>
+    </ul>
 thor:
   name:
     nom: Thor vom Friedenspark
@@ -803,6 +1119,17 @@ troya:
   type: pedigree-only
   extra_titles:
     - V
+ulana:
+  name:
+    nom: Фонте Фиделити Улана
+  type: nonbreeder
+  dob: 2020-03-21
+  father: helios
+  mother: inessa
+  pedigree:
+    pd: 2988942
+  photo: 2020/08111
+  after: tekila
 ulk:
   name:
     nom: Ulk von Arlett
@@ -816,6 +1143,10 @@ umathurman:
   type: pedigree-only
   extra_titles:
     - Отборный класс
+undina:
+  name:
+    nom: Фанхил Хаус Ундина
+  type: pedigree-only
 ustinov:
   name:
     nom: Ustinov vom Römerland
@@ -836,7 +1167,18 @@ vegas:
   type: pedigree-only
   extra_titles:
     - Отборный класс,
-    - 2 х Чемпион мира, ЕвропыV
+    - 2 х Чемпион мира, Европы
+vivat:
+  name:
+    nom: Фонте Фиделити Виват
+  type: nonbreeder
+  dob: 2015-08-19
+  father: eiko
+  mother: demetra
+  pedigree:
+    pd: 2424549
+  photo: photos/dogs/vivat
+  after: bosko
 vivian:
   name:
     nom: Vivian vom Zellwaldrand
@@ -871,6 +1213,10 @@ yasko:
   extra_titles:
     - Отборный класс
     - 2x Чемпион мира, Европы
+zakhar:
+  name:
+    nom: Zakhar no Bārtas Krasta
+  type: pedigree-only
 zamp:
   name:
     nom: Zamp vom Thermodos
@@ -897,6 +1243,17 @@ zenta:
   type: pedigree-only
   extra_titles:
     - V
+zhasmina:
+  name:
+    nom: Фонте Фиделити Жасмина
+  type: nonbreeder
+  dob: 2016-12-23
+  father: armour
+  mother: nikoletta
+  pedigree:
+    pd: 2610971
+  photo: 2017/12021
+  after: zhofrei
 zheneva:
   name:
     nom: Фонте Фиделити Женева
@@ -912,4 +1269,19 @@ zheneva:
   gender: female
   type: breeder
   content: >
+    <ul>
+      <li>Лучший бэби</li>
+      <li>Jun. CAC</li>
+    </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
+zhofrei:
+  name:
+    nom: Фонте Фиделити Жофрей
+  type: nonbreeder
+  dob: 2016-12-23
+  father: armour
+  mother: nikoletta
+  pedigree:
+    pd: 2599793
+  photo: photos/dogs/zhofrey
+  after: elisei
