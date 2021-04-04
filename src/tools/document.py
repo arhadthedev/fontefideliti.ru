@@ -124,12 +124,7 @@ class Document(object):
 
         base = 'img/{}'.format(name)
         fullsize_path = '{}.jpg'.format(base)
-        preview_path = '{}-p.jpg'.format(base)
-        try:
-            legacy_preview_test = self._resources.get_image(preview_path)
-            legacy_preview_test.close()
-        except FileNotFoundError:
-            preview_path = '{}-{}.jpg'.format(base, size)
+        preview_path = '{}-{}.jpg'.format(base, size)
 
         os.makedirs(os.path.dirname(preview_path), exist_ok=True)
         original = self._resources.get_image('img/{}.jpg'.format(name))
