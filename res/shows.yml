@@ -20,6 +20,11 @@
         achievements:
           - лб
           - bis-b-1
+      hillari:
+        class: беби
+        place: 1 большая перспектива
+        achievements:
+          - cw
 2007-11-04:
   - city: Самара
     rank: региональная
@@ -53,6 +58,16 @@
         achievements:
           - лщ
           - bis-3
+2008-02-02:
+  - city: Тольятти
+    rank: региональная
+    expert: Григоренко
+    dogs:
+      hillari:
+        class: щенков
+        place: 1 большая перспектива
+        achievements:
+          - лщ
 2008-04-05:
   - city: Самара
     rank: всероссийская
@@ -74,6 +89,11 @@
         achievements:
           - cw
           - лп
+      hillari:
+        class: подростков
+        place: 1 очень перспективный
+        achievements:
+          - cw
 2008-05-17:
   - city: Ульяновск
     rank: монопородная
@@ -86,6 +106,9 @@
         achievements:
           - cw
           - лп
+      hillari:
+        class: подростков
+        place: 6 очень перспективный
 2008-05-24:
   - city: Яхрома
     rank: монопородная
@@ -130,6 +153,9 @@
         achievements:
           - пмк
           - юкчк
+      hillari:
+        class: юниоров
+        place: 8 очень хорошо
 2008-09-06:
   - city: Саратов
     rank: монопородная
@@ -184,6 +210,16 @@
         place: 1 отлично
         achievements:
           - cac
+2009-02-15:
+  - city: Тольятти
+    rank: региональная
+    expert: Смелов
+    dogs:
+      hillari:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cac
 2009-03-15:
   - city: Самара
     rank: всероссийская
@@ -206,6 +242,57 @@
         achievements:
           - пмк
           - юкчк
+      hillari:
+        class: молодых собак
+        place: 4 очень хорошо
+2009-05-31:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Седых
+    dogs:
+      hillari:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cac
+          - лс
+          - лпп
+          - чф рфлс
+          - best 1г
+          - bis-3
+2009-06-14:
+  - city: Тольятти
+    rank: региональная
+    expert: Терентьева
+    dogs:
+      hillari:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cac
+2009-06-21:
+  - city: Ульяновск
+    rank: монопородная
+    expert: Куретов
+    figurant: Авроров
+    dogs:
+      hillari:
+        class: рабочих собак
+        place: 1 отлично, выражено/отпускает
+        achievements:
+          - кчк
+          - лпп
+2009-06-28:
+  - city: Бугульма
+    rank: региональная
+    expert: Белкин
+    dogs:
+      hillari:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cac
+          - кчфсс
 2009-08-29:
   - city: Ульяновск
     rank: монопородная
@@ -214,6 +301,16 @@
       hasso:
         class: рабочих собак
         place: 5 отлично, выражено/отпускает
+2009-11-01:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Филатова
+    dogs:
+      hillari:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cac
 2009-12-05:
   - city: Тольятти
     rank: региональная
@@ -226,6 +323,17 @@
           - cac
           - лк
           - кчф рфлс
+2010-09-18:
+  - city: Саратов
+    rank: монопородная
+    expert: Азен
+    figurant: Хорешко
+    dogs:
+      hillari:
+        class: рабочих собак
+        place: 1 отлично, выражено/отпускает
+        achievements:
+          - кчк
 2010-04-10:
   - city: Самара
     rank: монопородная
