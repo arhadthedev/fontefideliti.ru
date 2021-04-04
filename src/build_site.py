@@ -8,7 +8,6 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 import os
-import PIL
 import sections.breeders
 import sections.dogs
 import sections.main
@@ -18,19 +17,7 @@ import sections.shows
 import shutil
 import sys
 import tools.document
-
-
-class Input(object):
-    def __init__(self, base_path):
-        self._base_path = base_path
-
-    def get(self, rel_path):
-        full_path = os.path.join(self._base_path, rel_path)
-        return open(full_path, 'r', encoding='utf-8')
-
-    def get_image(self, rel_path):
-        full_path = os.path.join(self._base_path, rel_path)
-        return PIL.Image.open(full_path)
+import tools.resources
 
 
 def _copy_missing_recursive(entries, src, dst):
@@ -62,7 +49,7 @@ def copy_static_files(input_directory):
 if len(sys.argv) < 2:
     sys.exit('error: output directory path argument is not specified')
 input_base_path = sys.argv[1]
-resources = Input(input_base_path)
+resources = tools.resources.Input(input_base_path)
 
 for generator in [sections.breeders, sections.dogs, sections.main, sections.photos, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
