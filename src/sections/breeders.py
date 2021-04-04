@@ -7,19 +7,18 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from collections import OrderedDict
-import yaml
 
 def generate_photos(output_document, resources):
     output_document.start_container()
 
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
 
     path = output_document.get_path()
     dog_id = path.split('/')[1]
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
 
-    photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
+    photo_list = resources.get_yaml('dogphotos.yml')
     photos = photo_list.get(dog_id)
     for photo in photos:
         photo['caption'] = photo['caption'] if photo['caption'] != None else ''
@@ -31,7 +30,7 @@ def generate_photos(output_document, resources):
 def generate_videos(output_document, resources):
     output_document.start_container()
 
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
 
     path = output_document.get_path()
     dog_id = path.split('/')[1]
@@ -146,9 +145,9 @@ def assembly_achievements(place, ranks):
 
 def generate_shows(output_document, resources):
     output_document.start_container(css_classes=['filled'])
-    show_list = yaml.safe_load(resources.get('shows.yml'))
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
-    experts = yaml.safe_load(resources.get('people.yml'))
+    show_list = resources.get_yaml('shows.yml')
+    dog_list = resources.get_yaml('doglist.yml')
+    experts = resources.get_yaml('people.yml')
 
     path = output_document.get_path()
     dog_id = path.split('/')[1]
@@ -198,8 +197,8 @@ def generate_shows(output_document, resources):
 
 
 def generate_index(output_document, resources):
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
-    show_list = yaml.safe_load(resources.get('shows.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
+    show_list = resources.get_yaml('shows.yml')
 
     path = output_document.get_path()
     dog_id = path.split('/')[1]
@@ -219,7 +218,7 @@ def generate_index(output_document, resources):
 
     output_document.start_paragraph()
     subsections = []
-    photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
+    photo_list = resources.get_yaml('dogphotos.yml')
     photos = photo_list.get(dog_id)
     if photos:
         subsections.append('<a href="photos.htm">Фотографии</a>')
@@ -263,7 +262,7 @@ def get_dog_records_key(dog_list):
 
 
 def generate_list(output_document, resources):
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
 
     path = output_document.get_path()
     gender = path.split('/')[0][:-1]
@@ -288,8 +287,8 @@ def generate_list(output_document, resources):
 def get_root_artifact_list(resources):
     section_pages = []
 
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
-    photo_list = yaml.safe_load(resources.get('dogphotos.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
+    photo_list = resources.get_yaml('dogphotos.yml')
     dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired']]
     for dog_id, dog_details in dogs:
 
@@ -311,7 +310,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso', 'itan']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso', 'itan', 'demetra']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)

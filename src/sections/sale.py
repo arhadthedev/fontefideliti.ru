@@ -7,10 +7,9 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from datetime import datetime
-import yaml
 
 def _print_list(output, resources):
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
 
     output.start_container(['card'])
     output.add_raw('<h1 style="font-size: 100%">Продаются щенки</h1>')

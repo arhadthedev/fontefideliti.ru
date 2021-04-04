@@ -6,9 +6,6 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
-import yaml
-
-
 def get_dog_records_key(dog_list):
     def _key_generator(value):
         dog_id, dog_payload = value
@@ -27,7 +24,7 @@ def get_dog_records_key(dog_list):
 
 
 def generate_dogs(output_document, resources):
-    dog_list = yaml.safe_load(resources.get('doglist.yml'))
+    dog_list = resources.get_yaml('doglist.yml')
     dogs = [dog for dog in dog_list.items() if dog[1]['type'] == 'nonbreeder']
     dogs.sort(key=get_dog_records_key(dog_list))
     for dog_id, dog_details in dogs:

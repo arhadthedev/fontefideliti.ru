@@ -7,11 +7,9 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 import re
-import yaml
 
 def generate_shows(output_document, resources):
-    per_year_list_raw = resources.get('show_years.yml')
-    per_year_list = yaml.safe_load(per_year_list_raw)
+    per_year_list = resources.get_yaml('show_years.yml')
 
     for year_entry in reversed(per_year_list):
         year = year_entry['год']
@@ -28,7 +26,7 @@ def generate_shows(output_document, resources):
 def generate_year_page(output_document, resources):
     path = output_document.get_path()
     year = path.split('/')[1]
-    source = resources.get('../_shows/{}'.format(year)).read()
+    source = resources.get_string('../_shows/{}'.format(year))
 
     end_of_frontmatter = source.find('---', 1) + 3
     source = source[end_of_frontmatter:]
@@ -47,8 +45,7 @@ def generate_year_page(output_document, resources):
 def get_root_artifact_list(resources):
     section_pages = [('Выставки', 'shows/index', generate_shows)]
 
-    per_year_list_raw = resources.get('show_years.yml')
-    per_year_list = yaml.safe_load(per_year_list_raw)
+    per_year_list = resources.get_yaml('show_years.yml')
     for year_entry in per_year_list:
         year = year_entry['год']
         section_pages.append(('Выставки {} года'.format(year), 'shows/{}'.format(year), generate_year_page))
