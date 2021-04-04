@@ -749,6 +749,55 @@
         zheneva:
           class: бэби
           place: 5 большая перспектива
+2017-08-19:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Поливанов
+      dogs:
+        itan:
+          class: бэби
+          place: 1 большая перспектива
+          achievements:
+            - cw
+            - лб
+2017-11-12:
+  city: Тольятти
+  events:
+    - rank: региональная
+      expert: Дивель
+      dogs:
+        itan:
+          class: щенков
+          place: 1 большая перспектива
+          achievements:
+            - cw
+            - лщ
+            - best в4
+2017-12-10:
+  city: Пенза
+    - rank: региональная
+      expert: Краковская
+      dogs:
+        itan:
+          class: щенков
+          place: 1 большая перспектива
+          achievements:
+            - cw
+            - лщ
+            - best щ1
+2018-08-25:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Попов
+      dogs:
+        itan:
+          class: юниоров
+          place: 1 очень хорошо
+          achievements:
+            - cw
+            - юкчк
 2018-11-17:
   city: Тольятти
   events:
@@ -767,7 +816,7 @@
 2018-11-18:
   city: Пенза
   events:
-    - rank: всероссийская
+    - rank: всероссийская ЧРКФ
       expert: Мищенко
       dogs:
         inessa:
@@ -782,7 +831,7 @@
   city: Самара
   events:
     - expert: Киркицкая
-      rank: всероссийская
+      rank: всероссийская ЧРКФ
       dogs:
         inessa:
           class: промежуточный
@@ -838,6 +887,38 @@
     - rank: монопородная
       expert: Пудеев
       dogs:
+        itan:
+          class: рабочих собак
+          place: 5 отлично СС, выражено, отпускает
         olivia:
           class: юниоров
           place: 8 очень хорошо
+2019-08-25:
+  city: Тольятти
+  events:
+    - rank: монопородная
+      expert: Букаринова
+      dogs:
+        itan:
+          class: рабочих собак
+          place: 2 отлично СС, выражено, не отпускает
+2019-09-14:
+  city: Ульяновск
+  events:
+    - rank: монопородная
+      expert: Горюгина
+      dogs:
+        itan:
+          class: рабочих собак
+          place: 5 отлично СС, выражено, не отпускает
+2019-10-19:
+  city: Димитровград
+  events:
+    - rank: монопородная
+      expert: Тимофеева
+      dogs:
+        itan:
+          class: рабочих собак
+          place: 1 отлично, выражено, не отпускает
+          achievements:
+            - кчк
