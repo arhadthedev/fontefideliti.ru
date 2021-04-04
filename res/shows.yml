@@ -340,6 +340,42 @@
       mabari:
         class: рабочих собак
         place: 4 отлично, выражено/отпускает
+2014-05-25:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Гаврилова
+    dogs:
+      demetra:
+        class: щенков
+        place: 1 большая перспектива
+        achievements:
+          - лщ
+2014-06-01:
+  - city: Уфа
+    rank: монопородная
+    expert: Сороко
+    dogs:
+      demetra:
+        class: подростков
+        place: 1 очень перспективный
+        achievements:
+          - пкп
+2014-06-07:
+  - city: Пермь
+    rank: монопородная
+    expert: Renaud
+    dogs:
+      demetra:
+        class: подростков
+        place: 2 очень перспективный
+2014-06-15:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Куколева
+    dogs:
+      demetra:
+        class: юниоров
+        place: 1 отлично
 2014-08-24:
   - city: Тольятти
     rank: монопородная
@@ -359,6 +395,16 @@
       mabari:
         class: рабочих собак
         place: 2 отлично, выражено/отпускает
+2014-11-30:
+  - city: Тольятти
+    rank: региональная
+    expert: Абракимов
+    dogs:
+      demetra:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - rcac
 2015-04-26:
   - city: Самара
     rank: монопородная
@@ -366,6 +412,24 @@
     dogs:
       viviana:
         class: юниоров
+        place: 2 очень хорошо
+        achievements:
+          - юсс
+2015-04-26:
+  - city: Самара
+    rank: монопородная
+    expert: Овсянникова
+    dogs:
+      demetra:
+        class: молодых собак
+        place: 9 очень хорошо
+2015-05-02:
+  - city: Волгоград
+    rank: монопородная
+    expert: Пудеев
+    dogs:
+      demetra:
+        class: молодых собак
         place: 2 очень хорошо
         achievements:
           - юсс
@@ -452,6 +516,21 @@
           - cw
           - jcac
           - лю
+2016-03-06:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Выгузов
+    dogs:
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - чф оанкоо
+          - best 1г
 2016-04-16:
   - city: Саратов
     rank: всероссийская
@@ -509,6 +588,14 @@
           - cw
           - jcac
           - лю
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лс
+          - чф рфсс
   - city: Тольятти
     rank: региональная
     expert: Соколова
@@ -519,11 +606,29 @@
         achievements:
           - cw
           - jcac
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - кчф оанкоо
 2016-07-24:
   - city: Самара
     rank: всероссийская
     expert: Шевелёва
     dogs:
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - чф оанкоо
+          - best 1г
       hasso:
         class: ветеранов
         place: 1 отлично
@@ -580,6 +685,37 @@
           - лв
           - best в1
           - ч кз
+2016-08-07:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Никитин
+    dogs:
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - чф оанкоо
+          - best 1г
+          - cnd
+  - city: Тольятти
+    rank: региональная
+    expert: Тиц
+    dogs:
+      demetra:
+        class: рабочих собак
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - кчф оанкоо
+          - big 2
+          - cnd
 2016-09-25:
   - city: Тольятти
     rank: региональная
@@ -708,12 +844,27 @@
     rank: монопородная
     expert: Поливанов
     dogs:
+      demetra:
+        class: рабочих собак
+        place: 5 отлично, дорожка пройдена/выражено/отпускает
       itan:
         class: бэби
         place: 1 большая перспектива
         achievements:
           - cw
           - лб
+2017-09-09:
+  - city: Самара
+    rank: всероссийская ЧРКФ
+    expert: Крюкова
+    dogs:
+      demetra:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - чф рфсс
 2017-11-12:
   - city: Тольятти
     rank: региональная
@@ -931,6 +1082,19 @@
           - vcac
           - лпп
           - best в2
+2019-02-10:
+  - city: Самара
+    rank: всероссийская
+    expert: Григоренко
+    dogs:
+      demetra:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - чф рфлс
 2019-03-17:
   - city: Тольятти
     rank: всероссийская

@@ -82,6 +82,7 @@ def get_proper_expert_name(last_name, registry):
 printable_ranks = OrderedDict()
 printable_ranks['cw'] = 'Победитель класса'
 printable_ranks['пмк'] = 'Победитель младшего класса'
+printable_ranks['пкп'] = 'Победитель класса подростков'
 printable_ranks['пкю'] = 'Победитель класса юниоров'
 printable_ranks['лб'] = 'Лучший бэби'
 printable_ranks['лщ'] = 'Лучший щенок'
@@ -118,7 +119,7 @@ printable_ranks['best г2'] = 'BEST группы 2 место!'
 printable_ranks['вице best'] = 'Вице-победитель BEST щенков'
 printable_ranks['best щ1'] = 'Победитель Best щенков'
 printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
-printable_ranks['best 1г'] = 'Победитель BEST 1 группы'
+printable_ranks['best 1г'] = 'Победитель BEST 1 группы' # BIG-1?
 printable_ranks['best в1'] = 'Победитель Best ветеранов'
 printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
 printable_ranks['best в2'] = 'ВEST ветеранов 2 место!'
