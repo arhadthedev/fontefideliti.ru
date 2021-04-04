@@ -1,15 +1,5 @@
 {
   "hosting": {
-    "rewrites": [ {
-    	"source": "/aleks-shows.htm",
-    	"destination": "/males/alex/shows.htm",
-    	"type": 301
-    }, {
-    	"source": "/hasso-shows.htm",
-    	"destination": "/males/hasso/shows.htm",
-    	"type": 301
-    } ],
-
     "public": "public",
     "ignore": ["_*/", ".**", "res/"]
   }
