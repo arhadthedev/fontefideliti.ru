@@ -49,8 +49,8 @@ def generate_videos(output_document, resources):
 
 def filter_shows_for(filtered_dog_id, show_tree):
     filtered_shows = []
-    for date, eventset in show_tree.items():
-        for event in eventset['events']:
+    for date, events in show_tree.items():
+        for event in events:
             for dog_id, dog_details in event['dogs'].items():
                 if dog_id == filtered_dog_id:
                     element = {}
@@ -58,7 +58,7 @@ def filter_shows_for(filtered_dog_id, show_tree):
                     element['rank'] = event['rank']
                     if 'cup' in event:
                         element['cup'] = event['cup']
-                    element['city'] = eventset['city']
+                    element['city'] = event['city']
                     element['class'] = dog_details['class']
                     element['expert'] = event['expert']
                     element['figurant'] = event.get('figurant', '')
