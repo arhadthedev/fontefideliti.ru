@@ -36,10 +36,9 @@ article {
 	}
 
 	&.dog {
-		font-weight: bold;
-
 		& > ul {
 			color: $text-light;
+			font-weight: bold;
 			list-style-type: none;
 			padding: 0pt;
 			text-align: center;
@@ -77,6 +76,10 @@ article {
 		& > p:last-child {
 			margin-bottom: 0pt;
 		}
+	}
+
+	&.heavy {
+		font-weight: bold;
 	}
 
 	&.compact {

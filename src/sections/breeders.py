@@ -204,7 +204,7 @@ def generate_index(output_document, resources):
     dog_id = path.split('/')[1]
     dog_info = dog_list[dog_id]
 
-    output_document.start_container(['dog', 'card'])
+    output_document.start_container(['heavy', 'dog', 'card'])
     output_document.add_header(1, dog_info['name']['nom'])
     if dog_info.get('renter', ''):
         output_document.add_raw('<p><em>Находится в аренде. Владелец — {}</em></p>'.format(dog_info['renter']))

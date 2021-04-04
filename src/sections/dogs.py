@@ -31,7 +31,7 @@ def generate_dogs(output_document, resources):
     dogs = [dog for dog in dog_list.items() if dog[1]['type'] == 'nonbreeder']
     dogs.sort(key=get_dog_records_key(dog_list))
     for dog_id, dog_details in dogs:
-        output_document.start_container(css_classes=['filled'])
+        output_document.start_container(css_classes=['compact', 'dog', 'card'])
         output_document.add_header(3, dog_details['name']['nom'])
         output_document.add_raw(dog_details.get('content', ''))
         output_document.add_raw('<p>Дата рождения: ')
