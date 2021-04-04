@@ -738,6 +738,76 @@
           - cw
           - лщ
           - best щ1
+  - city: Пенза
+    rank: всероссийская
+    expert: Лакатош
+    dogs:
+      itan:
+        class: щенков
+        place: 1 большая перспектива
+        achievements:
+          - cw
+          - лщ
+          - вице best
+          - вице cnd
+2017-12-24:
+  - city: Тольятти
+    rank: региональная
+    expert: Куколева
+    dogs:
+      itan:
+        class: щенков
+        place: 1 большая перспектива
+        achievements:
+          - cw
+          - лщ
+          - вице best
+2018-02-17:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Овсянникова
+    dogs:
+      itan:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+2018-02-25:
+  - city: Пенза
+    rank: региональная
+    expert: Гачина
+    dogs:
+      itan:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - лпп
+2018-03-03:
+  - city: Самара
+    rank: всероссийская
+    expert: Азен
+    dogs:
+      itan:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+2018-04-07:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Смирнова
+    dogs:
+      itan:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
 2018-08-25:
   - city: Тольятти
     rank: монопородная
@@ -763,6 +833,21 @@
           - cac
           - чф рфлс
           - bos
+2018-11-17:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Егорова
+    dogs:
+      itan:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - чф рфлс
+          - лпп
+          - best г2
 2018-11-18:
   - city: Пенза
     rank: всероссийская ЧРКФ
@@ -776,6 +861,16 @@
           - cac
           - cac
           - чф рфсс
+      itan:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - cac
+          - чркф
+          - bos
 2018-11-25:
   - city: Самара
     expert: Киркицкая
@@ -783,6 +878,14 @@
     dogs:
       inessa:
         class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - cac
+          - чф рфсс
+      itan:
+        class: открытый
         place: 1 отлично
         achievements:
           - cw
@@ -828,6 +931,21 @@
           - vcac
           - лпп
           - best в2
+2019-03-17:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Поливанов
+    dogs:
+      itan:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - чф оанкоо
+          - лпп
+          - best 1г
 2019-06-15:
   - city: Тольятти
     rank: монопородная
