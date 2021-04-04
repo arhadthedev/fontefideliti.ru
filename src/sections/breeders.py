@@ -90,6 +90,7 @@ printable_ranks['лю'] = 'Лучший юниор'
 printable_ranks['лв'] = 'Лучший ветеран'
 printable_ranks['лк'] = 'Лучший кобель'
 printable_ranks['лс'] = 'Лучшая сука'
+printable_ranks['лсдг'] = 'Лучшая сука до года'
 printable_ranks['jcac'] = 'JunCAC'
 printable_ranks['cac'] = 'CAC'
 printable_ranks['rcac'] = 'RCAC'
@@ -106,6 +107,7 @@ printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАН
 printable_ranks['ч кз'] = 'Чемпион Казахстана'
 printable_ranks['лпп'] = 'Лучший представитель породы'
 printable_ranks['big 2'] = 'BIG-2'
+printable_ranks['rcacib'] = 'RCACIB'
 # Baby ones
 printable_ranks['bis-b-1'] = 'BIS-B-I'
 printable_ranks['bis-b-3'] = 'BIS-B-III'
@@ -120,10 +122,12 @@ printable_ranks['вице best'] = 'Вице-победитель BEST щенк�
 printable_ranks['best щ1'] = 'Победитель Best щенков'
 printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
 printable_ranks['best 1г'] = 'Победитель BEST 1 группы' # BIG-1?
+printable_ranks['big-3'] = 'Победитель BEST 3 группы' # BIG-3?
 printable_ranks['best в1'] = 'Победитель Best ветеранов'
 printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
 printable_ranks['best в2'] = 'ВEST ветеранов 2 место!'
 printable_ranks['best в3'] = 'ВEST ветеранов 3 место!'
+printable_ranks['bis 1'] = 'Победитель Best in Show'
 
 
 def assembly_achievements(place, ranks):
@@ -311,7 +315,7 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso', 'itan', 'demetra', 'hillari']:
+        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso', 'itan', 'demetra', 'hillari', 'nikoletta']:
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, shows_url, generate_shows)
             section_pages.append(page)

@@ -541,6 +541,24 @@
         place: 2 очень хорошо
         achievements:
           - юсс
+      nikoletta:
+        class: подростков
+        place: 1 очень персперктивный
+        achievements:
+          - пкп
+          - лсдг
+2015-08-01:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Мазин
+    dogs:
+      nikoletta:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - лю
+          - jcac
 2015-08-23:
   - city: Тольятти
     rank: монопородная
@@ -549,6 +567,11 @@
       alisha:
         class: щенков
         place: 6 большая перспектива
+      nikoletta:
+        class: юниоров
+        place: 3 очень хорошо
+        achievements:
+          - юсс
       viviana:
         class: молодых собак
         place: 1 очень хорошо
@@ -557,9 +580,32 @@
     rank: всероссийская чркф
     expert: Попова
     dogs:
+      nikoletta:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - лю
+          - jcac
+          - jcac
       viviana:
         class: промежуточный
         place: 1 отлично
+2015-09-19:
+  - city: Самара
+    rank: региональная
+    expert: Терентьева
+    dogs:
+      nikoletta:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - лю
+          - jcac
+          - лс
+          - лпп
+          - big 2
 2015-09-20:
   - city: Чита
     rank: монопородная
@@ -579,6 +625,9 @@
       alisha:
         class: щенков
         place: 4 большая перспектива
+      nikoletta:
+        class: юниоров
+        place: 4 очень хорошо
 2015-10-17:
   - city: Балаково
     rank: монопородная
@@ -587,6 +636,9 @@
       aleks:
         class: щенков
         place: 3 очень перспективный
+      nikoletta:
+        class: юниоров
+        place: 9 очень хорошо
 2015-11-08:
   - city: Сызрань
     rank: региональная
@@ -599,6 +651,15 @@
           - cw
           - jcac
           - лю
+      nikoletta:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - кчф рфлс
 2015-11-15:
   - city: Пенза
     rank: всероссийская чркф
@@ -612,6 +673,15 @@
           - jcac
           - jcac
           - лю
+      nikoletta:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - cac
+          - лс
+          - чркф
 2015-12-05:
   - city: Тольятти
     rank: всероссийская
@@ -624,6 +694,22 @@
           - cw
           - jcac
           - лю
+2016-02-14:
+  - city: Тольятти
+    rank: региональная
+    expert: Кальянова
+    dogs:
+      nikoletta:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лс
+          - лпп
+          - кчф оанкоо
+          - best 1г
+          - bis-3
 2016-03-06:
   - city: Тольятти
     rank: всероссийская
@@ -651,10 +737,36 @@
           - cw
           - jcac
           - лк
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - чф рфсс
+          - big 2
+  - city: Саратов
+    rank: региональная
+    expert: Галиаскарова
+    dogs:
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - кчф рфлс
+          - кчф
+          - best 1г
+          - bis 1
 2016-04-17:
   - city: Пенза
     rank: всероссийская
-    expert: Дружинина
+    expert: Косарева
     dogs:
       aleks:
         class: юниоров
@@ -664,6 +776,31 @@
           - jcac
           - лю
           - лк
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - чф рфлс
+          - big 2
+  - city: Пенза
+    rank: региональная
+    expert: Дружинина
+    dogs:
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - лпп
+          - кчф оанкоо
+          - best 1г
+          - bis 1
 2016-04-24:
   - city: Самара
     rank: монопородная
@@ -672,6 +809,19 @@
       aleks:
         class: юниоров
         place: 8 очень хорошо
+      nikoletta:
+        class: молодых собак
+        place: 5 очень хорошо
+2016-05-07:
+  - city: Ульяновск
+    rank: монопородная
+    expert: Коротина
+    dogs:
+      nikoletta:
+        class: молодых собак
+        place: 3 очень хорошо
+        achievements:
+          - юсс
 2016-06-04:
   - city: Самара
     rank: всероссийская
@@ -684,6 +834,35 @@
           - cw
           - jcac
           - лю
+  - city: Самара
+    rank: всероссийская ЧРКФ
+    expert: Васильев
+    dogs:
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - cac
+          - лс
+          - лпп
+          - чркф
+          - big-3
+  - city: Самара
+    rank: региональная
+    expert: Лепеха
+    dogs:
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лс
+          - лпп
+          - кчф рфлс
+          - big 2
 2016-06-12:
   - city: Тольятти
     rank: всероссийская
@@ -793,6 +972,14 @@
           - лв
           - best в1
           - ч кз
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лс
+          - ч кз
 2016-08-07:
   - city: Тольятти
     rank: всероссийская
@@ -852,6 +1039,13 @@
           - лв
           - bos
           - best в3
+      nikoletta:
+        class: чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - rcacib
 2016-12-10:
   - city: Тольятти
     rank: региональная
