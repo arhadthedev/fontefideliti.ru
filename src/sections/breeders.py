@@ -102,10 +102,12 @@ printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Фе�
 printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
 printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
 printable_ranks['чф рфсс'] = 'Чемпион Федерации РФСС'
+printable_ranks['ючф рфос'] = 'Юный Чемпион Федерации РФОС'
+printable_ranks['ючф рфлс'] = 'Юный Чемпион Федерации РФЛС'
 printable_ranks['кчфсс'] = 'КЧФСС'
 printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАНКОО'
 printable_ranks['ч кз'] = 'Чемпион Казахстана'
-printable_ranks['лпп'] = 'Лучший представитель породы'
+printable_ranks['лпп'] = 'Лучший представитель породы' # BOB
 printable_ranks['big 2'] = 'BIG-2'
 printable_ranks['rcacib'] = 'RCACIB'
 # Baby ones
@@ -114,13 +116,16 @@ printable_ranks['bis-b-3'] = 'BIS-B-III'
 # Non-baby ones
 printable_ranks['bis-3'] = 'BIS-III'
 printable_ranks['чркф'] = 'Чемпион РКФ'
-printable_ranks['bos'] = 'BOS'
+printable_ranks['bos'] = 'BOS' # Лучший представитель противоположного пола
 printable_ranks['вице cnd'] = 'Вице-победитель в конкурсе «Ребёнок и собака»'
 printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
+printable_ranks['best г3'] = 'BEST группы 3 место!'
 printable_ranks['best г2'] = 'BEST группы 2 место!'
+printable_ranks['best г1'] = 'BEST группы 1 место!'
 printable_ranks['вице best'] = 'Вице-победитель BEST щенков'
 printable_ranks['best щ1'] = 'Победитель Best щенков'
-printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
+printable_ranks['best 3'] = 'Best щенков 3 место'
+printable_ranks['best в4'] = 'Best щенков призовое 4 место'
 printable_ranks['best 1г'] = 'Победитель BEST 1 группы' # BIG-1?
 printable_ranks['big-3'] = 'Победитель BEST 3 группы' # BIG-3?
 printable_ranks['best в1'] = 'Победитель Best ветеранов'
@@ -315,10 +320,9 @@ def get_root_artifact_list(resources):
             section_pages.append(page)
 
         shows_url = '{}/shows'.format(base_url)
-        if dog_id in ['aleks', 'eiko', 'zheneva', 'danaya', 'olivia', 'inessa', 'alisha', 'viviana', 'mabari', 'hasso', 'itan', 'demetra', 'hillari', 'nikoletta']:
-            title = "Результаты выставок {}".format(name['gen'])
-            page = (title, shows_url, generate_shows)
-            section_pages.append(page)
+        title = "Результаты выставок {}".format(name['gen'])
+        page = (title, shows_url, generate_shows)
+        section_pages.append(page)
 
     section_pages.append(('Производители', 'males/index', generate_list))
     section_pages.append(('Производительницы', 'females/index', generate_list))

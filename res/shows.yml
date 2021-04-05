@@ -1286,11 +1286,6 @@
           - cac
           - чф рфлс
           - bos
-2018-11-17:
-  - city: Тольятти
-    rank: всероссийская
-    expert: Егорова
-    dogs:
       itan:
         class: промежуточный
         place: 1 отлично
@@ -1301,6 +1296,12 @@
           - чф рфлс
           - лпп
           - best г2
+      palmira:
+        class: беби
+        place: 1 большая перспектива
+        achievements:
+          - cw
+          - лб
 2018-11-18:
   - city: Пенза
     rank: всероссийская ЧРКФ
@@ -1412,6 +1413,54 @@
           - чф оанкоо
           - лпп
           - best 1г
+      palmira:
+        class: щенков
+        place: 1 большая перспектива
+        achievements:
+          - cw
+          - лщ
+          - best 3
+2019-04-06:
+  - city: Тольятти
+    rank: региональная
+    expert: Друца
+    dogs:
+      palmira:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - лпп
+          - best г3
+2019-04-27:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Богданова
+    dogs:
+      palmira:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - bos
+          - ючф рфос
+2019-05-05:
+  - city: Балаково
+    rank: всероссийская
+    expert: Трифонова
+    dogs:
+      palmira:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - ючф рфлс
 2019-06-15:
   - city: Тольятти
     rank: монопородная
@@ -1423,6 +1472,9 @@
       olivia:
         class: юниоров
         place: 8 очень хорошо
+      palmira:
+        class: подростков
+        place: 3 большая перспектива
 2019-08-25:
   - city: Тольятти
     rank: монопородная
@@ -1431,6 +1483,9 @@
       itan:
         class: рабочих собак
         place: 2 отлично СС, выражено, не отпускает
+      palmira:
+        class: юниоров
+        place: 7 очень хорошо
 2019-09-14:
   - city: Ульяновск
     rank: монопородная
@@ -1439,6 +1494,9 @@
       itan:
         class: рабочих собак
         place: 5 отлично СС, выражено, не отпускает
+      palmira:
+        class: юниоров
+        place: 4 очень хорошо
 2019-10-19:
   - city: Димитровград
     rank: монопородная
@@ -1449,3 +1507,74 @@
         place: 1 отлично, выражено, не отпускает
         achievements:
           - кчк
+      palmira:
+        class: юниоров
+        place: 4 очень хорошо
+2019-11-09:
+  - city: Сызрань
+    rank: региональная
+    expert: Гачина
+    dogs:
+      palmira:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - кчф рфлс
+          - лпп
+          - best г1
+2019-11-16:
+  - city: Тольятти
+    rank: региональная
+    expert: Бобикова
+    dogs:
+      palmira:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - кчф рфлс
+          - лпп
+2019-12-15:
+  - city: Пенза
+    rank: всероссийская
+    expert: Купляускас
+    dogs:
+      palmira:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - bos
+          - чф оанкоо
+  - city: Пенза
+    rank: региональная
+    expert: Прозоров
+    dogs:
+      palmira:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+2020-03-08:
+  - city: Тольятти
+    rank: всероссийская
+    expert: Кармазина
+    dogs:
+      palmira:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - cac
+          - чркф
