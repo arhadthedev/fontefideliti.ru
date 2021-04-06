@@ -6,7 +6,7 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
-from collections import OrderedDict
+import tools.shows
 
 def generate_photos(output_document, resources):
     output_document.start_container()
@@ -76,83 +76,6 @@ def get_proper_expert_name(last_name, registry):
     else:
         return '{} {}'.format(first_name, last_name)
 
-
-# Items are printed in the order they specified here
-printable_ranks = OrderedDict()
-printable_ranks['cw'] = 'Победитель класса'
-printable_ranks['пмк'] = 'Победитель младшего класса'
-printable_ranks['пкп'] = 'Победитель класса подростков'
-printable_ranks['пкю'] = 'Победитель класса юниоров'
-printable_ranks['лб'] = 'Лучший бэби'
-printable_ranks['лщ'] = 'Лучший щенок'
-printable_ranks['лп'] = 'Лучший подросток'
-printable_ranks['лю'] = 'Лучший юниор'
-printable_ranks['лв'] = 'Лучший ветеран'
-printable_ranks['лк'] = 'Лучший кобель'
-printable_ranks['лс'] = 'Лучшая сука'
-printable_ranks['лсдг'] = 'Лучшая сука до года'
-printable_ranks['jcac'] = 'JunCAC'
-printable_ranks['cac'] = 'CAC'
-printable_ranks['rcac'] = 'RCAC'
-printable_ranks['vcac'] = 'VCAC'
-printable_ranks['юсс'] = 'ЮСС'
-printable_ranks['юкчк'] = 'Юный кандидат в Чемпионы клуба'
-printable_ranks['кчк'] = 'Кандидат в Чемпионы клуба'
-printable_ranks['кчф рфлс'] = 'Кандидат в Чемпионы Федерации РФЛС'
-printable_ranks['кчф оанкоо'] = 'Кандидат в Чемпионы Федерации ОАНКОО'
-printable_ranks['чф рфлс'] = 'Чемпион Федерации РФЛС'
-printable_ranks['чф рфсс'] = 'Чемпион Федерации РФСС'
-printable_ranks['ючф рфос'] = 'Юный Чемпион Федерации РФОС'
-printable_ranks['ючф рфлс'] = 'Юный Чемпион Федерации РФЛС'
-printable_ranks['кчфсс'] = 'КЧФСС'
-printable_ranks['чф оанкоо'] = 'Чемпион Федерации ОАНКОО'
-printable_ranks['ч кз'] = 'Чемпион Казахстана'
-printable_ranks['лпп'] = 'Лучший представитель породы' # BOB
-printable_ranks['big 2'] = 'BIG-2'
-printable_ranks['rcacib'] = 'RCACIB'
-# Baby ones
-printable_ranks['bis-b-1'] = 'BIS-B-I'
-printable_ranks['bis-b-3'] = 'BIS-B-III'
-# Non-baby ones
-printable_ranks['bis-3'] = 'BIS-III'
-printable_ranks['чркф'] = 'Чемпион РКФ'
-printable_ranks['bos'] = 'BOS' # Лучший представитель противоположного пола
-printable_ranks['вице cnd'] = 'Вице-победитель в конкурсе «Ребёнок и собака»'
-printable_ranks['cnd'] = 'Победитель в конкурсе «Ребёнок и собака»'
-printable_ranks['best г3'] = 'BEST группы 3 место!'
-printable_ranks['best г2'] = 'BEST группы 2 место!'
-printable_ranks['best г1'] = 'BEST группы 1 место!'
-printable_ranks['вице best'] = 'Вице-победитель BEST щенков'
-printable_ranks['best щ1'] = 'Победитель Best щенков'
-printable_ranks['best 3'] = 'Best щенков 3 место'
-printable_ranks['best в4'] = 'Best щенков призовое 4 место'
-printable_ranks['best 1г'] = 'Победитель BEST 1 группы' # BIG-1?
-printable_ranks['big-3'] = 'Победитель BEST 3 группы' # BIG-3?
-printable_ranks['best в1'] = 'Победитель Best ветеранов'
-printable_ranks['best в4'] = 'Бест щенков призовое 4 место'
-printable_ranks['best в2'] = 'ВEST ветеранов 2 место!'
-printable_ranks['best в3'] = 'ВEST ветеранов 3 место!'
-printable_ranks['bis 1'] = 'Победитель Best in Show'
-
-
-def assembly_achievements(place, ranks):
-    place_formatted = ' '.join(place.split(' ', 1))
-    ranks_count = {}
-    for source_rank in ranks:
-        ranks_count.setdefault(source_rank, 0)
-        ranks_count[source_rank] += 1
-
-    def id_to_name(rank_id):
-        count = ranks_count.get(rank_id, 0)
-        if count > 1:
-            return '{}x {}'.format(count, printable_ranks[rank_id])
-        elif count == 1:
-            return printable_ranks[rank_id]
-        else:
-            raise RuntimeError('undefined rank should be filtered by a caller')
-    titles = ', '.join((id_to_name(x) for x in printable_ranks if x in ranks))
-    return '{}, {}'.format(place, titles) if titles else place
-
 def generate_shows(output_document, resources):
     output_document.start_container(css_classes=['filled'])
     show_list = resources.get_yaml('shows.yml')
@@ -172,7 +95,9 @@ def generate_shows(output_document, resources):
         output_document.add_raw('<ol class="chrono-list">')
         for show in mono_shows:
             place = show['place'].replace(' ', ' ', 1)
-            achievements = assembly_achievements(place, show['achievements'])
+            achievements = tools.shows.stringify_title_list(show['achievements'])
+            if achievements:
+                place = '{}, {}'.format(place, achievements)
             expert = get_proper_expert_name(show['expert'], experts)
             if show['figurant']:
                 figurant_name = get_proper_expert_name(show['figurant'], experts)
@@ -193,7 +118,10 @@ def generate_shows(output_document, resources):
         output_document.add_raw('<h1>Всепородные выставки</h2>')
         output_document.add_raw('<ol class="chrono-list">')
         for show in nonmono_shows:
-            achievements = assembly_achievements(show['place'], show['achievements'])
+            place = show['place'].replace(' ', ' ', 1)
+            achievements = tools.shows.stringify_title_list(show['achievements'])
+            if achievements:
+                place = '{}, {}'.format(place, achievements)
             expert = get_proper_expert_name(show['expert'], experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
