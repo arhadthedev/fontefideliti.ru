@@ -60,7 +60,8 @@ def filter_shows_for(filtered_dog_id, show_tree):
                     element['city'] = event['city']
                     element['class'] = dog_details['class']
                     element['expert'] = event['expert']
-                    element['figurant'] = event.get('figurant', '')
+                    if 'figurant' in element:
+                        element['figurant'] = event['figurant']
                     element['place'] = dog_details['place']
                     if 'note' in dog_details:
                         element['note'] = dog_details['note']
@@ -73,7 +74,7 @@ def generate_shows(output_document, resources):
     output_document.start_container(css_classes=['filled'])
     show_list = resources.get_yaml('shows.yml')
     dog_list = resources.get_yaml('doglist.yml')
-    experts = resources.get_yaml('people.yml')
+    all_experts = resources.get_yaml('people.yml')
 
     path = output_document.get_path()
     dog_id = path.split('/')[1]
@@ -91,7 +92,7 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            experts = tools.shows.get_experts(show, experts)
+            experts = tools.shows.get_experts(show, all_experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
             cup = '«Кубок {}»'.format(show['cup']) if 'cup' in show else 'КЧК'
@@ -110,7 +111,7 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            experts = tools.shows.get_experts(show, experts)
+            experts = tools.shows.get_experts(show, all_experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
             normalized_rank = show['rank'][0].upper() + show['rank'][1:]
