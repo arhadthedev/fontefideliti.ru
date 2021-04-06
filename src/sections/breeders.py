@@ -69,13 +69,6 @@ def filter_shows_for(filtered_dog_id, show_tree):
     return filtered_shows
 
 
-def get_proper_expert_name(last_name, registry):
-    first_name, *patronymic = registry[last_name].split(' ')
-    if patronymic:
-        return '{} {}. {}.'.format(last_name, first_name[0], patronymic[0][0])
-    else:
-        return '{} {}'.format(first_name, last_name)
-
 def generate_shows(output_document, resources):
     output_document.start_container(css_classes=['filled'])
     show_list = resources.get_yaml('shows.yml')
@@ -98,9 +91,9 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            expert = get_proper_expert_name(show['expert'], experts)
+            expert = utils.shows.get_proper_person_name(show['expert'], experts)
             if show['figurant']:
-                figurant_name = get_proper_expert_name(show['figurant'], experts)
+                figurant_name = utils.shows.get_full_person_name(show['figurant'], experts)
                 figurant = ', фигурант {}'.format(figurant_name)
             else:
                 figurant = ''
@@ -122,7 +115,7 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            expert = get_proper_expert_name(show['expert'], experts)
+            expert = utils.shows.get_full_person_name(show['expert'], experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
             normalized_rank = show['rank'][0].upper() + show['rank'][1:]

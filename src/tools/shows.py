@@ -86,3 +86,11 @@ def stringify_title_list(titles):
 
     stringified = [_stringify_title(counted_titles[x], known_titles[x]) for x in known_titles if x in counted_titles]
     return ', '.join(stringified)
+
+
+def get_full_person_name(last_name, registry):
+    first_name, *patronymic = registry[last_name].split(' ')
+    if patronymic:
+        return '{} {}. {}.'.format(last_name, first_name[0], patronymic[0][0])
+    else:
+        return '{} {}'.format(first_name, last_name)
