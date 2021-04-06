@@ -91,17 +91,12 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            expert = utils.shows.get_proper_person_name(show['expert'], experts)
-            if show['figurant']:
-                figurant_name = utils.shows.get_full_person_name(show['figurant'], experts)
-                figurant = ', фигурант {}'.format(figurant_name)
-            else:
-                figurant = ''
+            experts = tools.shows.get_experts(show, experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
             cup = '«Кубок {}»'.format(show['cup']) if 'cup' in show else 'КЧК'
             notes = '({})'.format(show['note']) if 'note' in show else ''
-            output_document.add_raw(' Монопородная выставка {cp}, г. {ci}, класс {cl}, <strong>{a}</strong> {n} (эксперт {e}{f}).'.format(cp=cup, ci=show['city'], cl=show['class'], a=achievements, e=expert, f=figurant, n=notes))
+            output_document.add_raw(' Монопородная выставка {cp}, г. {ci}, класс {cl}, <strong>{a}</strong> {n} ({e}).'.format(cp=cup, ci=show['city'], cl=show['class'], a=achievements, e=experts, n=notes))
         output_document.add_raw('</ol>')
         output_document.end_container()
 
@@ -115,11 +110,11 @@ def generate_shows(output_document, resources):
             achievements = tools.shows.stringify_title_list(show['achievements'])
             if achievements:
                 place = '{}, {}'.format(place, achievements)
-            expert = utils.shows.get_full_person_name(show['expert'], experts)
+            experts = tools.shows.get_experts(show, experts)
             output_document.add_raw('<li>')
             output_document.add_date(show['date'])
             normalized_rank = show['rank'][0].upper() + show['rank'][1:]
-            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> (эксперт {e}).'.format(s=normalized_rank, ci=show['city'], cl=show['class'], a=achievements, e=expert))
+            output_document.add_raw(' {s}, г. {ci}, класс {cl}, <strong>{a}</strong> ({e}).'.format(s=normalized_rank, ci=show['city'], cl=show['class'], a=achievements, e=experts))
         output_document.add_raw('</ol>')
         output_document.end_container()
     output_document.end_container()

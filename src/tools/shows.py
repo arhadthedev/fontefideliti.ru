@@ -94,3 +94,12 @@ def get_full_person_name(last_name, registry):
         return '{} {}. {}.'.format(last_name, first_name[0], patronymic[0][0])
     else:
         return '{} {}'.format(first_name, last_name)
+
+
+def get_experts(event, all_people):
+    expert_name = get_full_person_name(event['expert'], all_people)
+    if 'figurant' in event:
+        figurant_name = get_full_person_name(event['figurant'], all_people)
+        return 'эксперт {}, фигурант {}'.format(expert_name, figurant_name)
+    else:
+        return 'эксперт {}'.format(expert_name)
