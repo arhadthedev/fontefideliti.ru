@@ -57,6 +57,12 @@ jobs:
         uses: chabad360/htmlproofer@master
         with:
           directory: "./public"
+      - name: Validate HTML and CSS Conformance
+        id: html_css_conformance
+        uses: Cyb3r-Jak3/html5validator-action@v0.4.2
+        with:
+          css: true
+          root: public/
 
   deploy:
     name: Deploy
