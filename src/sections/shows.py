@@ -33,6 +33,8 @@ def generate_year_page(output_document, resources):
 
     output_document.start_container(css_classes=['card'])
     matches = re.findall(r'([^{]*){% include photo.html path="([^"]*)" title="([^"]*)" [^%]*%}', source)
+    if not matches:
+        output_document.add_raw(source)
     for rest, path, title in matches:
         output_document.add_raw(rest)
         output_document.add_image(path, title, 'h', 152, is_clickable=True)
