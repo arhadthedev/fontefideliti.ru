@@ -31,15 +31,12 @@ def generate_year_page(output_document, resources):
     end_of_frontmatter = source.find('---', 1) + 3
     source = source[end_of_frontmatter:]
 
-    first_image = source.find('{%')
-    output_document.add_raw('<article class="card">')
-    output_document.add_raw(source[:first_image])
-    output_document.add_raw('</article>')
-
-    matches = re.findall(r'{% include photo.html path="([^"]*)" title="([^"]*)"([^{]*)', source)
-    for path, title, rest in matches:
-        output_document.add_image(path, title, 'h', 152, is_clickable=True)
+    output_document.start_container(css_classes=['card'])
+    matches = re.findall(r'([^{]*){% include photo.html path="([^"]*)" title="([^"]*)" [^%]*%}', source)
+    for rest, path, title in matches:
         output_document.add_raw(rest)
+        output_document.add_image(path, title, 'h', 152, is_clickable=True)
+    output_document.end_container()
 
 
 def get_root_artifact_list(resources):
