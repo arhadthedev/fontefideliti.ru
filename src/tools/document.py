@@ -67,7 +67,7 @@ class Document(object):
             else:
                 item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
             self._content_chunks.append(item)
-        self._content_chunks.append('</nav>')
+        self._content_chunks.append('</ul></nav>')
 
 
     def get_path(self):
