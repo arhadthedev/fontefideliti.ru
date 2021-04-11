@@ -9,8 +9,6 @@ adelina:
       <li>Best Puppy-2</li>
     </ul>
 aleks:
-  name:
-    gen: Ersteshrit Aleks
   extra_titles:
     - Чемпион России
     - Юный Чемпион России
@@ -33,8 +31,6 @@ aike:
   extra_titles:
     - V
 alisha:
-  name:
-    gen: Фонте Фиделити Алиши
   content: >
     <ul>
       <li>Чемпион России</li>
@@ -106,13 +102,9 @@ count:
   extra_titles:
     - Отборный класс
 danaya:
-  name:
-    gen: Фанхил Хаус Данаи
   content: >
     <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
 demetra:
-  name:
-    gen: Фанхил Хаус Деметры
   extra_titles:
     - Чемпион России
     - Чемпион РКФ
@@ -146,8 +138,6 @@ dux:
   extra_titles:
     - Отборный класс
 eiko:
-  name:
-    gen: Eiko vom Haus Portofino
   renter: питомник «Баларис»
   extra_titles:
     - Чемпион России
@@ -204,8 +194,6 @@ handa:
   extra_titles:
     - V
 hasso:
-  name:
-    gen: Фанхил Хаус Хассо
   videos:
     - ZtrtZPUq2Cg
     - DSoxvCLlRKA
@@ -226,8 +214,6 @@ heiko:
   extra_titles:
     - Отборный класс
 hillari:
-  name:
-    gen: Фанхил Хаус Хиллари
   extra_titles:
     - V
   videos:
@@ -242,8 +228,6 @@ hillari:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
 inessa:
-  name:
-    gen: Фонте Фиделити Инессы
   content: >
     <ul class="titles">
       <li>Чемпион России</li>
@@ -269,8 +253,6 @@ isabel:
     </ul>
     <p><b>ОКД/ЗКС; HD-A, ED-0</b></p>
 itan:
-  name:
-    gen: Фонте Фиделити Итана
   videos:
     - fDREAoKZtR8
   extra_titles:
@@ -330,8 +312,6 @@ lilskan:
   extra_titles:
     - V
 mabari:
-  name:
-    gen: Фанхил Хаус Мабари
   extra_titles:
     - V
   videos:
@@ -376,8 +356,6 @@ nata:
   extra_titles:
     - Отборный класс
 nikoletta:
-  name:
-    gen: Фанхил Хаус Николетты
   extra_titles:
     - Чемпион России
     - Чемпион Казахстана
@@ -403,8 +381,6 @@ nikoletta:
     </ul>
     <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
 olivia:
-  name:
-    gen: Фонте Фиделити Оливии
   content: >
     <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
 ober:
@@ -417,8 +393,6 @@ pacco:
   extra_titles:
     - Отборный класс
 palmira:
-  name:
-    gen: Фонте Фиделити Пальмиры
   content: >
     <ul>
       <li>Чемпион России</li>
@@ -522,8 +496,6 @@ vivian:
   extra_titles:
     - V
 viviana:
-  name:
-    gen: Хаус Велхольм Вивианы
   longhair: true
   content: >
     <ul>
@@ -547,8 +519,6 @@ zenta:
   extra_titles:
     - V
 zheneva:
-  name:
-    gen: Фонте Фиделити Женевы
   content: >
     <ul>
       <li>Лучший бэби</li>

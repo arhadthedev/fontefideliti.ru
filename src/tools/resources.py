@@ -12,6 +12,47 @@ import os
 import PIL
 import yaml
 
+
+# based on https://russkiiyazyk.ru/chasti-rechi/sushhestvitelnoe/tipyi-skloneniya-imen-sushhestvitelnyih.html
+def _declense(word, case, gender):
+    if case == 'gen':
+        if word[-2:] == 'ия':
+            return ''.join(word[:-2] + 'ии')
+        elif word[-2:] == 'ие':
+            return ''.join(word[:-2] + 'ия')
+        elif word[-1] == 'а':
+            return ''.join(word[:-1] + 'ы')
+        elif word[-1] == 'я':
+            return ''.join(word[:-1] + 'и')
+        #elif word[-1] == 'о':  -- Хассо proves that this is a bad idea
+        #    return ''.join(word[:-1] + 'а')
+        #elif word[-1] == 'е':
+        #    return ''.join(word[:-1] + 'я')
+        elif word[-1] == 'ь':
+            if gender == 'f':
+                return ''.join(word[-1:] + 'и')
+            else:
+                return ''.join(word[-1:] + 'я')
+        else:
+            return word
+    else:
+        raise NotImplementedError('only genitive case is supported for now')
+
+
+def _get_genitive_dog_name(name, case, gender):
+    # Non-russian name, do not declense
+    if not 'А' <= name[0].capitalize() <= 'Я':
+        return name
+
+    name_first_features = ['оф', 'с']
+    words = name.split(' ')
+    if any(word in name_first_features for word in words):
+        words[0] = _declense(words[0], case, gender)
+    else:
+        words[-1] = _declense(words[-1], case, gender)
+    return ' '.join(words)
+
+
 class Input(object):
     def __init__(self, base_path):
         self._base_path = base_path
@@ -43,6 +84,7 @@ class Input(object):
                             if 'name' not in dog:
                                 dog['name'] = {}
                             dog['name']['nom'] = line['Name']
+                            dog['name']['gen'] = _get_genitive_dog_name(line['Name'], 'gen', line['Gender'])
                             if line['Gender']:
                                 genders = {'f': 'female', 'm': 'male'}
                                 dog['gender'] = genders[line['Gender']]
