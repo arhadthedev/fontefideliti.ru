@@ -61,11 +61,11 @@ class Document(object):
             if not menu_path:
                 menu_path = 'index.html'
             if compact_path == menu_path:
-                item = '<li><span class="current">{}'.format(title)
+                item = '<li><span class="current">{}</span></li>'.format(title)
             elif path.startswith(menu_path):
-                item = '<li><a href="/{}" class="current">{}</a>'.format(menu_path, title)
+                item = '<li><a href="/{}" class="current">{}</a></li>'.format(menu_path, title)
             else:
-                item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
+                item = '<li><a href="/{}">{}</a></li>'.format(menu_path, title)
             self._content_chunks.append(item)
         self._content_chunks.append('</ul></nav>')
 
