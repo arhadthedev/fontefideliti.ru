@@ -1,0 +1,115 @@
+Type,ID,Name,Gender,DOB,Father,Mother,Pedigree Database #,GSDOG #,Photo,Renter,Display After
+p,adel,Страпинг Феллоу Адель,,,,,,,,,
+n,adelina,Фонте Фиделити Аделина,,2015-01-31,eiko,mabari,2339100,,photos/dogs/adelina,,ando
+b,aleks,Ersteshrit Aleks,m,2015-04-08,count,kaja,2466950,28512,2018/1222a,,
+p,aike,Aike,,,arex,troya,,,,,
+b,alisha,Фонте Фиделити Алиша,f,2015-01-31,eiko,mabari,2339101,,photos/alisha/main,,antei
+p,anabel,Anabel vom Sofienwald,,,,,,,,,
+n,ando,Фонте Фиделити Андо,,2015-01-31,eiko,mabari,2339097,,2019/06171,,alisha
+n,antei,Фонте Фиделити Антей,,2015-01-31,eiko,mabari,2339099,,photos/dogs/antey,,
+p,ankaa,Ankaa vom Nadelhaus,,,,,,,,,
+p,arex,Arex vom Herbramer-Wald,,,,,,,,,
+p,armour,Armour from Lannasland,,,phill,aike,,,2016/09112,,
+p,ballack,Ballack von Aurelius,,,,,,,,,
+p,bazi,Bazi von der Urbecke,,,quando,ertha,,,photos/bazi,,
+n,bosko,Фонте Фиделити Боско,,2015-07-17,eiko,undina,2417587,,photos/dogs/bosko,,adelina
+p,buster,Buster aus der Brunnenstraße,,,,,,,,,
+p,carina,Carina vom Wildsteiger Landhaus,,,larus,nata,,,,,
+p,cleo,Cleo van der Lust,,,,,,,,,
+p,conny,Conny vom Haus Portofino,,,zamp,carina,,,photos/conny,,
+p,count,Count Ustinov van de Ybajo Hoeve,,,ustinov,opal,,,photos/count,,
+n,daimond,Фонте Фиделити Даймонд,,2016-05-21,eiko,danaya,2553014,,photos/dogs/daimond,,deiko
+r,danaya,Фанхил Хаус Даная,f,2013-08-30,eltoro,hillari,2069515,25364,photos/danaya/main,,mabari
+n,deiko,Фонте Фиделити Дейко,,2016-05-21,eiko,danaya,2553015,,photos/dogs/deiko,,greit
+r,demetra,Фанхил Хаус Деметра,f,2013-08-30,eltoro,hillari,2069514,25363,photos/shows/2016-samara-25072016-10,,danaya
+p,devil,Devil von Santamar,,,,,,,,,
+p,dux,Dux della Valcuvia,,,,,,,,,
+b,eiko,Eiko vom Haus Portofino,m,2007-07-10,bazi,conny,558835,,photos/eiko/main,Баларис,itan
+n,elisei,Фонте Фиделити Елисей,,2016-10-24,eiko,demetra,2594228,,photos/dogs/elisey-2,,daimond
+p,eltoro,Atsel Hof El-Toro,,,siska,rouk,,,photos/el-toro,,
+p,hilton,Endrefalva Hilton,,,ulk,riply,,,,,
+p,ertha,Ertha von der Urbecke,,,yasko,malte,,,,,
+p,evita,Evita van de Ybajo Hoeve,,,,,,,,,
+p,fanta,Фанта оф Флокиш Фест,,,heiko,adel,,,,,
+p,fenia,Fenia degli Achei,,,,,,,,,
+p,flex,Flex von Tronje,,,,,,,,,
+p,floro,Floro degli Achei,,,quenn,fenia,,,,,
+n,gambo,Фонте Фиделити Гамбо,,2016-02-01,zakhar,mabari,2695110,,photos/dogs/gambo,,vivat
+p,ghandi,Ghandi von Arlett,,,,,,,,,
+n,goldi,Фонте Фиделити Голди,,2016-02-01,zakhar,mabari,2695107,,photos/dogs/goldi,,gambo
+n,greit,Фонте Фиделити Грейт,,2016-02-01,zakhar,mabari,2619808,,photos/dogs/greit,,goldi
+p,handa,Handa von der Urbecke,,,,,,,,,
+p,helios,Helios di Fosco Aidas,,,,,,,,,
+r,hasso,Фанхил Хаус Хассо,m,2007-06-06,thor,kvina,574451,12847,photos/hasso/main,,eiko
+p,heiko,Aranyvölgyi-Örseg Heiko,,,,,,,,,
+r,hillari,Фанхил Хаус Хиллари,f,2007-06-06,thor,kvina,574533,13729,photos/hillari/main,,viviana
+b,inessa,Фонте Фиделити Инесса,f,2017-04-26,aleks,demetra,2647833,,2020/01151,,zheneva
+n,ingur,Фонте Фиделити Ингур,,2017-04-26,aleks,demetra,2647829,,photos/dogs/ingur,,isabel
+n,isabel,Фонте Фиделити Изабель,,2017-04-26,aleks,demetra,2647826,,photos/dogs/isabel-2,,zhasmina
+n,iskander,Фонте Фиделити Искандер,,2017-04-26,aleks,demetra,2647828,,photos/dogs/iskander-1,,ingur
+b,itan,Фонте Фиделити Итан,m,2017-04-26,aleks,demetra,2647827,30940,2019/10193,,aleks
+p,jilla,Jilla von der Urbecke,,,bazi,handa,,,,,
+p,kaja,Kaja von der Urbecke,,,pacco,jilla,,,photos/kaja,,
+n,kamila,Фонте Фиделити Камила,,2017-06-25,aleks,danaya,2696790,,photos/dogs/kamila,,kassandra
+p,karats,Karat’s Ulk,,,ghandi,lilskan,,,,,
+n,kassandra,Фонте Фиделити Кассандра,,2017-06-25,aleks,danaya,2695099,,photos/dogs/kassandra-1,,iskander
+p,kitty,Kitty vom Friedenspark,,,dux,zenta,,,,,
+p,kira,Kira von Lacroz,,,,,,,,,
+p,kuba,Kuba Feetback,,,vegas,selma,,,,,
+p,kvina,Квантум Квина,,,hilton,fanta,,,2008/04051,,
+p,larus,Larus von Batu,,,,,,,,,
+n,lagerta,Фонте Фиделити Лагерта,,2017-09-07,aleks,pantera,2697073,,photos/dogs/lagerta,,kamila
+n,lankaster,Фонте Фиделити Ланкастер,,2017-09-07,aleks,pantera,2697063,,photos/dogs/lankaster,,lagerta
+n,legenda,Фонте Фиделити Легенда,,2017-09-07,aleks,pantera,2697078,,photos/dogs/legenda,,levadia
+n,levadia,Фонте Фиделити Левадия,,2017-09-07,aleks,pantera,2697076,,photos/dogs/levadia,,lankaster
+p,lilskan,Lilskan Never Give Up,,,,,,,,,
+r,mabari,Фанхил Хаус Мабари,f,2011-01-21,zearo,kvina,705217,21008,photos/mabari/main,,hillari
+p,maestro,Maestro vom Osterberger-Land,,,,,,,,,
+p,malte,Malte von der Urbecke,,,,,,,,,
+p,mary,Mary della Valcuvia,,,,,,,,,
+p,maybach,Maybach Tigback Hof,,,ober,kuba,,,photos/maibah,,
+p,melinda,Melinda vom Niemberger Eck,,,,,,,,,
+p,merlinmonro,Antenor Hof Merlin Monro,,,buster,umathurman,,,,,
+p,maraj,Atsel Hof Maraj,,,,,,,,,
+p,nalmira,Антенор Хоф Нальмира,,,eiko,merlinmonro,,,none,,
+p,nando,Nando vom Gollerweiher,,,,,,,,,
+p,nannila,Nannila von der Freiheit Westerholt,,,,,,,,,
+p,nata,Nata vom Wildsteiger Land,,,,,,,,,
+b,nikoletta,Фанхил Хаус Николетта,f,2014-07-26,eiko,hillari,2230345,26656,photos/nikoletta/main,,
+b,olivia,Фонте Фиделити Оливия,f,2018-03-22,aleks,mabari,2813203,,2019/09021,,inessa
+p,ober,Ober della Valcuvia,,,zamp,mary,,,,,
+p,opal,Opal van de Ybajo Hoeve,,,nando,evita,,,,,
+p,pacco,Pacco vom Langenbungert,,,remo,ankaa,,,,,
+b,palmira,Фонте Фиделити Пальмира,f,2018-06-29,aleks,nikoletta,2791393,,2019/05053,,olivia
+p,pantera,Пантера с Нижней Камы,,,,,,,,,
+n,persei,Фонте Фиделити Персей,,2018-06-29,aleks,nikoletta,2791385,,2019/05052,,legenda
+p,phill,Phill van der Lust,,,devil,cleo,,,,,
+p,quando,Quando vom Sofienwald,,,flex,anabel,,,,,
+p,quantum,Quantum von Arminius,,,,,,,,,
+p,quenn,Quenn vom Löher Weg,,,,,,,,,
+p,remo,Remo vom Fichtenschlag,,,,,,,,,
+p,rouk,Atsel Hof Rouk,,,ballack,maraj,,,,,
+p,riply,Endrefalva Riply,,,,,,,,,
+p,selma,Selma Feetback,,,,,,,,,
+p,siska,Siska von der Freiheit Westerholt,,,maestro,nannila,,,,,
+n,tekila,Фонте Фиделити Текила,,2019-05-21,aleks,demetra,2894363,,2020/05291,,persei
+p,thor,Thor vom Friedenspark,,,karats,kitty,,,photos/thor,,
+p,troya,Troya Legendhof,,,,,,,,,
+n,ulana,Фонте Фиделити Улана,,2020-03-21,helios,inessa,2988942,,2020/08111,,tekila
+p,ulk,Ulk von Arlett,,,,,,,,,
+p,umathurman,Antenor Hof Uma Thurman,,,,,,,,,
+p,undina,Фанхил Хаус Ундина,,,,,,,,,
+p,ustinov,Ustinov vom Römerland,,,quantum,kira,,,,,
+p,ute,Ute vom Thermodos,,,,,,,,,
+p,vegas,Vegas du Haut Mansard,,,,,,,,,
+n,vivat,Фонте Фиделити Виват,,2015-08-19,eiko,demetra,2424549,,photos/dogs/vivat,,bosko
+p,vivian,Vivian vom Zellwaldrand,,,zamp,melinda,,,,,
+b,viviana,Хаус Велхольм Вивиана,f,2014-01-30,maybach,mabari,2156108,,2015/08111,,palmira
+p,yasko,Yasko vom Farbenspiel,,,,,,,,,
+p,zakhar,Zakhar no Bārtas Krasta,,,,,,,,,
+p,zamp,Zamp vom Thermodos,,,quantum,ute,,,,,
+p,zearo,Zearo vom Zellwaldrand,,,floro,vivian,,,photos/zearo,,
+p,zenta,Zenta vom Friedenspark,,,,,,,,,
+n,zhasmina,Фонте Фиделити Жасмина,,2016-12-23,armour,nikoletta,2610971,,2017/12021,,zhofrei
+b,zheneva,Фонте Фиделити Женева,f,2016-12-23,armour,nikoletta,2610976,31482,2018/07281,,alisha
+n,zhofrei,Фонте Фиделити Жофрей,,2016-12-23,armour,nikoletta,2599793,,photos/dogs/zhofrey,,elisei
