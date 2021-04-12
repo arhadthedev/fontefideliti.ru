@@ -47,7 +47,7 @@ def generate_year_page(output_document, resources):
     path = output_document.get_path()
     file_name = path.split('/')[1]
     displayed_year = int(file_name[0:4])
-    if displayed_year != 2021:
+    if displayed_year != 2021 and displayed_year != 2020:
         generate_legacy_year_page(output_document, resources)
         return
 
@@ -75,7 +75,7 @@ def generate_year_page(output_document, resources):
                 output_document.add_plain(dog_performance['class'])
                 output_document.add_raw(', ')
                 place = dog_performance['place'].replace(' ', ' ', 1)
-                achievements = tools.shows.stringify_title_list(dog_performance['achievements'])
+                achievements = tools.shows.stringify_title_list(dog_performance.get('achievements', []))
                 if achievements:
                     place = '{}, {}'.format(place, achievements)
                 output_document.add_plain(place)
