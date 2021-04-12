@@ -57,9 +57,9 @@ def generate_year_page(output_document, resources):
 
     output_document.start_container(css_classes=['card'])
     displayed_dates = [(date, events) for (date, events) in show_list.items() if date.year == displayed_year]
-    displayed_dates.sort(key=lambda x: x, reverse=True)
+    displayed_dates.sort(key=lambda x: x[0], reverse=True)
     gallery = OrderedDict()
-    for date, events in reversed(displayed_dates):
+    for date, events in displayed_dates:
         for event in events:
             output_document.add_raw('<h2 style="font-size: 90%">')
             output_document.add_date(date)
