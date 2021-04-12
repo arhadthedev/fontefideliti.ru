@@ -1225,6 +1225,29 @@
         achievements:
           - cw
           - jcac
+        photos:
+          - path: photos/shows/20180217-tolyatty-1
+            caption: Фонте Фиделити Итан. Всероссийская выставка, г. Тольятти, 17 февраля 2018 г.
+          - path: photos/shows/20180217-tolyatty-2
+            caption: Фонте Фиделити Итан. Всероссийская выставка, г. Тольятти, 17 февраля 2018 г.
+          - path: photos/shows/20180217-tolyatty-3
+            caption: Фонте Фиделити Итан. Всероссийская выставка, г. Тольятти, 17 февраля 2018 г.
+  - city: Пермь
+    rank: всероссийская
+    expert: Костарёва
+    dogs:
+      ando:
+        class: Чемпионов
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лпп
+          - чф рфсс
+          - чркф
+        photos:
+          - path: photos/shows/20180217-perm-1
+            caption: Фонте Фиделити Андо. Всероссийская выставка, г. Пермь, 17 февраля 2018 г.
 2018-02-25:
   - city: Пенза
     rank: региональная
@@ -1249,6 +1272,13 @@
         achievements:
           - cw
           - jcac
+        photos:
+          - path: photos/shows/2018-samara-20180303-1
+            caption: Фонте Фиделити Итан, г. Самара, 3 марта 2018 г.
+          - path: photos/shows/2018-samara-20180303-2
+            caption: Фонте Фиделити Итан, г. Самара, 3 марта 2018 г.
+          - path: photos/shows/2018-samara-20180303-3
+            caption: Фонте Фиделити Итан, г. Самара, 3 марта 2018 г.
 2018-04-07:
   - city: Тольятти
     rank: всероссийская
@@ -1260,17 +1290,125 @@
         achievements:
           - cw
           - jcac
+        photos:
+          - path: photos/shows/2018-tolyatty-20182407-1
+            caption: Фонте Фиделити Итан, г. Тольятти, 7 апреля 2018 г.
+2018-04-14:
+  - city: Сызрань
+    rank: всероссийская
+    expert: Островская
+    dogs:
+      lankaster:
+        class: щенков
+        place: 1 очень перспективный
+          - cw
+          - лщ
+        photos:
+          - path: photos/shows/20180414-syzran-1
+            caption: Фонте Фиделити Ланкастер, г. Сызрань, 14 апреля 2018 г.
+2018-06-17:
+  - city: Тольятти
+    rank: всероссийская ЧРКФ
+    expert: Лакатош
+    dogs:
+      isabel:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - jcac
+      lankaster:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - jcac
+          - лю
+  - city: Тольятти
+    rank: региональная
+    expert: Кармазина
+    dogs:
+      lankaster:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - jcac
+          - лю
+        photos:
+          - path: photos/shows/20180617-tolyatty-1
+            caption: Фонте Фиделити Изабель, г. Тольятти, 17 июня 2018 г.
+          - path: photos/shows/20180617-tolyatty-2
+            caption: Фонте Фиделити Изабель, г. Тольятти, 17 июня 2018 г.
+          - path: photos/shows/20180617-tolyatty-3
+            caption: Фонте Фиделити Изабель, г. Тольятти, 17 июня 2018 г.
+          - path: photos/shows/20180617-tolyatty-4
+            caption: Фонте Фиделити Ланкастер, г. Тольятти, 17 июня 2018 г.
+2018-08-04:
+  - city: Тольятти
+    rank: региональная
+    expert: Чуприс
+    dogs:
+      isabel:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+2018-08-12:
+  - city: Омск
+    rank: монопородная
+    expert: Куретов
+    dogs:
+      ando:
+        class: рабочих собак
+        place: 5 отлично, дорожка пройдена/выражено/отпускает
+        photos:
+          - path: photos/shows/20180812-omsk-1
+            caption: Фонте Фиделити Андо, г. Омск, 12 августа 2018 г.
 2018-08-25:
   - city: Тольятти
     rank: монопородная
     expert: Попов
     dogs:
+      gaidar:
+        class: щенков
+        place: 2 большая перспектива
+        photos:
+          - path: photos/shows/20180825-tolyatti-1
+            caption: Фонте Фиделити Итан, г. Тольятти, 25 августа 2018 г.
+          - path: photos/shows/20180825-tolyatti-5
+            caption: Фонте Фиделити Итан, г. Тольятти, 25 августа 2018 г.
+          - path: photos/shows/20180825-tolyatti-2
+            caption: Фонте Фиделити Итан и Фонте Фиделити Калиста, г. Тольятти, 25 августа 2018 г.
+          - path: photos/shows/20180825-tolyatti-3
+            caption: Фонте Фиделити Итан, г. Тольятти, 25 августа 2018 г.
+          - path: photos/shows/20180825-tolyatti-4
+            caption: Группа потомков производителя Ersteshrit Aleks, г. Тольятти, 25 августа 2018 г.
       itan:
         class: юниоров
         place: 1 очень хорошо
         achievements:
-          - cw
+          - cw  # in personal profile but not in per-year shows
           - юкчк
+      kalista:
+        class: юниоров
+        place: 2 очень хорошо
+2018-09-29:
+  - city: Ижевск
+    rank: монопородная
+    expert: Попов
+    dogs:
+      ando:
+        class: рабочих собак
+        place: 6 отлично, дорожка пройдена, выражено, отпускает, Лучший на проверке рабочих качеств!
+        photos:
+          - path: photos/shows/20180929-izhevsk
+            caption: Фонте Фиделити Андо, г. Ижевск, 29 сентября 2018 г.
 2018-11-17:
   - city: Тольятти
     rank: всероссийская
@@ -1301,6 +1439,17 @@
         achievements:
           - cw
           - лб
+        photos:
+          - path: photos/shows/20181117-tolyatty-4
+            caption: Фонте Фиделити Итан, г. Тольятти, 17 ноября 2018 г.
+          - path: photos/shows/20181117-tolyatty-5
+            caption: Фонте Фиделити Итан, г. Тольятти, 17 ноября 2018 г.
+          - path: photos/shows/20181117-tolyatty-1
+            caption: Фонте Фиделити Итан, Фонте Фиделити Инесса и Фонте Фиделити Пальмира, г. Тольятти, 17 ноября 2018 г.
+          - path: photos/shows/20181117-tolyatty-2
+            caption: Фонте Фиделити Итан, г. Тольятти, 17 ноября 2018 г.
+          - path: photos/shows/20181117-tolyatty-3
+            caption: Фонте Фиделити Пальмира, г. Тольятти, 17 ноября 2018 г.
 2018-11-18:
   - city: Пенза
     rank: всероссийская ЧРКФ
@@ -1314,6 +1463,15 @@
           - cac
           - cac
           - чф рфсс
+        photos:
+          - path: photos/shows/20181118-penza-1
+            caption: Фонте Фиделити Итан, г. Пенза, 18 ноября 2018 г.
+          - path: photos/shows/20181118-penza-2
+            caption: Фонте Фиделити Итан, г. Пенза, 18 ноября 2018 г.
+          - path: photos/shows/20181118-penza-3
+            caption: Фонте Фиделити Инесса, г. Пенза, 18 ноября 2018 г.
+          - path: photos/shows/20181118-penza-4
+            caption: Фонте Фиделити Инесса, г. Пенза, 18 ноября 2018 г.
       itan:
         class: открытый
         place: 1 отлично
@@ -1371,6 +1529,11 @@
           - cac
           - лпп
           - best г2
+        photos:
+          - path: photos/shows/20181209-pensa-1
+            caption: Фонте Фиделити Инесса, г. Пенза, 9 декабря 2018 г.
+          - path: photos/shows/20181209-pensa-2
+            caption: Фонте Фиделити Инесса, г. Пенза, 9 декабря 2018 г.
 2018-12-16:
   - city: Тольятти
     rank: региональная
@@ -1384,6 +1547,31 @@
           - vcac
           - лпп
           - best в2
+      isabel:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лс
+          - cac
+          - кчф рфсс
+      persei:
+        class: беби
+        place: 1 большая перспектива
+        achievements:
+          - cw
+          - лб
+        photos:
+          - path: photos/shows/20181216-tolyatty-1
+            caption: Фанхил Хаус Хассо, Изабель и Персей, г. Тольятти, 16 декабря 2018 г.
+          - path: photos/shows/20181216-tolyatty-2
+            caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 201 г.
+          - path: photos/shows/20181216-tolyatty-3
+            caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018 г.
+          - path: photos/shows/20181216-tolyatty-4
+            caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018 г.
+          - path: photos/shows/20181216-tolyatty-5
+            caption: Фанхил Хаус Хассо, г. Тольятти, 16 декабря 2018 г.
 2019-02-10:
   - city: Самара
     rank: всероссийская
