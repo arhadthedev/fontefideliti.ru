@@ -71,7 +71,10 @@ def generate_year_page(output_document, resources):
 
                 output_document.add_raw('<p style="text-align: left"><strong>')
                 output_document.add_plain(dog_details['name']['nom'])
-                output_document.add_raw('</strong>, класс ')
+                output_document.add_raw('</strong>')
+                if 'longhair' in dog_details and dog_details['longhair']:
+                    output_document.add_raw(' (д/ш),')
+                output_document.add_raw(' класс ')
                 output_document.add_plain(dog_performance['class'])
                 output_document.add_raw(', ')
                 place = dog_performance['place'].replace(' ', ' ', 1)
