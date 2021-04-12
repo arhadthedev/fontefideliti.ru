@@ -187,6 +187,8 @@ flex:
 floro:
   extra_titles:
     - V
+gaidar:
+  longhair: true
 ghandi:
   extra_titles:
     - Отборный класс
