@@ -102,7 +102,10 @@ def get_full_person_name(last_name, registry):
 def get_experts(event, all_people):
     expert_name = get_full_person_name(event['expert'], all_people)
     if 'figurant' in event:
-        figurant_name = get_full_person_name(event['figurant'], all_people)
-        return 'эксперт {}, фигурант {}'.format(expert_name, figurant_name)
+        figurants = event['figurant']
+        if not isinstance(figurants, list):
+            figurants = [figurants]
+        figurant_names = [get_full_person_name(name, all_people) for name in figurants]
+        return 'эксперт {}, фигурант {}'.format(expert_name, ', '.join(figurant_names))
     else:
         return 'эксперт {}'.format(expert_name)
