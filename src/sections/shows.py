@@ -34,6 +34,9 @@ def generate_legacy_year_page(output_document, resources):
     source = source[end_of_frontmatter:]
 
     output_document.start_container(css_classes=['card'])
+    source = re.sub(r'<a href="/img/([^.]+).jpg" title="([^"]+)" rel="a"><img [^<]+</a>',
+                    r'{% include photo.html path="\1" title="\2" %}',
+                    source)
     matches = re.findall(r'([^{]*){% include photo.html path="([^"]*)" title="([^"]*)" [^%]*%}', source)
     if not matches:
         output_document.add_raw(source)
