@@ -47,7 +47,7 @@ def generate_year_page(output_document, resources):
     path = output_document.get_path()
     file_name = path.split('/')[1]
     displayed_year = int(file_name[0:4])
-    if displayed_year != 2021 and displayed_year != 2020:
+    if displayed_year != 2021 and displayed_year != 2020 and displayed_year != 2019:
         generate_legacy_year_page(output_document, resources)
         return
 
