@@ -6,6 +6,7 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+import sys
 import tools.shows
 
 def generate_photos(output_document, resources):
@@ -130,6 +131,7 @@ def generate_index(output_document, resources):
     path = output_document.get_path()
     dog_id = path.split('/')[1]
     dog_info = dog_list[dog_id]
+    print('Generating {}...'.format(dog_id), file=sys.stderr)
 
     output_document.start_container(['heavy', 'dog', 'card'])
     output_document.add_header(1, dog_info['name']['nom'])
