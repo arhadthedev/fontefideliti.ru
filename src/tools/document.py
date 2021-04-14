@@ -177,14 +177,14 @@ class Document(object):
         if current_depth >= max_depth:
             return
 
-        if 'father' not in dog_info:
+        if not dog_info['father']:
             raise ValueError('A father must be specified for {}'.format(dog_info['name']['nom']))
         father_id = dog_info['father']
         self._add_pedigree_cell(all_dogs[father_id], all_dogs, current_depth, max_depth)
 
         self._content_chunks.append('<tr>')
 
-        if 'mother' not in dog_info:
+        if not dog_info['mother']:
             raise ValueError('A mother must be specified for {}'.format(dog_info['name']['nom']))
         mother_id = dog_info['mother']
         self._add_pedigree_cell(all_dogs[mother_id], all_dogs, current_depth, max_depth)
