@@ -35,6 +35,7 @@ for generator in [sections.dogs, sections.main, sections.photos, sections.sale, 
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
+        print('Generating {}...'.format(output_path), file=sys.stderr)
         output_document = tools.document.Document(title, output_path, resources)
         generator(output_document, resources)
         html_content = output_document.finalize()

@@ -8,7 +8,6 @@
 
 from collections import OrderedDict
 import re
-import sys
 import tools.shows
 
 def generate_shows(output_document, resources):
@@ -51,7 +50,6 @@ def generate_year_page(output_document, resources):
     path = output_document.get_path()
     file_name = path.split('/')[1]
     displayed_year = int(file_name[0:4])
-    print('Generating {}...'.format(displayed_year), file=sys.stderr)
     if displayed_year != 2021 and displayed_year != 2020 and displayed_year != 2019 and displayed_year != 2018 and displayed_year != 2017:
         generate_legacy_year_page(output_document, resources)
         return
