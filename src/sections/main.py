@@ -16,13 +16,13 @@ def generate_contacts_section(name, telephones, email, site, output_document):
     output_document.add_plain('{}:'.format(name))
     output_document.start_list()
     for number in telephones:
-        output_document.new_list_item()
+        output_document.start_list_item()
         output_document.add_telephone(number)
     if email:
-        output_document.new_list_item()
+        output_document.start_list_item()
         output_document.add_plain(email)
     if site:
-        output_document.new_list_item()
+        output_document.start_list_item()
         output_document.add_human_url(site)
     output_document.end_list()
 

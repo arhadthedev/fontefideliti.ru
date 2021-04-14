@@ -217,12 +217,18 @@ class Document(object):
         self._content_chunks.append(chunk)
 
 
-    def start_list(self):
-        self._content_chunks.append('<ul>')
+    def start_list(self, css_classes=[]):
+        class_list = _make_html_class_list(css_classes)
+        class_mixin = ' class="{}"'.format(class_list) if css_classes else ''
+        self._content_chunks.append('<ul{}>'.format(class_mixin))
 
 
-    def new_list_item(self):
+    def start_list_item(self):
         self._content_chunks.append('<li>')
+
+
+    def end_list_item(self):
+        self._content_chunks.append('</li>')
 
 
     def end_list(self):
