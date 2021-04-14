@@ -234,9 +234,9 @@ def get_root_artifact_list(resources):
 
         name = dog_details['name']
         category = 'dog' if dog_details['type'] == 'nonbreeder' else dog_details['gender']
-        base_url = '{}s/{}/'.format(category, dog_id)
+        base_url = '{}s/{}'.format(category, dog_id)
 
-        section_pages.append((name['nom'], '{}index'.format(base_url), generate_index))
+        section_pages.append((name['nom'], '{}/index'.format(base_url), generate_index))
 
         photos = photo_list.get(dog_id)
         if photos:
