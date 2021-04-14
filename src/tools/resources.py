@@ -79,8 +79,8 @@ class Input(object):
                             if line['ID'] not in self._cached_parsed_resources[rel_path]:
                                 self._cached_parsed_resources[rel_path][line['ID']] = {}
                             dog = self._cached_parsed_resources[rel_path][line['ID']]
-                            types = {'p': 'pedigree-only', 'n': 'nonbreeder', 'b': 'breeder', 'r': 'retired'}
-                            dog['type'] = types[line['Type']]
+                            types = {'': 'nonbreeder', 'b': 'breeder', 'r': 'retired'}
+                            dog['type'] = types[line['Type']] if line['DOB'] else 'pedigree-only'
                             if 'name' not in dog:
                                 dog['name'] = {}
                             dog['name']['nom'] = line['Name']
