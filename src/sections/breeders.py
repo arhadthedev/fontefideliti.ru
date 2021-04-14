@@ -1,5 +1,5 @@
 # -*- coding: UTF-8 -*-
-# breeders.py - generates content of /females and /males
+# breeders.py - generates content of /dogs, /females, and /males
 #
 # Copyright (c) 2021 Oleg Iarygin <oleg@arhadthedev.net>
 #
@@ -194,8 +194,11 @@ def generate_list(output_document, resources):
     dog_list = resources.get_yaml('doglist.yml')
 
     path = output_document.get_path()
-    gender = path.split('/')[0][:-1]
-    dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired'] and dog[1]['gender'] == gender]
+    category = path.split('/')[0][:-1]
+    if category == 'dog':
+        dogs = [dog for dog in dog_list.items() if dog[1]['type'] == 'nonbreeder']
+    else:
+        dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired'] and dog[1]['gender'] == category]
     dogs.sort(key=get_dog_records_key(dog_list))
 
     for dog_id, dog_info in dogs:
@@ -213,16 +216,22 @@ def generate_list(output_document, resources):
         output_document.end_container()
 
 
+def for_pedigree_only(dog):
+    _, dog_details = dog
+    return 'dob' not in dog_details
+
+
 def get_root_artifact_list(resources):
     section_pages = []
 
     dog_list = resources.get_yaml('doglist.yml')
     photo_list = resources.get_yaml('dogphotos.yml')
-    dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired']]
+    dogs = [dog for dog in dog_list.items() if not for_pedigree_only(dog)]
     for dog_id, dog_details in dogs:
 
         name = dog_details['name']
-        base_url = '{}s/{}/'.format(dog_details['gender'], dog_id)
+        category = 'dog' if dog_details['type'] == 'nonbreeder' else dog_details['gender']
+        base_url = '{}s/{}/'.format(category, dog_id)
 
         section_pages.append((name['nom'], '{}index'.format(base_url), generate_index))
 
@@ -245,5 +254,6 @@ def get_root_artifact_list(resources):
 
     section_pages.append(('Производители', 'males/index', generate_list))
     section_pages.append(('Производительницы', 'females/index', generate_list))
+    section_pages.append(('Собаки питомника', 'dogs/index', generate_list))
 
     return section_pages

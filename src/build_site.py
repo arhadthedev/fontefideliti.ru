@@ -9,7 +9,6 @@
 
 import os
 import sections.breeders
-import sections.dogs
 import sections.main
 import sections.photos
 import sections.sale
@@ -31,7 +30,7 @@ if len(sys.argv) < 2:
 input_base_path = sys.argv[1]
 resources = tools.resources.Input(input_base_path)
 
-for generator in [sections.breeders, sections.dogs, sections.main, sections.photos, sections.sale, sections.shows]:
+for generator in [sections.breeders, sections.main, sections.photos, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'

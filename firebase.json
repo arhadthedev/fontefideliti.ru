@@ -1,5 +1,11 @@
 {
   "hosting": {
+    "redirects": [ {
+        "source": "/dogs.htm",
+        "destination": "/dogs/",
+        "type": 301
+    } ],
+
     "public": "public",
     "ignore": ["_*/", ".**", "res/"]
   }
