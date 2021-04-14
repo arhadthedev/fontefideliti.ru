@@ -65,6 +65,7 @@ known_titles['best 3'] = 'Best щенков 3 место'
 known_titles['best в4'] = 'Best щенков призовое 4 место'
 known_titles['best 1г'] = 'Победитель BEST 1 группы' # BIG-1?
 known_titles['big-3'] = 'Победитель BEST 3 группы' # BIG-3?
+known_titles['best вв1'] = 'Вице-победитель BEST ветеранов'
 known_titles['best в1'] = 'Победитель Best ветеранов'
 known_titles['best щ2'] = 'Бест щенков 2 место'
 known_titles['best в4'] = 'Бест щенков призовое 4 место'
