@@ -145,7 +145,6 @@ def generate_index(output_document, resources):
     output_document.add_raw(dog_info.get('content', ''))
     output_document.add_image(dog_info['photo'], 'Фотография {}'.format(dog_info['name']['gen']), 'w', 588, is_clickable=False)
 
-    output_document.start_paragraph()
     subsections = []
     photo_list = resources.get_yaml('dogphotos.yml')
     photos = photo_list.get(dog_id)
@@ -154,8 +153,13 @@ def generate_index(output_document, resources):
     videos = dog_list[dog_id].get('videos', [])
     if videos:
         subsections.append('<a href="videos.htm">Видео</a>')
-    subsections.append('<a href="shows.htm">Результаты выставок</a>')
-    output_document.add_raw(' | '.join(subsections))
+    shows = filter_shows_for(dog_id, show_list)
+    if shows:
+        subsections.append('<a href="shows.htm">Результаты выставок</a>')
+
+    if subsections:
+        output_document.start_paragraph()
+        output_document.add_raw(' | '.join(subsections))
 
     output_document.start_paragraph()
     output_document.add_plain('Родословная: ')
@@ -226,6 +230,7 @@ def get_root_artifact_list(resources):
 
     dog_list = resources.get_yaml('doglist.yml')
     photo_list = resources.get_yaml('dogphotos.yml')
+    show_list = resources.get_yaml('shows.yml')
     dogs = [dog for dog in dog_list.items() if not for_pedigree_only(dog)]
     for dog_id, dog_details in dogs:
 
@@ -247,10 +252,12 @@ def get_root_artifact_list(resources):
             page = (title, '{}/videos'.format(base_url), generate_videos)
             section_pages.append(page)
 
-        shows_url = '{}/shows'.format(base_url)
-        title = "Результаты выставок {}".format(name['gen'])
-        page = (title, shows_url, generate_shows)
-        section_pages.append(page)
+        shows = filter_shows_for(dog_id, show_list)
+        if shows:
+            shows_url = '{}/shows'.format(base_url)
+            title = "Результаты выставок {}".format(name['gen'])
+            page = (title, shows_url, generate_shows)
+            section_pages.append(page)
 
     section_pages.append(('Производители', 'males/index', generate_list))
     section_pages.append(('Производительницы', 'females/index', generate_list))
