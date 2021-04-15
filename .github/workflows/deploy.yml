@@ -18,14 +18,9 @@ jobs:
           pip install -r requirements.txt
       - name: Create a Build Directory
         run: mkdir public
-      - name: Build HTML and Image Files
+      - name: Build Site Content
         run: python ../src/build_site.py ../res
         working-directory: ./public
-      - name: Build CSS Files
-        uses: gha-utilities/sass-build@v0.3.7
-        with:
-          source: res/common.scss
-          destination: public/common.css
       - name: Upload Site Content Artifact
         uses: actions/upload-artifact@v2
         with:
@@ -44,7 +39,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download Artifact
+      - name: Download Site Content Artifact
         uses: actions/download-artifact@master
         with:
           name: public

@@ -8,6 +8,7 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 import os
+import scss.compiler
 import sections.dogs
 import sections.main
 import sections.photos
@@ -23,6 +24,14 @@ def copy_static_files(input_directory):
     base = os.path.join(input_directory, 'img/')
     shutil.copyfile('{}favicon.png'.format(base), 'favicon.png')
     shutil.copyfile('{}background.png'.format(base), 'img/background.png')
+
+
+def generate_styles(resources):
+    compiler = scss.Scss(scss_opts={'compress': True})
+    original_styles = resources.get_string('common.scss')
+    compiled_styles = compiler.compile(original_styles)
+    with open('common.css', 'w', encoding='utf-8') as output_file:
+        output_file.write(compiled_styles)
 
 
 if len(sys.argv) < 2:
@@ -46,4 +55,6 @@ for generator in [sections.dogs, sections.main, sections.photos, sections.sale, 
         with open(output_path, 'w', encoding='utf-8') as output:
             output.write(html_content)
 
+print('Generating content-independend files...', file=sys.stderr)
+generate_styles(resources)
 copy_static_files(input_base_path)
