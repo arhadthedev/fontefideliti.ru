@@ -41,7 +41,7 @@
     caption: Фонте Фиделити Белиссима, 1 год
   - path: photos/our-dogs/yunaru
     caption: Фанхил Хаус Юнару, 3 года
-  - path: photos/our-dogs/yunona
+  - path: 2014/05011
     caption: Фанхил Хаус Юнона
   - path: photos/our-dogs/valdo
     caption: Хаус Велхольм Вальдо
@@ -168,7 +168,7 @@ aleks:
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/aleks/42
     caption: Ersteshrit Aleks и Максимова Настя. Сентябрь 2016г.
-  - path: photos/aleks/1
+  - path: 2016/09201
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
   - path: photos/aleks/2
     caption: Ersteshrit Aleks, 1 год 5 месяцев. Сентябрь 2016г.
@@ -473,7 +473,7 @@ alisha:
     caption: 1,5 месяца
   - path: photos/alisha/54
     caption: 1,5 месяца
-  - path: photos/alisha/55
+  - path: 2015/03101
     caption: 1 месяц и 10 дней
 danaya:
   - path: photos/danaya/1
