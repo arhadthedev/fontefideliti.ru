@@ -1188,6 +1188,7 @@
       ando:
         class: открытый
         place: 1 отлично
+        achievements:
           - cw
           - cac
           - кчф оанкоо
