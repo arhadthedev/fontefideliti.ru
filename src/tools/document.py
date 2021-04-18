@@ -113,7 +113,7 @@ class Document(object):
         self._content_chunks.append(text)
 
 
-    def add_image(self, name, caption, dimension_type, dimension, is_clickable):
+    def add_image(self, output_name, caption, dimension_type, dimension, is_clickable, input_image=None):
         size = '{}{}'.format(dimension_type, dimension)
         if dimension_type == 'w':
             max_size = dimension, 9999
@@ -122,12 +122,15 @@ class Document(object):
         else:
             raise ValueError('dimension_type can be "w" or "h" only')
 
-        base = 'img/{}'.format(name.split(' ')[0])
+        base = 'img/{}'.format(output_name.split(' ')[0])
         fullsize_path = '{}.jpg'.format(base)
         preview_path = '{}-{}.jpg'.format(base, size)
 
         os.makedirs(os.path.dirname(preview_path), exist_ok=True)
-        original = self._resources.get_image('img/{}.jpg'.format(name))
+        if input_image:
+            original = input_image
+        else:
+            original = self._resources.get_image('img/{}.jpg'.format(output_name))
         width = None
         height = None
         if not os.path.isfile(preview_path):
