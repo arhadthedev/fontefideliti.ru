@@ -20,7 +20,11 @@ def generate_shows(output_document, resources, photos):
 
         output_document.start_container(css_classes=['card', 'compact'])
         output_document.add_raw('<a href="{0}.htm"><h3>{0}</h3>'.format(year))
-        output_document.add_image(photocard, caption, 'h', 152, False)
+        try:
+            photo = photos.get_for_id(photocard)
+            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, False, photo.open())
+        except FileNotFoundError:
+            output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
         output_document.end_container()
 
@@ -44,6 +48,11 @@ def generate_legacy_year_page(output_document, resources):
         output_document.add_raw(rest)
         output_document.add_image(path, title, 'h', 152, is_clickable=True)
     output_document.end_container()
+
+
+def human_date(date):
+    month_names = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
+    return '{} {} {} г.'.format(date.day, month_names[date.month - 1], date.year)
 
 
 def generate_year_page(output_document, resources, photos):
@@ -88,12 +97,19 @@ def generate_year_page(output_document, resources, photos):
                 output_document.add_raw('</p>')
 
                 if 'photos' in dog_performance:
-                    photos = dog_performance['photos']
-                    for photo in photos:
+                    photos2 = dog_performance['photos']
+                    for photo in photos2:
                         if photo['path'] not in gallery:
                             gallery[photo['path']] = photo['caption']
 
         output_document.add_raw('<p>')
+        photo_gallery = photos.get_for_date(date)
+        for photo in photo_gallery:
+            caption = '{}, г. {}, {}'.format(dog_details['name']['nom'], event['city'], human_date(date))
+            photo.set_caption(caption)
+            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.open())
+            output_document.add_plain(' ')
+
         for path, caption in gallery.items():
             output_document.add_image(path, caption, 'h', 152, True)
             output_document.add_plain(' ')
@@ -104,12 +120,14 @@ def generate_year_page(output_document, resources, photos):
 
 
 def get_root_artifact_list(resources):
-    section_pages = [('Выставки', 'shows/index', generate_shows)]
+    section_pages = []
 
     per_year_list = resources.get_yaml('show_years.yml')
     for year_entry in per_year_list:
         year = year_entry['год']
         section_pages.append(('Выставки {} года'.format(year), 'shows/{}'.format(year), generate_year_page))
+
+    section_pages.append(('Выставки', 'shows/index', generate_shows))
 
     return section_pages
 

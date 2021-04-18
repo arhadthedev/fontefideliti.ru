@@ -55,6 +55,7 @@ class PhotoList:
             if year == 'photos':
                 continue
             photos = [f for f in listdir(join(path, year))]
+            photos.sort()
             for filename in photos:
                 full_path = join(year, filename)
                 photo_id, *attributes = splitext(full_path)[0].split(' ')
