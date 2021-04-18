@@ -122,7 +122,7 @@ class Document(object):
         else:
             raise ValueError('dimension_type can be "w" or "h" only')
 
-        base = 'img/{}'.format(name)
+        base = 'img/{}'.format(name.split(' ')[0])
         fullsize_path = '{}.jpg'.format(base)
         preview_path = '{}-{}.jpg'.format(base, size)
 
