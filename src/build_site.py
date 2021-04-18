@@ -7,6 +7,7 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+from database.photos import PhotoList
 import os
 import scss.compiler
 import sections.dogs
@@ -39,6 +40,8 @@ if len(sys.argv) < 2:
 input_base_path = sys.argv[1]
 resources = tools.resources.Input(input_base_path)
 
+photos = PhotoList(os.path.join(input_base_path, 'img'))
+
 for generator in [sections.dogs, sections.main, sections.photos, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
@@ -46,7 +49,7 @@ for generator in [sections.dogs, sections.main, sections.photos, sections.sale, 
         output_path = '{}.{}'.format(path, extension)
         print('Generating {}...'.format(output_path), file=sys.stderr)
         output_document = tools.document.Document(title, output_path, resources)
-        generator(output_document, resources)
+        generator(output_document, resources, photos)
         html_content = output_document.finalize()
 
         output_directory = os.path.dirname(output_path)

@@ -6,7 +6,7 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
-def generate_photos(output, resources):
+def generate_photos(output, resources, photos):
     output.start_container()
     output.add_header(1, 'Фотографии всех наших собак')
 

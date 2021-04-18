@@ -44,7 +44,7 @@ def generate_contacts(output_document):
     generate_contacts_section('Передержка собак, Елена Прохорова', ['+79272125725'], None, None, output_document)
 
 
-def generate_index(output_document, resources):
+def generate_index(output_document, resources, photos):
     output_document.start_paragraph(['banner'])
     output_document.add_plain(banner_lines[0])
     output_document.add_break()

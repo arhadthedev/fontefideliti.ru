@@ -10,7 +10,7 @@ from collections import OrderedDict
 import re
 import tools.shows
 
-def generate_shows(output_document, resources):
+def generate_shows(output_document, resources, photos):
     per_year_list = resources.get_yaml('show_years.yml')
 
     for year_entry in reversed(per_year_list):
@@ -46,7 +46,7 @@ def generate_legacy_year_page(output_document, resources):
     output_document.end_container()
 
 
-def generate_year_page(output_document, resources):
+def generate_year_page(output_document, resources, photos):
     path = output_document.get_path()
     file_name = path.split('/')[1]
     displayed_year = int(file_name[0:4])
