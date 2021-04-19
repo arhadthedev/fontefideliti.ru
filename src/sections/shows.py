@@ -23,7 +23,7 @@ def generate_shows(output_document, resources, photos):
         try:
             photo = photos.get_for_id(photocard)
             output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, False, photo.open())
-        except FileNotFoundError:
+        except:
             output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
         output_document.end_container()
