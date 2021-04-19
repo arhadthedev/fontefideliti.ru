@@ -67,7 +67,7 @@ class PhotoList:
 
                 photo_dogs = []
                 for attribute in attributes:
-                    name, value = attribute[:1], attribute[2:]
+                    name, value = attribute[:2], attribute[2:]
                     if name == 'd=':
                         photo_dogs.append(value)
 
