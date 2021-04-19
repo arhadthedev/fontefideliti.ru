@@ -105,7 +105,10 @@ def generate_year_page(output_document, resources, photos):
         output_document.add_raw('<p>')
         photo_gallery = photos.get_for_date(date)
         for photo in photo_gallery:
-            caption = '{}, г. {}, {}'.format(dog_details['name']['nom'], event['city'], human_date(date))
+            dog_ids = photo.get_attributes()['dogs']
+            dog_names = [dogs[i]['name']['nom'] for i in dog_ids]
+            glued_dog_names = ', '.join(dog_names)
+            caption = '{}, г. {}, {}'.format(glued_dog_names, event['city'], human_date(date))
             photo.set_caption(caption)
             output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.open())
             output_document.add_plain(' ')
