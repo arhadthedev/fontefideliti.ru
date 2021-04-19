@@ -251,12 +251,6 @@ def get_root_artifact_list(resources):
 
         section_pages.append((name['nom'], '{}/index'.format(base_url), generate_index))
 
-        photos = photo_list.get(dog_id)
-        if photos:
-            title = "Фото {}".format(name['gen'])
-            page = (title, '{}/photos'.format(base_url), generate_photos)
-            section_pages.append(page)
-
         youtube_ids = dog_details.get('videos')
         if youtube_ids:
             title = "Видео {}".format(name['gen'])
