@@ -22,7 +22,7 @@ def generate_shows(output_document, resources, photos):
         output_document.add_raw('<a href="{0}.htm"><h3>{0}</h3>'.format(year))
         try:
             photo = photos.get_for_id(photocard)
-            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, False, photo.open())
+            output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'h', 152, False, photo.open())
         except:
             output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
