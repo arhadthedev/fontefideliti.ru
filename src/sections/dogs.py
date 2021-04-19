@@ -19,10 +19,14 @@ def generate_photos(output_document, resources, photos):
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
 
     photo_list = resources.get_yaml('dogphotos.yml')
-    photos = photo_list.get(dog_id)
-    for photo in photos:
-        photo['caption'] = photo['caption'] if photo['caption'] != None else ''
-        output_document.add_image(photo['path'], photo['caption'], 'h', 152, is_clickable=True)
+    photos_ = photo_list.get(dog_id)
+    for photo in photos_:
+        caption = photo['caption'] if photo['caption'] != None else ''
+        try:
+            photo_ = photos.get_for_id(photo['path'])
+            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.open())
+        except:
+            output_document.add_image(photo['path'], caption, 'h', 152, is_clickable=True)
         output_document.add_plain(' ')
     output_document.end_container()
 
@@ -141,7 +145,12 @@ def generate_index(output_document, resources, photos):
     output_document.add_date(dog_info['dob'])
     output_document.add_raw('</p>')
     output_document.add_raw(dog_info.get('content', ''))
-    output_document.add_image(dog_info['photo'], 'Фотография {}'.format(dog_info['name']['gen']), 'w', 588, is_clickable=False)
+    caption = 'Фотография {}'.format(dog_info['name']['gen'])
+    try:
+        photo = photos.get_for_id(dog_info['photo'])
+        output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.open())
+    except:
+        output_document.add_image(dog_info['photo'], caption, 'w', 588, is_clickable=False)
 
     subsections = []
     photo_list = resources.get_yaml('dogphotos.yml')
@@ -213,7 +222,11 @@ def generate_list(output_document, resources, photos):
         output_document.add_raw('<h1>{}{}</a></h1>'.format(link, dog_info['name']['nom']))
         output_document.add_raw(link)
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
-        output_document.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 200, is_clickable=False)
+        try:
+            photo = photos.get_for_id(dog_info['photo'])
+            output_document.add_image(photo.get_id(), caption, 'w', 200, False, photo.open())
+        except:
+            output_document.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 200, is_clickable=False)
         output_document.add_raw('</a>')
         output_document.end_container()
 

@@ -33,9 +33,10 @@ def _make_html_class_list(class_list):
 
 
 class Document(object):
-    def __init__(self, title, path, resources):
+    def __init__(self, title, path, resources, photos):
         self._path = path
         self._resources = resources
+        self._photos = photos
 
         self._content_chunks = []
         self._content_chunks.append('<!DOCTYPE html><html lang="ru">')
@@ -170,7 +171,12 @@ class Document(object):
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
             if dog_info['photo']:
-                self.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 168, is_clickable=True)
+                caption = dog_info['name']['nom']
+                try:
+                    photo = self._photos.get_for_id(dog_info['photo'])
+                    self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.open())
+                except:
+                    self.add_image(dog_info['photo'], caption, 'w', 168, is_clickable=True)
 
         self._content_chunks.append('</td>')
         self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)
