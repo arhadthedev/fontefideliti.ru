@@ -13,20 +13,22 @@ import tools.shows
 def generate_shows(output_document, resources, photos):
     per_year_list = resources.get_yaml('show_years.yml')
 
+    output_document.start_list(css_classes=['cards'])
     for year_entry in reversed(per_year_list):
         year = year_entry['год']
         photocard = year_entry['фотокарточка']
         caption = year_entry['подпись']
 
-        output_document.start_container(css_classes=['card', 'compact'])
-        output_document.add_raw('<a href="{0}.htm"><h3>{0}</h3>'.format(year))
+        output_document.start_list_item()
+        output_document.add_raw('<a href="{0}.htm">{0} '.format(year))
         try:
             photo = photos.get_for_id(photocard)
             output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'h', 152, False, photo.open())
         except:
             output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
-        output_document.end_container()
+        output_document.end_list_item()
+    output_document.end_list()
 
 
 def generate_legacy_year_page(output_document, resources):
