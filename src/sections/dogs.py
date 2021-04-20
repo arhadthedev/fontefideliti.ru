@@ -212,15 +212,14 @@ def generate_list(output_document, resources, photos):
         dogs = [dog for dog in dog_list.items() if dog[1]['type'] in ['breeder', 'retired'] and dog[1]['gender'] == category]
     dogs.sort(key=get_dog_records_key(dog_list))
 
+    output_document.start_list(css_classes=['cards'])
     for dog_id, dog_info in dogs:
-        output_document.start_container(css_classes=['compact', 'card'])
-        output_document.add_raw('<span class="note">')
+        output_document.start_list_item()
         if dog_info['type'] == 'retired':
-            output_document.add_plain('Заслуженный ветеран')
-        link = '<a href="{}/">'.format(dog_id)
-        output_document.add_raw('</span>')
-        output_document.add_raw('<h1>{}{}</a></h1>'.format(link, dog_info['name']['nom']))
-        output_document.add_raw(link)
+            output_document.add_plain('Заслуженный ветеран ')
+        output_document.add_raw('<a href="/{}s/{}/">'.format(category, dog_id))
+        output_document.add_raw(dog_info['name']['nom'])
+        output_document.add_plain(' ')
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
         try:
             photo = photos.get_for_id(dog_info['photo'])
@@ -228,7 +227,8 @@ def generate_list(output_document, resources, photos):
         except:
             output_document.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 200, is_clickable=False)
         output_document.add_raw('</a>')
-        output_document.end_container()
+        output_document.end_list_item()
+    output_document.end_list()
 
 
 def for_pedigree_only(dog):

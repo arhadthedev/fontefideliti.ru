@@ -126,10 +126,6 @@ img {
 	border-radius: 7pt;
 }
 
-dl, ul, ol {
-	text-align: left;
-}
-
 dt, dd {
 	display: inline;
 }
@@ -321,6 +317,36 @@ nav {
 				}
 			}
 		}
+	}
+}
+
+ul.cards {
+	color: $text-middle;
+	list-style: none;
+	margin: 0em;
+	padding: 0em;
+
+	a {
+		color: $text-dark;
+		display: block;
+		font: bold 1.17em Verdana;
+	}
+
+	li {
+		background-color: $background-page;
+		border: 1pt solid $borderline;
+		border-radius: 12pt;
+		display: inline-block;
+		font-weight: bold;
+		margin: 1em;
+		max-width: 570pt;
+		padding: 2em;
+	}
+
+	img {
+		border-radius: 7pt;
+		display: block;
+		margin: 1em auto 0em;
 	}
 }
 
