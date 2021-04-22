@@ -174,7 +174,7 @@ class Document(object):
                 caption = dog_info['name']['nom']
                 try:
                     photo = self._photos.get_for_id(dog_info['photo'])
-                    self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.open())
+                    self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.get_image())
                 except:
                     self.add_image(dog_info['photo'], caption, 'w', 168, is_clickable=True)
 

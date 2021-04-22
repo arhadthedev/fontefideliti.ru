@@ -24,7 +24,7 @@ def generate_photos(output_document, resources, photos):
         caption = photo['caption'] if photo['caption'] != None else ''
         try:
             photo_ = photos.get_for_id(photo['path'])
-            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.open())
+            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
         except:
             output_document.add_image(photo['path'], caption, 'h', 152, is_clickable=True)
         output_document.add_plain(' ')
@@ -148,7 +148,7 @@ def generate_index(output_document, resources, photos):
     caption = 'Фотография {}'.format(dog_info['name']['gen'])
     try:
         photo = photos.get_for_id(dog_info['photo'])
-        output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.open())
+        output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())
     except:
         output_document.add_image(dog_info['photo'], caption, 'w', 588, is_clickable=False)
 
@@ -223,7 +223,7 @@ def generate_list(output_document, resources, photos):
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
         try:
             photo = photos.get_for_id(dog_info['photo'])
-            output_document.add_image(photo.get_id(), caption, 'w', 200, False, photo.open())
+            output_document.add_image(photo.get_id(), caption, 'w', 200, False, photo.get_image())
         except:
             output_document.add_image(dog_info['photo'], dog_info['name']['nom'], 'w', 200, is_clickable=False)
         output_document.add_raw('</a>')

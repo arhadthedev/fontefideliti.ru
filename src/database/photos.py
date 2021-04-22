@@ -13,8 +13,8 @@ from PIL import Image
 
 
 class Photo:
-    def __init__(self, path, id, date, dogs):
-        self._path = path
+    def __init__(self, image, id, date, dogs):
+        self._image = image
         self._id = id
         self._date = date
         self._caption = ''
@@ -42,8 +42,8 @@ class Photo:
         return {'dogs': self._dogs}
 
 
-    def open(self):
-        return Image.open(self._path)
+    def get_image(self):
+        return self._image
 
 
 class PhotoList:
@@ -71,7 +71,9 @@ class PhotoList:
                     if name == 'd=':
                         photo_dogs.append(value)
 
-                photo = Photo(photo_path, photo_id, photo_date, photo_dogs)
+                # Image loading is lazy so we can open hundreds of photos fast
+                image = Image.open(photo_path)
+                photo = Photo(image, photo_id, photo_date, photo_dogs)
                 self._dates.setdefault(photo_date, []).append(photo)
 
 

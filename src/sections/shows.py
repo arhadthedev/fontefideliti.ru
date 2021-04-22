@@ -23,7 +23,7 @@ def generate_shows(output_document, resources, photos):
         output_document.add_raw('<a href="{0}.htm">{0} '.format(year))
         try:
             photo = photos.get_for_id(photocard)
-            output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'h', 152, False, photo.open())
+            output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'h', 152, False, photo.get_image())
         except:
             output_document.add_image(photocard, caption, 'h', 152, False)
         output_document.add_raw('</a>')
@@ -112,7 +112,7 @@ def generate_year_page(output_document, resources, photos):
             glued_dog_names = ', '.join(dog_names)
             caption = '{}, г. {}, {}'.format(glued_dog_names, event['city'], human_date(date))
             photo.set_caption(caption)
-            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.open())
+            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.get_image())
             output_document.add_plain(' ')
 
         for path, caption in gallery.items():
