@@ -7,8 +7,10 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+from argparse import ArgumentParser
 from database.photos import PhotoList
 import os
+from pathlib import Path
 import scss.compiler
 import sections.dogs
 import sections.main
@@ -19,6 +21,13 @@ import shutil
 import sys
 import tools.document
 import tools.resources
+
+
+parser = ArgumentParser(description='Generate fontefideliti.ru content.')
+parser.add_argument('src_dir', type=Path, help='path to a file database')
+
+args = parser.parse_args()
+resources = tools.resources.Input(args.src_dir)
 
 
 def copy_static_files(input_directory):
@@ -35,12 +44,7 @@ def generate_styles(resources):
         output_file.write(compiled_styles)
 
 
-if len(sys.argv) < 2:
-    sys.exit('error: output directory path argument is not specified')
-input_base_path = sys.argv[1]
-resources = tools.resources.Input(input_base_path)
-
-photos = PhotoList(os.path.join(input_base_path, 'img'))
+photos = PhotoList(args.src_dir / 'img')
 
 for generator in [sections.dogs, sections.main, sections.photos, sections.sale, sections.shows]:
     artifacts = generator.get_root_artifact_list(resources)
@@ -60,4 +64,4 @@ for generator in [sections.dogs, sections.main, sections.photos, sections.sale, 
 
 print('Generating content-independend files...', file=sys.stderr)
 generate_styles(resources)
-copy_static_files(input_base_path)
+copy_static_files(args.src_dir)
