@@ -82,32 +82,9 @@ article {
 		font-weight: bold;
 	}
 
-	&.compact {
-		display: inline-block;
-		margin: 1em;
-		vertical-align: top;
-
-		h1 {
-			font-size: 1.17em;
-			margin-top: 0.6em;
-		}
-
-		.note {
-			color: $text-middle;
-			display: block;
-			font-size: 1.25em;
-		}
-	}
-
 	&.notification {
 		font-style: italic;
 		font-weight: bold;
-	}
-
-	&.ultra {
-		h1 {
-			margin-top: 0pt;
-		}
 	}
 
 	&.filled {
@@ -126,40 +103,11 @@ img {
 	border-radius: 7pt;
 }
 
-dt, dd {
-	display: inline;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin-left: 0pt;
-
-	&::before {
-		content: " — ";
-	}
-
-	&::after {
-		content: "";
-		display: block;
-	}
-
-	&.accent {
-		font-weight: bold;
-	}
-}
-
 .banner {
 	color: $text-dark;
 	font-size: 14pt;
 	font-style: italic;
 	font-weight: bold;
-}
-
-.plike {
-	list-style-type: none;
 }
 
 .multicolumn {
