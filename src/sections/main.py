@@ -6,6 +6,8 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+from pathlib import Path
+
 banner_lines = ['Приветствуем вас на сайте питомника «Фонте Фиделити».',
                 'Наш питомник занимается профессиональным разведением собак '
                 'породы немецкая овчарка.']
@@ -59,5 +61,5 @@ def generate_index(output_document, resources, photos, extra):
 
 
 def get_root_artifact_list(resources):
-    section_pages = [('', 'index', generate_index)]
+    section_pages = [('', Path('index'), generate_index)]
     return section_pages

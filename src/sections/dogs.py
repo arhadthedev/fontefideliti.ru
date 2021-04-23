@@ -6,6 +6,7 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+from pathlib import Path
 import tools.shows
 
 def generate_photos(output_document, resources, photos, extra):
@@ -233,6 +234,7 @@ def for_pedigree_only(dog):
 
 def get_root_artifact_list(resources):
     section_pages = []
+    categories = {'dog': Path('dogs'), 'female': Path('females'), 'male': Path('males')}
 
     dog_list = resources.get_yaml('doglist.yml')
     photo_list = resources.get_yaml('dogphotos.yml')
@@ -242,25 +244,24 @@ def get_root_artifact_list(resources):
 
         name = dog_details['name']
         category = 'dog' if dog_details['type'] == 'nonbreeder' else dog_details['gender']
-        base_url = '{}s/{}'.format(category, dog_id)
+        directory = categories[category] / dog_id
 
-        section_pages.append((name['nom'], '{}/index'.format(base_url), generate_index, dog_id))
+        section_pages.append((name['nom'], directory / 'index', generate_index, dog_id))
 
         youtube_ids = dog_details.get('videos')
         if youtube_ids:
             title = "Видео {}".format(name['gen'])
-            page = (title, '{}/videos'.format(base_url), generate_videos, dog_id)
+            page = (title, directory / 'videos', generate_videos, dog_id)
             section_pages.append(page)
 
         shows = filter_shows_for(dog_id, show_list)
         if shows:
-            shows_url = '{}/shows'.format(base_url)
             title = "Результаты выставок {}".format(name['gen'])
-            page = (title, shows_url, generate_shows, dog_id)
+            page = (title, directory / 'shows', generate_shows, dog_id)
             section_pages.append(page)
 
-    section_pages.append(('Производители', 'males/index', generate_list, 'male'))
-    section_pages.append(('Производительницы', 'females/index', generate_list, 'female'))
-    section_pages.append(('Собаки питомника', 'dogs/index', generate_list, 'dog'))
+    section_pages.append(('Производители', Path('males', 'index'), generate_list, 'male'))
+    section_pages.append(('Производительницы', Path('females', 'index'), generate_list, 'female'))
+    section_pages.append(('Собаки питомника', Path('dogs', 'index'), generate_list, 'dog'))
 
     return section_pages

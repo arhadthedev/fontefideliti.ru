@@ -6,6 +6,8 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
+from pathlib import Path
+
 def generate_photos(output, resources, photos, extra):
     output.start_container()
     output.add_header(1, 'Фотографии всех наших собак')
@@ -19,4 +21,4 @@ def generate_photos(output, resources, photos, extra):
 
 
 def get_root_artifact_list(resources):
-    return [('Фотографии', 'photos', generate_photos)]
+    return [('Фотографии', Path('photos'), generate_photos)]

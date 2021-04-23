@@ -7,6 +7,7 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from collections import OrderedDict
+from pathlib import Path
 import re
 import tools.shows
 
@@ -124,11 +125,12 @@ def get_root_artifact_list(resources):
     section_pages = []
 
     per_year_list = resources.get_yaml('show_years.yml')
+    shows = Path('shows')
     for year_entry in per_year_list:
         year = year_entry['год']
-        section_pages.append(('Выставки {} года'.format(year), 'shows/{}'.format(year), generate_year_page, year))
+        section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
 
-    section_pages.append(('Выставки', 'shows/index', generate_shows))
+    section_pages.append(('Выставки', shows / 'index', generate_shows))
 
     return section_pages
 

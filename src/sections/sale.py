@@ -7,6 +7,7 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from datetime import datetime
+from pathlib import Path
 
 def _print_list(output, resources):
     dog_list = resources.get_yaml('doglist.yml')
@@ -57,4 +58,4 @@ def generate_sale(output, resources, photos, extra):
         output.add_plain('Светлана (т. 8 (917) 125-44-68, svetlana@fontefideliti.ru).')
 
 def get_root_artifact_list(resources):
-    return [('Щенки на продажу', 'sale', generate_sale)]
+    return [('Щенки на продажу', Path('sale'), generate_sale)]

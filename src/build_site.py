@@ -45,6 +45,7 @@ photos_ = PhotoList(args.src_dir / 'img')
 for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator, *extra in artifacts:
+        path = str(path)
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
         print('Generating {}...'.format(output_path), file=sys.stderr)
