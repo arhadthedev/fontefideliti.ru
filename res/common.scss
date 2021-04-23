@@ -36,6 +36,8 @@ article {
 	}
 
 	&.dog {
+		font-weight: bold;
+
 		& > ul {
 			color: $text-light;
 			font-weight: bold;
@@ -78,24 +80,9 @@ article {
 		}
 	}
 
-	&.heavy {
-		font-weight: bold;
-	}
-
 	&.notification {
 		font-style: italic;
 		font-weight: bold;
-	}
-
-	&.filled {
-		background-color: $background-page;
-		border: 1pt solid #021835;
-		border-radius: 12pt;
-		display: inline-block;
-		margin: 12pt;
-		max-width: 570pt;
-		padding: 24pt;
-		vertical-align: top;
 	}
 }
 

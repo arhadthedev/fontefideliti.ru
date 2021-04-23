@@ -75,7 +75,7 @@ def filter_shows_for(filtered_dog_id, show_tree):
 
 
 def generate_shows(output_document, resources, photos):
-    output_document.start_container(css_classes=['filled'])
+    output_document.start_container(css_classes=['card'])
     show_list = resources.get_yaml('shows.yml')
     dog_list = resources.get_yaml('doglist.yml')
     all_experts = resources.get_yaml('people.yml')
@@ -135,7 +135,7 @@ def generate_index(output_document, resources, photos):
     dog_id = path.split('/')[1]
     dog_info = dog_list[dog_id]
 
-    output_document.start_container(['heavy', 'dog', 'card'])
+    output_document.start_container(['dog', 'card'])
     output_document.add_header(1, dog_info['name']['nom'])
     if dog_info.get('renter', ''):
         output_document.add_raw('<p><em>Находится в аренде. Владелец — {}</em></p>'.format(dog_info['renter']))
