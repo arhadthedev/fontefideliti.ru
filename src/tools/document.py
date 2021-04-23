@@ -34,7 +34,6 @@ def _make_html_class_list(class_list):
 
 class Document(object):
     def __init__(self, title, path, resources, photos):
-        self._path = path
         self._resources = resources
         self._photos = photos
 
@@ -69,10 +68,6 @@ class Document(object):
                 item = '<li><a href="/{}">{}</a></li>'.format(menu_path, title)
             self._content_chunks.append(item)
         self._content_chunks.append('</ul></nav>')
-
-
-    def get_path(self):
-        return self._path
 
 
     def start_container(self, css_classes=[]):

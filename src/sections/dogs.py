@@ -13,8 +13,7 @@ def generate_photos(output_document, resources, photos, extra):
 
     dog_list = resources.get_yaml('doglist.yml')
 
-    path = output_document.get_path()
-    dog_id = path.split('/')[1]
+    dog_id = extra[0]
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
 
@@ -36,8 +35,7 @@ def generate_videos(output_document, resources, photos, extra):
 
     dog_list = resources.get_yaml('doglist.yml')
 
-    path = output_document.get_path()
-    dog_id = path.split('/')[1]
+    dog_id = extra[0]
     name = dog_list[dog_id]['name']
 
     youtube_ids = dog_list[dog_id].get('videos')
@@ -80,8 +78,7 @@ def generate_shows(output_document, resources, photos, extra):
     dog_list = resources.get_yaml('doglist.yml')
     all_experts = resources.get_yaml('people.yml')
 
-    path = output_document.get_path()
-    dog_id = path.split('/')[1]
+    dog_id = extra[0]
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Результаты выставок <a href=".">{}</a></h1>'.format(name['gen']))
 
@@ -131,8 +128,7 @@ def generate_index(output_document, resources, photos, extra):
     dog_list = resources.get_yaml('doglist.yml')
     show_list = resources.get_yaml('shows.yml')
 
-    path = output_document.get_path()
-    dog_id = path.split('/')[1]
+    dog_id = extra[0]
     dog_info = dog_list[dog_id]
 
     output_document.start_container(['dog', 'card'])
@@ -204,8 +200,7 @@ def get_dog_records_key(dog_list):
 def generate_list(output_document, resources, photos, extra):
     dog_list = resources.get_yaml('doglist.yml')
 
-    path = output_document.get_path()
-    category = path.split('/')[0][:-1]
+    category = extra[0]
     if category == 'dog':
         dogs = [dog for dog in dog_list.items() if dog[1]['type'] == 'nonbreeder']
     else:
@@ -249,23 +244,23 @@ def get_root_artifact_list(resources):
         category = 'dog' if dog_details['type'] == 'nonbreeder' else dog_details['gender']
         base_url = '{}s/{}'.format(category, dog_id)
 
-        section_pages.append((name['nom'], '{}/index'.format(base_url), generate_index))
+        section_pages.append((name['nom'], '{}/index'.format(base_url), generate_index, dog_id))
 
         youtube_ids = dog_details.get('videos')
         if youtube_ids:
             title = "Видео {}".format(name['gen'])
-            page = (title, '{}/videos'.format(base_url), generate_videos)
+            page = (title, '{}/videos'.format(base_url), generate_videos, dog_id)
             section_pages.append(page)
 
         shows = filter_shows_for(dog_id, show_list)
         if shows:
             shows_url = '{}/shows'.format(base_url)
             title = "Результаты выставок {}".format(name['gen'])
-            page = (title, shows_url, generate_shows)
+            page = (title, shows_url, generate_shows, dog_id)
             section_pages.append(page)
 
-    section_pages.append(('Производители', 'males/index', generate_list))
-    section_pages.append(('Производительницы', 'females/index', generate_list))
-    section_pages.append(('Собаки питомника', 'dogs/index', generate_list))
+    section_pages.append(('Производители', 'males/index', generate_list, 'male'))
+    section_pages.append(('Производительницы', 'females/index', generate_list, 'female'))
+    section_pages.append(('Собаки питомника', 'dogs/index', generate_list, 'dog'))
 
     return section_pages

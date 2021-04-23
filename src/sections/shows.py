@@ -31,10 +31,8 @@ def generate_shows(output_document, resources, photos, extra):
     output_document.end_list()
 
 
-def generate_legacy_year_page(output_document, resources):
-    path = output_document.get_path()
-    year = path.split('/')[1]
-    source = resources.get_string('../_shows/{}'.format(year))
+def generate_legacy_year_page(output_document, resources, year):
+    source = resources.get_string('../_shows/{}.htm'.format(year))
 
     end_of_frontmatter = source.find('---', 1) + 3
     source = source[end_of_frontmatter:]
@@ -57,12 +55,10 @@ def human_date(date):
     return '{} {} {} г.'.format(date.day, month_names[date.month - 1], date.year)
 
 
-def generate_year_page(output_document, resources, photos):
-    path = output_document.get_path()
-    file_name = path.split('/')[1]
-    displayed_year = int(file_name[0:4])
+def generate_year_page(output_document, resources, photos, extra):
+    displayed_year = extra[0]
     if displayed_year != 2021 and displayed_year != 2020 and displayed_year != 2019 and displayed_year != 2018 and displayed_year != 2017:
-        generate_legacy_year_page(output_document, resources)
+        generate_legacy_year_page(output_document, resources, displayed_year)
         return
 
     show_list = resources.get_yaml('shows.yml')
@@ -130,7 +126,7 @@ def get_root_artifact_list(resources):
     per_year_list = resources.get_yaml('show_years.yml')
     for year_entry in per_year_list:
         year = year_entry['год']
-        section_pages.append(('Выставки {} года'.format(year), 'shows/{}'.format(year), generate_year_page))
+        section_pages.append(('Выставки {} года'.format(year), 'shows/{}'.format(year), generate_year_page, year))
 
     section_pages.append(('Выставки', 'shows/index', generate_shows))
 
