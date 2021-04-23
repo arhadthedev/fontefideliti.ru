@@ -44,12 +44,12 @@ photos_ = PhotoList(args.src_dir / 'img')
 
 for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(resources)
-    for title, path, generator in artifacts:
+    for title, path, generator, *extra in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
         print('Generating {}...'.format(output_path), file=sys.stderr)
         output_document = tools.document.Document(title, output_path, resources, photos_)
-        generator(output_document, resources, photos_)
+        generator(output_document, resources, photos_, extra)
         html_content = output_document.finalize()
 
         output_directory = os.path.dirname(output_path)

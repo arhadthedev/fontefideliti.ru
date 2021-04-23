@@ -10,7 +10,7 @@ from collections import OrderedDict
 import re
 import tools.shows
 
-def generate_shows(output_document, resources, photos):
+def generate_shows(output_document, resources, photos, extra):
     per_year_list = resources.get_yaml('show_years.yml')
 
     output_document.start_list(css_classes=['cards'])

@@ -8,7 +8,7 @@
 
 import tools.shows
 
-def generate_photos(output_document, resources, photos):
+def generate_photos(output_document, resources, photos, extra):
     output_document.start_container()
 
     dog_list = resources.get_yaml('doglist.yml')
@@ -31,7 +31,7 @@ def generate_photos(output_document, resources, photos):
     output_document.end_container()
 
 
-def generate_videos(output_document, resources, photos):
+def generate_videos(output_document, resources, photos, extra):
     output_document.start_container()
 
     dog_list = resources.get_yaml('doglist.yml')
@@ -74,7 +74,7 @@ def filter_shows_for(filtered_dog_id, show_tree):
     return filtered_shows
 
 
-def generate_shows(output_document, resources, photos):
+def generate_shows(output_document, resources, photos, extra):
     output_document.start_container(css_classes=['card'])
     show_list = resources.get_yaml('shows.yml')
     dog_list = resources.get_yaml('doglist.yml')
@@ -127,7 +127,7 @@ def generate_shows(output_document, resources, photos):
     output_document.end_container()
 
 
-def generate_index(output_document, resources, photos):
+def generate_index(output_document, resources, photos, extra):
     dog_list = resources.get_yaml('doglist.yml')
     show_list = resources.get_yaml('shows.yml')
 
@@ -201,7 +201,7 @@ def get_dog_records_key(dog_list):
     return _key_generator
 
 
-def generate_list(output_document, resources, photos):
+def generate_list(output_document, resources, photos, extra):
     dog_list = resources.get_yaml('doglist.yml')
 
     path = output_document.get_path()

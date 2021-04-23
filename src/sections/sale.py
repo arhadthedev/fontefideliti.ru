@@ -35,7 +35,7 @@ def _print_list(output, resources):
     output.end_container()
 
 
-def generate_sale(output, resources, photos):
+def generate_sale(output, resources, photos, extra):
     output.start_container(['card', 'notification'])
     output.start_paragraph()
     output.add_plain('Питомник «Фонте Фиделити» предлагает на продажу ')
