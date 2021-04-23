@@ -9,7 +9,6 @@
 from datetime import datetime
 import os
 from PIL import Image
-import re
 
 brand_ru = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
 brand_en = 'Питомник немецких овчарок «Fonte Fideliti» г. Тольятти'
@@ -30,6 +29,13 @@ def _make_html_class_list(class_list):
     if any(('"' in element or ' ' in element) for element in class_list):
         raise ValueError('css classes must not contain quotes and spaces')
     return ' '.join(class_list)
+
+
+def as_minimal_url(path):
+    parts = list(path.parts)
+    if parts[-1].startswith('index.'):
+         parts[-1] = ''
+    return '/'.join(parts)
 
 
 class Document(object):
@@ -56,13 +62,13 @@ class Document(object):
         self._content_chunks.append('</header>')
 
         self._content_chunks.append('<nav><ul>')
-        compact_path = re.sub(r'index\.html?$', '', path)
+        page_rel_url = as_minimal_url(path)
         for title, menu_path in menu:
             if not menu_path:
                 menu_path = 'index.html'
-            if compact_path == menu_path:
+            if page_rel_url == menu_path:
                 item = '<li><span class="current">{}</span></li>'.format(title)
-            elif path.startswith(menu_path):
+            elif page_rel_url.startswith(menu_path):
                 item = '<li><a href="/{}" class="current">{}</a></li>'.format(menu_path, title)
             else:
                 item = '<li><a href="/{}">{}</a></li>'.format(menu_path, title)
