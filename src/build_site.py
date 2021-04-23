@@ -11,7 +11,7 @@ from argparse import ArgumentParser
 from database.photos import PhotoList
 import os
 from pathlib import Path
-import scss.compiler
+import sass
 from sections import dogs, main, photos, sale, shows
 import shutil
 import sys
@@ -33,11 +33,10 @@ def copy_static_files(input_directory):
 
 
 def generate_styles(resources):
-    compiler = scss.Scss(scss_opts={'compress': True})
-    original_styles = resources.get_string('common.scss')
-    compiled_styles = compiler.compile(original_styles)
+    original = resources.get_string('common.scss')
+    compiled = sass.compile(string=original, output_style='compressed')
     with open('common.css', 'w', encoding='utf-8') as output_file:
-        output_file.write(compiled_styles)
+        output_file.write(compiled)
 
 
 # Remove underscore after incorporating all photos into dog cards
