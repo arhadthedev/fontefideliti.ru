@@ -12,11 +12,7 @@ from database.photos import PhotoList
 import os
 from pathlib import Path
 import scss.compiler
-import sections.dogs
-import sections.main
-import sections.photos
-import sections.sale
-import sections.shows
+from sections import dogs, main, photos, sale, shows
 import shutil
 import sys
 import tools.document
@@ -44,16 +40,17 @@ def generate_styles(resources):
         output_file.write(compiled_styles)
 
 
-photos = PhotoList(args.src_dir / 'img')
+# Remove underscore after incorporating all photos into dog cards
+photos_ = PhotoList(args.src_dir / 'img')
 
-for generator in [sections.dogs, sections.main, sections.photos, sections.sale, sections.shows]:
+for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator in artifacts:
         extension = 'html' if path.endswith('index') else 'htm'
         output_path = '{}.{}'.format(path, extension)
         print('Generating {}...'.format(output_path), file=sys.stderr)
-        output_document = tools.document.Document(title, output_path, resources, photos)
-        generator(output_document, resources, photos)
+        output_document = tools.document.Document(title, output_path, resources, photos_)
+        generator(output_document, resources, photos_)
         html_content = output_document.finalize()
 
         output_directory = os.path.dirname(output_path)
