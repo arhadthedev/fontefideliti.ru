@@ -9,7 +9,6 @@
 
 from argparse import ArgumentParser
 from database.photos import PhotoList
-import os
 from pathlib import Path
 import sass
 from sections import dogs, main, photos, sale, shows
@@ -27,9 +26,9 @@ resources = tools.resources.Input(args.src_dir)
 
 
 def copy_static_files(input_directory):
-    base = os.path.join(input_directory, 'img/')
-    shutil.copyfile('{}favicon.png'.format(base), 'favicon.png')
-    shutil.copyfile('{}background.png'.format(base), 'img/background.png')
+    base = input_directory / 'img'
+    shutil.copyfile(base / 'favicon.png', 'favicon.png')
+    shutil.copyfile(base / 'background.png', Path('img', 'background.png'))
 
 
 def generate_styles(resources):
@@ -45,18 +44,15 @@ photos_ = PhotoList(args.src_dir / 'img')
 for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(resources)
     for title, path, generator, *extra in artifacts:
-        path = str(path)
-        extension = 'html' if path.endswith('index') else 'htm'
-        output_path = '{}.{}'.format(path, extension)
-        print('Generating {}...'.format(output_path), file=sys.stderr)
-        output_document = tools.document.Document(title, output_path, resources, photos_)
+        path = path.with_suffix('.html' if path.stem == 'index' else '.htm')
+
+        print('Generating {}...'.format(path), file=sys.stderr)
+        output_document = tools.document.Document(title, path, resources, photos_)
         generator(output_document, resources, photos_, extra)
         html_content = output_document.finalize()
 
-        output_directory = os.path.dirname(output_path)
-        if output_directory:
-            os.makedirs(output_directory, exist_ok=True)
-        with open(output_path, 'w', encoding='utf-8') as output:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with open(path, 'w', encoding='utf-8') as output:
             output.write(html_content)
 
 print('Generating content-independend files...', file=sys.stderr)
