@@ -13,12 +13,12 @@ from PIL import Image
 
 
 class Photo:
-    def __init__(self, image, id, date, dogs):
+    def __init__(self, image, id, date):
         self._image = image
         self._id = id
         self._date = date
         self._caption = ''
-        self._dogs = dogs
+        self._dogs = []
 
 
     def get_path(self):
@@ -65,16 +65,15 @@ class PhotoList:
                 photo_path = join(path, year, filename)
                 photo_date = date.fromisoformat('{}-{}-{}'.format(year, month, day))
 
-                photo_dogs = []
+                # Image loading is lazy so we can open hundreds of photos fast
+                image = Image.open(photo_path)
+                photo = Photo(image, photo_id, photo_date)
+                self._dates.setdefault(photo_date, []).append(photo)
+
                 for attribute in attributes:
                     name, value = attribute[:2], attribute[2:]
                     if name == 'd=':
-                        photo_dogs.append(value)
-
-                # Image loading is lazy so we can open hundreds of photos fast
-                image = Image.open(photo_path)
-                photo = Photo(image, photo_id, photo_date, photo_dogs)
-                self._dates.setdefault(photo_date, []).append(photo)
+                        photo._dogs.append(value)
 
 
     def get_for_date(self, date):
