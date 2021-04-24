@@ -49,6 +49,7 @@ class Photo:
 class PhotoList:
     def __init__(self, path):
         self._dates = {}
+        self._by_attribute = {}
 
         years = [d for d in listdir(path) if isdir(join(path, d))]
         for year in years:
@@ -72,12 +73,18 @@ class PhotoList:
 
                 for attribute in attributes:
                     name, value = attribute[:2], attribute[2:]
+                    attribute_group = self._by_attribute.setdefault(name, {})
+                    attribute_group.setdefault(value, []).append(photo)
                     if name == 'd=':
                         photo._dogs.append(value)
 
 
     def get_for_date(self, date):
         return self._dates[date] if date in self._dates else []
+
+
+    def get_for_attribute(self, name, value):
+        return self._by_attribute.get(name, {}).get(str(value), [])
 
 
     def get_for_id(self, id):
