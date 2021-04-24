@@ -10,10 +10,10 @@
 from argparse import ArgumentParser
 from database.photos import PhotoList
 from pathlib import Path
+import logging
 import sass
 from sections import dogs, main, photos, sale, shows
 import shutil
-import sys
 import tools.document
 import tools.resources
 
@@ -23,6 +23,9 @@ parser.add_argument('src_dir', type=Path, help='path to a file database')
 
 args = parser.parse_args()
 resources = tools.resources.Input(args.src_dir)
+
+logging.basicConfig(level=logging.INFO)
+log = logging.getLogger()
 
 
 def copy_static_files(input_directory):
@@ -46,7 +49,7 @@ for generator in [dogs, main, photos, sale, shows]:
     for title, path, generator, *extra in artifacts:
         path = path.with_suffix('.html' if path.stem == 'index' else '.htm')
 
-        print('Generating {}...'.format(path), file=sys.stderr)
+        log.info('Generating %s...', path)
         output_document = tools.document.Document(title, path, resources, photos_)
         generator(output_document, resources, photos_, extra)
         html_content = output_document.finalize()
@@ -55,6 +58,6 @@ for generator in [dogs, main, photos, sale, shows]:
         with open(path, 'w', encoding='utf-8') as output:
             output.write(html_content)
 
-print('Generating content-independend files...', file=sys.stderr)
+log.info('Generating content-independend files...')
 generate_styles(resources)
 copy_static_files(args.src_dir)
