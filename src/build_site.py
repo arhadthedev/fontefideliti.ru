@@ -45,7 +45,7 @@ def generate_styles(resources):
 photos_ = PhotoList(args.src_dir / 'img')
 
 for generator in [dogs, main, photos, sale, shows]:
-    artifacts = generator.get_root_artifact_list(resources)
+    artifacts = generator.get_root_artifact_list(resources, photos_)
     for title, path, generator, *extra in artifacts:
         path = path.with_suffix('.html' if path.stem == 'index' else '.htm')
 

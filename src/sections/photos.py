@@ -20,5 +20,5 @@ def generate_photos(output, resources, photos, extra):
     output.end_container()
 
 
-def get_root_artifact_list(resources):
+def get_root_artifact_list(resources, photos):
     return [('Фотографии', Path('photos'), generate_photos)]

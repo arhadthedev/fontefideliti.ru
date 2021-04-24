@@ -60,6 +60,6 @@ def generate_index(output_document, resources, photos, extra):
     output_document.end_generic_container()
 
 
-def get_root_artifact_list(resources):
+def get_root_artifact_list(resources, photos):
     section_pages = [('', Path('index'), generate_index)]
     return section_pages

@@ -121,7 +121,7 @@ def generate_year_page(output_document, resources, photos, extra):
     output_document.end_container()
 
 
-def get_root_artifact_list(resources):
+def get_root_artifact_list(resources, photos):
     section_pages = []
 
     per_year_list = resources.get_yaml('show_years.yml')

@@ -57,5 +57,5 @@ def generate_sale(output, resources, photos, extra):
         output.add_plain('Наталья (т. 8 (927) 211-09-63, natalia@fontefideliti.ru), ')
         output.add_plain('Светлана (т. 8 (917) 125-44-68, svetlana@fontefideliti.ru).')
 
-def get_root_artifact_list(resources):
+def get_root_artifact_list(resources, photos):
     return [('Щенки на продажу', Path('sale'), generate_sale)]

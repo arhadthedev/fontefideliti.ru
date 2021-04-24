@@ -232,7 +232,7 @@ def for_pedigree_only(dog):
     return 'dob' not in dog_details
 
 
-def get_root_artifact_list(resources):
+def get_root_artifact_list(resources, photos):
     section_pages = []
     categories = {'dog': Path('dogs'), 'female': Path('females'), 'male': Path('males')}
 
