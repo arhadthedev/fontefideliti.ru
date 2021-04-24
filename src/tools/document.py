@@ -116,6 +116,8 @@ class Document(object):
 
 
     def add_image(self, output_name, caption, dimension_type, dimension, is_clickable, input_image=None):
+        output_name = str(output_name)
+
         size = '{}{}'.format(dimension_type, dimension)
         if dimension_type == 'w':
             max_size = dimension, 9999
