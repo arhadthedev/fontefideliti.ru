@@ -160,7 +160,7 @@ class Document(object):
             self._content_chunks.append('</a>')
 
 
-    def _add_pedigree_cell(self, dog_info, all_dogs, current_depth, max_depth):
+    def _add_pedigree_cell(self, dog_id, dog_info, all_dogs, current_depth, max_depth):
         rowspan = 2 ** (max_depth - 1 - current_depth)
         if rowspan > 1:
             self._content_chunks.append('<td rowspan="{}">'.format(rowspan))
@@ -171,13 +171,10 @@ class Document(object):
         self._content_chunks.append(',<br>'.join(dog_info.get('extra_titles', [])))
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
-            if dog_info['photo']:
+            photo = self._photos.get_for_attribute('t=', dog_id)
+            if photo:
                 caption = dog_info['name']['nom']
-                try:
-                    photo = self._photos.get_for_id(dog_info['photo'])
-                    self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.get_image())
-                except:
-                    self.add_image(dog_info['photo'], caption, 'w', 168, is_clickable=True)
+                self.add_image(photo[0].get_id(), caption if caption else photo[0].get_caption(), 'w', 168, True, photo[0].get_image())
 
         self._content_chunks.append('</td>')
         self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)
@@ -190,14 +187,14 @@ class Document(object):
         if not dog_info['father']:
             raise ValueError('A father must be specified for {}'.format(dog_info['name']['nom']))
         father_id = dog_info['father']
-        self._add_pedigree_cell(all_dogs[father_id], all_dogs, current_depth, max_depth)
+        self._add_pedigree_cell(father_id, all_dogs[father_id], all_dogs, current_depth, max_depth)
 
         self._content_chunks.append('<tr>')
 
         if not dog_info['mother']:
             raise ValueError('A mother must be specified for {}'.format(dog_info['name']['nom']))
         mother_id = dog_info['mother']
-        self._add_pedigree_cell(all_dogs[mother_id], all_dogs, current_depth, max_depth)
+        self._add_pedigree_cell(mother_id, all_dogs[mother_id], all_dogs, current_depth, max_depth)
 
 
     def add_pedigree(self, dog_info, all_dogs, depth=3):

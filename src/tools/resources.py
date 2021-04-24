@@ -95,7 +95,6 @@ class Input(object):
                             dog['pedigree'] = {}
                             dog['pedigree']['pd'] = line['Pedigree Database #']
                             dog['pedigree']['gsdog'] = line['GSDOG #']
-                            dog['photo'] = line['Photo']
                             if line['Renter']:
                                 dog['renter'] = 'питомник «{}»'.format(line['Renter'])
                             dog['after'] = format(line['Display After'])
