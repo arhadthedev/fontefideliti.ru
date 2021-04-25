@@ -11,7 +11,7 @@ from datetime import date
 from pathlib import Path
 import tools.shows
 
-def generate_shows(output_document, resources, photos, extra):
+def generate_shows(output_document, database, extra):
     output_document.start_list(css_classes=['cards'])
 
     for year, photo in extra[0]:
@@ -28,7 +28,8 @@ def human_date(date):
     return '{} {} {} г.'.format(date.day, month_names[date.month - 1], date.year)
 
 
-def generate_year_page(output_document, resources, photos, extra):
+def generate_year_page(output_document, database, extra):
+    resources = database['resources']
     displayed_year = extra[0]
 
     show_list = resources.get_yaml('shows.yml')
@@ -71,7 +72,7 @@ def generate_year_page(output_document, resources, photos, extra):
                             gallery[photo['path']] = photo['caption']
 
         output_document.add_raw('<p>')
-        photo_gallery = photos.get_for_date(date)
+        photo_gallery = database['photos'].get_for_date(date)
         for photo in photo_gallery:
             dog_ids = photo.get_attributes()['dogs']
             dog_names = [dogs[i]['name']['nom'] for i in dog_ids]
@@ -90,14 +91,14 @@ def generate_year_page(output_document, resources, photos, extra):
     output_document.end_container()
 
 
-def get_root_artifact_list(resources, photos):
+def get_root_artifact_list(database):
     section_pages = []
     year_list = []
 
     shows = Path('shows')
     FIRST_SHOW_YEAR = 2015
     for year in range(date.today().year, FIRST_SHOW_YEAR - 1, -1):
-        photo = photos.get_card_assignation(year)
+        photo = database['photos'].get_card_assignation(year)
         section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
         year_list.append((year, photo))
 

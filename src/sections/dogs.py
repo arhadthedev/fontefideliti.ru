@@ -9,7 +9,8 @@
 from pathlib import Path
 import tools.shows
 
-def generate_photos(output_document, resources, photos, extra):
+def generate_photos(output_document, database, extra):
+    resources = database['resources']
     output_document.start_container()
 
     dog_list = resources.get_yaml('doglist.yml')
@@ -20,7 +21,8 @@ def generate_photos(output_document, resources, photos, extra):
     output_document.end_container()
 
 
-def generate_videos(output_document, resources, photos, extra):
+def generate_videos(output_document, database, extra):
+    resources = database['resources']
     output_document.start_container()
 
     dog_list = resources.get_yaml('doglist.yml')
@@ -62,7 +64,8 @@ def filter_shows_for(filtered_dog_id, show_tree):
     return filtered_shows
 
 
-def generate_shows(output_document, resources, photos, extra):
+def generate_shows(output_document, database, extra):
+    resources = database['resources']
     output_document.start_container(css_classes=['card'])
     show_list = resources.get_yaml('shows.yml')
     dog_list = resources.get_yaml('doglist.yml')
@@ -114,7 +117,8 @@ def generate_shows(output_document, resources, photos, extra):
     output_document.end_container()
 
 
-def generate_index(output_document, resources, photos, extra):
+def generate_index(output_document, database, extra):
+    resources = database['resources']
     dog_list = resources.get_yaml('doglist.yml')
     show_list = resources.get_yaml('shows.yml')
 
@@ -132,7 +136,7 @@ def generate_index(output_document, resources, photos, extra):
     output_document.add_raw('</p>')
     output_document.add_raw(dog_info.get('content', ''))
     caption = 'Фотография {}'.format(dog_info['name']['gen'])
-    photo = photos.get_card_assignation(dog_id)
+    photo = database['photos'].get_card_assignation(dog_id)
     output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())
 
     subsections = []
@@ -184,8 +188,8 @@ def get_dog_records_key(dog_list):
     return _key_generator
 
 
-def generate_list(output_document, resources, photos, extra):
-    dog_list = resources.get_yaml('doglist.yml')
+def generate_list(output_document, database, extra):
+    dog_list = database['resources'].get_yaml('doglist.yml')
 
     category = extra[0]
     if category == 'dog':
@@ -203,7 +207,7 @@ def generate_list(output_document, resources, photos, extra):
         output_document.add_raw(dog_info['name']['nom'])
         output_document.add_plain(' ')
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
-        photo = photos.get_card_assignation(dog_id)
+        photo = database['photos'].get_card_assignation(dog_id)
         output_document.add_image(photo.get_id(), caption, 'h', 152, False, photo.get_image())
         output_document.add_raw('</a>')
         output_document.end_list_item()
@@ -215,7 +219,8 @@ def for_pedigree_only(dog):
     return 'dob' not in dog_details
 
 
-def get_root_artifact_list(resources, photos):
+def get_root_artifact_list(database):
+    resources = database['resources']
     section_pages = []
     categories = {'dog': Path('dogs'), 'female': Path('females'), 'male': Path('males')}
 

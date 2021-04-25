@@ -39,9 +39,9 @@ def as_minimal_url(path):
 
 
 class Document(object):
-    def __init__(self, title, path, resources, photos):
-        self._resources = resources
-        self._photos = photos
+    def __init__(self, title, path, database):
+        self._resources = database['resources']
+        self._photos = database['photos']
 
         self._content_chunks = []
         self._content_chunks.append('<!DOCTYPE html><html lang="ru">')

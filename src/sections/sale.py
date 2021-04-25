@@ -36,7 +36,7 @@ def _print_list(output, resources):
     output.end_container()
 
 
-def generate_sale(output, resources, photos, extra):
+def generate_sale(output, database, extra):
     output.start_container(['card', 'notification'])
     output.start_paragraph()
     output.add_plain('Питомник «Фонте Фиделити» предлагает на продажу ')
@@ -49,7 +49,7 @@ def generate_sale(output, resources, photos, extra):
     output.add_plain('оказываем помощь в подготовке и показе на выставках.')
     output.end_container()
 
-    _print_list(output, resources)
+    _print_list(output, database['resources'])
 
     if False:
         output.start_paragraph()
@@ -57,5 +57,5 @@ def generate_sale(output, resources, photos, extra):
         output.add_plain('Наталья (т. 8 (927) 211-09-63, natalia@fontefideliti.ru), ')
         output.add_plain('Светлана (т. 8 (917) 125-44-68, svetlana@fontefideliti.ru).')
 
-def get_root_artifact_list(resources, photos):
+def get_root_artifact_list(database):
     return [('Щенки на продажу', Path('sale'), generate_sale)]

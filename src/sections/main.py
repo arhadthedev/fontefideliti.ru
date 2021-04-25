@@ -46,7 +46,7 @@ def generate_contacts(output_document):
     generate_contacts_section('Передержка собак, Елена Прохорова', ['+79272125725'], None, None, output_document)
 
 
-def generate_index(output_document, resources, photos, extra):
+def generate_index(output_document, database, extra):
     output_document.start_paragraph(['banner'])
     output_document.add_plain(banner_lines[0])
     output_document.add_break()
@@ -60,6 +60,6 @@ def generate_index(output_document, resources, photos, extra):
     output_document.end_generic_container()
 
 
-def get_root_artifact_list(resources, photos):
+def get_root_artifact_list(database):
     section_pages = [('', Path('index'), generate_index)]
     return section_pages

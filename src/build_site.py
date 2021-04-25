@@ -41,17 +41,18 @@ def generate_styles(resources):
         output_file.write(compiled)
 
 
-# Remove underscore after incorporating all photos into dog cards
-photos_ = PhotoList(args.src_dir / 'img')
+database = {}
+database['photos'] = PhotoList(args.src_dir / 'img')
+database['resources'] = resources # Until the whole database is introduced
 
 for generator in [dogs, main, photos, sale, shows]:
-    artifacts = generator.get_root_artifact_list(resources, photos_)
+    artifacts = generator.get_root_artifact_list(database)
     for title, path, generator, *extra in artifacts:
         path = path.with_suffix('.html' if path.stem == 'index' else '.htm')
 
         log.info('Generating %s...', path)
-        output_document = tools.document.Document(title, path, resources, photos_)
-        generator(output_document, resources, photos_, extra)
+        output_document = tools.document.Document(title, path, database)
+        generator(output_document, database, extra)
         html_content = output_document.finalize()
 
         path.parent.mkdir(parents=True, exist_ok=True)
