@@ -9,6 +9,7 @@
 
 from argparse import ArgumentParser
 from database.photos import PhotoList
+from database.shows import ShowList
 from pathlib import Path
 import logging
 import sass
@@ -44,6 +45,7 @@ def generate_styles(resources):
 database = {}
 database['photos'] = PhotoList(args.src_dir / 'img')
 database['resources'] = resources # Until the whole database is introduced
+database['shows'] = ShowList(resources)
 
 for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(database)
