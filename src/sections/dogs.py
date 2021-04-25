@@ -155,7 +155,7 @@ def generate_index(output_document, resources, photos, extra):
     output_document.add_plain('Родословная: ')
     pedigree = []
     if dog_info['pedigree'].get('pd', ''):
-        pedigree.append('<a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id={}">Pedigree Database</a>'.format(dog_info['pedigree']['pd']))
+        pedigree.append('<a href="http://www.pedigreedatabase.com/dog.html?id={}">Pedigree Database</a>'.format(dog_info['pedigree']['pd']))
     if dog_info['pedigree'].get('gsdog', ''):
         pedigree.append('<a href="http://database.gsdog.ru/dog.php?screen=1&amp;id={}">GSDOG</a>'.format(dog_info['pedigree']['gsdog']))
     output_document.add_raw(',<br>'.join(pedigree))
