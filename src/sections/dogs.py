@@ -204,7 +204,7 @@ def generate_list(output_document, resources, photos, extra):
         output_document.add_plain(' ')
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
         photo = photos.get_card_assignation(dog_id)
-        output_document.add_image(photo.get_id(), caption, 'w', 200, False, photo.get_image())
+        output_document.add_image(photo.get_id(), caption, 'h', 152, False, photo.get_image())
         output_document.add_raw('</a>')
         output_document.end_list_item()
     output_document.end_list()
