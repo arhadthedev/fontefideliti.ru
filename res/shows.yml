@@ -518,16 +518,14 @@
     rank: монопородная
     expert: Овсянникова
     dogs:
+      eiko:
+        class: рабочих собак
+        place: "6 отлично CC, проверка поведения: дорожка пройдена/выражено/отпускает"
       viviana:
         class: юниоров
         place: 2 очень хорошо
         achievements:
           - юсс
-2015-04-26:
-  - city: Самара
-    rank: монопородная
-    expert: Овсянникова
-    dogs:
       demetra:
         class: молодых собак
         place: 9 очень хорошо
@@ -588,6 +586,9 @@
           - лю
           - jcac
           - jcac
+      yunaru:
+        class: открытый
+        place: 1 отлично
       viviana:
         class: промежуточный
         place: 1 отлично
@@ -635,7 +636,7 @@
     dogs:
       aleks:
         class: щенков
-        place: 3 очень перспективный
+        place: 3 большая перспектива
       nikoletta:
         class: юниоров
         place: 9 очень хорошо
@@ -651,6 +652,14 @@
           - cw
           - jcac
           - лю
+      antei:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - лпп
       nikoletta:
         class: промежуточный
         place: 1 отлично
@@ -682,6 +691,41 @@
           - cac
           - лс
           - чркф
+  - city: Пермь
+    rank: всероссийская
+    expert: Прокошева
+    dogs:
+      ando:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+2015-11-22:
+  - city: Самара
+    rank: региональная
+    expert: Cholakov
+    dogs:
+      antei:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - лпп
+          - best г2
+  - city: Самара
+    rank: региональная
+    expert: Кирюшина
+    dogs:
+      antei:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
 2015-12-05:
   - city: Тольятти
     rank: всероссийская
@@ -692,6 +736,26 @@
         place: 1 отлично
         achievements:
           - cw
+          - jcac
+          - лю
+      antei:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
+          - лю
+          - лпп
+  - city: Пермь
+    rank: всероссийская ЧРКФ
+    expert: Марков
+    dogs:
+      ando:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
           - jcac
           - лю
 2016-02-14:

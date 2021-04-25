@@ -50,7 +50,7 @@ def human_date(date):
 
 def generate_year_page(output_document, resources, photos, extra):
     displayed_year = extra[0]
-    if displayed_year != 2021 and displayed_year != 2020 and displayed_year != 2019 and displayed_year != 2018 and displayed_year != 2017:
+    if displayed_year == 2016:
         generate_legacy_year_page(output_document, resources, displayed_year)
         return
 
