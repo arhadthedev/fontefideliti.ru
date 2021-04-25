@@ -17,17 +17,6 @@ def generate_photos(output_document, resources, photos, extra):
     dog_id = extra[0]
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
-
-    photo_list = resources.get_yaml('dogphotos.yml')
-    photos_ = photo_list.get(dog_id)
-    for photo in photos_:
-        caption = photo['caption'] if photo['caption'] != None else ''
-        try:
-            photo_ = photos.get_for_id(photo['path'])
-            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
-        except:
-            output_document.add_image(photo['path'], caption, 'h', 152, is_clickable=True)
-        output_document.add_plain(' ')
     output_document.end_container()
 
 
@@ -241,6 +230,12 @@ def get_root_artifact_list(resources, photos):
         directory = categories[category] / dog_id
 
         section_pages.append((name['nom'], directory / 'index', generate_index, dog_id))
+
+        photos = photo_list.get(dog_id)
+        if photos:
+            title = "Фото {}".format(name['gen'])
+            page = (title, directory / 'photos', generate_photos, dog_id)
+            section_pages.append(page)
 
         youtube_ids = dog_details.get('videos')
         if youtube_ids:
