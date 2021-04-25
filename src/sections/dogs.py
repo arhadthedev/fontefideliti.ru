@@ -132,7 +132,7 @@ def generate_index(output_document, resources, photos, extra):
     output_document.add_raw('</p>')
     output_document.add_raw(dog_info.get('content', ''))
     caption = 'Фотография {}'.format(dog_info['name']['gen'])
-    photo = photos.get_for_attribute('t=', dog_id)[0]
+    photo = photos.get_card_assignation(dog_id)
     output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())
 
     subsections = []
@@ -203,7 +203,7 @@ def generate_list(output_document, resources, photos, extra):
         output_document.add_raw(dog_info['name']['nom'])
         output_document.add_plain(' ')
         caption = 'Фотография {}'.format(dog_info['name']['gen'])
-        photo = photos.get_for_attribute('t=', dog_id)[0]
+        photo = photos.get_card_assignation(dog_id)
         output_document.add_image(photo.get_id(), caption, 'w', 200, False, photo.get_image())
         output_document.add_raw('</a>')
         output_document.end_list_item()

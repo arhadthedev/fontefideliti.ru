@@ -173,10 +173,9 @@ class Document(object):
         self._content_chunks.append(',<br>'.join(dog_info.get('extra_titles', [])))
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
-            photo = self._photos.get_for_attribute('t=', dog_id)
-            if photo:
-                caption = dog_info['name']['nom']
-                self.add_image(photo[0].get_id(), caption if caption else photo[0].get_caption(), 'w', 168, True, photo[0].get_image())
+            photo = self._photos.get_card_assignation(dog_id)
+            caption = dog_info['name']['nom']
+            self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.get_image())
 
         self._content_chunks.append('</td>')
         self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)

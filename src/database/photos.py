@@ -75,8 +75,13 @@ class PhotoList:
         return self._dates[date] if date in self._dates else []
 
 
-    def get_for_attribute(self, name, value):
-        return self._by_attribute.get(name, {}).get(str(value), [])
+    def get_card_assignation(self, assignation_name):
+        assigned = self._by_attribute.get('t=', {}).get(assignation_name)
+        if assigned == None:
+            raise ValueError('There must be a photo assigned to {} card'.format(assignation_name))
+        if len(assigned) > 1:
+            raise ValueError('Only a single photo may be assigned to {} card'.format(assignation_name))
+        return assigned[0]
 
 
     def get_for_id(self, id):
