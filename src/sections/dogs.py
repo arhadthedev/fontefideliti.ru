@@ -40,34 +40,9 @@ def generate_videos(output_document, database, extra):
     output_document.end_container()
 
 
-def filter_shows_for(filtered_dog_id, show_tree):
-    filtered_shows = []
-    for date, events in show_tree.items():
-        for event in events:
-            for dog_id, dog_details in event['dogs'].items():
-                if dog_id == filtered_dog_id:
-                    element = {}
-                    element['date'] = date
-                    element['rank'] = event['rank']
-                    if 'cup' in event:
-                        element['cup'] = event['cup']
-                    element['city'] = event['city']
-                    element['class'] = dog_details['class']
-                    element['expert'] = event['expert']
-                    if 'figurant' in element:
-                        element['figurant'] = event['figurant']
-                    element['place'] = dog_details['place']
-                    if 'note' in dog_details:
-                        element['note'] = dog_details['note']
-                    element['achievements'] = dog_details.get('achievements', [])
-                    filtered_shows.append(element)
-    return filtered_shows
-
-
 def generate_shows(output_document, database, extra):
     resources = database['resources']
     output_document.start_container(css_classes=['card'])
-    show_list = resources.get_yaml('shows.yml')
     dog_list = resources.get_yaml('doglist.yml')
     all_experts = resources.get_yaml('people.yml')
 
@@ -75,7 +50,7 @@ def generate_shows(output_document, database, extra):
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Результаты выставок <a href=".">{}</a></h1>'.format(name['gen']))
 
-    personal_shows = filter_shows_for(dog_id, show_list)
+    personal_shows = database['shows'].get_for_dog(dog_id)
     mono_shows = [x for x in personal_shows if x['rank'] == 'монопородная']
     if mono_shows:
         output_document.start_container()
@@ -120,7 +95,6 @@ def generate_shows(output_document, database, extra):
 def generate_index(output_document, database, extra):
     resources = database['resources']
     dog_list = resources.get_yaml('doglist.yml')
-    show_list = resources.get_yaml('shows.yml')
 
     dog_id = extra[0]
     dog_info = dog_list[dog_id]
@@ -147,8 +121,7 @@ def generate_index(output_document, database, extra):
     videos = dog_list[dog_id].get('videos', [])
     if videos:
         subsections.append('<a href="videos.htm">Видео</a>')
-    shows = filter_shows_for(dog_id, show_list)
-    if shows:
+    if database['shows'].get_for_dog(dog_id):
         subsections.append('<a href="shows.htm">Результаты выставок</a>')
 
     if subsections:
@@ -226,7 +199,6 @@ def get_root_artifact_list(database):
 
     dog_list = resources.get_yaml('doglist.yml')
     photo_list = resources.get_yaml('dogphotos.yml')
-    show_list = resources.get_yaml('shows.yml')
     dogs = [dog for dog in dog_list.items() if not for_pedigree_only(dog)]
     for dog_id, dog_details in dogs:
 
@@ -248,8 +220,7 @@ def get_root_artifact_list(database):
             page = (title, directory / 'videos', generate_videos, dog_id)
             section_pages.append(page)
 
-        shows = filter_shows_for(dog_id, show_list)
-        if shows:
+        if database['shows'].get_for_dog(dog_id):
             title = "Результаты выставок {}".format(name['gen'])
             page = (title, directory / 'shows', generate_shows, dog_id)
             section_pages.append(page)

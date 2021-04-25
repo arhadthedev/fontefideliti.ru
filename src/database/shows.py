@@ -12,3 +12,27 @@ import yaml
 class ShowList:
     def __init__(self, resources):
         self._shows = resources.get_yaml('shows.yml')
+
+
+    def get_for_dog(self, dog_id):
+        filtered_shows = []
+        for date, events in show_tree.items():
+            for event in events:
+                for current_dog_id, dog_details in event['dogs'].items():
+                    if current_dog_id == dog_id:
+                        element = {}
+                        element['date'] = date
+                        element['rank'] = event['rank']
+                        if 'cup' in event:
+                            element['cup'] = event['cup']
+                        element['city'] = event['city']
+                        element['class'] = dog_details['class']
+                        element['expert'] = event['expert']
+                        if 'figurant' in element:
+                            element['figurant'] = event['figurant']
+                        element['place'] = dog_details['place']
+                        if 'note' in dog_details:
+                            element['note'] = dog_details['note']
+                        element['achievements'] = dog_details.get('achievements', [])
+                        filtered_shows.append(element)
+        return filtered_shows
