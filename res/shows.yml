@@ -758,6 +758,21 @@
           - jcac
           - jcac
           - лю
+2016-12-11:
+  - city: Самара
+    rank: региональная
+    expert: Чайковская
+    dogs:
+      antei:
+        class: открытый
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - кчф оанкоо
+          - лпп
+          - best г3
 2016-02-14:
   - city: Тольятти
     rank: региональная
@@ -789,6 +804,17 @@
           - лпп
           - чф оанкоо
           - best 1г
+2016-03-19:
+  - city: Пермь
+    rank: всероссийская
+    expert: Матвеева
+    dogs:
+      ando:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
 2016-04-16:
   - city: Саратов
     rank: всероссийская
@@ -864,11 +890,26 @@
           - кчф оанкоо
           - best 1г
           - bis 1
+  - city: Пермь
+    rank: всероссийская
+    expert: Коротаева
+    dogs:
+      ando:
+        class: юниоров
+        place: 1 отлично
+        achievements:
+          - cw
+          - jcac
 2016-04-24:
   - city: Самара
     rank: монопородная
     expert: Кейвомяги
     dogs:
+      antei:
+        class: юниоров
+        place: 1 очень хорошо
+        achievements:
+          - юкчк
       aleks:
         class: юниоров
         place: 8 очень хорошо
@@ -885,6 +926,11 @@
         place: 3 очень хорошо
         achievements:
           - юсс
+      antei:
+        class: юниоров
+        place: 1 очень хорошо
+        achievements:
+          - юкчк
 2016-06-04:
   - city: Самара
     rank: всероссийская
@@ -926,6 +972,20 @@
           - лпп
           - кчф рфлс
           - big 2
+  - city: Ижевск
+    rank: всероссийская
+    expert: Гиндуллина
+    dogs:
+      ando:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лк
+          - лпп
+          - чф рфсс
+          - best 1г
 2016-06-12:
   - city: Тольятти
     rank: всероссийская
@@ -937,6 +997,7 @@
         achievements:
           - cw
           - jcac
+          - лк
           - лю
       demetra:
         class: рабочих собак
@@ -946,6 +1007,11 @@
           - cac
           - лс
           - чф рфсс
+      gvendi:
+        class: бэби
+        place: 1 очень перспективный
+        achievements:
+          - лб
   - city: Тольятти
     rank: региональная
     expert: Соколова
@@ -955,6 +1021,7 @@
         place: 1 отлично
         achievements:
           - cw
+          - лк
           - jcac
       demetra:
         class: рабочих собак
@@ -994,6 +1061,14 @@
       aleks:
         class: юниоров
         place: 3 очень хорошо
+      antei:
+        class: молодых собак
+        place: 1 очень хорошо
+        achievements:
+          - юкчк
+      gvendi:
+        class: щенков
+        place: 5 очень перспективно
 2016-08-17:
   - city: Самара
     rank: всероссийская чркф
@@ -1023,8 +1098,8 @@
           - лпп
           - big 2
 2016-09-11:
-  - city: Уральск
-    rank: Национальная, Казахстан
+  - city: Уральск, Казахстан
+    rank: национальная
     expert: Бойко
     dogs:
       hasso:
@@ -1048,6 +1123,20 @@
     rank: всероссийская
     expert: Никитин
     dogs:
+      aleks:
+        class: промежуточный
+        place: 2 отлично
+        achievements:
+          - rcac
+      antei:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - лпп
+          - чф оанкоо
       demetra:
         class: рабочих собак
         place: 1 отлично
@@ -1074,6 +1163,33 @@
           - кчф оанкоо
           - big 2
           - cnd
+2016-09-17:
+  - city: Самара
+    rank: всероссийская чркф
+    expert: Пирогова
+    dogs:
+      aleks:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - cac
+          - лк
+          - чркф
+  - city: Самара
+    rank: региональный
+    expert: Тихонова
+    dogs:
+      aleks:
+        class: промежуточный
+        place: 1 отлично
+        achievements:
+          - cw
+          - лк
+          - cac
+          - кчф оанкоо
+          - лпп
+          - best г2
 2016-09-25:
   - city: Тольятти
     rank: региональная

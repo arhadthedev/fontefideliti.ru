@@ -9,7 +9,6 @@
 from collections import OrderedDict
 from datetime import date
 from pathlib import Path
-import re
 import tools.shows
 
 def generate_shows(output_document, resources, photos, extra):
@@ -24,25 +23,6 @@ def generate_shows(output_document, resources, photos, extra):
     output_document.end_list()
 
 
-def generate_legacy_year_page(output_document, resources, year):
-    source = resources.get_string('../_shows/{}.htm'.format(year))
-
-    end_of_frontmatter = source.find('---', 1) + 3
-    source = source[end_of_frontmatter:]
-
-    output_document.start_container(css_classes=['card'])
-    source = re.sub(r'<a href="/img/([^.]+).jpg" title="([^"]+)" rel="a"><img [^<]+</a>',
-                    r'{% include photo.html path="\1" title="\2" %}',
-                    source)
-    matches = re.findall(r'([^{]*){% include photo.html path="([^"]*)" title="([^"]*)" [^%]*%}', source)
-    if not matches:
-        output_document.add_raw(source)
-    for rest, path, title in matches:
-        output_document.add_raw(rest)
-        output_document.add_image(path, title, 'h', 152, is_clickable=True)
-    output_document.end_container()
-
-
 def human_date(date):
     month_names = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря']
     return '{} {} {} г.'.format(date.day, month_names[date.month - 1], date.year)
@@ -50,9 +30,6 @@ def human_date(date):
 
 def generate_year_page(output_document, resources, photos, extra):
     displayed_year = extra[0]
-    if displayed_year == 2016:
-        generate_legacy_year_page(output_document, resources, displayed_year)
-        return
 
     show_list = resources.get_yaml('shows.yml')
     all_experts = resources.get_yaml('people.yml')
