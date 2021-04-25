@@ -15,7 +15,11 @@ def generate_photos(output, resources, photos, extra):
     dog_list = resources.get_yaml('dogphotos.yml')
     photo_list = dog_list['$']
     for photo in photo_list:
-        output.add_image(photo['path'], photo['caption'], 'h', 152, is_clickable=True)
+        try:
+            photo_ = photos.get_for_id(photo['path'])
+            output.add_image(photo_.get_id(), photo['caption'] if photo['caption'] else photo_.get_caption(), 'h', 152, True, photo_.get_image())
+        except:
+            output.add_image(photo['path'], photo['caption'], 'h', 152, is_clickable=True)
         output.add_plain(' ')
     output.end_container()
 
