@@ -14,9 +14,14 @@ class ShowList:
         self._shows = resources.get_yaml('shows.yml')
 
 
+    def get_for_year(self, year):
+        events = [(date, events) for (date, events) in self._shows.items() if date.year == year]
+        events.sort(key=lambda x: x[0], reverse=True)
+        return events
+
     def get_for_dog(self, dog_id):
         filtered_shows = []
-        for date, events in show_tree.items():
+        for date, events in self._shows.items():
             for event in events:
                 for current_dog_id, dog_details in event['dogs'].items():
                     if current_dog_id == dog_id:

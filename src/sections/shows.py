@@ -32,14 +32,11 @@ def generate_year_page(output_document, database, extra):
     resources = database['resources']
     displayed_year = extra[0]
 
-    show_list = resources.get_yaml('shows.yml')
     all_experts = resources.get_yaml('people.yml')
     dogs = resources.get_yaml('doglist.yml')
 
     output_document.start_container(css_classes=['card'])
-    displayed_dates = [(date, events) for (date, events) in show_list.items() if date.year == displayed_year]
-    displayed_dates.sort(key=lambda x: x[0], reverse=True)
-    for date, events in displayed_dates:
+    for date, events in database['shows'].get_for_year(displayed_year):
         gallery = OrderedDict()
         for event in events:
             output_document.add_raw('<h2 style="font-size: 90%">')
