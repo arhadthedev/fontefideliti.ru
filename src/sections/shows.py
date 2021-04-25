@@ -7,26 +7,18 @@
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
 from collections import OrderedDict
+from datetime import date
 from pathlib import Path
 import re
 import tools.shows
 
 def generate_shows(output_document, resources, photos, extra):
-    per_year_list = resources.get_yaml('show_years.yml')
-
     output_document.start_list(css_classes=['cards'])
-    for year_entry in reversed(per_year_list):
-        year = year_entry['год']
-        photocard = year_entry['фотокарточка']
-        caption = year_entry['подпись']
 
+    for year, photo in extra[0]:
         output_document.start_list_item()
         output_document.add_raw('<a href="{0}.htm">{0} '.format(year))
-        try:
-            photo = photos.get_for_id(photocard)
-            output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'h', 152, False, photo.get_image())
-        except:
-            output_document.add_image(photocard, caption, 'h', 152, False)
+        output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, False, photo.get_image())
         output_document.add_raw('</a>')
         output_document.end_list_item()
     output_document.end_list()
@@ -123,14 +115,17 @@ def generate_year_page(output_document, resources, photos, extra):
 
 def get_root_artifact_list(resources, photos):
     section_pages = []
+    year_list = []
 
-    per_year_list = resources.get_yaml('show_years.yml')
     shows = Path('shows')
-    for year_entry in per_year_list:
-        year = year_entry['год']
-        section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
+    FIRST_SHOW_YEAR = 2010
+    for year in range(date.today().year, FIRST_SHOW_YEAR - 1, -1):
+        photo = photos.get_for_attribute('t=', year)
+        if photo:
+            section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
+            year_list.append((year, photo[0]))
 
-    section_pages.append(('Выставки', shows / 'index', generate_shows))
+    section_pages.append(('Выставки', shows / 'index', generate_shows, year_list))
 
     return section_pages
 
