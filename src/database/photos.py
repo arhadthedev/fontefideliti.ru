@@ -76,7 +76,7 @@ class PhotoList:
 
 
     def get_card_assignation(self, assignation_name):
-        assigned = self._by_attribute.get('t=', {}).get(assignation_name)
+        assigned = self._by_attribute.get('t=', {}).get(str(assignation_name))
         if assigned == None:
             raise ValueError('There must be a photo assigned to {} card'.format(assignation_name))
         if len(assigned) > 1:

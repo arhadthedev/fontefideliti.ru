@@ -95,12 +95,11 @@ def get_root_artifact_list(resources, photos):
     year_list = []
 
     shows = Path('shows')
-    FIRST_SHOW_YEAR = 2010
+    FIRST_SHOW_YEAR = 2015
     for year in range(date.today().year, FIRST_SHOW_YEAR - 1, -1):
         photo = photos.get_card_assignation(year)
-        if photo:
-            section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
-            year_list.append((year, photo[0]))
+        section_pages.append(('Выставки {} года'.format(year), shows / str(year), generate_year_page, year))
+        year_list.append((year, photo))
 
     section_pages.append(('Выставки', shows / 'index', generate_shows, year_list))
 
