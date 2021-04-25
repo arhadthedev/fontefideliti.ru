@@ -50,7 +50,7 @@ b,eiko,Eiko vom Haus Portofino,m,2007-07-10,bazi,conny,558835,,Баларис,it
 ,goldi,Фонте Фиделити Голди,m,2016-02-01,zakhar,mabari,2695107,,,gambo
 ,greit,Фонте Фиделити Грейт,m,2016-02-01,zakhar,mabari,2619808,,,goldi
 ,handa,Handa von der Urbecke,,,,,,,,
-,helios,Helios di Fosco Aidas,m,,ulkan,corsa,,,,
+,helios,Helios di Fosco Aidas,m,,ulkan,corsa,2460263,31476,,
 r,hasso,Фанхил Хаус Хассо,m,2007-06-06,thor,kvina,574451,12847,,eiko
 ,heiko,Aranyvölgyi-Örseg Heiko,,,,,,,,
 r,hillari,Фанхил Хаус Хиллари,f,2007-06-06,thor,kvina,574533,13729,,viviana
@@ -83,11 +83,11 @@ r,mabari,Фанхил Хаус Мабари,f,2011-01-21,zearo,kvina,705217,2100
 ,maestro,Maestro vom Osterberger-Land,,,,,,,,
 ,malte,Malte von der Urbecke,,,,,,,,
 ,mary,Mary della Valcuvia,,,,,,,,
-,maybach,Maybach Tigback Hof,,,ober,kuba,,,,
+,maybach,Maybach Tigback Hof,,,ober,kuba,1930342,26890,,
 ,melinda,Melinda vom Niemberger Eck,,,,,,,,
 ,merlinmonro,Antenor Hof Merlin Monro,,,buster,umathurman,,,,
 ,maraj,Atsel Hof Maraj,,,,,,,,
-,nalmira,Антенор Хоф Нальмира,,,eiko,merlinmonro,,,,
+,nalmira,Антенор Хоф Нальмира,,,eiko,merlinmonro,2806898,30604,,
 ,nando,Nando vom Gollerweiher,,,,,,,,
 ,nannila,Nannila von der Freiheit Westerholt,,,,,,,,
 ,nata,Nata vom Wildsteiger Land,,,,,,,,
@@ -99,7 +99,7 @@ b,olivia,Фонте Фиделити Оливия,f,2018-03-22,aleks,mabari,2813
 ,pacco,Pacco vom Langenbungert,,,remo,ankaa,,,,
 ,paer,Paer vom Hasenborn,m,,,,,,,
 b,palmira,Фонте Фиделити Пальмира,f,2018-06-29,aleks,nikoletta,2791393,,,olivia
-,pantera,Пантера с Нижней Камы,f,,lew,tsefeya,,,,
+,pantera,Пантера с Нижней Камы,f,,lew,tsefeya,,34530,,
 ,persei,Фонте Фиделити Персей,m,2018-06-29,aleks,nikoletta,2791385,,,legenda
 ,phill,Phill van der Lust,,,devil,cleo,,,,
 ,quando,Quando vom Sofienwald,,,flex,anabel,,,,
@@ -122,7 +122,7 @@ b,palmira,Фонте Фиделити Пальмира,f,2018-06-29,aleks,nikole
 ,ulk,Ulk von Arlett,,,,,,,,
 ,ulkan,Ulkan von Maikhus,m,,landos,nera,,,,
 ,umathurman,Antenor Hof Uma Thurman,,,,,,,,
-,undina,Фанхил Хаус Ундина,f,,titan,hillari,,,,
+,undina,Фанхил Хаус Ундина,f,,titan,hillari,750544,,,
 ,ustinov,Ustinov vom Römerland,,,quantum,kira,,,,
 ,ute,Ute vom Thermodos,,,,,,,,
 ,vegas,Vegas du Haut Mansard,,,,,,,,
@@ -132,12 +132,12 @@ b,viviana,Хаус Велхольм Вивиана,f,2014-01-30,maybach,mabari,2
 ,yasko,Yasko vom Farbenspiel,,,,,,,,
 ,yunaru,Фанхил Хаус Юнару,f,2012-10-23,eltoro,hillari,1892025,23815,,
 ,zad,Zad Feetback,m,,,,,,,
-,zakhar,Zakhar no Bārtas Krasta,m,,dasty,hardena,,,,
+,zakhar,Zakhar no Bārtas Krasta,m,,dasty,hardena,1974446,26000,,
 ,zamp,Zamp vom Thermodos,,,quantum,ute,,,,
 ,zearo,Zearo vom Zellwaldrand,,,floro,vivian,,,,
 ,zenta,Zenta vom Friedenspark,,,,,,,,
 ,zhak,Жак Ширак с Нижней Камы,m,,,,,,,
-,zhakardi,Weitenshof Zhakardi,f,,phill,intriga,,,,
+,zhakardi,Weitenshof Zhakardi,f,,phill,intriga,1893262,,,
 ,zhasmina,Фонте Фиделити Жасмина,f,2016-12-23,armour,nikoletta,2610971,,,zhofrei
 b,zheneva,Фонте Фиделити Женева,f,2016-12-23,armour,nikoletta,2610976,31482,,alisha
 ,zhofrei,Фонте Фиделити Жофрей,m,2016-12-23,armour,nikoletta,2599793,,,elisei
