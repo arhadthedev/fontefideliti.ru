@@ -21,35 +21,31 @@ jobs:
       - name: Build Site Content
         run: python ../src/build_site.py ../res
         working-directory: ./public
-      - name: Upload Site Content Artifact
-        uses: actions/upload-artifact@v2
+      - name: Cache Build Artifacts
+        uses: actions/cache@v2
         with:
-          name: public
-          path: public
-          retention-days: 3
-      - name: Upload Firebase Project Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: firebase.json
-          path: firebase.json
-          retention-days: 3
+          path: |
+            public
+            firebase.json
+          key: build-${{ github.sha }}
 
   test:
     name: Test
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download Site Content Artifact
-        uses: actions/download-artifact@master
+      - name: Download Build Artifact Cache
+        uses: actions/cache@v2
         with:
-          name: public
-          path: public
+          path: |
+            public
+            firebase.json
+          key: build-${{ github.sha }}
       - name: Validate Hyperlink and Image Targets
         uses: chabad360/htmlproofer@master
         with:
           directory: "./public"
       - name: Validate HTML and CSS Conformance
-        id: html_css_conformance
         uses: Cyb3r-Jak3/html5validator-action@master
         with:
           css: true
@@ -60,15 +56,13 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Download Site Content Artifact
-        uses: actions/download-artifact@master
+      - name: Download Build Artifact Cache
+        uses: actions/cache@v2
         with:
-          name: public
-          path: public
-      - name: Firebase Project Artifact
-        uses: actions/download-artifact@master
-        with:
-          name: firebase.json
+          path: |
+            public
+            firebase.json
+          key: build-${{ github.sha }}
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
