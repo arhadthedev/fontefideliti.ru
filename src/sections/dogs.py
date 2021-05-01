@@ -18,6 +18,17 @@ def generate_photos(output_document, database, extra):
     dog_id = extra[0]
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
+
+    photo_list = resources.get_yaml('dogphotos.yml')
+    photos = photo_list.get(dog_id, [])
+    for photo in photos:
+        caption = photo['caption'] if photo['caption'] != None else ''
+        try:
+            photo_ = database['photos'].get_for_id(photo['path'])
+            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
+        except:
+            output_document.add_image(photo['path'], caption, 'h', 152, is_clickable=True)
+        output_document.add_plain(' ')
     output_document.end_container()
 
 
