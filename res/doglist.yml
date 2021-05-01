@@ -25,8 +25,6 @@ aleks:
       <li>5 x CAC, 6 x Лучший кобель</li>
       <li>2 x BIG 2</li>
     </ul>
-
-    <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
 aike:
   extra_titles:
     - V
@@ -40,7 +38,6 @@ alisha:
       <li>3 x Лучший юниор</li>
       <li>Лучшая сука</li>
     </ul>
-    <p>ОКД 2, ЗКС 2; HD-A, ED-0; Kkl 1</p>
 anabel:
   extra_titles:
     - Отборный класс
@@ -60,7 +57,6 @@ ando:
       <li>RCACIB</li>
       <li>3 x Лучшая защита на монопородных выставках</li>
     </ul>
-    <p><b>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</b></p>
 antei:
   content: >
     <ul class="titles" style="font-size: 90%">
@@ -71,7 +67,6 @@ antei:
       <li>BIG-2</li>
       <li>3 x ЮКЧК</li>
     </ul>
-    <p><b>HD-A, ED-0</b></p>
 ankaa:
   extra_titles:
     - V
@@ -101,9 +96,6 @@ conny:
 count:
   extra_titles:
     - Отборный класс
-danaya:
-  content: >
-    <p>ОКД 1, ЗКС 1; HD-B, ED-0; Kkl 1</p>
 demetra:
   extra_titles:
     - Чемпион России
@@ -130,7 +122,6 @@ demetra:
       <li>3 x BIG 1, BIG 2</li>
       <li>ЮСС</li>
     </ul>
-    <p>ОКД 2, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
 devil:
   extra_titles:
     - Отборный класс
@@ -158,8 +149,6 @@ eiko:
       <li>CACIB</li>
       <li>Лучшая защита на монопородных выставках</li>
     </ul>
-
-    <p>ОКД-1, ЗКС-1, IPO-I; HD-A, ED-0; Kkl 1П</p>
 eltoro:
   extra_titles:
     - Чемпион России
@@ -210,8 +199,6 @@ hasso:
       <li>КЧК, 3 х СС</li>
       <li>Лучший ветеран</li>
     </ul>
-
-    <p>ОКД-1, ЗКС-1; HD-A, ED-0; Kkl 1П</p>
 heiko:
   extra_titles:
     - Отборный класс
@@ -228,7 +215,6 @@ hillari:
       <li>Чемпион РФЛС</li>
       <li>КЧ РФСС</li>
     </ul>
-    <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1П</p>
 inessa:
   content: >
     <ul class="titles">
@@ -242,7 +228,6 @@ inessa:
       <li>7 x CAC</li>
       <li>BIG-2</li>
     </ul>
-    <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
 isabel:
   content: >
     <ul class="titles" style="font-size: 90%">
@@ -253,7 +238,6 @@ isabel:
       <li>Чемпион РФЛС</li>
       <li>КЧРФСС</li>
     </ul>
-    <p><b>ОКД/ЗКС; HD-A, ED-0</b></p>
 itan:
   videos:
     - fDREAoKZtR8
@@ -278,8 +262,6 @@ itan:
       <li>ЮКЧК, КЧК, 3 x СС</li>
       <li>BIG-1, BIG-2</li>
     </ul>
-
-    <p>ОКД-2, ЗКС-1; HD-A, ED-0, Kkl 1</p>
 jilla:
   extra_titles:
     - V
@@ -318,8 +300,6 @@ mabari:
     - V
   videos:
     - QVGW-IH7-_Q
-  content: >
-    <p>КД 1; HD-A, ED-0; Kkl 1П</p>
 maestro:
   extra_titles:
     - Отборный класс
@@ -381,10 +361,6 @@ nikoletta:
       <li>2 x BIS 1, BIS 3, 3 x BIG 1, 4 x BIG 2, BIG 3</li>
       <li>2 x ЮСС</li>
     </ul>
-    <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>
-olivia:
-  content: >
-    <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
 ober:
   extra_titles:
     - V
@@ -413,7 +389,6 @@ palmira:
       <li>Чемпион ОАНКОО</li>
       <li>Победитель Best 1 группы</li>
     </ul>
-    <p>ОКД-1, ЗКС-1; HD-A, ED-0</p>
 persei:
   content: >
     <ul class="titles" style="font-size: 90%">
@@ -503,7 +478,6 @@ viviana:
     <ul>
       <li>ЮСС</li>
     </ul>
-    <p>ОКД 1; ЗКС 2; HD-A</p>
 yasko:
   extra_titles:
     - Отборный класс
@@ -526,4 +500,3 @@ zheneva:
       <li>Лучший бэби</li>
       <li>Jun. CAC</li>
     </ul>
-    <p>ОКД 1, ЗКС 1; HD-A, ED-0; Kkl 1</p>

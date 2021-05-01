@@ -92,6 +92,11 @@ def generate_shows(output_document, database, extra):
     output_document.end_container()
 
 
+def to_roman(number):
+    numbers = ['Ⅰ', 'Ⅱ', 'Ⅲ', 'Ⅳ', 'Ⅴ', 'Ⅵ', 'Ⅶ', 'Ⅷ', 'Ⅸ', 'Ⅹ']
+    return numbers[number - 1]
+
+
 def generate_index(output_document, database, extra):
     resources = database['resources']
     dog_list = resources.get_yaml('doglist.yml')
@@ -109,6 +114,39 @@ def generate_index(output_document, database, extra):
     output_document.add_date(dog_info['dob'])
     output_document.add_raw('</p>')
     output_document.add_raw(dog_info.get('content', ''))
+    if 'tests' in dog_info:
+        training_group = []
+        if dog_info['tests'][2] == '?' and dog_info['tests'][3] == '?':
+            training_group.append('ОКД/ЗКС')
+        else:
+            if dog_info['tests'][2]:
+                fields = dog_info['tests'][2].split(' ')
+                if len(fields) > 1 and fields[1].lower() == 'кд':
+                    training_group.append('КД-{}'.format(fields[0]))
+                else:
+                    training_group.append('ОКД-{}'.format(fields[0]))
+            if dog_info['tests'][3]:
+                training_group.append('ЗКС-{}'.format(dog_info['tests'][3]))
+            if dog_info['tests'][4]:
+                training_group.append('IPO-{}'.format(to_roman(int(dog_info['tests'][4]))))
+        training_group = ', '.join(training_group)
+
+        health_group = []
+        if dog_info['tests'][0]:
+            health_group.append('HD-{}'.format(dog_info['tests'][0].upper()))
+        if dog_info['tests'][1]:
+            health_group.append('ED-{}'.format(dog_info['tests'][1]))
+        health_group = ', '.join(health_group)
+
+        kaerklass_group = []
+        if dog_info['tests'][5]:
+            kaerklass_group.append('Kkl {}'.format(dog_info['tests'][5].upper()))
+        kaerklass_group = ', '.join(kaerklass_group)
+
+        short_test_info = '; '.join(filter(bool, [training_group, health_group, kaerklass_group]))
+        output_document.add_raw('<p>')
+        output_document.add_raw(short_test_info)
+        output_document.add_raw('</p>')
     caption = 'Фотография {}'.format(dog_info['name']['gen'])
     photo = database['photos'].get_card_assignation(dog_id)
     output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())

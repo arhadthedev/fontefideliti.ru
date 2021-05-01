@@ -95,6 +95,11 @@ class Input(object):
                             dog['pedigree'] = {}
                             dog['pedigree']['pd'] = line['Pedigree Database #']
                             dog['pedigree']['gsdog'] = line['GSDOG #']
+                            ts_full_path = os.path.join(self._base_path, 'dog_tests.csv')
+                            with open(ts_full_path, 'r', encoding='utf-8') as tests:
+                                tests = {rows['ID']:(rows['HD'], rows['ED'], rows['ОКД'], rows['ЗКС'], rows['IPO'], rows['Kkl']) for rows in csv.DictReader(tests)}
+                            if line['ID'] in tests:
+                                dog['tests'] = tests[line['ID']]
                             if line['Renter']:
                                 dog['renter'] = 'питомник «{}»'.format(line['Renter'])
                             dog['after'] = format(line['Display After'])
