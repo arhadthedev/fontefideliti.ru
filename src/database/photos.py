@@ -69,6 +69,14 @@ class PhotoList:
                 attribute_group.setdefault(value, []).append(photo)
                 if name == 'd=':
                     photo._dogs.append(value)
+                if name == 'c=':
+                    crop_margins = value.split(',')
+                    crop_left = int(crop_margins[0])
+                    crop_top = int(crop_margins[1])
+                    crop_right = image.width - int(crop_margins[2])
+                    crop_bottom = image.height - int(crop_margins[3])
+                    crop_rect = (crop_left, crop_top, crop_right, crop_bottom)
+                    image = image.crop(crop_rect)
 
 
     def get_for_date(self, date):
