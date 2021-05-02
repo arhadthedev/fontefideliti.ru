@@ -7,6 +7,15 @@
     } ],
 
     "public": "public",
-    "ignore": ["_*/", ".**", "res/"]
+    "ignore": [
+    	".git",
+    	".github",
+    	"res",
+    	"src",
+    	".gitignore",
+    	"README.txt",
+    	"LICENSE.txt",
+    	"requirements.txt"
+    ]
   }
 }
