@@ -95,6 +95,6 @@ class PhotoList:
 
 
     def get_for_id(self, id):
-        year, month, day, sequence = id[0:4], id[5:7], id[7:9], id[9]
+        year, month, day, sequence = id[0:4], id[5:7], id[7:9], id[9:]
         prefix_group = self.get_for_date(date(int(year), int(month), int(day)))
-        return [e for e in prefix_group if str(e.get_id())[-1] == sequence][0]
+        return [e for e in prefix_group if str(e.get_id())[9:] == sequence][0]
