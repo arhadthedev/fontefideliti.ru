@@ -12,12 +12,10 @@ from PIL import Image
 
 
 class Photo:
-    def __init__(self, image, id, date):
-        self._image = image
+    def __init__(self, id, date):
         self._id = id
         self._date = date
         self._caption = ''
-        self._dogs = []
 
 
     def get_path(self):
@@ -57,18 +55,19 @@ class PhotoList:
             month, day, sequence = month_date_seq[0:2], month_date_seq[2:4], month_date_seq[4:]
 
             # Image loading is lazy so we can open hundreds of photos fast
-            image = Image.open(photo_path)
             photo_id = Path(year, month + day + sequence)
             photo_date = date(int(year), int(month), int(day))
-            photo = Photo(image, photo_id, photo_date)
+            photo = Photo(photo_id, photo_date)
             self._dates.setdefault(photo_date, []).append(photo)
 
+            dogs = []
+            image = Image.open(photo_path)
             for attribute in attributes:
                 name, value = attribute[:2], attribute[2:]
                 attribute_group = self._by_attribute.setdefault(name, {})
                 attribute_group.setdefault(value, []).append(photo)
                 if name == 'd=':
-                    photo._dogs.append(value)
+                    dogs.append(value)
                 if name == 'c=':
                     crop_margins = value.split(',')
                     crop_left = int(crop_margins[0])
@@ -77,6 +76,9 @@ class PhotoList:
                     crop_bottom = image.height - int(crop_margins[3])
                     crop_rect = (crop_left, crop_top, crop_right, crop_bottom)
                     image = image.crop(crop_rect)
+
+            photo._dogs = dogs
+            photo._image = image
 
 
     def get_for_date(self, date):
