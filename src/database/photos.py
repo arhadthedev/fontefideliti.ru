@@ -8,7 +8,7 @@
 
 from datetime import date
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageEnhance
 
 
 class Photo:
@@ -68,6 +68,8 @@ class PhotoList:
                 attribute_group.setdefault(value, []).append(photo)
                 if name == 'd=':
                     dogs.append(value)
+                if name == 'b=':
+                    image = ImageEnhance.Contrast(image).enhance(float(value))
                 if name == 'c=':
                     crop_margins = value.split(',')
                     crop_left = int(crop_margins[0])
