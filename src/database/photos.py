@@ -48,15 +48,19 @@ class PhotoList:
         self._dates = {}
         self._by_attribute = {}
 
-        for photo_path in gallery_path.glob('*/*.jpg'):
+        for photo_path in gallery_path.glob('*/**/*.jpg'):
             relative_photo_path = photo_path.relative_to(gallery_path)
-            year, id_and_attributes = relative_photo_path.with_suffix('').parts
-            month_date_seq, *attributes = id_and_attributes.split(' ')
-            month, day, sequence = month_date_seq[0:2], month_date_seq[2:4], month_date_seq[4:]
 
-            # Image loading is lazy so we can open hundreds of photos fast
-            photo_id = Path(year, month + day + sequence)
-            photo_date = date(int(year), int(month), int(day))
+            if relative_photo_path.parts[0] == 'photos':
+                photo_id = relative_photo_path.with_suffix('').as_posix()
+                photo_date = photo_id
+            else:
+                year, id_and_attributes = relative_photo_path.with_suffix('').parts
+                month_date_seq, *attributes = id_and_attributes.split(' ')
+                month, day, sequence = month_date_seq[0:2], month_date_seq[2:4], month_date_seq[4:]
+
+                photo_id = Path(year, month + day + sequence)
+                photo_date = date(int(year), int(month), int(day))
             photo = Photo(photo_id, photo_date)
             self._dates.setdefault(photo_date, []).append(photo)
 
@@ -98,5 +102,8 @@ class PhotoList:
 
     def get_for_id(self, id):
         year, month, day, sequence = id[0:4], id[5:7], id[7:9], id[9:]
-        prefix_group = self.get_for_date(date(int(year), int(month), int(day)))
-        return [e for e in prefix_group if str(e.get_id())[9:] == sequence][0]
+        try:
+            prefix_group = self.get_for_date(date(int(year), int(month), int(day)))
+            return [e for e in prefix_group if str(e.get_id())[9:] == sequence][0]
+        except ValueError:
+            return self._dates[id][0]

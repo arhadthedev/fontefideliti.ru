@@ -23,11 +23,8 @@ def generate_photos(output_document, database, extra):
     photos = photo_list.get(dog_id, [])
     for photo in photos:
         caption = photo['caption'] if photo['caption'] != None else ''
-        try:
-            photo_ = database['photos'].get_for_id(photo['path'])
-            output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
-        except:
-            output_document.add_image(photo['path'], caption, 'h', 152, is_clickable=True)
+        photo_ = database['photos'].get_for_id(photo['path'])
+        output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
         output_document.add_plain(' ')
     output_document.end_container()
 
