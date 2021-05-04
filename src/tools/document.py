@@ -246,9 +246,12 @@ class Document(object):
         self._content_chunks.append('</ul>')
 
 
-    def finalize(self):
+    def end_document(self):
         now = datetime.now()
         copyright = '© Ярыгин О. В. (oleg@arhadthedev.net) 2015–{}.'.format(now.year)
         footer = '<footer><p>{}</footer>'.format(copyright)
         self._content_chunks.append(footer)
-        return ''.join(self._content_chunks)
+
+
+    def __str__(self):
+        return ''.join(map(str, self._content_chunks))

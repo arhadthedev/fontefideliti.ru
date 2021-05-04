@@ -55,7 +55,8 @@ for generator in [dogs, main, photos, sale, shows]:
         log.info('Generating %s...', path)
         output_document = tools.document.Document(title, path, database)
         generator(output_document, database, extra)
-        html_content = output_document.finalize()
+        output_document.end_document()
+        html_content = str(output_document)
 
         path.parent.mkdir(parents=True, exist_ok=True)
         with open(path, 'w', encoding='utf-8') as output:
