@@ -38,6 +38,20 @@ def as_minimal_url(path):
     return '/'.join(parts)
 
 
+class ConditionalChunk(object):
+    def __init__(self, content):
+        self._condition = False
+        self._content = content
+
+
+    def trigger_condition(self):
+        self._condition = True
+
+
+    def __str__(self):
+        return self._content if self._condition else ''
+
+
 class Document(object):
     def __init__(self, title, path, database):
         self._resources = database['resources']
@@ -51,10 +65,14 @@ class Document(object):
         self._content_chunks.append('<link rel="stylesheet" href="/common.css">')
         self._content_chunks.append('<link rel="icon" href="/favicon.png">')
 
-        self._content_placeholder_id = len(self._content_chunks)
-        self._content_chunks.append('')
-        self._content_chunks.append('')
-        self._content_chunks.append('')
+        gallery = ('<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/'
+                   'libs/baguettebox.js/1.11.1/baguetteBox.min.css">'
+                    '<script src="//cdnjs.cloudflare.com/ajax/libs/'
+                    'baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
+                    '<script>addEventListener("load", function() {baguetteBox.'
+                    'run("article", {noScrollbars: true})})</script>')
+        self._gallery_script = ConditionalChunk(gallery)
+        self._content_chunks.append(self._gallery_script)
         self._content_chunks.append('<header>')
         brand_pretty = brand_en.replace('«', '<span>«').replace('»', '»</span>')
         self._content_chunks.append('<h1>{}</h1>'.format(brand_pretty))
@@ -152,10 +170,7 @@ class Document(object):
                 full_size = 794, 794
                 preview.thumbnail(full_size, Image.LANCZOS, None)
                 preview.save(fullsize_path, quality=94, optimize=True, progressive=True)
-            i = self._content_placeholder_id
-            self._content_chunks[i + 0] = '<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">'
-            self._content_chunks[i + 1] = '<script src="//cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
-            self._content_chunks[i + 2] = '<script>addEventListener("load", function() {baguetteBox.run("article", {noScrollbars: true})})</script>'
+            self._gallery_script.trigger_condition()
             self._content_chunks.append('<a href="/{}" title="{}">'.format(fullsize_path, caption))
         self._content_chunks.append('<img src="/{}" width="{}" height="{}" alt="{}">'.format(preview_path, width, height, caption))
         if is_clickable:
