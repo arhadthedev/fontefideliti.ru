@@ -9,7 +9,7 @@
 from datetime import datetime
 from pathlib import Path
 
-def _print_list(output, resources):
+def _print_list(output, resources, photos):
     dog_list = resources.get_yaml('doglist.yml')
 
     output.start_container(['card'])
@@ -28,11 +28,10 @@ def _print_list(output, resources):
     output.add_raw('<h2 style="font-size: 100%">Суки:</h2>')
     output.add_raw('<h3 style="font-size: 11pt">Фонте Фиделити Циана</h3>')
     output.add_raw('<p><a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=3069915">Родословная</a></p>')
-    output.add_image('2021/03281', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
-    output.add_plain(' ')
-    output.add_image('2021/03282', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
-    output.add_plain(' ')
-    output.add_image('2021/03283', 'Фонте Фиделити Циана, 1,5 месяца', 'h', 152, True)
+    for photo in photos.get_for_dog('tsiana'):
+        photo.set_caption('Фонте Фиделити Циана, 1,5 месяца')
+        output.add_image('', '', 'h', 152, True, photo)
+        output.add_plain(' ')
     output.end_container()
 
 
@@ -49,7 +48,7 @@ def generate_sale(output, database, extra):
     output.add_plain('оказываем помощь в подготовке и показе на выставках.')
     output.end_container()
 
-    _print_list(output, database['resources'])
+    _print_list(output, database['resources'], database['photos'])
 
     if False:
         output.start_paragraph()

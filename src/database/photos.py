@@ -99,6 +99,10 @@ class PhotoList:
         return self._dates[date] if date in self._dates else []
 
 
+    def get_for_dog(self, dog_id):
+        return self._by_attribute.get('d=', {}).get(dog_id)
+
+
     def get_card_assignation(self, assignation_name):
         assigned = self._by_attribute.get('t=', {}).get(str(assignation_name))
         if assigned == None:
