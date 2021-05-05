@@ -6,7 +6,6 @@
 # Distributed under the MIT software license; see the accompanying
 # file LICENSE.txt or <https://www.opensource.org/licenses/mit-license.php>.
 
-from collections import OrderedDict
 from datetime import date
 from pathlib import Path
 import tools.shows
@@ -37,7 +36,6 @@ def generate_year_page(output_document, database, extra):
 
     output_document.start_container(css_classes=['card'])
     for date, events in database['shows'].get_for_year(displayed_year):
-        gallery = OrderedDict()
         for event in events:
             output_document.add_raw('<h2 style="font-size: 90%">')
             output_document.add_date(date)
@@ -62,12 +60,6 @@ def generate_year_page(output_document, database, extra):
                 output_document.add_plain(place)
                 output_document.add_raw('</p>')
 
-                if 'photos' in dog_performance:
-                    photos2 = dog_performance['photos']
-                    for photo in photos2:
-                        if photo['path'] not in gallery:
-                            gallery[photo['path']] = photo['caption']
-
         output_document.add_raw('<p>')
         photo_gallery = database['photos'].get_for_date(date)
         for photo in photo_gallery:
@@ -77,10 +69,6 @@ def generate_year_page(output_document, database, extra):
             caption = '{}, г. {}, {}'.format(glued_dog_names, event['city'], human_date(date))
             photo.set_caption(caption)
             output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.get_image())
-            output_document.add_plain(' ')
-
-        for path, caption in gallery.items():
-            output_document.add_image(path, caption, 'h', 152, True)
             output_document.add_plain(' ')
         output_document.add_raw('</p>')
 
