@@ -12,14 +12,32 @@ from PIL import Image, ImageEnhance
 
 
 class Photo:
-    def __init__(self, id, date):
+    def __init__(self, input_path, id, date):
+        self._input_path = input_path
         self._id = id
         self._date = date
         self._caption = ''
 
+        self._blackening = None
+        self._crop_margins = None
+
 
     def get_path(self):
         return self._path
+
+
+    def get_image(self):
+        image = Image.open(self._input_path)
+        if self._blackening:
+            image = ImageEnhance.Contrast(image).enhance(self._blackening)
+        if self._crop_margins:
+            left, top, right, bottom = self._crop_margins
+            abs_right = image.width - right
+            abs_bottom = image.height - bottom
+            cropping_rectangle = left, top, abs_right, abs_bottom
+            image = image.crop(cropping_rectangle)
+
+        return image
 
 
     def get_id(self):
@@ -37,10 +55,6 @@ class Photo:
 
     def get_attributes(self,):
         return {'dogs': self._dogs}
-
-
-    def get_image(self):
-        return self._image
 
 
 class PhotoList:
@@ -61,11 +75,10 @@ class PhotoList:
 
                 photo_id = Path(year, month + day + sequence)
                 photo_date = date(int(year), int(month), int(day))
-            photo = Photo(photo_id, photo_date)
+            photo = Photo(photo_path, photo_id, photo_date)
             self._dates.setdefault(photo_date, []).append(photo)
 
             dogs = []
-            image = Image.open(photo_path)
             for attribute in attributes:
                 name, value = attribute[:2], attribute[2:]
                 attribute_group = self._by_attribute.setdefault(name, {})
@@ -73,18 +86,12 @@ class PhotoList:
                 if name == 'd=':
                     dogs.append(value)
                 if name == 'b=':
-                    image = ImageEnhance.Contrast(image).enhance(float(value))
+                    photo._blackening = float(value)
                 if name == 'c=':
-                    crop_margins = value.split(',')
-                    crop_left = int(crop_margins[0])
-                    crop_top = int(crop_margins[1])
-                    crop_right = image.width - int(crop_margins[2])
-                    crop_bottom = image.height - int(crop_margins[3])
-                    crop_rect = (crop_left, crop_top, crop_right, crop_bottom)
-                    image = image.crop(crop_rect)
+                    raw_crop_margins = value.split(',')
+                    photo._crop_margins = tuple(map(int, raw_crop_margins))
 
             photo._dogs = dogs
-            photo._image = image
 
 
     def get_for_date(self, date):
