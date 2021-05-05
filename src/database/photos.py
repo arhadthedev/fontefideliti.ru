@@ -81,15 +81,16 @@ class PhotoList:
             dogs = []
             for attribute in attributes:
                 name, value = attribute[:2], attribute[2:]
-                attribute_group = self._by_attribute.setdefault(name, {})
-                attribute_group.setdefault(value, []).append(photo)
-                if name == 'd=':
-                    dogs.append(value)
                 if name == 'b=':
                     photo._blackening = float(value)
                 if name == 'c=':
                     raw_crop_margins = value.split(',')
                     photo._crop_margins = tuple(map(int, raw_crop_margins))
+                else:
+                    attribute_group = self._by_attribute.setdefault(name, {})
+                    attribute_group.setdefault(value, []).append(photo)
+                    if name == 'd=':
+                        dogs.append(value)
 
             photo._dogs = dogs
 
