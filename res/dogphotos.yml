@@ -90,7 +90,7 @@ aleks:
     caption: Ersteshrit Aleks. Монопородная выставка ранга КЧК, г. Ульяновск, 10 июня 2017 г.
   - path: 2017/06101
     caption: Ersteshrit Aleks и Фонте Фиделити Женева. Монопородная выставка ранга КЧК, г. Ульяновск, 10 июня 2017 г.
-  - path: photos/aleks/110
+  - path: 2017/05207
     caption: Ersteshrit Aleks. Май, 2017г.
   - path: 2017/05200
     caption: Ersteshrit Aleks. Май, 2017г.
@@ -98,19 +98,19 @@ aleks:
     caption: Ersteshrit Aleks. Май, 2017г. Сдача кёрунга.
   - path: 2017/05172
     caption: Ersteshrit Aleks. Май, 2017г. Сдача кёрунга.
-  - path: photos/aleks/126
+  - path: 2017/05145
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/127
+  - path: 2017/05146
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/128
+  - path: 2017/05147
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/129
+  - path: 2017/05148
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/130
+  - path: 2017/05149
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/131
+  - path: 2017/0514a
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
-  - path: photos/aleks/132
+  - path: 2017/0514b
     caption: Ersteshrit Aleks. Май, 2017г. Ринговка.
   - path: 2017/05161
     caption: Ersteshrit Aleks. Май, 2017г.
@@ -597,13 +597,13 @@ demetra:
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: 2015/04261
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/demetra/40
+  - path: 2015/04269
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: 2015/04262
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/shows/2015-samara-7
+  - path: 2015/0426a
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
-  - path: photos/shows/2015-samara-8
+  - path: 2015/0426b
     caption: Монопородная выставка, г. Самара, 26 апреля 2015 г.
   - path: 2015/03051
     caption: Ринговка в зале. Март, 2015г.
@@ -1168,9 +1168,9 @@ nikoletta:
     caption: Светлана Крыгина с Фанхил Хаус Николеттой
   - path: 2016/06041
     caption: Светлана Крыгина с Ersteshrit Alex и Фанхил Хаус Николеттой. Всепородная выставка, г. Самара, 4 июня 2016 г.
-  - path: photos/shows/2016-samara-04062016-4
+  - path: 2016/06048
     caption: Фанхил Хаус Николетта. Всероссийская выставка, г. Самара, 4 июня 2016 г. BIG-3.
-  - path: photos/shows/2016-samara-04062016-5
+  - path: 2016/06049
     caption: Фанхил Хаус Николетта. Региональная выставка, г. Самара, 4 июня 2016 г. BIG-2
   - path: photos/nikoletta/70
     caption: Фанхил Хаус Николетта. Региональная выставка, г. Самара, 4 июня 2016 г. BIG-2
@@ -1408,9 +1408,9 @@ zheneva:
     caption: 4 месяца
   - path: 2017/05203
     caption: 4 месяца
-  - path: 2017/05202
+  - path: 2017/05209
     caption: 4 месяца
-  - path: 2017/05201
+  - path: 2017/05208
     caption: 4 месяца
   - path: 2017/05141
     caption: 4 месяца
