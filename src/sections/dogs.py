@@ -19,12 +19,9 @@ def generate_photos(output_document, database, extra):
     name = dog_list[dog_id]['name']
     output_document.add_raw('<h1>Фото <a href=".">{}</a></h1>'.format(name['gen']))
 
-    photo_list = resources.get_yaml('dogphotos.yml')
-    photos = photo_list.get(dog_id, [])
+    photos = database['photos'].get_for_dog(dog_id)
     for photo in photos:
-        caption = photo['caption'] if photo['caption'] != None else ''
-        photo_ = database['photos'].get_for_id(photo['path'])
-        output_document.add_image(photo_.get_id(), caption if caption else photo_.get_caption(), 'h', 152, True, photo_.get_image())
+        output_document.add_image('', '', 'h', 152, True, photo.get_image())
         output_document.add_plain(' ')
     output_document.end_container()
 
@@ -160,9 +157,7 @@ def generate_index(output_document, database, extra):
     output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())
 
     subsections = []
-    photo_list = resources.get_yaml('dogphotos.yml')
-    photos = photo_list.get(dog_id)
-    if photos:
+    if database['photos'].get_for_dog(dog_id):
         subsections.append('<a href="photos.htm">Фотографии</a>')
     videos = dog_list[dog_id].get('videos', [])
     if videos:
@@ -244,7 +239,6 @@ def get_root_artifact_list(database):
     categories = {'dog': Path('dogs'), 'female': Path('females'), 'male': Path('males')}
 
     dog_list = resources.get_yaml('doglist.yml')
-    photo_list = resources.get_yaml('dogphotos.yml')
     dogs = [dog for dog in dog_list.items() if not for_pedigree_only(dog)]
     for dog_id, dog_details in dogs:
 
@@ -254,8 +248,7 @@ def get_root_artifact_list(database):
 
         section_pages.append((name['nom'], directory / 'index', generate_index, dog_id))
 
-        photos = photo_list.get(dog_id)
-        if photos:
+        if database['photos'].get_for_dog(dog_id):
             title = "Фото {}".format(name['gen'])
             page = (title, directory / 'photos', generate_photos, dog_id)
             section_pages.append(page)
