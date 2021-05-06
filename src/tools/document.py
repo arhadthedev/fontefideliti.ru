@@ -63,7 +63,11 @@ class Document(object):
         self._content_chunks.append('<header>')
         brand_pretty = brand_en.replace('«', '<span>«').replace('»', '»</span>')
         self._content_chunks.append('<h1>{}</h1>'.format(brand_pretty))
-        self.add_image('title', 'Логотип', 'w', 500, False)
+
+        photo = self._photos.get_card_assignation('site_head')
+        photo.set_caption('Логотип')
+        self.add_image('', '', 'w', 500, False, photo.get_image())
+
         self._content_chunks.append('</header>')
 
         self._content_chunks.append('<nav><ul>')
