@@ -9,33 +9,33 @@
     caption: Фонте Фиделити Инесса, 7 месяцев
   - path: photos/dogs/iskander-2
     caption: Фонте Фиделити Искандер, 7 месяцев
-  - path: photos/dogs/kassandra-2
+  - path: 2017/11074
     caption: Фонте Фиделити Кассандра, 4 месяца
-  - path: photos/dogs/kamila-2
+  - path: 2017/11126
     caption: Фонте Фиделити Камила, 4 месяца
-  - path: photos/dogs/zheneva-3
+  - path: 2017/11072
     caption: Фонте Фиделити Женева, 10 месяцев
-  - path: photos/dogs/izabel-3
+  - path: 2017/07111
     caption: Фонте Фиделити Изабель, 6 месяцев
-  - path: photos/dogs/itan-3
+  - path: 2017/11055
     caption: Фонте Фиделити Итан, 6 месяцев
-  - path: photos/dogs/gambo-2
+  - path: 2017/11051
     caption: Фонте Фиделити Гамбо, 1,5 года
-  - path: photos/dogs/goldi-2
+  - path: 2017/11052
     caption: Фонте Фиделити Голди, 1,5 года
-  - path: photos/dogs/zhofrey-2
+  - path: 2017/11056
     caption: Фонте Фиделити Жофрей, 10 месяцев
-  - path: photos/dogs/ingur-2
+  - path: 2017/11053
     caption: Фонте Фиделити Ингур, 6 месяцев
-  - path: photos/our-dogs/vivat
+  - path: 2015/12201
     caption: Фонте Фиделити Виват, 4 месяца
-  - path: photos/dogs/vivat2
+  - path: 2017/03263
     caption: Фонте Фиделити Виват, 1,5 года
-  - path: photos/dogs/greit2
+  - path: 2017/03264
     caption: Фонте Фиделити Грейт, 1 год
   - path: photos/dogs/elisei
     caption: Фонте Фиделити Елисей, 5 месяцев
-  - path: photos/our-dogs/vivat2
+  - path: 2017/03263
     caption: Фонте Фиделити Виват, 8 месяцев
   - path: photos/our-dogs/belissima
     caption: Фонте Фиделити Белиссима, 1 год
@@ -1331,11 +1331,11 @@ viviana:
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: 2015/08234
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/23
+  - path: 2015/08239
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/22
+  - path: 2015/0823a
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
-  - path: photos/viviana/21
+  - path: 2015/0823b
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
   - path: 2015/08236
     caption: Монопородная выставка, г. Тольятти, 23 августа 2015 г.
@@ -1343,7 +1343,7 @@ viviana:
     caption: Хаус Велхольм Вивиана, 1,5 года
   - path: 2015/08113
     caption: Хаус Велхольм Вивиана, 1,5 года
-  - path: photos/viviana/17
+  - path: 2015/08114
     caption: Хаус Велхольм Вивиана, 1,5 года
   - path: 2015/04267
     caption: Хаус Велхольм Вивиана. Монопородная выставка, г. Самара, 26 апреля 2015 г.
@@ -1398,7 +1398,7 @@ zheneva:
     caption: 10 месяцев
   - path: 2017/11071
     caption: 10 месяцев
-  - path: photos/zheneva/14
+  - path: 2017/08011
     caption: 7 месяцев
   - path: 2017/05144
     caption: 4 месяца
