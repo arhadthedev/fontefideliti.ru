@@ -46,7 +46,9 @@ class Photo:
         return promise
 
 
-    def keep_generation_promises(self, rewrite_existing):
+    def keep_generation_promises(self, rewrite_existing, photo_logger):
+        photo_logger(self._relative_input_path)
+
         for (dimension, output_directory), promise in self._generation_promises.items():
             dimension_type, dimension_size = dimension
             REASONABLY_LARGE_SIZE = 9_999
@@ -165,8 +167,8 @@ class PhotoList:
             return assigned[0]
 
 
-    def keep_generation_promises(self, rewrite_existing):
+    def keep_generation_promises(self, rewrite_existing, photo_logger):
         # each photo belongs to a single date unlike other categories
         for date, date_group in self._dates.items():
             for photo in date_group:
-                photo.keep_generation_promises(rewrite_existing)
+                photo.keep_generation_promises(rewrite_existing, photo_logger)

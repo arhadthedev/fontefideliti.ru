@@ -53,14 +53,14 @@ for generator in [dogs, main, photos, sale, shows]:
     for title, path, generator, *extra in artifacts:
         path = path.with_suffix('.html' if path.stem == 'index' else '.htm')
 
-        log.info('Generating %s...', path)
         output_document = tools.document.Document(title, path, database)
         generator(output_document, database, extra)
         output_document.end_document()
         documents.append((output_document, path))
 
+photo_logger = lambda path: log.info('Generating from "%s"...', path)
 rewrite_existing = False
-database['photos'].keep_generation_promises(rewrite_existing)
+database['photos'].keep_generation_promises(rewrite_existing, photo_logger)
 
 for document, path in documents:
     path.parent.mkdir(parents=True, exist_ok=True)
