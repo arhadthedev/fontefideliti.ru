@@ -32,13 +32,6 @@ def _make_html_class_list(class_list):
     return ' '.join(class_list)
 
 
-def as_minimal_url(path):
-    parts = list(path.parts)
-    if parts[-1].startswith('index.'):
-         parts[-1] = ''
-    return '/'.join(parts)
-
-
 class Document(object):
     def __init__(self, title, path, database):
         self._resources = database['resources']
@@ -71,13 +64,12 @@ class Document(object):
         self._content_chunks.append('</header>')
 
         self._content_chunks.append('<nav><ul>')
-        page_rel_url = as_minimal_url(path)
         for title, menu_path in menu:
-            if not menu_path:
-                menu_path = 'index.html'
-            if page_rel_url == menu_path:
+            if not menu_path or menu_path[-1] == '/':
+                menu_path = '{}index.html'.format(menu_path)
+            if path.as_posix() == menu_path:
                 item = '<li><span class="current">{}</span></li>'.format(title)
-            elif page_rel_url.startswith(menu_path):
+            elif path.as_posix().startswith(menu_path):
                 item = '<li><a href="/{}" class="current">{}</a></li>'.format(menu_path, title)
             else:
                 item = '<li><a href="/{}">{}</a></li>'.format(menu_path, title)
