@@ -125,45 +125,24 @@ class Document(object):
 
 
     def add_image(self, output_name, caption, dimension_type, dimension, is_clickable, input_image=None):
-        output_name = str(output_name)
-
-        size = '{}{}'.format(dimension_type, dimension)
-        if dimension_type == 'w':
-            max_size = dimension, 9999
-        elif dimension_type == 'h':
-            max_size = 9999, dimension
-        else:
-            raise ValueError('dimension_type can be "w" or "h" only')
-
-        base = 'img/{}'.format(output_name.split(' ')[0])
-        fullsize_path = '{}.jpg'.format(base)
-        preview_path = '{}-{}.jpg'.format(base, size)
-
-        os.makedirs(os.path.dirname(preview_path), exist_ok=True)
-        if input_image:
-            original = input_image
-        else:
-            original = self._resources.get_image('img/{}.jpg'.format(output_name))
-        width = None
-        height = None
-        if not os.path.isfile(preview_path):
-            preview = original.copy()
-            preview.thumbnail(max_size, Image.LANCZOS, None)
-            preview.save(preview_path, quality=94, optimize=True, progressive=True)
-            width, height = preview.size
-        else:
-            with Image.open(preview_path) as existing:
-                width, height = existing.size
-
         if is_clickable:
-            if not os.path.isfile(fullsize_path):
-                preview = original.copy()
-                full_size = 794, 794
-                preview.thumbnail(full_size, Image.LANCZOS, None)
-                preview.save(fullsize_path, quality=94, optimize=True, progressive=True)
             self._gallery_script.trigger_condition()
-            self._content_chunks.append('<a href="/{}" title="{}">'.format(fullsize_path, caption))
-        self._content_chunks.append('<img src="/{}" width="{}" height="{}" alt="{}">'.format(preview_path, width, height, caption))
+            dimension = ('e', 794)
+            fullsize = image.get_generation_promise_for_size(dimension, to='img')
+            self._content_chunks.append('<a href="/')
+            self._content_chunks.append(fullsize.posix_path_chunk)
+            self._content_chunks.append('" title="{}">'.format(caption))
+
+        dimension = (dimension_type, dimension_size)
+        preview = image.get_generation_promise_for_size(dimension, to='img')
+        self._content_chunks.append('<img src="/')
+        self._content_chunks.append(preview.posix_path_chunk)
+        self._content_chunks.append('" width="')
+        self._content_chunks.append(preview.width_chunk)
+        self._content_chunks.append('" height="')
+        self._content_chunks.append(preview.height_chunk)
+        self._content_chunks.append('" alt="{}">'.format(caption))
+
         if is_clickable:
             self._content_chunks.append('</a>')
 

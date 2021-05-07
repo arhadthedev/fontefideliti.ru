@@ -59,6 +59,9 @@ for generator in [dogs, main, photos, sale, shows]:
         output_document.end_document()
         documents.append((output_document, path))
 
+rewrite_existing = False
+database['photos'].keep_generation_promises(rewrite_existing)
+
 for document, path in documents:
     path.parent.mkdir(parents=True, exist_ok=True)
     with open(path, 'w', encoding='utf-8') as output:
