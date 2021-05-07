@@ -153,13 +153,16 @@ class PhotoList:
         return self._by_attribute.get('d=', {}).get(dog_id)
 
 
-    def get_card_assignation(self, assignation_name):
+    def get_card_assignation(self, assignation_name, multiphoto_group=False):
         assigned = self._by_attribute.get('t=', {}).get(str(assignation_name))
         if assigned == None:
             raise ValueError('There must be a photo assigned to {} card'.format(assignation_name))
-        if len(assigned) > 1:
-            raise ValueError('Only a single photo may be assigned to {} card'.format(assignation_name))
-        return assigned[0]
+        if multiphoto_group:
+            return assigned
+        else:
+            if len(assigned) > 1:
+                raise ValueError('Only a single photo may be assigned to {} card'.format(assignation_name))
+            return assigned[0]
 
 
     def keep_generation_promises(self, rewrite_existing):

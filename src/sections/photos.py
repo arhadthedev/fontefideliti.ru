@@ -12,7 +12,7 @@ def generate_photos(output, database, extra):
     output.start_container()
     output.add_header(1, 'Фотографии всех наших собак')
 
-    photos = database['photos'].get_card_assignation('allphotos')
+    photos = database['photos'].get_card_assignation('allphotos', multiphoto_group=True)
     for photo in photos:
         output.add_image('',  '', 'h', 152, True, photo.get_image())
         output.add_plain(' ')
