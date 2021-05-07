@@ -131,7 +131,7 @@ class Document(object):
             fullsize = image.get_generation_promise_for_size(dimension, to='img')
             self._content_chunks.append('<a href="/')
             self._content_chunks.append(fullsize.posix_path_chunk)
-            self._content_chunks.append('" title="{}">'.format(caption))
+            self._content_chunks.append('" title="{}">'.format(image.get_caption()))
 
         dimension = (dimension_type, dimension_size)
         preview = image.get_generation_promise_for_size(dimension, to='img')
@@ -141,7 +141,7 @@ class Document(object):
         self._content_chunks.append(preview.width_chunk)
         self._content_chunks.append('" height="')
         self._content_chunks.append(preview.height_chunk)
-        self._content_chunks.append('" alt="{}">'.format(caption))
+        self._content_chunks.append('" alt="{}">'.format(image.get_caption()))
 
         if is_clickable:
             self._content_chunks.append('</a>')
