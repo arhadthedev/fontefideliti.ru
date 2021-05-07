@@ -9,6 +9,7 @@
 from datetime import datetime
 import os
 from PIL import Image
+from tools.text_chunks import ConditionalText
 
 brand_ru = 'Питомник немецких овчарок «Фонте Фиделити» г. Тольятти'
 brand_en = 'Питомник немецких овчарок «Fonte Fideliti» г. Тольятти'
@@ -38,20 +39,6 @@ def as_minimal_url(path):
     return '/'.join(parts)
 
 
-class ConditionalChunk(object):
-    def __init__(self, content):
-        self._condition = False
-        self._content = content
-
-
-    def trigger_condition(self):
-        self._condition = True
-
-
-    def __str__(self):
-        return self._content if self._condition else ''
-
-
 class Document(object):
     def __init__(self, title, path, database):
         self._resources = database['resources']
@@ -71,7 +58,7 @@ class Document(object):
                     'baguettebox.js/1.11.1/baguetteBox.min.js" async></script>'
                     '<script>addEventListener("load", function() {baguetteBox.'
                     'run("article", {noScrollbars: true})})</script>')
-        self._gallery_script = ConditionalChunk(gallery)
+        self._gallery_script = ConditionalText(gallery)
         self._content_chunks.append(self._gallery_script)
         self._content_chunks.append('<header>')
         brand_pretty = brand_en.replace('«', '<span>«').replace('»', '»</span>')
