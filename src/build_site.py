@@ -47,6 +47,7 @@ database['photos'] = PhotoList(args.src_dir / 'img')
 database['resources'] = resources # Until the whole database is introduced
 database['shows'] = ShowList(resources)
 
+documents = []
 for generator in [dogs, main, photos, sale, shows]:
     artifacts = generator.get_root_artifact_list(database)
     for title, path, generator, *extra in artifacts:
@@ -56,11 +57,13 @@ for generator in [dogs, main, photos, sale, shows]:
         output_document = tools.document.Document(title, path, database)
         generator(output_document, database, extra)
         output_document.end_document()
-        html_content = str(output_document)
+        documents.append((output_document, path))
 
-        path.parent.mkdir(parents=True, exist_ok=True)
-        with open(path, 'w', encoding='utf-8') as output:
-            output.write(html_content)
+for document, path in documents:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as output:
+        serialized_content = str(document)
+        output.write(serialized_content)
 
 log.info('Generating content-independend files...')
 generate_styles(resources)
