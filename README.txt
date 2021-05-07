@@ -4,12 +4,21 @@ NAME
 
 SYNOPSIS
 
-       python src/build_site.py RES_DIR
+       python src/build_site.py [-h | --help] <res_dir>
 
 DESCRIPTION
 
        Take a file database from RES_DIR directory and populate
        a current directory with a static site file structure.
+
+OPTIONS
+
+       -h
+       --help
+       Show a help message and exit.
+
+       <res_dir>
+       Path to a file database with source data and resources.
 
 NOTES
 
