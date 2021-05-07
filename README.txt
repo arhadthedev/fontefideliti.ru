@@ -4,7 +4,7 @@ NAME
 
 SYNOPSIS
 
-       python src/build_site.py [-h | --help] <res_dir>
+       python src/build_site.py [-h | --help] [-f | --force] <res_dir>
 
 DESCRIPTION
 
@@ -16,6 +16,10 @@ OPTIONS
        -h
        --help
        Show a help message and exit.
+
+       -f
+       --force
+       Regenerate all resources (photos) in RES_DIR, not only missing.
 
        <res_dir>
        Path to a file database with source data and resources.
