@@ -30,7 +30,7 @@ def _print_list(output, resources, photos):
     output.add_raw('<p><a href="http://www.pedigreedatabase.com/german_shepherd_dog/dog.html?id=3069915">Родословная</a></p>')
     for photo in photos.get_for_dog('tsiana'):
         photo.set_caption('Фонте Фиделити Циана, 1,5 месяца')
-        output.add_image('', '', 'h', 152, True, photo)
+        output.add_image(photo, 'h', 152, is_clickable=True)
         output.add_plain(' ')
     output.end_container()
 

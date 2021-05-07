@@ -16,7 +16,7 @@ def generate_shows(output_document, database, extra):
     for year, photo in extra[0]:
         output_document.start_list_item()
         output_document.add_raw('<a href="{0}.htm">{0} '.format(year))
-        output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, False, photo.get_image())
+        output_document.add_image(photo, 'h', 152, is_clickable=False)
         output_document.add_raw('</a>')
         output_document.end_list_item()
     output_document.end_list()
@@ -68,7 +68,7 @@ def generate_year_page(output_document, database, extra):
             glued_dog_names = ', '.join(dog_names)
             caption = '{}, г. {}, {}'.format(glued_dog_names, event['city'], human_date(date))
             photo.set_caption(caption)
-            output_document.add_image(photo.get_id(), photo.get_caption(), 'h', 152, True, photo.get_image())
+            output_document.add_image(photo, 'h', 152, is_clickable=True)
             output_document.add_plain(' ')
         output_document.add_raw('</p>')
 

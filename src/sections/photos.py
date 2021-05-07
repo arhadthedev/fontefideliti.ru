@@ -14,7 +14,7 @@ def generate_photos(output, database, extra):
 
     photos = database['photos'].get_card_assignation('allphotos', multiphoto_group=True)
     for photo in photos:
-        output.add_image('',  '', 'h', 152, True, photo.get_image())
+        output.add_image(photo, 'h', 152, is_clickable=True)
         output.add_plain(' ')
     output.end_container()
 

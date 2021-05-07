@@ -66,7 +66,7 @@ class Document(object):
 
         photo = self._photos.get_card_assignation('site_head')
         photo.set_caption('Логотип')
-        self.add_image('', '', 'w', 500, False, photo.get_image())
+        self.add_image(photo, 'w', 500, is_clickable=False)
 
         self._content_chunks.append('</header>')
 
@@ -124,7 +124,7 @@ class Document(object):
         self._content_chunks.append(text)
 
 
-    def add_image(self, output_name, caption, dimension_type, dimension, is_clickable, input_image=None):
+    def add_image(self, image, dimension_type, dimension_size, is_clickable):
         if is_clickable:
             self._gallery_script.trigger_condition()
             dimension = ('e', 794)
@@ -159,8 +159,8 @@ class Document(object):
         self._content_chunks.append('<p>{}</p>'.format(dog_info['name']['nom']))
         if current_depth == 0:
             photo = self._photos.get_card_assignation(dog_id)
-            caption = dog_info['name']['nom']
-            self.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 168, True, photo.get_image())
+            photo.set_caption(dog_info['name']['nom'])
+            self.add_image(photo, 'w', 168, is_clickable=True)
 
         self._content_chunks.append('</td>')
         self._add_pedigree(dog_info, all_dogs, current_depth + 1, max_depth)

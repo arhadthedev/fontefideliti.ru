@@ -21,7 +21,7 @@ def generate_photos(output_document, database, extra):
 
     photos = database['photos'].get_for_dog(dog_id)
     for photo in photos:
-        output_document.add_image('', '', 'h', 152, True, photo.get_image())
+        output_document.add_image(photo, 'h', 152, is_clickable=True)
         output_document.add_plain(' ')
     output_document.end_container()
 
@@ -152,9 +152,9 @@ def generate_index(output_document, database, extra):
         output_document.add_raw('<p>')
         output_document.add_raw(short_test_info)
         output_document.add_raw('</p>')
-    caption = 'Фотография {}'.format(dog_info['name']['gen'])
     photo = database['photos'].get_card_assignation(dog_id)
-    output_document.add_image(photo.get_id(), caption if caption else photo.get_caption(), 'w', 558, False, photo.get_image())
+    photo.set_caption('Фотография {}'.format(dog_info['name']['gen']))
+    output_document.add_image(photo, 'w', 558, is_clickable=False)
 
     subsections = []
     if database['photos'].get_for_dog(dog_id):
@@ -220,9 +220,9 @@ def generate_list(output_document, database, extra):
         output_document.add_raw('<a href="/{}s/{}/">'.format(category, dog_id))
         output_document.add_raw(dog_info['name']['nom'])
         output_document.add_plain(' ')
-        caption = 'Фотография {}'.format(dog_info['name']['gen'])
         photo = database['photos'].get_card_assignation(dog_id)
-        output_document.add_image(photo.get_id(), caption, 'h', 152, False, photo.get_image())
+        photo.set_caption('Фотография {}'.format(dog_info['name']['gen']))
+        output_document.add_image(photo, 'h', 152, is_clickable=False)
         output_document.add_raw('</a>')
         output_document.end_list_item()
     output_document.end_list()

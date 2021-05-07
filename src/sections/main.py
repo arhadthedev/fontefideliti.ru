@@ -55,7 +55,7 @@ def generate_index(output_document, database, extra):
     output_document.start_generic_container(['multicolumn'])
     photo = database['photos'].get_card_assignation('main')
     photo.set_caption('Фанхил Хаус Хассо')
-    output_document.add_image('', '', 'h', 540, False, photo)
+    output_document.add_image(photo, 'h', 540, is_clickable=False)
     output_document.start_generic_container()
     generate_contacts(output_document)
     output_document.end_generic_container()
