@@ -92,24 +92,6 @@ class Photo:
             image.save(output_path, quality=94, optimize=True, progressive=True)
 
 
-    def get_image(self):
-        image = Image.open(self._input_path)
-        if self._blackening:
-            image = ImageEnhance.Contrast(image).enhance(self._blackening)
-        if self._crop_margins:
-            left, top, right, bottom = self._crop_margins
-            abs_right = image.width - right
-            abs_bottom = image.height - bottom
-            cropping_rectangle = left, top, abs_right, abs_bottom
-            image = image.crop(cropping_rectangle)
-
-        return image
-
-
-    def get_id(self):
-        return None
-
-
     def set_caption(self, caption):
         if not self._caption:
             self._caption = caption
