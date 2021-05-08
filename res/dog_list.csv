@@ -46,7 +46,7 @@ b,eiko,Eiko vom Haus Portofino,m,2007-07-10,bazi,conny,558835,,Баларис,it
 ,gaidar,Леге Артис Гайдар,,,,,,,,
 ,gambo,Фонте Фиделити Гамбо,m,2016-02-01,zakhar,mabari,2695110,,,vivat
 ,ghandi,Ghandi von Arlett,,,,,,,,
-,gvendi,Фонте Фиделити Гвенди,f,2016-02-01,zakhar,mabari,,,,kalista
+,gvendi,Фонте Фиделити Гвенди,f,,zakhar,mabari,,,,kalista
 ,goldi,Фонте Фиделити Голди,m,2016-02-01,zakhar,mabari,2695107,,,gambo
 ,greit,Фонте Фиделити Грейт,m,2016-02-01,zakhar,mabari,2619808,,,goldi
 ,handa,Handa von der Urbecke,,,,,,,,
@@ -62,7 +62,7 @@ b,inessa,Фонте Фиделити Инесса,f,2017-04-26,aleks,demetra,264
 b,itan,Фонте Фиделити Итан,m,2017-04-26,aleks,demetra,2647827,30940,,aleks
 ,jilla,Jilla von der Urbecke,,,bazi,handa,,,,
 ,kaja,Kaja von der Urbecke,,,pacco,jilla,,,,
-,kalista,Фонте Фиделити Калиста,f,2017-06-05,aleks,danaya,2697048,,,sigbert
+,kalista,Фонте Фиделити Калиста,f,,aleks,danaya,2697048,,,sigbert
 ,kamila,Фонте Фиделити Камила,f,2017-06-25,aleks,danaya,2696790,,,kassandra
 ,karats,Karat’s Ulk,,,ghandi,lilskan,,,,
 ,kassandra,Фонте Фиделити Кассандра,f,2017-06-25,aleks,danaya,2695099,,,iskander
@@ -111,7 +111,7 @@ b,palmira,Фонте Фиделити Пальмира,f,2018-06-29,aleks,nikole
 ,riply,Endrefalva Riply,,,,,,,,
 ,selma,Selma Feetback,,,,,,,,
 ,siska,Siska von der Freiheit Westerholt,,,maestro,nannila,,,,
-,sigbert,Фонте Фиделити Сигберт,m,2018-09-10,aleks,zhakardi,2813175,,,ulana
+,sigbert,Фонте Фиделити Сигберт,m,,aleks,zhakardi,2813175,,,ulana
 ,sirio,Sirio della Real Favorita,m,,,,,,,
 ,tekila,Фонте Фиделити Текила,f,2019-05-21,aleks,demetra,2894363,,,persei
 ,titan,Фанхил Заус Титан,f,,kolumbus,kvina,,,,
@@ -130,7 +130,7 @@ b,palmira,Фонте Фиделити Пальмира,f,2018-06-29,aleks,nikole
 ,vivian,Vivian vom Zellwaldrand,,,zamp,melinda,,,,
 r,viviana,Хаус Велхольм Вивиана,f,2014-01-30,maybach,mabari,2156108,,,palmira
 ,yasko,Yasko vom Farbenspiel,,,,,,,,
-,yunaru,Фанхил Хаус Юнару,f,2012-10-23,eltoro,hillari,1892025,23815,,
+,yunaru,Фанхил Хаус Юнару,f,,eltoro,hillari,1892025,23815,,
 ,zad,Zad Feetback,m,,,,,,,
 ,zakhar,Zakhar no Bārtas Krasta,m,,dasty,hardena,1974446,26000,,
 ,zamp,Zamp vom Thermodos,,,quantum,ute,,,,
