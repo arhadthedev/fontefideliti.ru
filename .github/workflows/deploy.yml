@@ -29,9 +29,10 @@ jobs:
       - uses: actions/setup-node@v2-beta
       - run: python photo_generation.py public
       - run: cd public && python ../src/build_site.py ../res
-      - uses: w9jds/firebase-action@master
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v2
         with:
-          args: deploy --only hosting
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_ID: fontefideliti
+          name: public
+          path: public
+          retention-days: 3
+
