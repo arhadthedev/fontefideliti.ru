@@ -52,8 +52,10 @@ class Document(object):
         for title, menu_path in menu:
             if not menu_path:
                 menu_path = 'index.html'
-            if path.startswith(menu_path):
-                item = '<li><span class="current">{}'.format(title)
+            if path == menu_path:
+                item = '<li><span class="current">{}</span>'.format(title)
+            elif path.startswith(menu_path):
+                item = '<li><a href="/{}" class="current">{}</a>'.format(menu_path, title)
             else:
                 item = '<li><a href="/{}">{}</a>'.format(menu_path, title)
             self._content_chunks.append(item)
