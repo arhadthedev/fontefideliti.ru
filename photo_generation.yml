@@ -9,6 +9,7 @@
   mirror: true
   output:
     - w168
+    - h152
 - path: "img/2008/04052"
 - path: "img/2008/04181"
 - path: "img/2008/04261"
