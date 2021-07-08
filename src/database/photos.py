@@ -46,7 +46,7 @@ class Photo:
         return promise
 
 
-    def keep_generation_promises(self, rewrite_existing, photo_logger):
+    def keep_generation_promises(self, photo_logger):
         photo_logger(self._relative_input_path)
 
         for (dimension, output_directory), promise in self._generation_promises.items():
@@ -72,7 +72,7 @@ class Photo:
             output_name = self._relative_input_path.with_name(output_stem + self._relative_input_path.suffix)
             output_path = output_directory / output_name
 
-            if output_path.exists() and not rewrite_existing:
+            if output_path.exists():
                 continue
 
             image = Image.open(self._gallery_root / self._relative_input_path)
@@ -167,8 +167,8 @@ class PhotoList:
             return assigned[0]
 
 
-    def keep_generation_promises(self, rewrite_existing, photo_logger):
+    def keep_generation_promises(self, photo_logger):
         # each photo belongs to a single date unlike other categories
         for date, date_group in self._dates.items():
             for photo in date_group:
-                photo.keep_generation_promises(rewrite_existing, photo_logger)
+                photo.keep_generation_promises(photo_logger)

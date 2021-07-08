@@ -21,12 +21,9 @@ import tools.resources
 
 parser = ArgumentParser(description='Generate fontefideliti.ru content.')
 parser.add_argument('src_dir', type=Path, help='path to a file database')
-parser.add_argument('-f', '--force', action='store_true',
-                    help='regenerate all resources, not only missing')
 
 args = parser.parse_args()
 resources = tools.resources.Input(args.src_dir)
-rewrite_existing = args.force
 
 logging.basicConfig(level=logging.INFO)
 log = logging.getLogger()
@@ -62,7 +59,7 @@ for generator in [dogs, main, photos, sale, shows]:
         documents.append((output_document, path))
 
 photo_logger = lambda path: log.info('Generating from "%s"...', path)
-database['photos'].keep_generation_promises(rewrite_existing, photo_logger)
+database['photos'].keep_generation_promises(photo_logger)
 
 for document, path in documents:
     path.parent.mkdir(parents=True, exist_ok=True)

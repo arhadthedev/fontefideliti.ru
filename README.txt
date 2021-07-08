@@ -4,7 +4,7 @@ NAME
 
 SYNOPSIS
 
-       python src/build_site.py [-h | --help] [-f | --force] <res_dir>
+       python src/build_site.py [-h | --help] <res_dir>
 
 DESCRIPTION
 
@@ -17,14 +17,15 @@ OPTIONS
        --help
        Show a help message and exit.
 
-       -f
-       --force
-       Regenerate all resources (photos) in RES_DIR, not only missing.
-
        <res_dir>
        Path to a file database with source data and resources.
 
 NOTES
+
+       If an output directory is not empty, the script overwrites document files
+       and skips already presented image variants. So if you change an original
+       image, delete all of its variants from an output directory to force their
+       regeneration.
 
        To run the script, Python 3.3 or above is required.
 
