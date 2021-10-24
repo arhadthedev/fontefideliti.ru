@@ -34,5 +34,3 @@ jobs:
         with:
           name: public
           path: public
-          retention-days: 3
-
