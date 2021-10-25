@@ -1,5 +1,45 @@
 # A temporary file required until proper requests from page generators are added
 
+- path: img/photos/puppies/shagrand1
+  output:
+    - h152
+- path: img/photos/puppies/shagrand2
+  output:
+    - h152
+- path: img/photos/puppies/shakira1
+  output:
+    - h152
+- path: img/photos/puppies/shakira2
+  output:
+    - h152
+- path: img/photos/puppies/sharlotta1
+  output:
+    - h152
+- path: img/photos/puppies/sharlotta2
+  output:
+    - h152
+- path: img/photos/puppies/sharlotta3
+  output:
+    - h152
+- path: img/photos/puppies/shein1
+  output:
+    - h152
+- path: img/photos/puppies/shein2
+  output:
+    - h152
+- path: img/photos/puppies/shein3
+  output:
+    - h152
+- path: img/photos/puppies/shera1
+  output:
+    - h152
+- path: img/photos/puppies/shiko1
+  output:
+    - h152
+- path: img/photos/puppies/shiko1
+  output:
+    - h152
+
 - path: "img/title"
   default_size: 500
 - path: "img/2007/09141"
