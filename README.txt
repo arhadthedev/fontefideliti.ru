@@ -40,7 +40,7 @@ REPORTING BUGS
 
 COPYRIGHT
 
-       Code: Copyright © 2015–2021 Oleg Yarygin.  License MIT:
+       Code: Copyright © 2015–2022 Oleg Yarygin.  License MIT:
        <https://opensource.org/licenses/MIT>.  This is free software:
        you are free to change and redistribute it. There is NO WARRANTY,
        to the extent permitted by law.
